@@ -1,0 +1,26 @@
+{
+  "name": "دیارکرنا قوتابیان",
+  "short_name": "دیارکرنا قوتابیان",
+  "description": "سیستەمێ دیارکرن و دیتنا خوشک و برایان و کەسوکاران و قوتابیێن ب تنێ",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1120",
+  "theme_color": "#2563eb",
+  "orientation": "any",
+  "lang": "ku",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

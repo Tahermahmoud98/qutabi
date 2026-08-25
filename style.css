@@ -1,0 +1,655 @@
+/* 30% - 40% Calm Pastel Claymorphism Design System - Ultra Optimized */
+:root {
+    --clay-bg: #edf2f7;
+    --clay-primary: #5a8fee;
+    --clay-primary-hover: #4a7fdc;
+    --clay-shadow-color: rgba(165, 180, 200, 0.28);
+    --clay-inner-shadow: rgba(165, 180, 200, 0.15);
+    --clay-card-bg: rgba(255, 255, 255, 0.94);
+}
+
+.theme-green {
+    --clay-bg: #edf6f2;
+    --clay-primary: #38b289;
+    --clay-primary-hover: #2c9a74;
+    --clay-shadow-color: rgba(160, 190, 175, 0.28);
+    --clay-inner-shadow: rgba(160, 190, 175, 0.15);
+}
+.theme-pink {
+    --clay-bg: #faf0f3;
+    --clay-primary: #e06d99;
+    --clay-primary-hover: #cc5b86;
+    --clay-shadow-color: rgba(210, 175, 190, 0.28);
+    --clay-inner-shadow: rgba(210, 175, 190, 0.15);
+}
+.theme-purple {
+    --clay-bg: #f5f0fb;
+    --clay-primary: #8d75dc;
+    --clay-primary-hover: #7b62ca;
+    --clay-shadow-color: rgba(185, 170, 215, 0.28);
+    --clay-inner-shadow: rgba(185, 170, 215, 0.15);
+}
+.theme-dark {
+    --clay-bg: #0b1120;
+    --clay-card-bg: rgba(21, 30, 48, 0.95);
+    --clay-primary: #3b82f6;
+    --clay-primary-hover: #60a5fa;
+    --clay-shadow-color: rgba(0, 0, 0, 0.6);
+    --clay-inner-shadow: rgba(0, 0, 0, 0.35);
+    color: #f8fafc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Kufi Arabic', 'Vazirmatn', sans-serif;
+    background-color: var(--clay-bg);
+    transition: background-color 0.18s cubic-bezier(0.4, 0, 0.2, 1), color 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+html[lang="en"] body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 3D Calm Clay Cards - Hardware Accelerated */
+.clay-card {
+    background: var(--clay-card-bg);
+    border-radius: 22px;
+    box-shadow: 
+        6px 10px 20px var(--clay-shadow-color),
+        -6px -6px 20px rgba(255, 255, 255, 0.85),
+        inset -3px -3px 6px var(--clay-inner-shadow),
+        inset 3px 3px 6px rgba(255, 255, 255, 0.85);
+    border: 1.5px solid rgba(255, 255, 255, 0.65);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+    contain: content;
+}
+.theme-dark .clay-card {
+    background: rgba(21, 30, 48, 0.95);
+    box-shadow: 
+        6px 10px 24px var(--clay-shadow-color),
+        -3px -3px 12px rgba(255, 255, 255, 0.02),
+        inset -2px -2px 6px rgba(0, 0, 0, 0.5),
+        inset 2px 2px 6px rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(71, 85, 105, 0.6);
+}
+
+/* Clay Soft Pastel Sub-Cards */
+.clay-card-blue {
+    background: rgba(240, 246, 254, 0.85);
+    border-radius: 18px;
+    box-shadow: 
+        2px 4px 10px var(--clay-shadow-color),
+        inset -2px -2px 4px rgba(255, 255, 255, 0.8),
+        inset 2px 2px 4px rgba(90, 143, 238, 0.08);
+    border: 1px solid rgba(191, 219, 254, 0.7);
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.theme-dark .clay-card-blue {
+    background: rgba(26, 41, 66, 0.85);
+    border: 1.5px solid rgba(96, 165, 250, 0.45);
+    box-shadow: 
+        2px 4px 10px var(--clay-shadow-color),
+        inset -2px -2px 4px rgba(0, 0, 0, 0.35),
+        inset 2px 2px 4px rgba(96, 165, 250, 0.15);
+}
+
+.clay-card-maternal {
+    background: rgba(254, 242, 246, 0.85);
+    border-radius: 18px;
+    box-shadow: 
+        2px 4px 10px var(--clay-shadow-color),
+        inset -2px -2px 4px rgba(255, 255, 255, 0.8),
+        inset 2px 2px 4px rgba(224, 109, 153, 0.08);
+    border: 1px solid rgba(251, 207, 232, 0.6);
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.theme-dark .clay-card-maternal {
+    background: rgba(55, 25, 45, 0.85);
+    border: 1.5px solid rgba(244, 114, 182, 0.45);
+    box-shadow: 
+        2px 4px 10px var(--clay-shadow-color),
+        inset -2px -2px 4px rgba(0, 0, 0, 0.35),
+        inset 2px 2px 4px rgba(244, 114, 182, 0.15);
+}
+
+/* 40% Calm Pastel 3D Clay Stat Cards - Light Mode */
+.stat-card-blue {
+    background: rgba(219, 234, 254, 0.94) !important;
+    border: 1.5px solid rgba(147, 197, 253, 0.85) !important;
+    box-shadow: 
+        5px 8px 16px rgba(147, 197, 253, 0.35),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.85),
+        inset 2px 2px 5px rgba(59, 130, 246, 0.12) !important;
+}
+.stat-card-green {
+    background: rgba(209, 250, 229, 0.94) !important;
+    border: 1.5px solid rgba(110, 231, 183, 0.85) !important;
+    box-shadow: 
+        5px 8px 16px rgba(110, 231, 183, 0.35),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.85),
+        inset 2px 2px 5px rgba(16, 185, 129, 0.12) !important;
+}
+.stat-card-purple {
+    background: rgba(224, 231, 255, 0.94) !important;
+    border: 1.5px solid rgba(165, 180, 252, 0.85) !important;
+    box-shadow: 
+        5px 8px 16px rgba(165, 180, 252, 0.35),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.85),
+        inset 2px 2px 5px rgba(99, 102, 241, 0.12) !important;
+}
+.stat-card-amber {
+    background: rgba(254, 243, 199, 0.94) !important;
+    border: 1.5px solid rgba(252, 211, 77, 0.85) !important;
+    box-shadow: 
+        5px 8px 16px rgba(252, 211, 77, 0.35),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.85),
+        inset 2px 2px 5px rgba(245, 158, 11, 0.12) !important;
+}
+.stat-card-rose {
+    background: rgba(255, 228, 230, 0.94) !important;
+    border: 1.5px solid rgba(253, 164, 175, 0.85) !important;
+    box-shadow: 
+        5px 8px 16px rgba(253, 164, 175, 0.35),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.85),
+        inset 2px 2px 5px rgba(244, 63, 94, 0.12) !important;
+}
+
+/* 40% High-Contrast Luminous Stat Cards in Dark Mode */
+.theme-dark .stat-card-blue {
+    background: rgba(24, 48, 88, 0.92) !important;
+    border: 1.5px solid #60a5fa !important;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35), inset 0 0 8px rgba(96, 165, 250, 0.2) !important;
+}
+.theme-dark #stat-total-title {
+    color: #bfdbfe !important;
+    font-weight: 800 !important;
+}
+.theme-dark #stat-total {
+    color: #60a5fa !important;
+    text-shadow: 0 0 12px rgba(96, 165, 250, 0.5);
+}
+
+.theme-dark .stat-card-green {
+    background: rgba(14, 60, 45, 0.92) !important;
+    border: 1.5px solid #34d399 !important;
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35), inset 0 0 8px rgba(52, 211, 153, 0.2) !important;
+}
+.theme-dark #stat-siblings-title {
+    color: #a7f3d0 !important;
+    font-weight: 800 !important;
+}
+.theme-dark #stat-siblings {
+    color: #34d399 !important;
+    text-shadow: 0 0 12px rgba(52, 211, 153, 0.5);
+}
+
+.theme-dark .stat-card-purple {
+    background: rgba(45, 34, 85, 0.92) !important;
+    border: 1.5px solid #818cf8 !important;
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35), inset 0 0 8px rgba(129, 140, 248, 0.2) !important;
+}
+.theme-dark #stat-relatives-title {
+    color: #c7d2fe !important;
+    font-weight: 800 !important;
+}
+.theme-dark #stat-relatives {
+    color: #818cf8 !important;
+    text-shadow: 0 0 12px rgba(129, 140, 248, 0.5);
+}
+
+.theme-dark .stat-card-amber {
+    background: rgba(70, 48, 16, 0.92) !important;
+    border: 1.5px solid #fbbf24 !important;
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35), inset 0 0 8px rgba(251, 191, 36, 0.2) !important;
+}
+.theme-dark #stat-twins-title {
+    color: #fde68a !important;
+    font-weight: 800 !important;
+}
+.theme-dark #stat-twins {
+    color: #fbbf24 !important;
+    text-shadow: 0 0 12px rgba(251, 191, 36, 0.5);
+}
+
+.theme-dark .stat-card-rose {
+    background: rgba(75, 20, 38, 0.92) !important;
+    border: 1.5px solid #fb7185 !important;
+    box-shadow: 0 6px 20px rgba(244, 63, 94, 0.35), inset 0 0 8px rgba(251, 113, 133, 0.2) !important;
+}
+.theme-dark #stat-solitary-title,
+.theme-dark #stat-solitary-label {
+    color: #fecdd3 !important;
+    font-weight: 800 !important;
+}
+.theme-dark #stat-solitary {
+    color: #fb7185 !important;
+    text-shadow: 0 0 12px rgba(251, 113, 133, 0.5);
+}
+
+/* Compact Clay Inputs */
+.clay-input {
+    background: #f8fafc;
+    border-radius: 14px;
+    box-shadow: 
+        inset 2px 2px 4px var(--clay-inner-shadow),
+        inset -2px -2px 4px rgba(255, 255, 255, 0.9);
+    border: 1.5px solid #e2e8f0;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+.theme-dark .clay-input,
+.theme-dark select.clay-input,
+.theme-dark textarea.clay-input,
+.theme-dark input.clay-input {
+    background-color: #1e293b !important;
+    border: 1.5px solid #475569 !important;
+    color: #f8fafc !important;
+    box-shadow: 
+        inset 2px 2px 4px rgba(0, 0, 0, 0.4),
+        inset -1px -1px 2px rgba(255, 255, 255, 0.05) !important;
+}
+.clay-input:focus {
+    outline: none;
+    border-color: var(--clay-primary);
+}
+
+/* Compact Calm Clay Buttons */
+.clay-btn {
+    background: var(--clay-primary);
+    border-radius: 14px;
+    box-shadow: 
+        3px 5px 12px var(--clay-shadow-color),
+        inset -2px -2px 5px rgba(0, 0, 0, 0.15),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.22);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.1s ease, filter 0.1s ease;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+}
+.clay-btn:hover {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+}
+.clay-btn:active {
+    transform: scale(0.96);
+    box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.clay-btn-sec {
+    background: #e6ebf2;
+    color: #374151;
+    border-radius: 14px;
+    box-shadow: 
+        2px 4px 8px var(--clay-shadow-color),
+        inset -2px -2px 4px rgba(0, 0, 0, 0.05),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.85);
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    transition: transform 0.1s ease, filter 0.1s ease, background-color 0.15s ease;
+    cursor: pointer;
+    user-select: none;
+}
+.theme-dark .clay-btn-sec {
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+    box-shadow: 
+        2px 4px 8px var(--clay-shadow-color),
+        inset -2px -2px 4px rgba(0, 0, 0, 0.3),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.06) !important;
+    border: 1.5px solid #475569 !important;
+}
+.clay-btn-sec:hover {
+    filter: brightness(1.08);
+}
+
+/* 40% Calm Pastel Action Buttons */
+.clay-btn-blue-40 {
+    background: rgba(219, 234, 254, 0.95);
+    color: #1e40af !important;
+    border: 1.5px solid rgba(147, 197, 253, 0.85);
+    box-shadow: 
+        2px 3px 8px rgba(147, 197, 253, 0.4),
+        inset -2px -2px 3px rgba(255, 255, 255, 0.9),
+        inset 2px 2px 3px rgba(59, 130, 246, 0.15);
+    border-radius: 12px;
+    transition: transform 0.1s ease, filter 0.1s ease;
+    cursor: pointer;
+}
+.clay-btn-blue-40:hover {
+    background: rgba(191, 219, 254, 1);
+    transform: translateY(-1px);
+}
+.theme-dark .clay-btn-blue-40 {
+    background: rgba(30, 64, 120, 0.95) !important;
+    color: #dbeafe !important;
+    border: 1.5px solid #60a5fa !important;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3), inset 0 0 5px rgba(96, 165, 250, 0.2) !important;
+}
+
+.clay-btn-green-40 {
+    background: rgba(209, 250, 229, 0.95);
+    color: #065f46 !important;
+    border: 1.5px solid rgba(110, 231, 183, 0.85);
+    box-shadow: 
+        2px 3px 8px rgba(110, 231, 183, 0.4),
+        inset -2px -2px 3px rgba(255, 255, 255, 0.9),
+        inset 2px 2px 3px rgba(16, 185, 129, 0.15);
+    border-radius: 12px;
+    transition: transform 0.1s ease, filter 0.1s ease;
+    cursor: pointer;
+}
+.clay-btn-green-40:hover {
+    background: rgba(167, 243, 208, 1);
+    transform: translateY(-1px);
+}
+.theme-dark .clay-btn-green-40 {
+    background: rgba(16, 75, 55, 0.95) !important;
+    color: #d1fae5 !important;
+    border: 1.5px solid #34d399 !important;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3), inset 0 0 5px rgba(52, 211, 153, 0.2) !important;
+}
+
+.clay-btn-purple-40 {
+    background: rgba(224, 231, 255, 0.95);
+    color: #4338ca !important;
+    border: 1.5px solid rgba(165, 180, 252, 0.85);
+    box-shadow: 
+        2px 3px 8px rgba(165, 180, 252, 0.4),
+        inset -2px -2px 3px rgba(255, 255, 255, 0.9),
+        inset 2px 2px 3px rgba(99, 102, 241, 0.15);
+    border-radius: 12px;
+    transition: transform 0.1s ease, filter 0.1s ease;
+    cursor: pointer;
+}
+.clay-btn-purple-40:hover {
+    background: rgba(224, 231, 255, 1);
+    transform: translateY(-1px);
+}
+.theme-dark .clay-btn-purple-40 {
+    background: rgba(60, 45, 115, 0.95) !important;
+    color: #e0e7ff !important;
+    border: 1.5px solid #818cf8 !important;
+    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3), inset 0 0 5px rgba(129, 140, 248, 0.2) !important;
+}
+
+.clay-btn-rose-40 {
+    background: rgba(255, 228, 230, 0.95);
+    color: #9f1239 !important;
+    border: 1.5px solid rgba(253, 164, 175, 0.85);
+    box-shadow: 
+        2px 3px 8px rgba(253, 164, 175, 0.4),
+        inset -2px -2px 3px rgba(255, 255, 255, 0.9),
+        inset 2px 2px 3px rgba(244, 63, 94, 0.15);
+    border-radius: 12px;
+    transition: transform 0.1s ease, filter 0.1s ease;
+    cursor: pointer;
+}
+.clay-btn-rose-40:hover {
+    background: rgba(254, 205, 211, 1);
+    transform: translateY(-1px);
+}
+.theme-dark .clay-btn-rose-40 {
+    background: rgba(90, 25, 50, 0.95) !important;
+    color: #ffe4e6 !important;
+    border: 1.5px solid #fb7185 !important;
+    box-shadow: 0 4px 10px rgba(244, 63, 94, 0.3), inset 0 0 5px rgba(251, 113, 133, 0.2) !important;
+}
+
+.clay-btn-red-40 {
+    background: rgba(254, 226, 226, 0.95);
+    color: #b91c1c !important;
+    border: 1.5px solid rgba(252, 165, 165, 0.85);
+    box-shadow: 
+        2px 3px 8px rgba(252, 165, 165, 0.4),
+        inset -2px -2px 3px rgba(255, 255, 255, 0.9),
+        inset 2px 2px 3px rgba(239, 68, 68, 0.15);
+    border-radius: 12px;
+    transition: transform 0.1s ease, filter 0.1s ease;
+    cursor: pointer;
+}
+.clay-btn-red-40:hover {
+    background: rgba(254, 202, 202, 1);
+    transform: translateY(-1px);
+}
+.theme-dark .clay-btn-red-40 {
+    background: rgba(100, 25, 25, 0.95) !important;
+    color: #fee2e2 !important;
+    border: 1.5px solid #f87171 !important;
+    box-shadow: 0 4px 10px rgba(239, 68, 68, 0.3), inset 0 0 5px rgba(248, 113, 113, 0.2) !important;
+}
+.clay-btn-sec:active {
+    transform: scale(0.96);
+}
+
+/* Clay Soft Badges */
+.clay-badge {
+    background: rgba(228, 235, 244, 0.85);
+    border-radius: 12px;
+    box-shadow: 
+        2px 2px 4px var(--clay-shadow-color),
+        inset -1px -1px 2px rgba(0, 0, 0, 0.04),
+        inset 1px 1px 2px rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.theme-dark .clay-badge {
+    background: rgba(30, 41, 59, 0.95) !important;
+    color: #e2e8f0 !important;
+    box-shadow: 
+        2px 2px 6px rgba(0, 0, 0, 0.4),
+        inset -1px -1px 2px rgba(0, 0, 0, 0.3),
+        inset 1px 1px 2px rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(71, 85, 105, 0.7) !important;
+}
+
+/* Dark Mode Typography and High-Contrast Elements */
+.theme-dark #ui-title {
+    color: #93c5fd !important;
+    text-shadow: 0 2px 12px rgba(59, 130, 246, 0.35);
+}
+.theme-dark #ui-subtitle {
+    color: #cbd5e1 !important;
+}
+.theme-dark #ui-input-label {
+    color: #93c5fd !important;
+}
+.theme-dark #ui-sep-label,
+.theme-dark #ui-match-label,
+.theme-dark #ui-relatives-mode-label,
+.theme-dark #ui-grandpa-level-label,
+.theme-dark #ui-prefix-label,
+.theme-dark #ui-data-status-title,
+.theme-dark #ui-history-label,
+.theme-dark #modalLineCounter,
+.theme-dark label {
+    color: #e2e8f0 !important;
+}
+
+/* Results Area Cards in Dark Mode */
+.theme-dark .group-card {
+    background: rgba(22, 33, 54, 0.95) !important;
+    border: 1.5px solid rgba(71, 85, 105, 0.7) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), inset 0 0 6px rgba(255, 255, 255, 0.03) !important;
+}
+.theme-dark .group-card .bg-blue-50\/80 {
+    background: rgba(30, 58, 110, 0.9) !important;
+    color: #bfdbfe !important;
+    border: 1px solid rgba(96, 165, 250, 0.4) !important;
+}
+.theme-dark #resultsArea li,
+.theme-dark .group-card li {
+    background: rgba(15, 23, 42, 0.8) !important;
+    border: 1px solid rgba(51, 65, 85, 0.8) !important;
+    color: #f8fafc !important;
+}
+.theme-dark #resultsArea li:hover,
+.theme-dark .group-card li:hover {
+    background: rgba(30, 41, 59, 0.98) !important;
+    border-color: rgba(96, 165, 250, 0.6) !important;
+}
+.theme-dark .group-card [contenteditable] {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+.theme-dark .group-card .bg-amber-100\/80 {
+    background: rgba(85, 60, 20, 0.9) !important;
+    color: #fde68a !important;
+    border: 1px solid rgba(251, 191, 36, 0.5) !important;
+}
+.theme-dark .group-card .bg-pink-50\/80 {
+    background: rgba(80, 25, 50, 0.9) !important;
+    color: #fbcfe8 !important;
+    border: 1px solid rgba(244, 114, 182, 0.5) !important;
+}
+.theme-dark .group-card .bg-emerald-50\/80 {
+    background: rgba(16, 75, 55, 0.9) !important;
+    color: #6ee7b7 !important;
+    border: 1px solid rgba(52, 211, 153, 0.5) !important;
+}
+
+/* Notices and Filters in Dark Mode */
+.theme-dark #relativesTabNotice {
+    background: rgba(40, 30, 75, 0.9) !important;
+    border: 1.5px solid rgba(129, 140, 248, 0.45) !important;
+}
+.theme-dark #ui-relatives-tab-desc {
+    color: #c7d2fe !important;
+}
+.theme-dark #solitaryTabNotice {
+    background: rgba(75, 20, 35, 0.9) !important;
+    border: 1.5px solid rgba(251, 113, 133, 0.45) !important;
+}
+.theme-dark #ui-solitary-tab-desc {
+    color: #fecdd3 !important;
+}
+.theme-dark #searchFilter {
+    background: #1e293b !important;
+    color: #f8fafc !important;
+    border: 1.5px solid #475569 !important;
+}
+.theme-dark #searchFilter::placeholder {
+    color: #94a3b8 !important;
+}
+.theme-dark select option {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+}
+
+.drag-over {
+    background: #e0edfe !important;
+    border: 2.5px dashed #5a8fee !important;
+    transform: scale(1.01);
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: rgba(165, 180, 200, 0.4);
+    border-radius: 9999px;
+}
+.theme-dark .custom-scroll::-webkit-scrollbar-thumb {
+    background: rgba(100, 116, 139, 0.6);
+}
+
+#toast {
+    position: fixed;
+    bottom: 24px;
+    right: 50%;
+    transform: translateX(50%) translateY(100px);
+    opacity: 0;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+    z-index: 9999;
+}
+#toast.show {
+    transform: translateX(50%) translateY(0);
+    opacity: 1;
+}
+
+/* انغلاق وانفتاح اللوحة الجانبية أفقياً في نفس مكانها */
+#sidebarCol {
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: right center;
+}
+html[dir="ltr"] #sidebarCol {
+    transform-origin: left center;
+}
+
+.sidebar-is-closed #sidebarCol {
+    display: none !important;
+}
+.sidebar-is-closed #resultsCol {
+    grid-column: span 12 / span 12 !important;
+}
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 10mm;
+    }
+    html, body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        height: auto !important;
+        min-height: 100% !important;
+        overflow: visible !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 10pt !important;
+    }
+    header, footer, .clay-top-bar, #statsBar, #mobileViewToggle, #sidebarCol, #dataInputModal, .no-print, .tab-buttons, button, #history-container, #relativesTabNotice, #solitaryTabNotice, #searchFilterContainer {
+        display: none !important;
+    }
+    main, .container, #mainGrid, #resultsCol, #resultsArea {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        max-height: none !important;
+        height: auto !important;
+        overflow: visible !important;
+        position: static !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .clay-card {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .group-card {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        border: 1.5px solid #64748b !important;
+        border-radius: 8px !important;
+        padding: 10px 14px !important;
+        margin-bottom: 12px !important;
+        background: #ffffff !important;
+        box-shadow: none !important;
+    }
+    #resultsArea li {
+        border-bottom: 1px solid #e2e8f0 !important;
+        padding: 4px 0 !important;
+        background: transparent !important;
+    }
+    .print-only-header {
+        display: block !important;
+        text-align: center;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #0f172a;
+    }
+    span, p, div, li {
+        color: #000000 !important;
+    }
+}

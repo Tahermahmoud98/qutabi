@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- خلفية أيقونة التطبيق بتدرج أزرق ملكي عميق -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- لمعان زجاجي فخم على الحواف -->
+    <linearGradient id="topGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- تدرج إطار عدسة الكشف والبحث (Magnifying Glass Frame) -->
+    <linearGradient id="lensFrameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+
+    <!-- زجاج عدسة الكشف الشفافة المضيئة -->
+    <linearGradient id="lensGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <!-- تدرج مقبض العدسة الكريستالي -->
+    <linearGradient id="handleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="40%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+
+    <!-- تدرج الإخوة الأشقاء (أزرق وأبيض ناصع) -->
+    <linearGradient id="siblingGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+
+    <linearGradient id="siblingGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <!-- تدرج الأقارب والعمومة (أخضر ووردي ناعم) -->
+    <linearGradient id="relativeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="sparkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+
+    <!-- فلاتر الظلال والوهج ثلاثي الأبعاد -->
+    <filter id="appShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+
+    <filter id="lensGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1d4ed8" flood-opacity="0.5"/>
+    </filter>
+
+    <filter id="figureShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- جسم الأيقونة الخارجي (Squircle / Rounded Superellipse) -->
+  <rect x="24" y="24" width="464" height="464" rx="116" fill="url(#bgGradient)" filter="url(#appShadow)"/>
+  
+  <!-- إطار داخلي ناعم مضيء ولمعان زجاجي علوي -->
+  <rect x="28" y="28" width="456" height="210" rx="112" fill="url(#topGlass)"/>
+  <rect x="26" y="26" width="460" height="460" rx="114" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-opacity="0.4"/>
+
+  <!-- شبكة نقاط وترابط الأقارب والجينات في الخلفية (Family Tree / Constellation Nodes) -->
+  <g opacity="0.25" stroke="#93c5fd" stroke-width="1.5">
+    <line x1="80" y1="120" x2="160" y2="90"/>
+    <line x1="160" y1="90" x2="240" y2="130"/>
+    <line x1="360" y1="100" x2="420" y2="150"/>
+    <line x1="380" y1="360" x2="430" y2="410"/>
+    <circle cx="80" cy="120" r="4" fill="#93c5fd"/>
+    <circle cx="160" cy="90" r="5" fill="#93c5fd"/>
+    <circle cx="240" cy="130" r="4" fill="#93c5fd"/>
+    <circle cx="360" cy="100" r="4" fill="#93c5fd"/>
+    <circle cx="420" cy="150" r="5" fill="#93c5fd"/>
+    <circle cx="380" cy="360" r="4" fill="#93c5fd"/>
+    <circle cx="430" cy="410" r="5" fill="#93c5fd"/>
+  </g>
+
+  <!-- مقبض عدسة الكشف والبحث (Magnifying Glass Handle) -->
+  <g filter="url(#lensGlow)">
+    <path d="M335,335 L425,425 C434,434 434,448 425,457 C416,466 402,466 393,457 L303,367 Z" fill="url(#handleGrad)"/>
+    <circle cx="409" cy="441" r="10" fill="#93c5fd" opacity="0.6"/>
+  </g>
+
+  <!-- عدسة الكشف الرئيسية المضيئة (Detection & Discovery Lens) -->
+  <g filter="url(#lensGlow)">
+    <!-- الإطار الخارجي السميك للعدسة -->
+    <circle cx="225" cy="225" r="150" fill="none" stroke="url(#lensFrameGrad)" stroke-width="18"/>
+    <!-- لمعان إطار العدسة الداخلي -->
+    <circle cx="225" cy="225" r="141" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.6"/>
+    <!-- زجاج العدسة الكاشفة بتأثير زجاجي وشفافية -->
+    <circle cx="225" cy="225" r="141" fill="url(#lensGlass)"/>
+    <circle cx="225" cy="225" r="141" fill="#1e3a8a" fill-opacity="0.25"/>
+  </g>
+
+  <!-- عناصر الكشف داخل العدسة: الإخوة والأقارب المكتشفين المترابطين -->
+  <g filter="url(#figureShadow)">
+
+    <!-- خطوط شجرة العائلة والترابط بين الأشقاء والأقارب (Connection Tree Branches) -->
+    <path d="M165,245 C165,190 225,190 225,245" fill="none" stroke="#60a5fa" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M225,245 C225,190 285,190 285,245" fill="none" stroke="#34d399" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+    
+    <!-- نقطة الجد المشترك في الأعلى (Shared Ancestor Node) -->
+    <circle cx="225" cy="140" r="14" fill="url(#sparkGrad)"/>
+    <line x1="225" y1="154" x2="225" y2="190" stroke="#fde047" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- 1. الأخ الأكبر (الشقيق الأول - أزرق سماوي مضيء) -->
+    <g transform="translate(140, 195)">
+      <circle cx="25" cy="25" r="22" fill="url(#siblingGrad2)"/>
+      <path d="M-2,100 C-2,68 12,54 52,54 C92,54 106,68 106,100 C106,108 100,114 90,114 L14,114 C4,114 -2,108 -2,100 Z" fill="url(#siblingGrad2)"/>
+    </g>
+
+    <!-- 2. الأخ الشقيق الأوسط (الشقيق الثاني - أبيض ناصع مع شارة الترابط) -->
+    <g transform="translate(195, 175)">
+      <circle cx="30" cy="28" r="26" fill="url(#siblingGrad1)"/>
+      <path d="M-8,120 C-8,80 8,64 68,64 C128,64 144,80 144,120 C144,130 136,138 124,138 L12,138 C0,138 -8,130 -8,120 Z" fill="url(#siblingGrad1)"/>
+      <!-- رمز التطابق والشبه بين الإخوة (رمز قلب أو صلة رحم) -->
+      <circle cx="30" cy="92" r="6" fill="#2563eb"/>
+    </g>
+
+    <!-- 3. القريب / ابن العم (أخضر زمردي - يرمز لفرع الأقارب المكتشف) -->
+    <g transform="translate(260, 205)">
+      <circle cx="25" cy="22" r="19" fill="url(#relativeGrad)"/>
+      <path d="M0,90 C0,62 12,50 48,50 C84,50 96,62 96,90 C96,96 90,102 82,102 L14,102 C6,102 0,96 0,90 Z" fill="url(#relativeGrad)"/>
+    </g>
+
+    <!-- قوس ترابط الأشقاء السفلي (Golden Siblings Link) -->
+    <path d="M155,305 C185,325 265,325 295,305" fill="none" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="155" cy="305" r="4.5" fill="#f59e0b"/>
+    <circle cx="225" cy="320" r="5" fill="#fde047"/>
+    <circle cx="295" cy="305" r="4.5" fill="#f59e0b"/>
+
+  </g>
+
+  <!-- بريق وشعاع الكشف والذكاء (Discovery Radar Sparkle) -->
+  <g transform="translate(115, 115)">
+    <path d="M0,22 C12,22 22,12 22,0 C22,12 32,22 44,22 C32,22 22,32 22,44 C22,32 12,22 0,22 Z" fill="url(#sparkGrad)"/>
+  </g>
+  <g transform="translate(310, 140)">
+    <path d="M0,12 C7,12 12,7 12,0 C12,7 17,12 24,12 C17,12 12,17 12,24 C12,17 7,12 0,12 Z" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- انعكاس لمعان الضوء على زجاج العدسة (Glass Reflection Highlight) -->
+  <path d="M125,160 C155,105 215,85 270,95 C250,90 200,98 155,135 C132,154 122,185 120,205 C118,188 120,172 125,160 Z" fill="#ffffff" opacity="0.45"/>
+
+</svg>

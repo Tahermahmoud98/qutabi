@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl" class="theme-blue">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>دیارکرنا قوتابیان</title>
+    
+    <!-- ميزات تثبيت التطبيق على أي جهاز (PWA Support) -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#5a8fee">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="دیارکرنا قوتابیان">
+    
+    <!-- أيقونة وشعار التطبيق SVG الفخم -->
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="apple-touch-icon" href="icon.svg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        clayPrimary: 'var(--clay-primary)',
+                        clayPrimaryHover: 'var(--clay-primary-hover)',
+                        clayBg: 'var(--clay-bg)',
+                    },
+                    screens: {
+                        'xs': '480px',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- ربط ملف التنسيقات الخارجي CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col justify-between p-2.5 sm:p-4 md:p-5 min-h-screen">
+
+    <!-- شريط الإعدادات والتحكم العلوي المتناسق بتصميم كلاي مورفيزم الهادئ (Clay Top Bar) -->
+    <div class="container mx-auto max-w-7xl mb-2.5 flex justify-between items-center flex-wrap gap-2 no-print">
+        
+        <!-- زر اللغات الموحد المنسدل بتصميم كلاي -->
+        <div class="relative inline-block text-left">
+            <button onclick="toggleDropdown('langMenu')" id="langBtn" class="clay-btn-sec px-2.5 py-1.5 text-xs font-bold flex items-center gap-1.5">
+                <span>🌐</span>
+                <span id="currentLangLabel">بادینی</span>
+                <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div id="langMenu" class="hidden absolute right-0 sm:right-auto sm:left-0 mt-2 w-44 rounded-2xl shadow-xl bg-white dark:bg-slate-800 ring-1 ring-black/5 dark:ring-white/10 z-50 p-1.5 clay-card text-xs">
+                <button onclick="selectLang('ku_ba')" class="block w-full text-right px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-700/60 rounded-xl font-bold">بادینی</button>
+                <button onclick="selectLang('ku_so')" class="block w-full text-right px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-700/60 rounded-xl font-bold">سۆرانی</button>
+                <button onclick="selectLang('ar')" class="block w-full text-right px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-700/60 rounded-xl font-bold">العربية</button>
+                <button onclick="selectLang('en')" class="block w-full text-left px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-700/60 rounded-xl font-bold">English</button>
+            </div>
+        </div>
+
+        <!-- أزرار التثبيت ومخصّص الألوان والوضع الليلي -->
+        <div class="flex items-center gap-1.5">
+            <!-- زر تثبيت التطبيق على الجهاز (PWA Install Button) -->
+            <button id="pwaInstallBtn" onclick="installPWA()" class="hidden clay-btn-blue-40 px-2.5 py-1.5 text-xs font-bold items-center gap-1.5 shadow-xs">
+                <span>📲</span>
+                <span id="ui-btn-install-app">دانانا بەرنامەی</span>
+            </button>
+
+            <button onclick="setTheme('blue')" title="Blue Theme" class="w-5 h-5 rounded-full bg-blue-400 border-2 border-white shadow-xs transition hover:scale-110"></button>
+            <button onclick="setTheme('green')" title="Green Theme" class="w-5 h-5 rounded-full bg-emerald-400 border-2 border-white shadow-xs transition hover:scale-110"></button>
+            <button onclick="setTheme('pink')" title="Pink Theme" class="w-5 h-5 rounded-full bg-pink-400 border-2 border-white shadow-xs transition hover:scale-110"></button>
+            <button onclick="setTheme('purple')" title="Purple Theme" class="w-5 h-5 rounded-full bg-purple-400 border-2 border-white shadow-xs transition hover:scale-110"></button>
+            <button onclick="toggleDarkMode()" class="clay-btn-sec px-2.5 py-1.5 text-xs font-bold flex items-center gap-1">
+                <span>🌓</span>
+                <span id="darkBtnText">تاری</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- رأس التطبيق والعنوان التوضيحي -->
+    <header class="container mx-auto max-w-7xl mb-3 text-center no-print">
+        <h1 id="ui-title" class="text-lg sm:text-2xl md:text-3xl font-extrabold text-blue-900/90 dark:text-blue-200 mb-0.5 leading-tight tracking-tight">
+            لێگەڕیان ل دیڤ خوشک و برایان و کەسوکاران و قوتابیێن ب تنێ
+        </h1>
+        <p id="ui-subtitle" class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium px-2">
+            کەشفکرنا خویشک و برایێن ئێک باب، و جوداکرنا مرۆڤان ب پشتبەستن ل سەر باپیرێ 3 و 4 یان ناڤێ دەیکێ
+        </p>
+    </header>
+
+    <!-- لوحة الإحصائيات الذكية كلاي مورفيزم بالألوان الهادئة 40% لكل بطاقة والمتجاوبة -->
+    <section id="statsBar" class="container mx-auto max-w-7xl mb-3.5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3.5 no-print">
+        <!-- 1. إجمالي الطلاب (لون أزرق هادئ 40%) -->
+        <div class="clay-card stat-card-blue p-2.5 sm:p-3 text-center transition hover:scale-[1.01] cursor-pointer" onclick="switchResultTab('siblings')">
+            <p id="stat-total-title" class="text-[10px] sm:text-[11px] text-blue-900/90 dark:text-blue-200 font-bold truncate">سەرجەمێ قوتابیان</p>
+            <p id="stat-total" class="text-lg sm:text-2xl font-extrabold text-blue-600/95 dark:text-blue-300 mt-0.5">0</p>
+        </div>
+        <!-- 2. الإخوة الأشقاء (لون أخضر هادئ 40%) -->
+        <div class="clay-card stat-card-green p-2.5 sm:p-3 text-center transition hover:scale-[1.01] cursor-pointer" onclick="switchResultTab('siblings')">
+            <p id="stat-siblings-title" class="text-[10px] sm:text-[11px] text-emerald-900/90 dark:text-emerald-200 font-bold truncate">خویشک و برا</p>
+            <p id="stat-siblings" class="text-lg sm:text-2xl font-extrabold text-emerald-600/95 dark:text-emerald-300 mt-0.5">0</p>
+        </div>
+        <!-- 3. الأقارب وأبناء العم (لون بنفسجي/نيلي هادئ 40%) -->
+        <div class="clay-card stat-card-purple p-2.5 sm:p-3 text-center transition hover:scale-[1.01] cursor-pointer" onclick="switchResultTab('relatives')">
+            <p id="stat-relatives-title" class="text-[10px] sm:text-[11px] text-indigo-900/90 dark:text-indigo-200 font-bold truncate">پسمام و کەسوکار</p>
+            <p id="stat-relatives" class="text-lg sm:text-2xl font-extrabold text-indigo-600/95 dark:text-indigo-300 mt-0.5">0</p>
+        </div>
+        <!-- 4. التوائم (لون عسلي هادئ 40%) -->
+        <div class="clay-card stat-card-amber p-2.5 sm:p-3 text-center transition hover:scale-[1.01] cursor-pointer" onclick="switchResultTab('siblings')">
+            <p id="stat-twins-title" class="text-[10px] sm:text-[11px] text-amber-900/90 dark:text-amber-200 font-bold truncate">دووانە</p>
+            <p id="stat-twins" class="text-lg sm:text-2xl font-extrabold text-amber-600/95 dark:text-amber-300 mt-0.5">0</p>
+        </div>
+        <!-- 5. ميزة كشف الطلاب الوحيدين (لون وردي هادئ 40%) -->
+        <div class="clay-card stat-card-rose p-2.5 sm:p-3 text-center transition hover:scale-[1.01] cursor-pointer col-span-2 sm:col-span-1" onclick="switchResultTab('solitary')">
+            <p id="stat-solitary-title" class="text-[10px] sm:text-[11px] text-rose-900/90 dark:text-rose-200 font-bold truncate flex items-center justify-center gap-1">
+                <span>👤</span> <span id="stat-solitary-label">ب تنێ (بێ مرۆڤ)</span>
+            </p>
+            <p id="stat-solitary" class="text-lg sm:text-2xl font-extrabold text-rose-500/95 dark:text-rose-300 mt-0.5">0</p>
+        </div>
+    </section>
+
+    <!-- شريط التبديل السريع للشاشات الصغيرة والموبايل (Mobile View Switcher) -->
+    <div id="mobileViewToggle" class="container mx-auto max-w-7xl mb-2.5 lg:hidden no-print">
+        <div class="clay-card p-1 flex gap-1.5">
+            <button id="btn-show-input" onclick="setMobileView('input')" class="flex-1 py-1.5 px-2.5 rounded-xl text-xs font-bold transition clay-btn text-white flex items-center justify-center gap-1 shadow-xs">
+                <span>📥</span>
+                <span id="ui-mob-input-tab">داخلكرن</span>
+            </button>
+            <button id="btn-show-results" onclick="setMobileView('results')" class="flex-1 py-1.5 px-2.5 rounded-xl text-xs font-bold transition clay-btn-sec flex items-center justify-center gap-1">
+                <span>👥</span>
+                <span id="ui-mob-results-tab">ئەنجام</span>
+                <span id="mobResultsBadge" class="bg-blue-500 text-white text-[9px] px-1.5 py-0.2 rounded-full hidden">0</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- شبكة المحتوى الرئيسية المتجاوبة (Main Grid) -->
+    <main class="container mx-auto max-w-7xl flex-grow mb-3">
+        <div id="mainGrid" class="grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-start">
+            
+            <!-- لوحة الإدخال والتحكم في نفس مكانها على الجانب (In-Place Collapsible Sidebar) -->
+            <div id="sidebarCol" class="lg:col-span-4 xl:col-span-3 clay-card p-3.5 flex flex-col justify-between no-print gap-2.5">
+                <div>
+                    <!-- رأس قسم الإدخال مع زر الخطوط الثلاث ☰ لغلق اللوحة أفقياً من الجانب -->
+                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-100 dark:border-slate-800">
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="toggleSidebarInPlace()" title="گرتنا بەشێ دەستکاریێ بۆ لایەکی" class="clay-btn-sec p-1 rounded-lg flex items-center justify-center text-blue-600 hover:bg-slate-200 transition">
+                                <!-- أيقونة الخطوط الثلاث ☰ -->
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                            </button>
+                            <h2 id="ui-input-label" class="text-xs font-bold text-blue-900/90 dark:text-blue-200">
+                                1. داخلكرنا داتایان
+                            </h2>
+                        </div>
+                        <span class="text-[9px] bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-1.5 py-0.2 rounded-full font-bold">XLSX</span>
+                    </div>
+
+                    <!-- بطاقة حالة البيانات الحالية بأزرار مدمجة صغيرة ونصوص موجزة -->
+                    <div class="clay-card-blue p-2.5 my-2 flex flex-col gap-1.5">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-bold text-slate-700 dark:text-slate-200 flex items-center gap-1">
+                                📊 <span id="ui-data-status-title">دۆخێ داتایان:</span>
+                            </span>
+                            <span id="sideDataBadge" class="clay-badge text-[9px] text-blue-800 dark:text-blue-300 font-bold px-2 py-0.2">
+                                0 دێڕ
+                            </span>
+                        </div>
+                        
+                        <!-- زران صغيران لفتح نافذة الكتابة ورفع الإكسل -->
+                        <div class="grid grid-cols-2 gap-1.5 pt-0.5">
+                            <button onclick="openDataModal('paste')" class="clay-btn-blue-40 py-1.5 px-2 text-[10px] font-bold flex items-center justify-center gap-1 shadow-xs">
+                                <span>📝</span>
+                                <span id="ui-btn-open-editor">نڤیسین</span>
+                            </button>
+                            <button onclick="openDataModal('upload')" class="clay-btn-green-40 py-1.5 px-2 text-[10px] font-bold flex items-center justify-center gap-1 shadow-xs">
+                                <span>📤</span>
+                                <span id="ui-btn-upload-file">ئێکسل</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- إعدادات سريعة ومختصرة -->
+                    <div class="space-y-1.5 text-[10px]">
+                        <!-- إعدادات الفواصل ومطابقة الإخوة -->
+                        <div class="grid grid-cols-2 gap-1">
+                            <div>
+                                <label id="ui-sep-label" class="block text-[9px] font-bold text-slate-500 dark:text-slate-400 mb-0.5">جوداکەر:</label>
+                                <select id="dataSeparator" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-slate-50 dark:bg-slate-700 cursor-pointer">
+                                    <option id="opt-sep-auto" value="auto">ئۆتۆماتیک</option>
+                                    <option id="opt-sep-tab" value="tab">Tab</option>
+                                    <option id="opt-sep-comma" value="comma">فاریزە ( , )</option>
+                                    <option id="opt-sep-semicolon" value="semicolon">خاڵدار ( ; )</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label id="ui-match-label" class="block text-[9px] font-bold text-slate-500 dark:text-slate-400 mb-0.5">هەڤبەری:</label>
+                                <select id="matchType" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-slate-50 dark:bg-slate-700 cursor-pointer">
+                                    <option id="opt-match-rest" value="all-except-first">پاشماوە</option>
+                                    <option id="opt-match-last2" value="last-two">دوو ناڤ</option>
+                                    <option id="opt-match-family" value="last-one">بنەمالە</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- إعدادات الأقارب والجد 3 و 4 والأم -->
+                        <div class="p-2 bg-slate-100/60 dark:bg-slate-800/60 rounded-xl border border-slate-200/50 dark:border-slate-700/50 space-y-1">
+                            <label id="ui-relatives-mode-label" class="block text-[9px] font-bold text-indigo-900/90 dark:text-indigo-300">رێکا مرۆڤان:</label>
+                            <select id="relativesSearchMode" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-white dark:bg-slate-700 cursor-pointer font-medium">
+                                <option id="opt-rel-paternal" value="father-grandpa" selected>🌿 باپیرێ 3 و 4 (باب)</option>
+                                <option id="opt-rel-maternal" value="mother">🌸 ناڤێ دەیکێ</option>
+                                <option id="opt-rel-both" value="both">🔀 باب و دەیک پێکڤە</option>
+                            </select>
+
+                            <div id="grandpaMatchBox">
+                                <label id="ui-grandpa-level-label" class="block text-[9px] font-bold text-slate-500 dark:text-slate-400 mb-0.5">رێکا دیتنا باپیران:</label>
+                                <select id="grandpaMatchDepth" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-white dark:bg-slate-700 cursor-pointer">
+                                    <option id="opt-grandpa-34" value="grandpa-3-4" selected>باپیرێ 3 و 4 (پێشنیارکری)</option>
+                                    <option id="opt-grandpa-3" value="grandpa-3">باپیرێ 3 بتنێ</option>
+                                    <option id="opt-grandpa-4" value="grandpa-4">باپیرێ 4 / لەقەب</option>
+                                    <option id="opt-grandpa-all" value="all-ancestors">هەمی باپیر</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- خيارات إضافية -->
+                        <div class="flex items-center justify-between bg-slate-100/50 dark:bg-slate-800/50 p-1 rounded-xl text-xs flex-wrap gap-1">
+                            <label class="flex items-center gap-1 cursor-pointer select-none">
+                                <input type="checkbox" id="stripPrefixOpt" onchange="processNames()" checked class="rounded text-blue-600 focus:ring-0 w-3 h-3">
+                                <span id="ui-prefix-label" class="font-semibold text-[9px]">پێشگر و (ال)</span>
+                            </label>
+                            <select id="resultsSort" onchange="processNames()" class="clay-input p-1 text-[9px] cursor-pointer">
+                                <option id="ui-sort-default" value="count-desc">زێدەترین</option>
+                                <option id="ui-sort-alpha" value="alpha">ئەبجەدی</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- أزرار الإجراءات والتحكم بأحجام صغيرة مدمجة ونصوص قصيرة بألوان هادئة 40% -->
+                <div class="space-y-1.5 mt-1">
+                    <button id="ui-btn-detect" onclick="processNames(); triggerMobileResults();" class="clay-btn text-white w-full py-2 font-extrabold text-xs transition-all shadow-sm flex items-center justify-center gap-1">
+                        <span>⚡</span>
+                        <span id="ui-btn-detect-text">دیارکرن</span>
+                    </button>
+                    
+                    <div class="grid grid-cols-2 gap-1">
+                        <button id="ui-btn-excel" onclick="exportToCSV()" class="clay-btn-green-40 py-1.5 text-[10px] font-bold flex items-center justify-center gap-1">
+                            <span>📥</span>
+                            <span>CSV</span>
+                        </button>
+                        <!-- زر كشف الأشخاص الوحيدين (بدون إخوة وبدون أقارب) -->
+                        <button id="ui-btn-singletons" onclick="switchResultTab('solitary');" class="clay-btn-rose-40 py-1.5 text-[10px] font-bold flex items-center justify-center gap-1">
+                            <span>👤</span>
+                            <span id="ui-btn-singletons-text">ب تنێ</span>
+                        </button>
+                    </div>
+                    <div class="grid grid-cols-2 gap-1">
+                        <button id="ui-btn-print" onclick="printReport()" class="clay-btn-purple-40 py-1.5 text-[10px] font-bold flex items-center justify-center gap-1">
+                            <span>📑</span>
+                            <span>چاپ</span>
+                        </button>
+                        <button id="ui-btn-clear" onclick="clearAll()" class="clay-btn-red-40 py-1.5 text-[10px] font-bold flex items-center justify-center gap-1">
+                            <span>🗑️</span>
+                            <span>پاککرن</span>
+                        </button>
+                    </div>
+
+                    <!-- سجل المحفوظات -->
+                    <div id="history-container" class="border-t border-slate-100 dark:border-slate-800 pt-1 text-[8px]">
+                        <span id="ui-history-label" class="font-bold text-slate-400 block mb-0.5">ئەرشیف:</span>
+                        <div id="historyList" class="flex flex-wrap gap-1 mt-0.5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- لوحة النتائج والتقارير الرئيسية (Results Panel) -->
+            <div id="resultsCol" class="lg:col-span-8 xl:col-span-9 clay-card p-3.5 sm:p-5 flex flex-col min-h-[540px]">
+                
+                <!-- ترويسة خاصة بالطباعة الورقية -->
+                <div id="printHeader" class="hidden print-only-header">
+                    <h2 class="text-xl font-bold mb-1" id="printReportTitle">راپۆرتا قوتابیان</h2>
+                    <p class="text-xs text-slate-600" id="printReportMeta"></p>
+                </div>
+
+                <!-- شريط التبويبات والتصفية العلوي للنتائج (3 تبويبات متكاملة) -->
+                <div class="flex flex-wrap justify-between items-center mb-3 pb-2 border-b border-slate-100 dark:border-slate-800 gap-2 no-print">
+                    
+                    <!-- تبويبات التبديل بين الإخوة، الأقارب، والطلاب الوحيدين + زر الخطوط الثلاث ☰ عند انغلاق اللوحة الجانبية -->
+                    <div class="flex flex-wrap items-center gap-1.5 tab-buttons">
+                        <!-- زر الخطوط الثلاث ☰ لفتح اللوحة الجانبية في مكانها إذا كانت مغلقة -->
+                        <button onclick="toggleSidebarInPlace()" id="reopenSidebarBtn" title="ڤەکرنا بەشێ دەستکاریێ ژ لایەکی" class="p-1.5 rounded-xl clay-btn-sec hidden items-center justify-center text-blue-600 font-bold text-xs hover:bg-slate-200 transition shadow-xs">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        </button>
+
+                        <!-- تبويب 1: الإخوة الأشقاء -->
+                        <button id="tab-siblings-btn" onclick="switchResultTab('siblings')" class="px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn text-white flex items-center gap-1">
+                            <span>👨‍👩‍👦</span>
+                            <span id="tab-siblings-label">خویشک و برا</span>
+                        </button>
+                        <!-- تبويب 2: الأقارب وأبناء العم -->
+                        <button id="tab-relatives-btn" onclick="switchResultTab('relatives')" class="px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn-sec flex items-center gap-1">
+                            <span>🌿</span>
+                            <span id="tab-relatives-label">پسمام و کەسوکار</span>
+                        </button>
+                        <!-- تبويب 3: الطلاب الوحيدين (بدون إخوة وبدون أقارب) -->
+                        <button id="tab-solitary-btn" onclick="switchResultTab('solitary')" class="px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn-sec flex items-center gap-1 text-rose-700 dark:text-rose-300">
+                            <span>👤</span>
+                            <span id="tab-solitary-label">ب تنێ (بێ مرۆڤ)</span>
+                        </button>
+                    </div>
+
+                    <!-- عداد المجموعات وفلتر المراحل -->
+                    <div class="flex items-center gap-1">
+                        <select id="gradeFilter" onchange="filterByGrade()" class="clay-input p-1 text-[9px] hidden cursor-pointer">
+                            <option id="ui-all-grades" value="all">هەمی قۆناغ</option>
+                        </select>
+                        <span id="resultsCount" class="clay-badge text-blue-800 dark:text-blue-300 text-[10px] px-2 py-1 font-bold hidden">
+                            0 خێزان
+                        </span>
+                    </div>
+                </div>
+
+                <!-- إشعار خاص بقسم الأقارب -->
+                <div id="relativesTabNotice" class="hidden mb-2.5 p-2 bg-indigo-50/80 dark:bg-slate-800/80 rounded-xl border border-indigo-100 dark:border-indigo-900 text-xs flex items-center justify-between no-print">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-sm">ℹ️</span>
+                        <span id="ui-relatives-tab-desc" class="text-indigo-900 dark:text-indigo-200 font-medium text-[10px] leading-relaxed">
+                            قسم الأقارب يعرض فقط الطلاب المرتبطين كأبناء عمومة أو خؤولة (من آباء مختلفين / أمهات مختلفات) مع استبعاد الإخوة المباشرين.
+                        </span>
+                    </div>
+                </div>
+
+                <!-- إشعار خاص بقسم الطلاب الوحيدين (بدون إخوة وبدون أقارب) -->
+                <div id="solitaryTabNotice" class="hidden mb-2.5 p-2 bg-rose-50/80 dark:bg-slate-800/80 rounded-xl border border-rose-200/70 dark:border-rose-900/50 text-xs flex items-center justify-between no-print">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-sm">👤</span>
+                        <span id="ui-solitary-tab-desc" class="text-rose-900 dark:text-rose-200 font-medium text-[10px] leading-relaxed">
+                            ئەڤ بەشە وان قوتابیان نیشان ددەت یێن کو چو خویشک و برایێن ئێک باب و چو پسمام و کەسوکار ل قوتابخانێ نینن (ب تەواوی ب تنێ).
+                        </span>
+                    </div>
+                </div>
+
+                <!-- شريط تصفية البحث التفاعلي والحي -->
+                <div id="searchFilterContainer" class="mb-3 hidden no-print">
+                    <input type="text" id="searchFilter" oninput="filterResults()" placeholder="..." 
+                           class="clay-input w-full p-2 text-xs focus:ring-0">
+                </div>
+
+                <!-- مساحة العرض التفاعلية للنتائج مع تمرير ناعم -->
+                <div id="resultsArea" class="flex-grow flex flex-col justify-center items-center text-slate-400 py-10 text-center custom-scroll">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 mb-3 text-slate-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <p id="ui-results-default-desc" class="text-xs px-4 max-w-md leading-relaxed">
+                        تکایە کلیک ل سەر زرێ '☰' یان 'نڤیسین' بکە بۆ داخلكرنا داتایان، پاشان کلیک ل سەر دیارکرنێ بکە.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- النافذة المنبثقة الشاملة لإدخال ورفع البيانات (Claymorphism Modal Dialog) -->
+    <div id="dataInputModal" class="hidden fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-3 sm:p-5 no-print" onclick="handleModalBackdropClick(event)">
+        <div class="clay-card max-w-2xl w-full p-4 sm:p-5 max-h-[92vh] flex flex-col justify-between shadow-2xl relative" onclick="event.stopPropagation()">
+            
+            <!-- رأس النافذة المنبثقة -->
+            <div class="flex items-center justify-between pb-2.5 border-b border-slate-200/70 dark:border-slate-700/70 mb-2.5">
+                <div class="flex items-center gap-2">
+                    <span class="text-lg">📥</span>
+                    <h3 id="ui-modal-title" class="text-xs sm:text-sm font-extrabold text-blue-900/90 dark:text-blue-200">
+                        داخلكرن و دەستکاریکرنا داتایێن قوتابیان
+                    </h3>
+                </div>
+                <button onclick="closeDataModal()" class="w-7 h-7 rounded-full clay-btn-sec flex items-center justify-center text-slate-500 hover:text-red-500 font-bold text-base leading-none transition">
+                    &times;
+                </button>
+            </div>
+
+            <!-- تبويبات داخل النافذة: رفع ملف إكسل أو لصق النص -->
+            <div class="flex gap-1.5 mb-2.5">
+                <button id="modal-tab-upload-btn" onclick="switchModalTab('upload')" class="flex-1 py-1.5 px-2.5 rounded-xl text-xs font-bold transition clay-btn-sec flex items-center justify-center gap-1">
+                    <span>📊</span> <span id="ui-modal-tab-upload">ئێکسل</span>
+                </button>
+                <button id="modal-tab-paste-btn" onclick="switchModalTab('paste')" class="flex-1 py-1.5 px-2.5 rounded-xl text-xs font-bold transition clay-btn flex items-center justify-center gap-1 shadow-xs">
+                    <span>✍️</span> <span id="ui-modal-tab-paste">نڤیسین / دەق</span>
+                </button>
+            </div>
+
+            <!-- محتوى تبويب 1: رفع ملف إكسل (Drop Zone) -->
+            <div id="modalUploadSection" class="hidden mb-2.5">
+                <div id="dropZone" onclick="document.getElementById('fileInput').click()" 
+                     ondragover="event.preventDefault(); this.classList.add('drag-over')" 
+                     ondragleave="this.classList.remove('drag-over')" 
+                     ondrop="handleFileDrop(event)" 
+                     class="clay-card-blue p-4 text-xs leading-relaxed transition-all cursor-pointer hover:shadow-md text-center flex flex-col items-center justify-center gap-1.5 border-2 border-dashed border-blue-300">
+                    
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl mb-0.5">
+                        📊
+                    </div>
+                    <p id="ui-instructions-title" class="font-bold text-xs sm:text-sm text-slate-800 dark:text-slate-100">
+                        چەوانیا داخلكرنا داتایان / مەلەفێ ئێکسل:
+                    </p>
+                    <p id="ui-instruction-1" class="text-[10px] text-slate-600 dark:text-slate-300 max-w-md">
+                        تۆ دشێی مەلەفێ إکسل (XLSX, XLS, CSV, TXT) بهاڤێژیە ڤێرێ یان کلیک بکە بۆ هەلبژارتنا مەلەفی ژ ئامیرێ خۆ.
+                    </p>
+                    <p class="font-mono text-blue-900/90 dark:text-blue-300 text-[9px] bg-white/80 dark:bg-slate-800/80 p-1.5 rounded-xl border border-blue-200/50 leading-normal max-w-md w-full" id="ui-example-1">
+                        ناڤێ قوتابی (سێیانە/چوارانە)، ناڤێ دەیکێ (ب بژاردەیی)، پۆل، شعبە
+                    </p>
+                    <input type="file" id="fileInput" accept=".xlsx, .xls, .csv, .txt, .tsv, .xlsm, .xlsb" class="hidden" onchange="handleFileInput(event)">
+                </div>
+            </div>
+
+            <!-- محتوى تبويب 2: كتابة ولصق النصوص (Textarea) -->
+            <div id="modalPasteSection" class="flex-grow flex flex-col mb-2.5">
+                <div class="flex items-center justify-between mb-1 px-1">
+                    <span class="text-[10px] font-bold text-slate-600 dark:text-slate-300">دەقێ داتایان:</span>
+                    <span id="modalLineCounter" class="clay-badge text-[9px] px-2 py-0.2 font-mono text-slate-600 dark:text-slate-300">0 دێڕ</span>
+                </div>
+                <textarea id="namesInput" oninput="onInputChanged()" rows="9" 
+                          class="clay-input w-full p-2.5 text-xs font-mono placeholder-slate-400 focus:ring-0 custom-scroll resize-y leading-relaxed" 
+                          placeholder="..."></textarea>
+            </div>
+
+            <!-- أزرار أسفل النافذة المنبثقة بحجم مدمج -->
+            <div class="flex items-center justify-between gap-1.5 pt-2.5 border-t border-slate-200/70 dark:border-slate-700/70">
+                <button onclick="clearAll();" class="clay-btn-sec py-1.5 px-2.5 text-xs font-bold text-red-500 hover:text-red-700 flex items-center gap-1">
+                    <span>🗑️</span> <span id="ui-modal-clear">پاککرن</span>
+                </button>
+
+                <div class="flex items-center gap-1.5">
+                    <button onclick="closeDataModal()" class="clay-btn-sec py-1.5 px-3 text-xs font-bold">
+                        <span id="ui-modal-close">داخستن</span>
+                    </button>
+                    <button onclick="saveModalAndDetect()" class="clay-btn py-1.5 px-3.5 text-xs font-bold flex items-center gap-1 shadow-sm">
+                        <span>⚡</span> <span id="ui-modal-save-detect">پاشەکەفت و شیکار</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- التذييل كلاي مورفيزم -->
+    <footer class="text-center text-xs text-slate-500 py-2.5 no-print">
+        <div id="ui-footer-text" class="clay-badge inline-block px-3 py-1.5 font-medium text-[10px]">
+            🔒 هەمی کردار د ناڤا مۆبایل یان کۆمپیوتەرا تە دا ب شێوەیەکێ پاراستی دهێنە ئەنجامدان.
+        </div>
+    </footer>
+
+    <!-- إشعار توست كلاي مورفيزم (Clay Toast) -->
+    <div id="toast" class="clay-card px-3.5 py-2 text-xs font-bold text-slate-800 dark:text-slate-100 shadow-xl flex items-center gap-1.5">
+        <span class="text-emerald-500 font-bold">✓</span>
+        <span id="toastMsg">تمت العملية بنجاح</span>
+    </div>
+
+    <!-- ربط ملف المنطق البرمجي الخارجي JS -->
+    <script src="script.js"></script>
+</body>
+</html>
