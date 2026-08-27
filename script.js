@@ -1,7 +1,7 @@
 const translations = {
     ku_ba: {
         title: "لێگەڕیان ل دیڤ خوشک و برایان و کەسوکاران و قوتابیێن ب تنێ",
-        subtitle: "کەشفکرنا خویشک و برایێن ئێک باب، و جوداکرنا مرۆڤان ب پشتبەستن ل سەر باپیرێ 3 و 4 یان ناڤێ دەیکێ",
+        subtitle: "دیارکرنا خویشک و برایێن ئێک باب، و جوداکرنا کەسوکاران ب پشتبەستن ل سەر باپیرێ 3 و 4 یان ناڤێ دەیکێ",
         input_label: "1. داخلكرنا داتایان",
         top_sidebar_btn: "بەشێ داخلكرنێ ☰",
         mob_sidebar_toggle: "داخلكرن و کۆنترۆڵ ☰",
@@ -29,8 +29,8 @@ const translations = {
         match_rest: "پاشماوە",
         match_last2: "دوو ناڤ",
         match_family: "بنەمالە",
-        relatives_mode_label: "رێکا مرۆڤان:",
-        relatives_badge: "مرۆڤ",
+        relatives_mode_label: "رێکا کەسوکاران:",
+        relatives_badge: "کەسوکار",
         grandpa_level_label: "رێکا دیتنا باپیران:",
         paternal_mode: "🌿 باپیرێ 3 و 4 (باب)",
         maternal_mode: "🌸 ناڤێ دەیکێ",
@@ -49,19 +49,26 @@ const translations = {
         btn_clear: "پاککرن",
         history_label: "ئەرشیف:",
         history_ver: "کۆپیا",
+        tab_all: "هەمی ناڤ",
         tab_siblings: "خویشک و برا",
         tab_relatives: "پسمام و کەسوکار",
-        tab_solitary: "ب تنێ (بێ مرۆڤ)",
+        tab_solitary: "ب تنێ",
+        tab_duplicates: "ناڤێن وەکهەڤ",
         all_grades: "هەمی قۆناغ",
-        relatives_tab_desc: "بەشێ مرۆڤان بتنێ پسمام و کەسوکاران (ژ بابێن جودا یان دەیکێن جودا) نیشان ددەت و خویشک و برایێن ئێک باب ل ڤێرێ نینن.",
+        all_title: "لیستا گشتی یا قوتابیان",
+        all_names_desc: "لیستا هەمی قوتابیێن قوتابخانەیێ ب ڕێزبەندی و هویربینی",
+        relatives_tab_desc: "بەشێ کەسوکاران بتنێ پسمام و کەسوکاران (ژ بابێن جودا یان دەیکێن جودا) نیشان ددەت و خویشک و برایێن ئێک باب ل ڤێرێ نینن.",
         solitary_tab_desc: "ئەڤ بەشە وان قوتابیان نیشان ددەت یێن کو چو خویشک و برایێن ئێک باب و چو پسمام و کەسوکار ل قوتابخانێ نینن (ب تەواوی ب تنێ).",
+        duplicates_tab_desc: "ئەڤ بەشە وان قوتابیان نیشان ددەت یێن کو ناڤێن وان ب تەواوی یان تا رادەیەکی زۆر وەکهەڤن ل سەرانسەری قوتابخانێ.",
         placeholder_search: "گەڕیانا بلەز...",
         results_default_desc: "تکایە کلیک ل سەر زرێ '☰' یان 'نڤیسین' بکە بۆ داخلكرنا داتایان، پاشان کلیک ل سەر دیارکرنێ بکە.",
         results_empty_title: "چو ئەنجام نەهاتنە دیتن",
         results_empty_desc: "تکایە پشتڕاست ببە کو تە ناڤ دروست نڤیسینە یان رێکا لێگەڕیانێ بگوهۆڕە.",
+        badge_groups_all: "قوتابی",
         badge_groups_sib: "خێزانێن خویشک و برا",
         badge_groups_rel: "کۆمێن پسمام و کەسوکاران",
-        badge_groups_sol: "قوتابیێن ب تنێ (بێ مرۆڤ)",
+        badge_groups_sol: "قوتابیێن ب تنێ",
+        badge_groups_dup: "کۆمێن ناڤێن وەکهەڤ",
         family_label: "بنەمالە / باپیرێ هەڤپشک:",
         maternal_family_label: "دەیکا هەڤپشک:",
         siblings_count: "قوتابی:",
@@ -73,7 +80,8 @@ const translations = {
         stat_siblings: "خویشک و برا",
         stat_relatives: "پسمام و کەسوکار",
         stat_twins: "دووانە",
-        stat_solitary: "ب تنێ (بێ مرۆڤ)",
+        stat_solitary: "ب تنێ",
+        stat_duplicates: "ناڤێن وەکهەڤ",
         dark_mode_dark: "تاری",
         dark_mode_light: "رووناهی",
         twin_warn: "⚠️ دووانە؟",
@@ -83,19 +91,25 @@ const translations = {
         groups_suffix: "کۆم",
         copy_btn: "📋 کۆپی",
         copy_success: "کارت ب سەرکەفتی هاتە کۆپیکرن!",
-        singletons_title: "لیستا قوتابیێن ب تنێ (بێ خویشک، برا و مرۆڤ):",
+        singletons_title: "لیستا قوتابیێن ب تنێ (بێ خویشک، برا و کەسوکار):",
         no_singletons: "چو قوتابیێن ب تنێ نینن",
         singletons_count_suffix: "قوتابیێن ب تنێ",
+        duplicates_title: "لیستا ناڤێن وەکهەڤ و لێکچوو:",
+        no_duplicates: "چو ناڤێن وەکهەڤ نەهاتنە دیتن",
         csv_paternal_type: "ژ لایێ بابێ (باپیرێ 3 و 4)",
         csv_maternal_type: "ژ لایێ دەیکێ",
-        csv_solitary_type: "ب تنێ (بێ خویشک و بێ مرۆڤ)",
-        csv_type: "جۆرێ مرۆڤایەتیێ",
+        csv_solitary_type: "ب تنێ (بێ خویشک و بێ کەسوکار)",
+        csv_duplicates_type: "ناڤێ وەکهەڤ",
+        csv_type: "جۆرێ کەسوکاریێ",
         csv_shared: "باپیرێ هەڤپشک / دەیک",
         csv_branch: "تاع / باب",
         csv_name: "ناڤێ قوتابی",
         paternal_card_title: "قرابەتا ژ لایێ بابێ (باپیرێ 3 و 4):",
         maternal_card_title: "قرابەتا ژ لایێ دەیکێ (دەیکا هەڤپشک):",
         btn_install_app: "دانانا بەرنامەی",
+        fullscreen_btn: "تمامێ شاشەیێ",
+        exit_fullscreen_btn: "دەرکەفتن",
+        fullscreen_activated: "دۆخێ تەرکیز ل سەر ناڤان هاتە چالاککرن",
         dir: "rtl"
     },
     ku_so: {
@@ -148,19 +162,26 @@ const translations = {
         btn_clear: "سڕینەوە",
         history_label: "ئەرشیف:",
         history_ver: "کۆپیی",
+        tab_all: "هەموو ناوەکان",
         tab_siblings: "خوشک و برا",
         tab_relatives: "ئامۆزا و خزم",
         tab_solitary: "تەنیا (بێ خزم)",
+        tab_duplicates: "ناوە لێکچووەکان",
         all_grades: "هەموو قۆناغەکان",
+        all_title: "لیستی گشتی قوتابیان",
+        all_names_desc: "لیستی هەموو قوتابییانی قوتابخانە بە ڕێزبەندی",
         relatives_tab_desc: "بەشی خزمەکان تەنها ئامۆزا و خزمانی باوک یان دایک (لە باوکی جیاواز) پیشان دەدات.",
         solitary_tab_desc: "ئەم بەشە ئەو قوتابیانە پیشان دەدات کە هیچ خوشک، برا و خزمێکیان لە قوتابخانەدا نییە.",
+        duplicates_tab_desc: "ئەم بەشە ئەو قوتابیانە پیشان دەدات کە ناوی تەواویان یان بەشێکی ناویان لە یەکتر دەچێت.",
         placeholder_search: "گەڕانی خێرا...",
         results_default_desc: "تکایە کلیک لەسەر '☰' یان 'نووسین' بکە بۆ داخلکردنی داتا، پاشان کلیک لەسەر دۆزینەوە بکە.",
         results_empty_title: "هیچ ئەنجامێک نەدۆزرایەوە",
         results_empty_desc: "تکایە دڵنیابەوە لەوەی ناوەکانت بە دروستی نووسیوە یان ڕێگای گەڕان بگۆڕە.",
+        badge_groups_all: "قوتابی",
         badge_groups_sib: "خێزانەکانی خوشک و برا",
         badge_groups_rel: "کۆمەڵەی ئامۆزا و خزمەکان",
         badge_groups_sol: "قوتابیانی تەنیا",
+        badge_groups_dup: "کۆمەڵەی ناوە لێکچووەکان",
         family_label: "بنەماڵە / باپیرەی هاوبەش:",
         maternal_family_label: "دایکی هاوبەش:",
         siblings_count: "قوتابی:",
@@ -173,6 +194,7 @@ const translations = {
         stat_relatives: "ئامۆزا و خزم",
         stat_twins: "دووانە",
         stat_solitary: "تەنیا (بێ خزم)",
+        stat_duplicates: "ناوە لێکچووەکان",
         dark_mode_dark: "تاریک",
         dark_mode_light: "ڕووناک",
         twin_warn: "⚠️ دووانە؟",
@@ -185,9 +207,12 @@ const translations = {
         singletons_title: "لیستی قوتابیانی تەنیا (بێ خوشک، برا و خزم):",
         no_singletons: "هیچ قوتابییەکی تەنیا نییە",
         singletons_count_suffix: "قوتابی تەنیا",
+        duplicates_title: "لیستی ناوە لێکچووەکان:",
+        no_duplicates: "هیچ ناوێکی لێکچوو نەدۆزرایەوە",
         csv_paternal_type: "لە لایەنی باوک (ناوی 3 و 4)",
         csv_maternal_type: "لە لایەنی دایک",
         csv_solitary_type: "تەنیا (بێ خوشک و بێ خزم)",
+        csv_duplicates_type: "ناوی لێکچوو",
         csv_type: "جۆری خزمایەتی",
         csv_shared: "باپیرەی هاوبەش / دایک",
         csv_branch: "لق / باوک",
@@ -195,6 +220,9 @@ const translations = {
         paternal_card_title: "خزمایەتی لە لایەنی باوک (ناوی 3 و 4):",
         maternal_card_title: "خزمایەتی لە لایەنی دایک (دایکی هاوبەش):",
         btn_install_app: "دابەزاندنی بەرنامە",
+        fullscreen_btn: "پڕاوپڕی شاشە",
+        exit_fullscreen_btn: "دەرچوون",
+        fullscreen_activated: "دۆخی سەرنجدان لەسەر ناوەکان چالاککرا",
         dir: "rtl"
     },
     ar: {
@@ -247,19 +275,26 @@ const translations = {
         btn_clear: "مسح",
         history_label: "الأرشيف:",
         history_ver: "نسخة",
+        tab_all: "كافة الأسماء",
         tab_siblings: "الإخوة الأشقاء",
         tab_relatives: "الأقارب والعمومة",
         tab_solitary: "وحيدين (بدون أقارب)",
+        tab_duplicates: "الأسماء المتشابهة",
         all_grades: "كل المراحل",
+        all_title: "القائمة العامة للطلاب",
+        all_names_desc: "قائمة بكافة أسماء طلاب المدرسة مرتبة ومفصلة",
         relatives_tab_desc: "قسم الأقارب يعرض فقط الطلاب المرتبطين كأبناء عمومة أو خؤولة (من آباء مختلفين / أمهات مختلفات) مع استبعاد الإخوة المباشرين.",
         solitary_tab_desc: "هذا القسم يعرض الطلاب الذين ليس لديهم أي إخوة أشقاء ولا أبناء عمومة أو خؤولة مسجلين في المدرسة (وحيدون تماماً).",
+        duplicates_tab_desc: "هذا القسم يكتشف ويعرض الطلاب الذين تتشابه أو تتطابق أسماؤهم بالكامل لمراجعة التكرارات.",
         placeholder_search: "بحث سريع...",
         results_default_desc: "يرجى الضغط على زر '☰' أو 'كتابة' لإدخال القائمة، ثم الضغط على زر الكشف.",
         results_empty_title: "لم يتم العثور على مجموعات",
         results_empty_desc: "يرجى التأكد من كتابة الأسماء الكاملة أو تجربة طريقة مطابقة أخرى.",
+        badge_groups_all: "طالب",
         badge_groups_sib: "عائلات الإخوة الأشقاء",
         badge_groups_rel: "مجموعات الأقارب والعمومة",
         badge_groups_sol: "طلاب وحيدين تماماً",
+        badge_groups_dup: "مجموعات الأسماء المتشابهة",
         family_label: "الجد المشترك / العائلة:",
         maternal_family_label: "الأم المشتركة:",
         siblings_count: "طلاب:",
@@ -272,6 +307,7 @@ const translations = {
         stat_relatives: "الأقارب",
         stat_twins: "التوائم",
         stat_solitary: "وحيدين (بدون أقارب)",
+        stat_duplicates: "الأسماء المتشابهة",
         dark_mode_dark: "داكن",
         dark_mode_light: "فاتح",
         twin_warn: "⚠️ توأم؟",
@@ -284,9 +320,12 @@ const translations = {
         singletons_title: "قائمة الطلاب الوحيدين تماماً (لا إخوة ولا أقارب في المدرسة):",
         no_singletons: "لا يوجد طلاب وحيدين",
         singletons_count_suffix: "طلاب وحيدين",
+        duplicates_title: "قائمة الأسماء المتشابهة والمطابقة:",
+        no_duplicates: "لا توجد أسماء متشابهة",
         csv_paternal_type: "جهة الأب (الاسم 3 و 4)",
         csv_maternal_type: "جهة الأم",
         csv_solitary_type: "وحيد تماماً (بدون إخوة وبدون أقارب)",
+        csv_duplicates_type: "اسم متشابه",
         csv_type: "نوع القرابة",
         csv_shared: "الجد المشترك / الأم",
         csv_branch: "الفرع / الأب",
@@ -294,6 +333,9 @@ const translations = {
         paternal_card_title: "قرابة من جهة الأب (الاسم 3 و 4):",
         maternal_card_title: "قرابة من جهة الأم (الأم المشتركة):",
         btn_install_app: "تثبيت التطبيق",
+        fullscreen_btn: "ملء الشاشة",
+        exit_fullscreen_btn: "إلغاء ملء الشاشة",
+        fullscreen_activated: "تم تفعيل وضع ملء الشاشة للنتائج",
         dir: "rtl"
     },
     en: {
@@ -346,19 +388,26 @@ const translations = {
         btn_clear: "Clear",
         history_label: "Archive:",
         history_ver: "Ver",
+        tab_all: "All Names",
         tab_siblings: "Direct Siblings",
         tab_relatives: "Relatives & Cousins",
         tab_solitary: "Solitary (No Relatives)",
+        tab_duplicates: "Duplicate Names",
         all_grades: "All Grades",
+        all_title: "All Students List",
+        all_names_desc: "Full list of all registered school students",
         relatives_tab_desc: "The Relatives section only displays students connected as cousins/relatives across different parent branches (excluding direct siblings).",
         solitary_tab_desc: "This section displays solitary students who have zero direct siblings and zero cousins/relatives in the school.",
+        duplicates_tab_desc: "This section detects and displays students with duplicate or identical full names across the school.",
         placeholder_search: "Quick search...",
         results_default_desc: "Click '☰' or 'Write' to enter student list, then click detect.",
         results_empty_title: "No groups found",
         results_empty_desc: "Please make sure full names are entered or try another matching method.",
+        badge_groups_all: "Students",
         badge_groups_sib: "Sibling Families",
         badge_groups_rel: "Relative Groups",
         badge_groups_sol: "Solitary Students",
+        badge_groups_dup: "Duplicate Groups",
         family_label: "Shared Grandfather / Family:",
         maternal_family_label: "Shared Mother:",
         siblings_count: "Students:",
@@ -371,6 +420,7 @@ const translations = {
         stat_relatives: "Relatives",
         stat_twins: "Twins",
         stat_solitary: "Solitary (No Relatives)",
+        stat_duplicates: "Duplicate Names",
         dark_mode_dark: "Dark",
         dark_mode_light: "Light",
         twin_warn: "⚠️ Twin?",
@@ -383,9 +433,12 @@ const translations = {
         singletons_title: "List of Solitary Students (Zero Siblings & Zero Relatives):",
         no_singletons: "No solitary students found",
         singletons_count_suffix: "Solitary Students",
+        duplicates_title: "List of Duplicate & Identical Names:",
+        no_duplicates: "No duplicate names found",
         csv_paternal_type: "Via Father (3rd & 4th Grandfather)",
         csv_maternal_type: "Via Mother",
         csv_solitary_type: "Solitary (No Siblings & No Relatives)",
+        csv_duplicates_type: "Duplicate Name",
         csv_type: "Relationship Type",
         csv_shared: "Shared Grandfather / Mother",
         csv_branch: "Branch / Father",
@@ -393,6 +446,9 @@ const translations = {
         paternal_card_title: "Paternal Relatives (3rd & 4th Grandfather):",
         maternal_card_title: "Maternal Relatives (Shared Mother):",
         btn_install_app: "Install App",
+        fullscreen_btn: "Fullscreen",
+        exit_fullscreen_btn: "Exit Fullscreen",
+        fullscreen_activated: "Fullscreen results mode enabled",
         dir: "ltr"
     }
 };
@@ -402,6 +458,7 @@ let studentPool = [];
 let siblingResults = [];
 let relativeResults = [];
 let solitaryResults = [];
+let duplicateResults = [];
 let activeTab = 'siblings';
 let isSidebarClosed = false;
 
@@ -529,6 +586,7 @@ function selectLang(lang) {
         return;
     }
     currentLang = lang;
+    localStorage.setItem('siblings_lang', lang);
     const labelEl = document.getElementById('currentLangLabel');
     if (labelEl) {
         labelEl.textContent = {
@@ -583,8 +641,8 @@ function changeLanguage(lang) {
         'ui-history-label': dict.history_label,
         'ui-relatives-tab-desc': dict.relatives_tab_desc,
         'ui-solitary-tab-desc': dict.solitary_tab_desc,
-        'ui-footer-text': dict.footer_text,
-        'ui-all-grades': dict.all_grades,
+        'ui-duplicates-tab-desc': dict.duplicates_tab_desc,
+        'ui-all-grades': `🏷️ ${dict.all_grades}`,
         'opt-sep-auto': dict.sep_auto,
         'opt-sep-tab': dict.sep_tab,
         'opt-sep-comma': dict.sep_comma,
@@ -599,15 +657,19 @@ function changeLanguage(lang) {
         'opt-grandpa-3': dict.grandpa_3,
         'opt-grandpa-4': dict.grandpa_4,
         'opt-grandpa-all': dict.all_ancestors,
+        'tab-all-label': dict.tab_all,
         'tab-siblings-label': dict.tab_siblings,
         'tab-relatives-label': dict.tab_relatives,
         'tab-solitary-label': dict.tab_solitary,
+        'tab-duplicates-label': dict.tab_duplicates,
         'stat-total-title': dict.stat_total,
         'stat-siblings-title': dict.stat_siblings,
         'stat-relatives-title': dict.stat_relatives,
         'stat-twins-title': dict.stat_twins,
         'stat-solitary-label': dict.stat_solitary,
-        'ui-btn-install-app': dict.btn_install_app || "دانانا بەرنامەی"
+        'stat-duplicates-label': dict.stat_duplicates,
+        'ui-btn-install-app': dict.btn_install_app || "دانانا بەرنامەی",
+        'ui-fullscreen-btn': isResultsFullscreen ? (dict.exit_fullscreen_btn || "دەرکەفتن") : (dict.fullscreen_btn || "تمامێ شاشەیێ")
     };
 
     for (const [id, text] of Object.entries(idsMap)) {
@@ -880,19 +942,104 @@ function stripPrefixes(text) {
     return res;
 }
 
-// تسريع وتوحيد النصوص (Memoized Normalization)
+// تسريع وتوحيد النصوص العربية والكردية (Memoized Deep Normalization)
 function normalizeText(text) {
     if (!text) return '';
     if (normCache.has(text)) return normCache.get(text);
 
     const res = text.trim()
-        .replace(/[أإآ]/g, 'ا')
-        .replace(/ة/g, 'ه')
-        .replace(/ى/g, 'ي')
-        .replace(/[\u064B-\u065F]/g, '')
+        .replace(/[\u064B-\u065F\u0670\u0640\u06D6-\u06ED]/g, '') // حركات وتشكيل وتطويل
+        .replace(/[أإآٱ]/g, 'ا')
+        .replace(/[ةەھ]/g, 'ه')
+        .replace(/[ىيیێۑئ]/g, 'ي') // توحيد كافة أشكال الياء (العربية، الكردية، الفارسية، والهمزة على نبرة)
+        .replace(/[كک]/g, 'ك')     // توحيد الكاف
+        .replace(/[ۆۇۈۋ]/g, 'و')   // توحيد الواو
+        .replace(/[ڕ]/g, 'ر')      // توحيد الراء
+        .replace(/[ڵ]/g, 'ل')      // توحيد اللام
         .replace(/\s+/g, ' ');
+
     normCache.set(text, res);
     return res;
+}
+
+// فحص تطابق الاسم بالكامل (4 من أصل 4 مقاطع) مع كشف الأخطاء الإملائية الطفيفة فقط واستبعاد الإخوة
+function isDuplicateOrTypoName(a, b) {
+    if (a === b) return true;
+    if (!a || !b) return false;
+
+    const wordsA = a.split(' ').filter(w => w.length > 0);
+    const wordsB = b.split(' ').filter(w => w.length > 0);
+
+    const minWords = Math.min(wordsA.length, wordsB.length);
+    const maxWords = Math.max(wordsA.length, wordsB.length);
+
+    // يجب أن تكون أطوال الأسماء متطابقة أو متقاربة جداً (الاسم الرباعي 4 مقاطع)
+    if (Math.abs(wordsA.length - wordsB.length) > 1 || minWords < 2) {
+        return false;
+    }
+
+    // 1. الاسم الأول للطالب: يجب أن يكون متطابقاً تماماً أو به خطأ إملائي طفيف جداً بحرف واحد فقط
+    // لمنع جمع الإخوة مثل (أحمد وسارة، علي ومحمد)
+    const firstA = wordsA[0];
+    const firstB = wordsB[0];
+    if (firstA !== firstB) {
+        const firstDist = levenshteinDistance(firstA, firstB);
+        if (firstDist > 1 || Math.min(firstA.length, firstB.length) < 3) {
+            return false;
+        }
+    }
+
+    // 2. مطابقة كافة المقاطع الأربعة (4 من أصل 4):
+    let totalCharErrors = 0;
+    for (let i = 0; i < minWords; i++) {
+        const wA = wordsA[i];
+        const wB = wordsB[i];
+        if (wA !== wB) {
+            const dist = levenshteinDistance(wA, wB);
+            // لا يُسمح بأكثر من حرف واحد خطأ في أي مقطع من المقاطع
+            if (dist > 1) {
+                return false; // كلمة مختلفة تعني اسماً أو جداً مختلفاً تماماً
+            }
+            totalCharErrors += dist;
+        }
+    }
+
+    // في كامل الاسم 4 من 4، لا يسمح بأكثر من خطأين طفيفين في الحروف
+    return totalCharErrors <= 2;
+}
+
+// خوارزمية ليفنشتاين فائقة السرعة مع خفض استهلاك الذاكرة وتخطي الفروقات الكبيرة فوراً
+const levBuf1 = new Int32Array(64);
+const levBuf2 = new Int32Array(64);
+
+function levenshteinDistance(s1, s2) {
+    if (s1 === s2) return 0;
+    const len1 = s1.length;
+    const len2 = s2.length;
+    if (len1 === 0) return len2;
+    if (len2 === 0) return len1;
+    if (Math.abs(len1 - len2) > 2) return 99; // خروج سريع وفوري عند الفارق الكبير
+
+    const maxLen = len2 + 1;
+    const prevRow = maxLen <= 64 ? levBuf1 : new Int32Array(maxLen);
+    const currRow = maxLen <= 64 ? levBuf2 : new Int32Array(maxLen);
+
+    for (let j = 0; j <= len2; j++) prevRow[j] = j;
+
+    for (let i = 1; i <= len1; i++) {
+        currRow[0] = i;
+        const char1 = s1.charCodeAt(i - 1);
+        for (let j = 1; j <= len2; j++) {
+            const cost = (char1 === s2.charCodeAt(j - 1)) ? 0 : 1;
+            currRow[j] = Math.min(
+                prevRow[j] + 1,
+                currRow[j - 1] + 1,
+                prevRow[j - 1] + cost
+            );
+        }
+        for (let j = 0; j <= len2; j++) prevRow[j] = currRow[j];
+    }
+    return currRow[len2];
 }
 
 function processNames() {
@@ -1118,16 +1265,78 @@ function renderEngine() {
     // 3. كشف الأشخاص الوحيدين
     solitaryResults = studentPool.filter(student => !siblingStudentIds.has(student.id) && !relativeStudentIds.has(student.id));
 
+    // 4. كشف وتحديد الأسماء المتشابهة والمطابقة في المدرسة (بما فيها الأسماء المتشابهة بنسبة 85% فما فوق)
+    const n = studentPool.length;
+    const parent = Array.from({ length: n }, (_, i) => i);
+    function find(i) {
+        if (parent[i] === i) return i;
+        return parent[i] = find(parent[i]);
+    }
+    function union(i, j) {
+        const rootI = find(i);
+        const rootJ = find(j);
+        if (rootI !== rootJ) parent[rootI] = rootJ;
+    }
+
+    const normPool = studentPool.map(s => normalizeText(s.name));
+
+    // خطوة 1: تجميع سريع للتطابق التام بعد توحيد النصوص
+    const exactMap = new Map();
+    for (let i = 0; i < n; i++) {
+        const clean = normPool[i];
+        if (clean.length > 1) {
+            if (exactMap.has(clean)) {
+                union(i, exactMap.get(clean));
+            } else {
+                exactMap.set(clean, i);
+            }
+        }
+    }
+
+    // خطوة 2: كشف الأسماء المتطابقة أو التي تحوي أخطاء إملائية طفيفة فقط (4 من أصل 4)
+    for (let i = 0; i < n; i++) {
+        const normA = normPool[i];
+        if (normA.length <= 1) continue;
+        for (let j = i + 1; j < n; j++) {
+            if (find(i) === find(j)) continue; // مجمّعان مسبقاً
+            const normB = normPool[j];
+            if (normB.length <= 1) continue;
+
+            if (isDuplicateOrTypoName(normA, normB)) {
+                union(i, j);
+            }
+        }
+    }
+
+    const clusters = new Map();
+    for (let i = 0; i < n; i++) {
+        const root = find(i);
+        if (!clusters.has(root)) clusters.set(root, []);
+        clusters.get(root).push(studentPool[i]);
+    }
+
+    duplicateResults = [];
+    clusters.forEach((students) => {
+        if (students.length > 1) {
+            duplicateResults.push({
+                sharedName: students[0].name,
+                students: students
+            });
+        }
+    });
+
     // ترتيب الفرز
     const sortMode = document.getElementById('resultsSort').value;
     if (sortMode === 'count-desc') {
         siblingResults.sort((a, b) => b.students.length - a.students.length);
         relativeResults.sort((a, b) => b.totalCount - a.totalCount);
         solitaryResults.sort((a, b) => a.name.localeCompare(b.name));
+        duplicateResults.sort((a, b) => b.students.length - a.students.length);
     } else {
         siblingResults.sort((a, b) => a.sharedName.localeCompare(b.sharedName));
         relativeResults.sort((a, b) => a.sharedKey.localeCompare(b.sharedKey));
         solitaryResults.sort((a, b) => a.name.localeCompare(b.name));
+        duplicateResults.sort((a, b) => a.sharedName.localeCompare(b.sharedName));
     }
 
     // تحديث الإحصائيات
@@ -1136,10 +1345,14 @@ function renderEngine() {
     document.getElementById('stat-relatives').textContent = totalRelativesMatched;
     document.getElementById('stat-twins').textContent = twinCount;
     document.getElementById('stat-solitary').textContent = solitaryResults.length;
+    
+    const totalDuplicateCount = duplicateResults.reduce((acc, g) => acc + g.students.length, 0);
+    const statDup = document.getElementById('stat-duplicates');
+    if (statDup) statDup.textContent = totalDuplicateCount;
 
     const mobBadge = document.getElementById('mobResultsBadge');
     if (mobBadge) {
-        const totalFound = linkedSiblingsCount + totalRelativesMatched + solitaryResults.length;
+        const totalFound = linkedSiblingsCount + totalRelativesMatched + solitaryResults.length + totalDuplicateCount;
         mobBadge.textContent = totalFound;
         if (totalFound > 0) mobBadge.classList.remove('hidden');
         else mobBadge.classList.add('hidden');
@@ -1151,61 +1364,239 @@ function renderEngine() {
 
 function switchResultTab(tab) {
     activeTab = tab;
+    const allBtn = document.getElementById('tab-all-btn');
     const sibBtn = document.getElementById('tab-siblings-btn');
     const relBtn = document.getElementById('tab-relatives-btn');
     const solBtn = document.getElementById('tab-solitary-btn');
+    const dupBtn = document.getElementById('tab-duplicates-btn');
     const relNotice = document.getElementById('relativesTabNotice');
     const solNotice = document.getElementById('solitaryTabNotice');
+    const dupNotice = document.getElementById('duplicatesTabNotice');
 
-    sibBtn.className = "px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn-sec flex items-center gap-1";
-    relBtn.className = "px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn-sec flex items-center gap-1";
-    solBtn.className = "px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn-sec flex items-center gap-1 text-rose-700 dark:text-rose-300";
+    const secClass = "w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec shadow-2xs";
+    if (allBtn) allBtn.className = `${secClass} text-slate-700 dark:text-slate-200`;
+    if (sibBtn) sibBtn.className = `${secClass} text-blue-700 dark:text-blue-300`;
+    if (relBtn) relBtn.className = `${secClass} text-indigo-700 dark:text-indigo-300`;
+    if (solBtn) solBtn.className = `${secClass} text-rose-700 dark:text-rose-300`;
+    if (dupBtn) dupBtn.className = `${secClass} text-teal-700 dark:text-teal-300`;
 
     if (relNotice) relNotice.classList.add('hidden');
     if (solNotice) solNotice.classList.add('hidden');
+    if (dupNotice) dupNotice.classList.add('hidden');
 
-    if (tab === 'siblings') {
-        sibBtn.className = "px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn text-white flex items-center gap-1";
+    const activeBase = "w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn text-white shadow-2xs";
+    if (tab === 'all') {
+        if (allBtn) allBtn.className = `${activeBase} bg-slate-700 dark:bg-slate-600`;
+    } else if (tab === 'siblings') {
+        if (sibBtn) sibBtn.className = activeBase;
     } else if (tab === 'relatives') {
-        relBtn.className = "px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn text-white flex items-center gap-1";
+        if (relBtn) relBtn.className = activeBase;
         if (relNotice) relNotice.classList.remove('hidden');
     } else if (tab === 'solitary') {
-        solBtn.className = "px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn text-white bg-rose-500/90 dark:bg-rose-600 flex items-center gap-1";
+        if (solBtn) solBtn.className = `${activeBase} bg-rose-500/90 dark:bg-rose-600`;
         if (solNotice) solNotice.classList.remove('hidden');
+    } else if (tab === 'duplicates') {
+        if (dupBtn) dupBtn.className = `${activeBase} bg-teal-600 dark:bg-teal-700`;
+        if (dupNotice) dupNotice.classList.remove('hidden');
     }
 
     displayResults();
 }
 
+function getGradeRank(g) {
+    if (!g) return 999;
+    const raw = String(g).trim().toLowerCase();
+    const str = normalizeText(raw).toLowerCase();
+
+    // 1. الأرقام المباشرة (1-12 أو ١-١٢ أو ۱-۱۲)
+    const normDigits = raw
+        .replace(/[١۱]/g, '1')
+        .replace(/[٢۲]/g, '2')
+        .replace(/[٣۳]/g, '3')
+        .replace(/[٤۴]/g, '4')
+        .replace(/[٥۵]/g, '5')
+        .replace(/[٦۶]/g, '6')
+        .replace(/[٧۷]/g, '7')
+        .replace(/[٨۸]/g, '8')
+        .replace(/[٩۹]/g, '9');
+    
+    const numMatch = normDigits.match(/\d+/);
+    if (numMatch) {
+        return parseInt(numMatch[0], 10);
+    }
+
+    // الروضة والتمهيدي
+    if (/باخچ|روض|تمهيد|kg|nursery|preschool/i.test(str)) return 0;
+
+    // الصف الأول (یەکەم / ئێکێ / الأول)
+    if (/يهك|يك|ئيك|اول|1st|first/i.test(str) || /یەک|ئێک|اول|أول/i.test(raw)) return 1;
+    // الصف الثاني (دووەم / دووێ / الثاني)
+    if (/دوو|ثاني|2nd|second/i.test(str) || /دوو|دووەم|ثاني/i.test(raw)) return 2;
+    // الصف الثالث (سێیەم / سێیێ / الثالث)
+    if (/سي|ثالث|3rd|third/i.test(str) || /سێ|سێیەم|ثالث/i.test(raw)) return 3;
+    // الصف الرابع (چوارەم / چارێ / الرابع)
+    if (/چوار|چار|رابع|4th|fourth/i.test(str) || /چوار|چار|رابع/i.test(raw)) return 4;
+    // الصف الخامس (پێنجەم / پێنجێ / الخامس)
+    if (/پينج|پێنج|خامس|5th|fifth/i.test(str) || /پێنج|خامس/i.test(raw)) return 5;
+    // الصف السادس (شەشەم / شەشێ / السادس)
+    if (/شش|شەش|سادس|6th|sixth/i.test(str) || /شەش|سادس/i.test(raw)) return 6;
+    // الصف السابع (حەوتەم / حەفتێ / السابع)
+    if (/حوت|حفت|حەوت|حەفت|سابع|7th|seventh/i.test(str) || /حەوت|حەفت|سابع/i.test(raw)) return 7;
+    // الصف الثامن (هەشتەم / الثامن)
+    if (/هشت|هەشت|ثامن|8th|eighth/i.test(str) || /هەشت|ثامن/i.test(raw)) return 8;
+    // الصف التاسع (نۆیەم / التاسع)
+    if (/نوي|نۆ|تاسع|9th|ninth/i.test(str) || /نۆ|تاسع/i.test(raw)) return 9;
+    // الصف العاشر (دەیەم / العاشر)
+    if (/دهم|دەی|عاشر|10th|tenth/i.test(str) || /دەی|عاشر/i.test(raw)) return 10;
+    // الصف الحادي عشر (یازدەیەم / الحادي عشر)
+    if (/يازد|حادي عشر|11th/i.test(str) || /یازد|حادي عشر/i.test(raw)) return 11;
+    // الصف الثاني عشر (دوازدەیەم / الثاني عشر)
+    if (/دوازد|ثاني عشر|12th/i.test(str) || /دوازد|ثاني عشر/i.test(raw)) return 12;
+
+    return 999;
+}
+
 function populateGradeFilter() {
     const filterSelect = document.getElementById('gradeFilter');
-    const currentVal = filterSelect.value;
-    filterSelect.innerHTML = `<option id="ui-all-grades" value="all">${translations[currentLang].all_grades}</option>`;
+    const dropdownBtn = document.getElementById('gradeDropdownBtn');
+    const dropdownMenu = document.getElementById('gradeDropdownMenu');
+    const selectedLabel = document.getElementById('selectedGradeLabel');
+    const currentVal = filterSelect ? (filterSelect.value || 'all') : 'all';
+    const dict = translations[currentLang];
+    
+    if (filterSelect) {
+        filterSelect.innerHTML = `<option id="ui-all-grades" value="all">${dict.all_grades}</option>`;
+    }
     
     const gradesSet = new Set();
-    studentPool.forEach(s => { if (s.grade) gradesSet.add(s.grade); });
-    
-    gradesSet.forEach(grade => {
-        const opt = document.createElement('option');
-        opt.value = grade;
-        opt.textContent = grade;
-        filterSelect.appendChild(opt);
+    studentPool.forEach(s => { 
+        if (s.grade && s.grade.trim() !== '') gradesSet.add(s.grade.trim()); 
     });
     
-    filterSelect.value = currentVal;
-    filterSelect.classList.remove('hidden');
+    // ترتيب المراحل دراسياً وأكاديمياً من الأول إلى الثاني عشر
+    const sortedGrades = Array.from(gradesSet).sort((a, b) => {
+        const rankA = getGradeRank(a);
+        const rankB = getGradeRank(b);
+        if (rankA !== rankB) return rankA - rankB;
+        return a.localeCompare(b);
+    });
+
+    sortedGrades.forEach(grade => {
+        if (filterSelect) {
+            const opt = document.createElement('option');
+            opt.value = grade;
+            opt.textContent = grade;
+            filterSelect.appendChild(opt);
+        }
+    });
+
+    // بناء قائمة الخيارات المنسدلة الأنيقة
+    if (dropdownMenu) {
+        let menuHtml = `
+            <button type="button" onclick="selectGradeOption('all', '${dict.all_grades}')" 
+                    class="grade-dropdown-item ${currentVal === 'all' ? 'active' : ''}">
+                <span class="flex items-center gap-1.5 min-w-0">
+                    <span class="text-xs">🏷️</span>
+                    <span class="truncate">${dict.all_grades}</span>
+                </span>
+                ${currentVal === 'all' ? '<span class="text-xs font-black">✓</span>' : ''}
+            </button>
+        `;
+
+        sortedGrades.forEach(grade => {
+            const isAct = (currentVal === grade);
+            const safeGrade = grade.replace(/'/g, "\\'");
+            menuHtml += `
+                <button type="button" onclick="selectGradeOption('${safeGrade}', '${safeGrade}')" 
+                        class="grade-dropdown-item ${isAct ? 'active' : ''}">
+                    <span class="flex items-center gap-1.5 min-w-0">
+                        <span class="text-xs">📍</span>
+                        <span class="truncate">${grade}</span>
+                    </span>
+                    ${isAct ? '<span class="text-xs font-black">✓</span>' : ''}
+                </button>
+            `;
+        });
+        dropdownMenu.innerHTML = menuHtml;
+    }
+
+    if (currentVal && (currentVal === 'all' || sortedGrades.includes(currentVal))) {
+        if (filterSelect) filterSelect.value = currentVal;
+        if (selectedLabel) selectedLabel.textContent = currentVal === 'all' ? dict.all_grades : currentVal;
+    } else {
+        if (filterSelect) filterSelect.value = 'all';
+        if (selectedLabel) selectedLabel.textContent = dict.all_grades;
+    }
+    
+    if (gradesSet.size > 0) {
+        if (dropdownBtn) {
+            dropdownBtn.classList.remove('hidden');
+            dropdownBtn.classList.add('flex');
+        }
+    } else {
+        if (dropdownBtn) {
+            dropdownBtn.classList.add('hidden');
+            dropdownBtn.classList.remove('flex');
+        }
+        if (dropdownMenu) dropdownMenu.classList.add('hidden');
+    }
 }
+
+function toggleGradeDropdown(e) {
+    if (e) e.stopPropagation();
+    const menu = document.getElementById('gradeDropdownMenu');
+    const arrow = document.getElementById('gradeDropdownArrow');
+    if (!menu) return;
+    const isHidden = menu.classList.contains('hidden');
+    if (isHidden) {
+        menu.classList.remove('hidden');
+        if (arrow) arrow.style.transform = 'rotate(180deg)';
+    } else {
+        menu.classList.add('hidden');
+        if (arrow) arrow.style.transform = 'rotate(0deg)';
+    }
+}
+
+function selectGradeOption(val, label) {
+    const filterSelect = document.getElementById('gradeFilter');
+    const selectedLabel = document.getElementById('selectedGradeLabel');
+    const menu = document.getElementById('gradeDropdownMenu');
+    const arrow = document.getElementById('gradeDropdownArrow');
+    
+    if (filterSelect) filterSelect.value = val;
+    if (selectedLabel) selectedLabel.textContent = label;
+    if (menu) menu.classList.add('hidden');
+    if (arrow) arrow.style.transform = 'rotate(0deg)';
+
+    populateGradeFilter();
+    filterByGrade();
+}
+
+// إغلاق القائمة المنسدلة عند النقر في أي مكان خارجها
+document.addEventListener('click', (e) => {
+    const wrapper = document.getElementById('gradeDropdownWrapper');
+    const menu = document.getElementById('gradeDropdownMenu');
+    const arrow = document.getElementById('gradeDropdownArrow');
+    if (wrapper && !wrapper.contains(e.target) && menu && !menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
+        if (arrow) arrow.style.transform = 'rotate(0deg)';
+    }
+});
 
 function displayResults() {
     const resultsArea = document.getElementById('resultsArea');
     const resultsCount = document.getElementById('resultsCount');
     const searchFilterContainer = document.getElementById('searchFilterContainer');
+    const gradeFilter = document.getElementById('gradeFilter');
     const dict = translations[currentLang];
 
     let currentResults = [];
     let badgeLabel = '';
 
-    if (activeTab === 'siblings') {
+    if (activeTab === 'all') {
+        currentResults = studentPool;
+        badgeLabel = dict.badge_groups_all || dict.students_suffix;
+    } else if (activeTab === 'siblings') {
         currentResults = siblingResults;
         badgeLabel = dict.badge_groups_sib;
     } else if (activeTab === 'relatives') {
@@ -1214,18 +1605,31 @@ function displayResults() {
     } else if (activeTab === 'solitary') {
         currentResults = solitaryResults;
         badgeLabel = dict.badge_groups_sol;
+    } else if (activeTab === 'duplicates') {
+        currentResults = duplicateResults;
+        badgeLabel = dict.badge_groups_dup;
     }
 
     if (currentResults.length === 0) {
         resultsArea.className = "flex-grow flex flex-col justify-center items-center text-slate-400 py-10 text-center";
+        let emptyMsg = dict.results_empty_title;
+        if (activeTab === 'solitary') emptyMsg = dict.no_singletons;
+        else if (activeTab === 'duplicates') emptyMsg = dict.no_duplicates;
+
         resultsArea.innerHTML = `
             <div class="w-14 h-14 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xl mb-2.5 text-slate-400">
                 🔍
             </div>
-            <p class="font-bold text-slate-700 dark:text-slate-200 text-xs sm:text-sm">${activeTab === 'solitary' ? dict.no_singletons : dict.results_empty_title}</p>
+            <p class="font-bold text-slate-700 dark:text-slate-200 text-xs sm:text-sm">${emptyMsg}</p>
             <p class="text-[11px] mt-1 text-slate-500 max-w-sm">${dict.results_empty_desc}</p>`;
         resultsCount.classList.add('hidden');
         searchFilterContainer.classList.add('hidden');
+        return;
+    }
+
+    // إذا كان هناك فلتر مرحلة محدد، تطبيقه مباشرة
+    if (gradeFilter && gradeFilter.value && gradeFilter.value !== 'all') {
+        filterByGrade();
         return;
     }
 
@@ -1233,14 +1637,24 @@ function displayResults() {
     resultsCount.classList.remove('hidden');
     searchFilterContainer.classList.remove('hidden');
 
-    resultsArea.className = "flex-grow space-y-3 overflow-y-auto max-h-[580px] custom-scroll pl-1 pr-1 py-1";
+    resultsArea.className = "flex-grow space-y-2 pl-0.5 pr-0.5 py-1";
 
-    if (activeTab === 'siblings') {
+    if (activeTab === 'all') {
+        renderAllStudentsList(studentPool);
+    } else if (activeTab === 'siblings') {
         renderSiblingsList(siblingResults);
     } else if (activeTab === 'relatives') {
         renderRelativesList(relativeResults);
     } else if (activeTab === 'solitary') {
         renderSolitaryList(solitaryResults);
+    } else if (activeTab === 'duplicates') {
+        renderDuplicatesList(duplicateResults);
+    }
+
+    // تطبيق فلتر البحث النصي إن وُجد
+    const searchInput = document.getElementById('searchFilter');
+    if (searchInput && searchInput.value.trim() !== '') {
+        filterResults();
     }
 }
 
@@ -1251,40 +1665,43 @@ function renderSiblingsList(groups) {
 
     groups.forEach((group, groupIdx) => {
         htmlContent += `
-            <div class="group-card clay-card p-3 sm:p-3.5 transition duration-150 hover:scale-[1.005]" 
+            <div class="group-card group-card-sibling transition duration-150" 
                  data-shared="${group.sharedName}" 
                  data-search-pool="${group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ')}">
                 
-                <div class="flex flex-wrap justify-between items-center mb-2.5 pb-1.5 border-b border-slate-100 dark:border-slate-800 gap-1.5">
-                    <span class="text-xs font-extrabold text-blue-900/90 dark:text-blue-200 bg-blue-50/80 dark:bg-slate-800 px-3 py-0.5 rounded-full shadow-xs">
-                        👨‍👩‍👦 ${dict.family_label} ${group.sharedName}
-                    </span>
-                    <div class="flex items-center gap-1.5">
-                        <button onclick="copyFamilyCard(${groupIdx})" class="clay-btn-sec text-[9px] px-2 py-0.5 font-bold no-print">${dict.copy_btn}</button>
-                        <span class="clay-badge text-[9px] text-emerald-700 dark:text-emerald-300 px-2 py-0.5 font-bold">
-                            ${dict.siblings_count} ${group.students.length}
+                <!-- رأس بطاقة الإخوة الأشقاء فائق الصغر -->
+                <div class="group-card-header flex flex-wrap justify-between items-center gap-1">
+                    <div class="flex items-center gap-1 min-w-0">
+                        <span class="text-xs">👨‍👩‍👦</span>
+                        <span class="text-[8px] text-slate-500 dark:text-slate-400 font-bold">${dict.family_label}</span>
+                        <span class="text-xs font-extrabold text-blue-900/90 dark:text-blue-200 tracking-tight">${group.sharedName}</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <button onclick="copyFamilyCard(${groupIdx})" class="clay-btn-sec text-[8px] px-1.5 py-0.2 font-bold shadow-2xs no-print flex items-center gap-0.5">
+                            <span>📋</span> <span>${dict.copy_btn}</span>
+                        </button>
+                        <span class="clay-badge text-[8px] text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-950/50 px-1.5 py-0.2 font-bold border border-blue-200/60 dark:border-blue-800/40">
+                            👥 ${dict.siblings_count} ${group.students.length}
                         </span>
                     </div>
                 </div>
                 
-                <ul class="space-y-1.5">
+                <!-- قائمة الطلاب الإخوة فائقة الصغر -->
+                <ul class="space-y-0.5">
                     ${group.students.map((student) => {
                         const isTwin = group.students.filter(s => s.grade === student.grade).length > 1;
                         return `
-                            <li class="flex flex-wrap items-center justify-between text-xs p-2 bg-slate-50/90 dark:bg-slate-800/50 rounded-xl hover:bg-white dark:hover:bg-slate-800 transition shadow-xs border border-transparent hover:border-slate-100 gap-1.5">
-                                <div class="flex flex-wrap items-center gap-1.5">
-                                    <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-1">${student.name}</span>
-                                    ${isTwin ? `<span class="bg-amber-100/80 text-amber-800 dark:bg-amber-950 dark:text-amber-300 text-[8px] px-1.5 py-0.2 rounded-full font-bold">${dict.twin_warn}</span>` : ''}
-                                    ${student.mother ? `<span class="bg-pink-50/80 text-pink-700 dark:bg-pink-950 dark:text-pink-300 text-[8px] px-1.5 py-0.2 rounded-full font-semibold border border-pink-200/50">🌸 ${dict.mother_label} ${student.mother}</span>` : ''}
+                            <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1.5 bg-slate-50/90 dark:bg-slate-800/60 rounded hover:bg-white dark:hover:bg-slate-800 transition shadow-2xs border border-slate-200/60 dark:border-slate-700/50 gap-1 min-h-[24px]">
+                                <div class="flex flex-wrap items-center gap-1 min-w-0">
+                                    <span class="w-3.5 h-3.5 rounded bg-blue-100/70 dark:bg-slate-700 text-blue-600 dark:text-blue-300 flex items-center justify-center text-[7.5px] font-bold">👤</span>
+                                    <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
+                                    ${isTwin ? `<span class="bg-amber-100/90 text-amber-800 dark:bg-amber-950 dark:text-amber-300 text-[7.5px] px-1 py-0.1 rounded font-bold border border-amber-200 dark:border-amber-800/50">${dict.twin_warn}</span>` : ''}
+                                    ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
                                 </div>
-                                <div class="flex items-center gap-1.5">
-                                    <span class="text-[9px] text-slate-500">${dict.grade_label}</span>
-                                    <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="bg-blue-50/80 dark:bg-slate-700 text-blue-700 dark:text-blue-300 px-1.5 py-0.2 rounded font-bold text-[10px]">${student.grade}</span>
-                                    
-                                    <span class="text-[9px] text-slate-500">${dict.section_label}</span>
-                                    <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'section', this.innerText)" class="bg-emerald-50/80 dark:bg-slate-700 text-emerald-700 dark:text-emerald-300 px-1.5 py-0.2 rounded font-bold text-[10px]">${student.section}</span>
-                                    
-                                    <button onclick="removeStudent(${student.id})" class="text-red-500 hover:text-red-700 text-xs font-bold ml-1 no-print">×</button>
+                                <div class="flex items-center gap-0.5 flex-shrink-0">
+                                    <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
+                                    <span class="clay-badge text-[7.5px] text-emerald-700 dark:text-emerald-300 bg-emerald-50/80 dark:bg-emerald-950/50 px-1 py-0.1 font-bold border border-emerald-200/60 dark:border-emerald-800/50">${dict.section_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'section', this.innerText)" class="font-extrabold">${student.section}</span></span>
+                                    <button onclick="removeStudent(${student.id})" class="w-3.5 h-3.5 rounded text-red-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950 flex items-center justify-center text-[10px] font-bold transition no-print">×</button>
                                 </div>
                             </li>
                         `;
@@ -1303,58 +1720,72 @@ function renderRelativesList(groups) {
 
     groups.forEach((group, groupIdx) => {
         const isMaternal = group.type === 'maternal';
-        const headerColor = isMaternal ? 'border-pink-200 dark:border-pink-900 bg-pink-50/60 dark:bg-pink-950/30' : 'border-indigo-200 dark:border-indigo-900 bg-indigo-50/60 dark:bg-indigo-950/30';
+        const cardClass = isMaternal ? 'group-card-maternal' : 'group-card-paternal';
         const tagColor = isMaternal ? 'text-pink-900/90 dark:text-pink-200' : 'text-indigo-900/90 dark:text-indigo-200';
+        const badgeTheme = isMaternal ? 'text-pink-700 dark:text-pink-300 bg-pink-50 dark:bg-pink-950/50 border-pink-200/60 dark:border-pink-800/40' : 'text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/50 border-indigo-200/60 dark:border-indigo-800/40';
         const icon = isMaternal ? '🌸' : '🌿';
         const relCategory = isMaternal ? dict.maternal_card_title : dict.paternal_card_title;
 
         htmlContent += `
-            <div class="group-card clay-card p-3 sm:p-3.5 transition duration-150 hover:scale-[1.005]"
+            <div class="group-card ${cardClass} transition duration-150"
                  data-shared="${group.sharedKey}"
                  data-search-pool="${Object.values(group.branches).flatMap(b => b).map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ')}">
                 
-                <div class="flex flex-wrap justify-between items-center mb-2.5 pb-1.5 border-b ${headerColor} p-1.5 rounded-xl gap-1.5">
-                    <div class="flex items-center gap-1.5">
-                        <span class="text-sm">${icon}</span>
-                        <div>
-                            <span class="text-[9px] text-slate-500 font-bold block">${relCategory}</span>
-                            <span class="text-xs font-extrabold ${tagColor}">
-                                ${group.sharedKey}
-                            </span>
-                        </div>
+                <!-- رأس بطاقة الأقارب المصغر جداً -->
+                <div class="group-card-header flex flex-wrap justify-between items-center gap-1">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                        <span class="text-xs">${icon}</span>
+                        <span class="text-[8px] text-slate-500 dark:text-slate-400 font-bold">${relCategory}</span>
+                        <span class="text-xs font-extrabold ${tagColor} tracking-tight">
+                            ${group.sharedKey}
+                        </span>
                     </div>
-                    <div class="flex items-center gap-1.5">
-                        <button onclick="copyRelativeCard(${groupIdx})" class="clay-btn-sec text-[9px] px-2 py-0.5 font-bold shadow-xs no-print">${dict.copy_btn}</button>
-                        <span class="clay-badge text-[9px] ${isMaternal ? 'text-pink-700 dark:text-pink-300' : 'text-indigo-700 dark:text-indigo-300'} px-2 py-0.5 font-bold">
-                            ${dict.siblings_count} ${group.totalCount}
+                    <div class="flex items-center gap-1">
+                        <button onclick="copyRelativeCard(${groupIdx})" class="clay-btn-sec text-[8px] px-1.5 py-0.2 font-bold shadow-2xs no-print flex items-center gap-0.5">
+                            <span>📋</span> <span>${dict.copy_btn}</span>
+                        </button>
+                        <span class="clay-badge text-[8px] ${badgeTheme} px-1.5 py-0.2 font-bold border">
+                            👥 ${dict.siblings_count} ${group.totalCount}
                         </span>
                     </div>
                 </div>
                 
-                <div class="space-y-2">
+                <!-- فروع الأب والأم المترابطة داخل الكارت الموحد بتصميم نحيف وسريع القراءة -->
+                <div class="space-y-1">
                     ${Object.keys(group.branches).map(branchKey => {
                         const branchStudents = group.branches[branchKey];
                         return `
-                            <div class="${isMaternal ? 'clay-card-maternal' : 'clay-card-blue'} p-2.5 rounded-xl">
-                                <div class="text-[9px] font-bold text-slate-600 dark:text-slate-300 mb-1.5 flex items-center justify-between border-b border-slate-200/50 pb-0.5">
+                            <div class="${isMaternal ? 'bg-pink-50/50 dark:bg-pink-950/20 border-pink-100/80 dark:border-pink-900/40' : 'bg-indigo-50/50 dark:bg-indigo-950/20 border-indigo-100/80 dark:border-indigo-900/40'} p-1.5 rounded-lg border">
+                                <!-- عنوان الفرع المدمج -->
+                                <div class="flex items-center justify-between pb-0.5 mb-1 border-b border-slate-200/40 dark:border-slate-700/40">
                                     <div class="flex items-center gap-1">
-                                        <span>${isMaternal ? '🌸 ' + dict.branch_label : '🌿 ' + dict.father_branch}</span>
-                                        <span class="font-extrabold ${tagColor}">${branchKey}</span>
+                                        <span class="text-[9.5px]">${isMaternal ? '🌸' : '🌿'}</span>
+                                        <span class="text-[9.5px] font-bold text-slate-700 dark:text-slate-200">
+                                            ${isMaternal ? dict.branch_label : dict.father_branch} 
+                                            <span class="font-extrabold ${tagColor} mr-0.5">${branchKey}</span>
+                                        </span>
                                     </div>
-                                    <span class="text-[8px] px-1.5 py-0.2 bg-white/70 dark:bg-slate-800/70 rounded-full font-semibold">
-                                        (${branchStudents.length} ${dict.students_suffix})
+                                    <span class="text-[7.5px] font-bold px-1 py-0.1 rounded-full bg-white/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-300 border border-slate-200/50 dark:border-slate-700/50">
+                                        ${branchStudents.length} ${dict.students_suffix}
                                     </span>
                                 </div>
-                                <ul class="space-y-1">
+
+                                <!-- قائمة طلاب هذا الفرع بنظام الصفوف النحيفة -->
+                                <ul class="space-y-0.5">
                                     ${branchStudents.map(student => `
-                                        <li class="flex flex-wrap items-center justify-between text-xs p-1.5 bg-white/90 dark:bg-slate-800/90 rounded-lg border border-transparent shadow-xs gap-1">
-                                            <div class="flex flex-wrap items-center gap-1.5">
-                                                <span class="font-bold text-slate-800 dark:text-slate-100">${student.name}</span>
-                                                ${student.mother ? `<span class="text-[8px] bg-pink-50/80 dark:bg-slate-700 text-pink-700 dark:text-pink-300 px-1 py-0.2 rounded font-bold">🌸 ${dict.mother_label} ${student.mother}</span>` : ''}
+                                        <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1 bg-white/95 dark:bg-slate-800/90 rounded border border-slate-100/80 dark:border-slate-700/60 shadow-2xs hover:bg-slate-50 transition gap-1 min-h-[23px]">
+                                            <div class="flex flex-wrap items-center gap-1 min-w-0">
+                                                <span class="w-3.5 h-3.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300 flex items-center justify-center text-[7.5px] font-bold">👤</span>
+                                                <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
+                                                ${student.mother ? `
+                                                    <span class="text-[7.5px] bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">
+                                                        🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span>
+                                                    </span>` : ''}
                                             </div>
-                                            <div class="flex gap-1 text-[9px]">
-                                                <span class="clay-badge text-blue-800 dark:text-blue-200 px-1.5 py-0.2 font-bold">${dict.grade_label} ${student.grade}</span>
-                                                <span class="clay-badge text-emerald-800 dark:text-emerald-200 px-1.5 py-0.2 font-bold">${dict.section_label} ${student.section}</span>
+                                            <div class="flex items-center gap-0.5 flex-shrink-0">
+                                                <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
+                                                <span class="clay-badge text-[7.5px] text-emerald-700 dark:text-emerald-300 bg-emerald-50/80 dark:bg-emerald-950/50 px-1 py-0.1 font-bold border border-emerald-200/60 dark:border-emerald-800/50">${dict.section_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'section', this.innerText)" class="font-extrabold">${student.section}</span></span>
+                                                <button onclick="removeStudent(${student.id})" class="w-3.5 h-3.5 rounded text-red-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950 flex items-center justify-center text-[10px] font-bold transition no-print">×</button>
                                             </div>
                                         </li>
                                     `).join('')}
@@ -1374,15 +1805,15 @@ function renderSolitaryList(students) {
     const resultsArea = document.getElementById('resultsArea');
     const dict = translations[currentLang];
     let htmlContent = `
-        <div class="clay-card p-2.5 sm:p-3 mb-2.5 border-rose-200 dark:border-rose-900 bg-rose-50/40 dark:bg-slate-800 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <span class="text-base">👤</span>
+        <div class="clay-card p-1.5 sm:p-2 mb-1.5 border-rose-200 dark:border-rose-900/60 bg-rose-50/40 dark:bg-slate-800 flex items-center justify-between shadow-2xs">
+            <div class="flex items-center gap-1.5 min-w-0">
+                <span class="text-xs">👤</span>
                 <div>
-                    <h3 class="font-extrabold text-xs sm:text-sm text-rose-900/90 dark:text-rose-200">${dict.singletons_title}</h3>
-                    <p class="text-[9px] text-slate-500 dark:text-slate-400">${dict.solitary_tab_desc}</p>
+                    <h3 class="font-extrabold text-[11px] text-rose-900/90 dark:text-rose-200 leading-tight">${dict.singletons_title}</h3>
+                    <p class="text-[8px] text-slate-500 dark:text-slate-400">${dict.solitary_tab_desc}</p>
                 </div>
             </div>
-            <button onclick="copySolitaryList()" class="clay-btn-sec text-[9px] px-2 py-1 font-bold no-print flex items-center gap-1">
+            <button onclick="copySolitaryList()" class="clay-btn-sec text-[8px] px-1.5 py-0.2 font-bold no-print flex items-center gap-0.5 shadow-2xs">
                 <span>📋</span> <span>${dict.copy_btn}</span>
             </button>
         </div>
@@ -1390,25 +1821,21 @@ function renderSolitaryList(students) {
 
     students.forEach((student) => {
         htmlContent += `
-            <div class="group-card clay-card p-2.5 sm:p-3 transition duration-150 hover:scale-[1.005]" 
+            <div class="group-card group-card-solitary transition duration-150" 
                  data-shared="${student.name}" 
                  data-search-pool="${student.name} ${student.grade} ${student.section} ${student.mother || ''}">
                 
-                <div class="flex flex-wrap items-center justify-between text-xs gap-1.5">
-                    <div class="flex flex-wrap items-center gap-1.5">
-                        <span class="w-5 h-5 rounded-full bg-rose-100/80 dark:bg-rose-950 text-rose-600 dark:text-rose-300 flex items-center justify-center font-bold text-[9px]">👤</span>
-                        <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-1">${student.name}</span>
-                        ${student.mother ? `<span class="bg-pink-50/80 text-pink-700 dark:bg-pink-950 dark:text-pink-300 text-[8px] px-1.5 py-0.2 rounded-full font-semibold border border-pink-200/50">🌸 ${dict.mother_label} ${student.mother}</span>` : ''}
-                        <span class="bg-rose-100/70 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-[8px] px-1.5 py-0.2 rounded-full font-bold">بێ کەسوکار</span>
+                <div class="flex flex-wrap items-center justify-between text-[10.5px] gap-1 min-h-[23px]">
+                    <div class="flex flex-wrap items-center gap-1 min-w-0">
+                        <span class="w-3.5 h-3.5 rounded bg-rose-100/80 dark:bg-rose-950 text-rose-600 dark:text-rose-300 flex items-center justify-center font-bold text-[7.5px]">👤</span>
+                        <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
+                        ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
+                        <span class="bg-rose-100/80 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-[7.5px] px-1 py-0.1 rounded font-bold border border-rose-200 dark:border-rose-800/50">بێ کەسوکار</span>
                     </div>
-                    <div class="flex items-center gap-1.5">
-                        <span class="text-[9px] text-slate-500">${dict.grade_label}</span>
-                        <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="bg-blue-50/80 dark:bg-slate-700 text-blue-700 dark:text-blue-300 px-1.5 py-0.2 rounded font-bold text-[10px]">${student.grade}</span>
-                        
-                        <span class="text-[9px] text-slate-500">${dict.section_label}</span>
-                        <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'section', this.innerText)" class="bg-emerald-50/80 dark:bg-slate-700 text-emerald-700 dark:text-emerald-300 px-1.5 py-0.2 rounded font-bold text-[10px]">${student.section}</span>
-                        
-                        <button onclick="removeStudent(${student.id})" class="text-red-500 hover:text-red-700 text-xs font-bold ml-1 no-print">×</button>
+                    <div class="flex items-center gap-0.5 flex-shrink-0">
+                        <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
+                        <span class="clay-badge text-[7.5px] text-emerald-700 dark:text-emerald-300 bg-emerald-50/80 dark:bg-emerald-950/50 px-1 py-0.1 font-bold border border-emerald-200/60 dark:border-emerald-800/50">${dict.section_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'section', this.innerText)" class="font-extrabold">${student.section}</span></span>
+                        <button onclick="removeStudent(${student.id})" class="w-3.5 h-3.5 rounded text-red-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950 flex items-center justify-center text-[10px] font-bold transition no-print">×</button>
                     </div>
                 </div>
             </div>
@@ -1416,6 +1843,126 @@ function renderSolitaryList(students) {
     });
 
     resultsArea.innerHTML = htmlContent;
+}
+
+function renderDuplicatesList(groups) {
+    const resultsArea = document.getElementById('resultsArea');
+    const dict = translations[currentLang];
+    let htmlContent = '';
+
+    groups.forEach((group, groupIdx) => {
+        htmlContent += `
+            <div class="group-card group-card-duplicate transition duration-150" 
+                 data-shared="${group.sharedName}" 
+                 data-search-pool="${group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ')}">
+                
+                <!-- رأس بطاقة الأسماء المتشابهة والمطابقة -->
+                <div class="group-card-header flex flex-wrap justify-between items-center gap-1">
+                    <div class="flex items-center gap-1 min-w-0">
+                        <span class="text-xs">👥</span>
+                        <span class="text-[8px] text-slate-500 dark:text-slate-400 font-bold">${dict.duplicates_title || 'ناڤێ وەکهەڤ:'}</span>
+                        <span class="text-xs font-extrabold text-teal-900/90 dark:text-teal-200 tracking-tight">${group.sharedName}</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <button onclick="copyDuplicateCard(${groupIdx})" class="clay-btn-sec text-[8px] px-1.5 py-0.2 font-bold shadow-2xs no-print flex items-center gap-0.5">
+                            <span>📋</span> <span>${dict.copy_btn}</span>
+                        </button>
+                        <span class="clay-badge text-[8px] text-teal-700 dark:text-teal-300 bg-teal-50 dark:bg-teal-950/50 px-1.5 py-0.2 font-bold border border-teal-200/60 dark:border-teal-800/40">
+                            👥 ${dict.siblings_count} ${group.students.length}
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- قائمة الطلاب المتشابهين -->
+                <ul class="space-y-0.5">
+                    ${group.students.map((student) => {
+                        return `
+                            <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1.5 bg-slate-50/90 dark:bg-slate-800/60 rounded hover:bg-white dark:hover:bg-slate-800 transition shadow-2xs border border-slate-200/60 dark:border-slate-700/50 gap-1 min-h-[24px]">
+                                <div class="flex flex-wrap items-center gap-1 min-w-0">
+                                    <span class="w-3.5 h-3.5 rounded bg-teal-100/70 dark:bg-slate-700 text-teal-600 dark:text-teal-300 flex items-center justify-center text-[7.5px] font-bold">👤</span>
+                                    <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
+                                    ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
+                                </div>
+                                <div class="flex items-center gap-0.5 flex-shrink-0">
+                                    <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
+                                    <span class="clay-badge text-[7.5px] text-emerald-700 dark:text-emerald-300 bg-emerald-50/80 dark:bg-emerald-950/50 px-1 py-0.1 font-bold border border-emerald-200/60 dark:border-emerald-800/50">${dict.section_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'section', this.innerText)" class="font-extrabold">${student.section}</span></span>
+                                    <button onclick="removeStudent(${student.id})" class="w-3.5 h-3.5 rounded text-red-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950 flex items-center justify-center text-[10px] font-bold transition no-print">×</button>
+                                </div>
+                            </li>
+                        `;
+                    }).join('')}
+                </ul>
+            </div>
+        `;
+    });
+    resultsArea.innerHTML = htmlContent;
+}
+
+function copyDuplicateCard(index) {
+    const group = duplicateResults[index];
+    if (!group) return;
+    const dict = translations[currentLang];
+    let text = `👥 ${dict.tab_duplicates}: ${group.sharedName} (${group.students.length} ${dict.students_suffix})\n`;
+    group.students.forEach((s, idx) => {
+        text += `${idx + 1}. ${s.name} - ${dict.grade_label} ${s.grade} - ${dict.section_label} ${s.section}${s.mother ? ` - ${dict.mother_label} ${s.mother}` : ''}\n`;
+    });
+    navigator.clipboard.writeText(text).then(() => {
+        showToast(dict.copy_success);
+    });
+}
+
+function renderAllStudentsList(students) {
+    const resultsArea = document.getElementById('resultsArea');
+    const dict = translations[currentLang];
+    let htmlContent = `
+        <div class="flex items-center justify-between p-1.5 bg-slate-100/80 dark:bg-slate-800/80 rounded-xl border border-slate-200/80 dark:border-slate-700/70 mb-1.5 no-print">
+            <div class="flex items-center gap-1.5">
+                <span class="text-sm">📚</span>
+                <div>
+                    <span class="text-[10px] font-extrabold text-slate-800 dark:text-slate-100">${dict.all_title || 'لیستا گشتی یا قوتابیان'}</span>
+                    <span class="text-[8px] text-slate-500 dark:text-slate-400 block">${dict.all_names_desc || 'لیستا هەمی قوتابیێن قوتابخانەیێ ب ڕێزبەندی و هویربینی'}</span>
+                </div>
+            </div>
+            <button onclick="copyAllStudentsList()" class="clay-btn-sec text-[8px] px-1.5 py-0.2 font-bold no-print flex items-center gap-0.5 shadow-2xs">
+                <span>📋</span> <span>${dict.copy_btn}</span>
+            </button>
+        </div>
+    `;
+
+    students.forEach((student, idx) => {
+        htmlContent += `
+            <div class="group-card group-card-all transition duration-150" 
+                 data-shared="${student.name}" 
+                 data-search-pool="${student.name} ${student.grade} ${student.section} ${student.mother || ''}">
+                
+                <div class="flex flex-wrap items-center justify-between text-[10.5px] gap-1 min-h-[23px]">
+                    <div class="flex flex-wrap items-center gap-1 min-w-0">
+                        <span class="w-4 h-4 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center font-extrabold text-[7.5px]">${idx + 1}</span>
+                        <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
+                        ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
+                    </div>
+                    <div class="flex items-center gap-0.5 flex-shrink-0">
+                        <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
+                        <span class="clay-badge text-[7.5px] text-emerald-700 dark:text-emerald-300 bg-emerald-50/80 dark:bg-emerald-950/50 px-1 py-0.1 font-bold border border-emerald-200/60 dark:border-emerald-800/50">${dict.section_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'section', this.innerText)" class="font-extrabold">${student.section}</span></span>
+                        <button onclick="removeStudent(${student.id})" class="w-3.5 h-3.5 rounded text-red-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950 flex items-center justify-center text-[10px] font-bold transition no-print">×</button>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    resultsArea.innerHTML = htmlContent;
+}
+
+function copyAllStudentsList() {
+    const dict = translations[currentLang];
+    let text = `📋 ${dict.all_title || 'لیستا گشتی یا قوتابیان'} (${studentPool.length} ${dict.students_suffix})\n`;
+    studentPool.forEach((s, idx) => {
+        text += `${idx + 1}. ${s.name} - ${dict.grade_label} ${s.grade} - ${dict.section_label} ${s.section}${s.mother ? ` - ${dict.mother_label} ${s.mother}` : ''}\n`;
+    });
+    navigator.clipboard.writeText(text).then(() => {
+        showToast(dict.copy_success);
+    });
 }
 
 function updateStudentValue(id, field, value) {
@@ -1446,37 +1993,96 @@ function reconstructTextarea() {
     onInputChanged();
 }
 
+function normalizeGrade(g) {
+    if (!g) return '';
+    return String(g)
+        .trim()
+        .replace(/[ىيی]/g, 'ي')
+        .replace(/[كک]/g, 'ك')
+        .replace(/[هة]/g, 'ه')
+        .replace(/[أإآ]/g, 'ا')
+        .replace(/[١-٩]/g, d => '123456789'['١٢٣٤٥٦٧٨٩'.indexOf(d)])
+        .replace(/[۱-۹]/g, d => '123456789'['۱۲۳۴۵۶۷۸۹'.indexOf(d)])
+        .replace(/\s+/g, ' ')
+        .toLowerCase();
+}
+
 function filterByGrade() {
     const selectedGrade = document.getElementById('gradeFilter').value;
     const dict = translations[currentLang];
+    const resultsArea = document.getElementById('resultsArea');
+    const resultsCount = document.getElementById('resultsCount');
+    const searchFilterContainer = document.getElementById('searchFilterContainer');
 
     if (selectedGrade === 'all') {
-        displayResults();
+        let currentResults = activeTab === 'all' ? studentPool : (activeTab === 'siblings' ? siblingResults : (activeTab === 'relatives' ? relativeResults : (activeTab === 'solitary' ? solitaryResults : duplicateResults)));
+        let badgeLabel = activeTab === 'all' ? dict.badge_groups_all : (activeTab === 'siblings' ? dict.badge_groups_sib : (activeTab === 'relatives' ? dict.badge_groups_rel : (activeTab === 'solitary' ? dict.badge_groups_sol : dict.badge_groups_dup)));
+        
+        resultsCount.textContent = `${currentResults.length} ${badgeLabel}`;
+        resultsCount.classList.remove('hidden');
+        searchFilterContainer.classList.remove('hidden');
+        resultsArea.className = "flex-grow space-y-2 pl-0.5 pr-0.5 py-1";
+
+        if (activeTab === 'all') {
+            renderAllStudentsList(studentPool);
+        } else if (activeTab === 'siblings') {
+            renderSiblingsList(siblingResults);
+        } else if (activeTab === 'relatives') {
+            renderRelativesList(relativeResults);
+        } else if (activeTab === 'solitary') {
+            renderSolitaryList(solitaryResults);
+        } else if (activeTab === 'duplicates') {
+            renderDuplicatesList(duplicateResults);
+        }
+
+        const searchInput = document.getElementById('searchFilter');
+        if (searchInput && searchInput.value.trim() !== '') {
+            filterResults();
+        }
         return;
     }
 
-    const resultsArea = document.getElementById('resultsArea');
-    const resultsCount = document.getElementById('resultsCount');
+    const normSelected = normalizeGrade(selectedGrade);
 
-    if (activeTab === 'siblings') {
+    if (activeTab === 'all') {
+        const filteredStudents = studentPool.filter(s => normalizeGrade(s.grade) === normSelected);
+        resultsCount.textContent = `${filteredStudents.length} ${dict.badge_groups_all || dict.students_suffix}`;
+        resultsArea.className = "flex-grow space-y-2 pl-0.5 pr-0.5";
+        renderAllStudentsList(filteredStudents);
+    } else if (activeTab === 'siblings') {
         const filteredGroups = siblingResults.filter(group => {
-            return group.students.some(s => s.grade === selectedGrade);
+            return group.students.some(s => normalizeGrade(s.grade) === normSelected);
         });
         resultsCount.textContent = `${filteredGroups.length} ${dict.badge_groups_sib}`;
-        resultsArea.className = "flex-grow space-y-3 overflow-y-auto max-h-[580px] custom-scroll pl-1 pr-1";
+        resultsArea.className = "flex-grow space-y-2 pl-0.5 pr-0.5";
         renderSiblingsList(filteredGroups);
     } else if (activeTab === 'relatives') {
         const filteredGroups = relativeResults.filter(group => {
-            return Object.values(group.branches).some(branch => branch.some(s => s.grade === selectedGrade));
+            return Object.values(group.branches).some(branch => branch.some(s => normalizeGrade(s.grade) === normSelected));
         });
         resultsCount.textContent = `${filteredGroups.length} ${dict.badge_groups_rel}`;
-        resultsArea.className = "flex-grow space-y-3 overflow-y-auto max-h-[580px] custom-scroll pl-1 pr-1";
+        resultsArea.className = "flex-grow space-y-2 pl-0.5 pr-0.5";
         renderRelativesList(filteredGroups);
     } else if (activeTab === 'solitary') {
-        const filteredStudents = solitaryResults.filter(s => s.grade === selectedGrade);
+        const filteredStudents = solitaryResults.filter(s => normalizeGrade(s.grade) === normSelected);
         resultsCount.textContent = `${filteredStudents.length} ${dict.badge_groups_sol}`;
-        resultsArea.className = "flex-grow space-y-3 overflow-y-auto max-h-[580px] custom-scroll pl-1 pr-1";
+        resultsArea.className = "flex-grow space-y-2 pl-0.5 pr-0.5";
         renderSolitaryList(filteredStudents);
+    } else if (activeTab === 'duplicates') {
+        const filteredGroups = duplicateResults.filter(group => {
+            return group.students.some(s => normalizeGrade(s.grade) === normSelected);
+        });
+        resultsCount.textContent = `${filteredGroups.length} ${dict.badge_groups_dup}`;
+        resultsArea.className = "flex-grow space-y-2 pl-0.5 pr-0.5";
+        renderDuplicatesList(filteredGroups);
+    }
+
+    resultsCount.classList.remove('hidden');
+    searchFilterContainer.classList.remove('hidden');
+
+    const searchInput = document.getElementById('searchFilter');
+    if (searchInput && searchInput.value.trim() !== '') {
+        filterResults();
     }
 }
 
@@ -1485,7 +2091,12 @@ function exportToCSV() {
     const dict = translations[currentLang];
     let csvContent = "data:text/csv;charset=utf-8,\uFEFF"; 
     
-    if (activeTab === 'siblings') {
+    if (activeTab === 'all') {
+        csvContent += `#,${dict.csv_name},${dict.mother_label},${dict.grade_label},${dict.section_label}\n`;
+        studentPool.forEach((s, idx) => {
+            csvContent += `${idx + 1},"${s.name}","${s.mother || ''}","${s.grade}","${s.section}"\n`;
+        });
+    } else if (activeTab === 'siblings') {
         csvContent += `${dict.family_label},${dict.csv_name},${dict.mother_label},${dict.grade_label},${dict.section_label}\n`;
         siblingResults.forEach(group => {
             group.students.forEach(s => {
@@ -1507,6 +2118,13 @@ function exportToCSV() {
         solitaryResults.forEach(s => {
             csvContent += `"${dict.csv_solitary_type}","${s.name}","${s.mother || ''}","${s.grade}","${s.section}"\n`;
         });
+    } else if (activeTab === 'duplicates') {
+        csvContent += `${dict.tab_duplicates},${dict.csv_name},${dict.mother_label},${dict.grade_label},${dict.section_label}\n`;
+        duplicateResults.forEach(group => {
+            group.students.forEach(s => {
+                csvContent += `"${group.sharedName}","${s.name}","${s.mother || ''}","${s.grade}","${s.section}"\n`;
+            });
+        });
     }
 
     const encodedUri = encodeURI(csvContent);
@@ -1525,7 +2143,10 @@ function printReport() {
     const titleEl = document.getElementById('printReportTitle');
     const metaEl = document.getElementById('printReportMeta');
     
-    if (activeTab === 'siblings') {
+    if (activeTab === 'all') {
+        if (titleEl) titleEl.textContent = `📚 ${dict.tab_all || 'کافة الأسماء'}`;
+        if (metaEl) metaEl.textContent = `${dict.stat_total}: ${studentPool.length} ${dict.students_suffix} | ${new Date().toLocaleDateString()}`;
+    } else if (activeTab === 'siblings') {
         if (titleEl) titleEl.textContent = `📋 ${dict.tab_siblings}`;
         if (metaEl) metaEl.textContent = `${dict.badge_groups_sib}: ${siblingResults.length} | ${dict.stat_siblings}: ${siblingResults.reduce((acc, g) => acc + g.students.length, 0)} ${dict.students_suffix} | ${new Date().toLocaleDateString()}`;
     } else if (activeTab === 'relatives') {
@@ -1534,6 +2155,9 @@ function printReport() {
     } else if (activeTab === 'solitary') {
         if (titleEl) titleEl.textContent = `👤 ${dict.tab_solitary}`;
         if (metaEl) metaEl.textContent = `${dict.badge_groups_sol}: ${solitaryResults.length} ${dict.students_suffix} | ${new Date().toLocaleDateString()}`;
+    } else if (activeTab === 'duplicates') {
+        if (titleEl) titleEl.textContent = `👥 ${dict.tab_duplicates}`;
+        if (metaEl) metaEl.textContent = `${dict.badge_groups_dup}: ${duplicateResults.length} | ${dict.stat_duplicates}: ${duplicateResults.reduce((acc, g) => acc + g.students.length, 0)} ${dict.students_suffix} | ${new Date().toLocaleDateString()}`;
     }
     window.print();
 }
@@ -1615,47 +2239,57 @@ function renderHistoryUI() {
 }
 
 function setTheme(color) {
-    document.documentElement.className = '';
-    document.documentElement.classList.add(`theme-${color}`);
+    const root = document.documentElement;
+    root.classList.remove('theme-blue', 'theme-emerald', 'theme-purple', 'theme-amber', 'theme-dark', 'dark');
+    root.classList.add(`theme-${color}`);
+    if (color === 'dark') {
+        root.classList.add('dark');
+    }
     localStorage.setItem('siblings_theme', color);
 }
 
-// تبديل فوري وسلس بين الوضع الفاتح والداكن
+// تبديل فوري 0 ثانية بين الوضع الفاتح والداكن
 function toggleDarkMode() {
     const root = document.documentElement;
-    const isDark = root.classList.contains('theme-dark');
-    root.className = '';
+    const isDark = root.classList.contains('theme-dark') || root.classList.contains('dark');
     const dict = translations[currentLang];
     
     if (!isDark) {
-        root.classList.add('theme-dark');
-        document.getElementById('darkBtnText').textContent = dict.dark_mode_light;
-        localStorage.setItem('siblings_theme', 'dark');
+        setTheme('dark');
+        const darkBtn = document.getElementById('darkBtnText');
+        if (darkBtn) darkBtn.textContent = dict.dark_mode_light;
     } else {
         setTheme('blue');
-        document.getElementById('darkBtnText').textContent = dict.dark_mode_dark;
+        const darkBtn = document.getElementById('darkBtnText');
+        if (darkBtn) darkBtn.textContent = dict.dark_mode_dark;
     }
 }
 
-// فلترة فورية مع خفض استهلاك المعالج
-let searchDebounceTimer = null;
+// فلترة فورية وسريعة جداً بمعدل 200Hz باستخدام requestAnimationFrame
+let searchRaf = null;
 function filterResults() {
-    clearTimeout(searchDebounceTimer);
-    searchDebounceTimer = setTimeout(() => {
+    if (searchRaf) cancelAnimationFrame(searchRaf);
+    searchRaf = requestAnimationFrame(() => {
         const query = normalizeText(document.getElementById('searchFilter').value);
         const cards = document.querySelectorAll('.group-card');
+        const total = cards.length;
 
-        cards.forEach(card => {
+        for (let i = 0; i < total; i++) {
+            const card = cards[i];
+            if (!query) {
+                card.style.display = '';
+                continue;
+            }
             const searchPool = normalizeText(card.getAttribute('data-search-pool') || '');
             const sharedName = normalizeText(card.getAttribute('data-shared') || '');
 
-            if (!query || searchPool.includes(query) || sharedName.includes(query)) {
-                card.style.display = 'block';
+            if (searchPool.includes(query) || sharedName.includes(query)) {
+                card.style.display = '';
             } else {
                 card.style.display = 'none';
             }
-        });
-    }, 40);
+        }
+    });
 }
 
 function clearResultsArea() {
@@ -1673,13 +2307,25 @@ function clearResultsArea() {
     
     resultsCount.classList.add('hidden');
     searchFilterContainer.classList.add('hidden');
-    document.getElementById('gradeFilter').classList.add('hidden');
+    const filterSelect = document.getElementById('gradeFilter');
+    if (filterSelect) filterSelect.classList.add('hidden');
+    const gradeBtn = document.getElementById('gradeDropdownBtn');
+    if (gradeBtn) {
+        gradeBtn.classList.add('hidden');
+        gradeBtn.classList.remove('flex');
+    }
+    const gradeMenu = document.getElementById('gradeDropdownMenu');
+    if (gradeMenu) gradeMenu.classList.add('hidden');
+    const gradeLabel = document.getElementById('selectedGradeLabel');
+    if (gradeLabel) gradeLabel.textContent = dict.all_grades;
 
     document.getElementById('stat-total').textContent = '0';
     document.getElementById('stat-siblings').textContent = '0';
     document.getElementById('stat-relatives').textContent = '0';
     document.getElementById('stat-twins').textContent = '0';
     document.getElementById('stat-solitary').textContent = '0';
+    const statDup = document.getElementById('stat-duplicates');
+    if (statDup) statDup.textContent = '0';
 }
 
 function clearAll() {
@@ -1692,6 +2338,7 @@ function clearAll() {
     siblingResults = [];
     relativeResults = [];
     solitaryResults = [];
+    duplicateResults = [];
     onInputChanged();
     clearResultsArea();
     showToast(translations[currentLang].btn_clear);
@@ -1741,39 +2388,82 @@ function installPWA() {
     }
 }
 
-// تسجيل Service Worker للعمل دون إنترنت
+// تسجيل Service Worker للعمل أوفلاين دون إنترنت فوراً
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').catch((err) => {
-            console.log('SW registration note:', err);
-        });
+    navigator.serviceWorker.register('./sw.js').then((reg) => {
+        reg.update();
+    }).catch((err) => {
+        console.log('SW Note:', err);
     });
 }
 
-window.onload = function() {
+// تشغيل فوري فائق السرعة بمجرد قراءة الـ DOM (Zero-latency Startup)
+document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('siblings_theme') || 'blue';
     if (savedTheme === 'dark') {
-        toggleDarkMode();
+        const root = document.documentElement;
+        root.classList.add('theme-dark', 'dark');
+        const darkBtn = document.getElementById('darkBtnText');
+        if (darkBtn) darkBtn.textContent = translations[currentLang]?.dark_mode_light || 'رووناهی';
     } else {
         setTheme(savedTheme);
     }
+
+    const savedLang = localStorage.getItem('siblings_lang') || 'ku_ba';
+    currentLang = savedLang;
+    const labelEl = document.getElementById('currentLangLabel');
+    if (labelEl) {
+        labelEl.textContent = {
+            'ku_ba': 'بادینی',
+            'ku_so': 'سۆرانی',
+            'ar': 'العربية',
+            'en': 'English'
+        }[savedLang];
+    }
+    changeLanguage(savedLang);
 
     const backup = localStorage.getItem('siblings_backup');
     if (backup) {
         document.getElementById('namesInput').value = backup;
         onInputChanged();
-    }
-
-    changeLanguage('ku_ba'); 
-    
-    if (backup) {
         processNames();
     }
-};
+});
 
 window.onclick = function(event) {
     if (!event.target.matches('#langBtn') && !event.target.closest('#langMenu') && !event.target.closest('#langBtn')) {
         document.getElementById('langMenu')?.classList.add('hidden');
     }
 };
+
+let isResultsFullscreen = false;
+
+function toggleResultsFullscreen() {
+    isResultsFullscreen = !isResultsFullscreen;
+    const body = document.body;
+    const icon = document.getElementById('resultsFullscreenIcon');
+    const text = document.getElementById('ui-fullscreen-btn');
+    const btn = document.getElementById('resultsFullscreenBtn');
+    const dict = translations[currentLang];
+
+    if (isResultsFullscreen) {
+        body.classList.add('results-focus-mode');
+        if (icon) icon.textContent = '✕';
+        if (text) text.textContent = dict.exit_fullscreen_btn || 'دەرکەفتن';
+        if (btn) btn.classList.add('clay-btn-active');
+        showToast(dict.fullscreen_activated || 'دۆخێ تەرکیز ل سەر ناڤان هاتە چالاککرن');
+    } else {
+        body.classList.remove('results-focus-mode');
+        if (icon) icon.textContent = '⛶';
+        if (text) text.textContent = dict.fullscreen_btn || 'تمامێ شاشەیێ';
+        if (btn) btn.classList.remove('clay-btn-active');
+    }
+}
+
+// الخروج من وضع ملء الشاشة عند الضغط على زر Escape في لوحة المفاتيح
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isResultsFullscreen) {
+        toggleResultsFullscreen();
+    }
+});
 

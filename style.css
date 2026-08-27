@@ -41,19 +41,28 @@
 
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    touch-action: manipulation;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-    font-family: 'Noto Kufi Arabic', 'Vazirmatn', sans-serif;
+    font-family: 'Noto Kufi Arabic', 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Tahoma, Arial, sans-serif;
     background-color: var(--clay-bg);
-    transition: background-color 0.18s cubic-bezier(0.4, 0, 0.2, 1), color 0.18s cubic-bezier(0.4, 0, 0.2, 1);
     min-height: 100vh;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
 }
 
-html[lang="en"] body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+button, a, select, input, textarea, .clay-btn, .clay-btn-sec, .stat-card, .group-card {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 /* 3D Calm Clay Cards - Hardware Accelerated */
@@ -66,7 +75,7 @@ html[lang="en"] body {
         inset -3px -3px 6px var(--clay-inner-shadow),
         inset 3px 3px 6px rgba(255, 255, 255, 0.85);
     border: 1.5px solid rgba(255, 255, 255, 0.65);
-    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+    transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.08s ease;
     contain: content;
 }
 .theme-dark .clay-card {
@@ -159,6 +168,14 @@ html[lang="en"] body {
         inset -2px -2px 5px rgba(255, 255, 255, 0.85),
         inset 2px 2px 5px rgba(244, 63, 94, 0.12) !important;
 }
+.stat-card-teal {
+    background: rgba(204, 251, 241, 0.94) !important;
+    border: 1.5px solid rgba(94, 234, 212, 0.85) !important;
+    box-shadow: 
+        5px 8px 16px rgba(94, 234, 212, 0.35),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.85),
+        inset 2px 2px 5px rgba(20, 184, 166, 0.12) !important;
+}
 
 /* 40% High-Contrast Luminous Stat Cards in Dark Mode */
 .theme-dark .stat-card-blue {
@@ -232,6 +249,21 @@ html[lang="en"] body {
     text-shadow: 0 0 12px rgba(251, 113, 133, 0.5);
 }
 
+.theme-dark .stat-card-teal {
+    background: rgba(19, 78, 74, 0.92) !important;
+    border: 1.5px solid #2dd4bf !important;
+    box-shadow: 0 6px 20px rgba(20, 184, 166, 0.35), inset 0 0 8px rgba(45, 212, 191, 0.2) !important;
+}
+.theme-dark #stat-duplicates-title,
+.theme-dark #stat-duplicates-label {
+    color: #99f6e4 !important;
+    font-weight: 800 !important;
+}
+.theme-dark #stat-duplicates {
+    color: #2dd4bf !important;
+    text-shadow: 0 0 12px rgba(45, 212, 191, 0.5);
+}
+
 /* Compact Clay Inputs */
 .clay-input {
     background: #f8fafc;
@@ -258,7 +290,7 @@ html[lang="en"] body {
     border-color: var(--clay-primary);
 }
 
-/* Compact Calm Clay Buttons */
+/* Compact Calm Clay Buttons - 200Hz Fast Response */
 .clay-btn {
     background: var(--clay-primary);
     border-radius: 14px;
@@ -267,17 +299,19 @@ html[lang="en"] body {
         inset -2px -2px 5px rgba(0, 0, 0, 0.15),
         inset 2px 2px 5px rgba(255, 255, 255, 0.22);
     border: 1.5px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.1s ease, filter 0.1s ease;
+    transition: transform 0.06s cubic-bezier(0.2, 0, 0, 1), filter 0.06s ease, background-color 0.08s ease !important;
     color: #ffffff;
     cursor: pointer;
     user-select: none;
+    touch-action: manipulation;
+    transform: translateZ(0);
 }
 .clay-btn:hover {
     filter: brightness(1.06);
-    transform: translateY(-1px);
+    transform: translateY(-1px) translateZ(0);
 }
 .clay-btn:active {
-    transform: scale(0.96);
+    transform: scale(0.95) translateZ(0) !important;
     box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -290,9 +324,11 @@ html[lang="en"] body {
         inset -2px -2px 4px rgba(0, 0, 0, 0.05),
         inset 2px 2px 4px rgba(255, 255, 255, 0.85);
     border: 1.5px solid rgba(255, 255, 255, 0.6);
-    transition: transform 0.1s ease, filter 0.1s ease, background-color 0.15s ease;
+    transition: transform 0.06s cubic-bezier(0.2, 0, 0, 1), filter 0.06s ease, background-color 0.08s ease !important;
     cursor: pointer;
     user-select: none;
+    touch-action: manipulation;
+    transform: translateZ(0);
 }
 .theme-dark .clay-btn-sec {
     background: #1e293b !important;
@@ -305,6 +341,10 @@ html[lang="en"] body {
 }
 .clay-btn-sec:hover {
     filter: brightness(1.08);
+    transform: translateY(-1px) translateZ(0);
+}
+.clay-btn-sec:active {
+    transform: scale(0.95) translateZ(0) !important;
 }
 
 /* 40% Calm Pastel Action Buttons */
@@ -446,6 +486,14 @@ html[lang="en"] body {
     border: 1px solid rgba(71, 85, 105, 0.7) !important;
 }
 
+#ui-title {
+    font-size: clamp(15px, 2vw, 22px) !important;
+    line-height: 1.35 !important;
+}
+#ui-subtitle {
+    font-size: clamp(10px, 1.1vw, 12px) !important;
+}
+
 /* Dark Mode Typography and High-Contrast Elements */
 .theme-dark #ui-title {
     color: #93c5fd !important;
@@ -469,72 +517,449 @@ html[lang="en"] body {
     color: #e2e8f0 !important;
 }
 
-/* Results Area Cards in Dark Mode */
-.theme-dark .group-card {
-    background: rgba(22, 33, 54, 0.95) !important;
-    border: 1.5px solid rgba(71, 85, 105, 0.7) !important;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), inset 0 0 6px rgba(255, 255, 255, 0.03) !important;
+/* Distinct Outer Framing for All Family Group Cards (Virtualised for 200Hz Rendering) */
+.group-card {
+    background: #ffffff;
+    border-radius: 12px !important;
+    border: 1px solid #cbd5e1;
+    box-shadow: 
+        0 2px 8px rgba(100, 116, 139, 0.08),
+        0 1px 2px rgba(0, 0, 0, 0.03);
+    padding: 6px 8px;
+    margin-bottom: 6px;
+    position: relative;
+    transition: transform 0.08s ease, box-shadow 0.08s ease;
+    contain: content;
+    content-visibility: auto;
+    contain-intrinsic-size: 0 42px;
+    transform: translateZ(0);
 }
-.theme-dark .group-card .bg-blue-50\/80 {
-    background: rgba(30, 58, 110, 0.9) !important;
-    color: #bfdbfe !important;
-    border: 1px solid rgba(96, 165, 250, 0.4) !important;
+.group-card:hover {
+    box-shadow: 0 4px 12px rgba(100, 116, 139, 0.12);
 }
+
+/* إطار قرابة الأب: حدود زرقاء بنفسجية أنيقة واضحة تحيط بكافة الفروع */
+.group-card-paternal {
+    border: 1px solid #818cf8 !important;
+    background: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(99, 102, 241, 0.1) !important;
+}
+.group-card-paternal .group-card-header {
+    background: linear-gradient(135deg, rgba(238, 242, 255, 0.95), rgba(224, 231, 255, 0.8)) !important;
+    border: 1px solid rgba(165, 180, 252, 0.6) !important;
+    border-radius: 8px;
+    padding: 3px 8px;
+    margin-bottom: 4px;
+}
+
+/* إطار قرابة الأم: حدود وردية واضحة تحيط بكافة الفروع */
+.group-card-maternal {
+    border: 1px solid #f472b6 !important;
+    background: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(236, 72, 153, 0.1) !important;
+}
+.group-card-maternal .group-card-header {
+    background: linear-gradient(135deg, rgba(253, 242, 248, 0.95), rgba(252, 231, 243, 0.8)) !important;
+    border: 1px solid rgba(249, 168, 212, 0.6) !important;
+    border-radius: 8px;
+    padding: 3px 8px;
+    margin-bottom: 4px;
+}
+
+/* إطار الإخوة الأشقاء: حدود زرقاء سماوية واضحة */
+.group-card-sibling {
+    border: 1px solid #60a5fa !important;
+    background: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(59, 130, 246, 0.1) !important;
+}
+.group-card-sibling .group-card-header {
+    background: linear-gradient(135deg, rgba(239, 246, 255, 0.95), rgba(219, 234, 254, 0.8)) !important;
+    border: 1px solid rgba(147, 197, 253, 0.6) !important;
+    border-radius: 8px;
+    padding: 3px 8px;
+    margin-bottom: 4px;
+}
+
+/* إطار بطاقة كافة الأسماء */
+.group-card-all {
+    border: 1px solid #94a3b8 !important;
+    background: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.1) !important;
+    border-radius: 10px !important;
+    padding: 5px 8px !important;
+    margin-bottom: 5px !important;
+}
+
+/* إطار الطلاب الوحيدين */
+.group-card-solitary {
+    border: 1px solid #fb7185 !important;
+    background: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(244, 63, 94, 0.1) !important;
+    border-radius: 10px !important;
+    padding: 5px 8px !important;
+    margin-bottom: 5px !important;
+}
+
+/* إطار الأسماء المتشابهة والمطابقة */
+.group-card-duplicate {
+    border: 1px solid #14b8a6 !important;
+    background: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(20, 184, 166, 0.1) !important;
+}
+.group-card-duplicate .group-card-header {
+    background: linear-gradient(135deg, rgba(240, 253, 250, 0.95), rgba(204, 251, 241, 0.8)) !important;
+    border: 1px solid rgba(153, 246, 228, 0.6) !important;
+    border-radius: 8px;
+    padding: 3px 8px;
+    margin-bottom: 4px;
+}
+
+/* شريط التبويبات المنساب والأنيق */
+.tab-buttons {
+    display: flex;
+    align-items: center;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    -webkit-overflow-scrolling: touch;
+}
+.tab-buttons::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+/* تصميم عصري وأنيق ومخصص لقائمة فلتر المراحل */
+#gradeDropdownBtn {
+    background: linear-gradient(135deg, rgba(236, 253, 245, 0.95), rgba(209, 250, 229, 0.8)) !important;
+    border: 1.5px solid #10b981 !important;
+    color: #065f46 !important;
+}
+.theme-dark #gradeDropdownBtn {
+    background: linear-gradient(135deg, rgba(6, 78, 59, 0.95), rgba(15, 23, 42, 0.8)) !important;
+    border: 1.5px solid #34d399 !important;
+    color: #6ee7b7 !important;
+}
+
+#gradeDropdownMenu {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(16, 185, 129, 0.15) !important;
+    animation: dropdownFadeIn 0.15s ease-out;
+}
+@keyframes dropdownFadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.grade-dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 8px;
+    font-size: 10.5px;
+    font-weight: 700;
+    text-align: right;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.12s ease;
+    color: #1e293b;
+}
+[dir="ltr"] .grade-dropdown-item {
+    text-align: left;
+}
+
+.grade-dropdown-item:hover {
+    background-color: rgba(209, 250, 229, 0.6);
+    color: #047857;
+}
+
+.grade-dropdown-item.active {
+    background-color: #10b981 !important;
+    color: #ffffff !important;
+}
+
+.theme-dark .grade-dropdown-item {
+    color: #f1f5f9;
+}
+.theme-dark .grade-dropdown-item:hover {
+    background-color: rgba(6, 78, 59, 0.6);
+    color: #6ee7b7;
+}
+.theme-dark .grade-dropdown-item.active {
+    background-color: #059669 !important;
+    color: #ffffff !important;
+}
+
+.theme-dark .group-card,
+.dark .group-card {
+    background: #0f172a !important;
+    border: 1.5px solid #334155 !important;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* بطاقات أقارب الأب */
+.theme-dark .group-card-paternal,
+.dark .group-card-paternal {
+    border: 1.5px solid #818cf8 !important;
+    background: #0f172a !important;
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.2) !important;
+}
+.theme-dark .group-card-paternal .group-card-header,
+.dark .group-card-paternal .group-card-header {
+    background: linear-gradient(135deg, #312e81, #1e1b4b) !important;
+    border: 1px solid #818cf8 !important;
+}
+.theme-dark .group-card-paternal .group-card-header span,
+.dark .group-card-paternal .group-card-header span {
+    color: #e0e7ff !important;
+}
+.theme-dark .group-card-paternal .group-card-header .font-extrabold,
+.dark .group-card-paternal .group-card-header .font-extrabold {
+    color: #c7d2fe !important;
+    font-size: 12px !important;
+    text-shadow: 0 0 10px rgba(199, 210, 254, 0.4) !important;
+}
+
+/* بطاقات أقارب الأم */
+.theme-dark .group-card-maternal,
+.dark .group-card-maternal {
+    border: 1.5px solid #f472b6 !important;
+    background: #0f172a !important;
+    box-shadow: 0 6px 20px rgba(236, 72, 153, 0.2) !important;
+}
+.theme-dark .group-card-maternal .group-card-header,
+.dark .group-card-maternal .group-card-header {
+    background: linear-gradient(135deg, #831843, #500724) !important;
+    border: 1px solid #f472b6 !important;
+}
+.theme-dark .group-card-maternal .group-card-header span,
+.dark .group-card-maternal .group-card-header span {
+    color: #fdf2f8 !important;
+}
+.theme-dark .group-card-maternal .group-card-header .font-extrabold,
+.dark .group-card-maternal .group-card-header .font-extrabold {
+    color: #fbcfe8 !important;
+    font-size: 12px !important;
+    text-shadow: 0 0 10px rgba(251, 207, 232, 0.4) !important;
+}
+
+/* بطاقات الإخوة الأشقاء */
+.theme-dark .group-card-sibling,
+.dark .group-card-sibling {
+    border: 1.5px solid #60a5fa !important;
+    background: #0f172a !important;
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.2) !important;
+}
+.theme-dark .group-card-sibling .group-card-header,
+.dark .group-card-sibling .group-card-header {
+    background: linear-gradient(135deg, #1e3a8a, #172554) !important;
+    border: 1px solid #60a5fa !important;
+}
+.theme-dark .group-card-sibling .group-card-header span,
+.dark .group-card-sibling .group-card-header span {
+    color: #e0f2fe !important;
+}
+.theme-dark .group-card-sibling .group-card-header .font-extrabold,
+.dark .group-card-sibling .group-card-header .font-extrabold {
+    color: #93c5fd !important;
+    font-size: 12px !important;
+    text-shadow: 0 0 10px rgba(147, 197, 253, 0.4) !important;
+}
+
+/* بطاقات الأسماء المتشابهة */
+.theme-dark .group-card-duplicate,
+.dark .group-card-duplicate {
+    border: 1.5px solid #2dd4bf !important;
+    background: #0f172a !important;
+    box-shadow: 0 6px 20px rgba(45, 212, 191, 0.2) !important;
+}
+.theme-dark .group-card-duplicate .group-card-header,
+.dark .group-card-duplicate .group-card-header {
+    background: linear-gradient(135deg, #134e4a, #042f2e) !important;
+    border: 1px solid #2dd4bf !important;
+}
+.theme-dark .group-card-duplicate .group-card-header span,
+.dark .group-card-duplicate .group-card-header span {
+    color: #ccfbf1 !important;
+}
+.theme-dark .group-card-duplicate .group-card-header .font-extrabold,
+.dark .group-card-duplicate .group-card-header .font-extrabold {
+    color: #5eead4 !important;
+    font-size: 12px !important;
+    text-shadow: 0 0 10px rgba(94, 234, 212, 0.4) !important;
+}
+
+/* بطاقات الطلاب المنفردين */
+.theme-dark .group-card-solitary,
+.dark .group-card-solitary {
+    border: 1.5px solid #fb7185 !important;
+    background: #0f172a !important;
+    box-shadow: 0 6px 20px rgba(244, 63, 94, 0.2) !important;
+}
+
+/* فروع الأقارب (Branches) */
+.theme-dark .group-card [class*="bg-indigo-50"],
+.dark .group-card [class*="bg-indigo-50"] {
+    background: rgba(30, 27, 75, 0.6) !important;
+    border: 1px solid rgba(129, 140, 248, 0.4) !important;
+}
+.theme-dark .group-card [class*="bg-pink-50"],
+.dark .group-card [class*="bg-pink-50"] {
+    background: rgba(80, 7, 36, 0.6) !important;
+    border: 1px solid rgba(244, 114, 182, 0.4) !important;
+}
+
+/* نصوص عناوين الفروع */
+.theme-dark .group-card [class*="border-b"],
+.dark .group-card [class*="border-b"] {
+    border-color: rgba(71, 85, 105, 0.6) !important;
+}
+.theme-dark .group-card [class*="border-b"] span,
+.dark .group-card [class*="border-b"] span {
+    color: #e2e8f0 !important;
+}
+.theme-dark .group-card [class*="border-b"] .font-extrabold,
+.dark .group-card [class*="border-b"] .font-extrabold {
+    color: #a5b4fc !important;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+}
+
+/* صفوف الطلاب والأسماء بالكامل واضحة جداً وناصعة */
 .theme-dark #resultsArea li,
-.theme-dark .group-card li {
-    background: rgba(15, 23, 42, 0.8) !important;
-    border: 1px solid rgba(51, 65, 85, 0.8) !important;
-    color: #f8fafc !important;
+.dark #resultsArea li,
+.theme-dark .group-card li,
+.dark .group-card li {
+    background: #1e293b !important;
+    border: 1px solid #475569 !important;
+    color: #ffffff !important;
 }
 .theme-dark #resultsArea li:hover,
-.theme-dark .group-card li:hover {
-    background: rgba(30, 41, 59, 0.98) !important;
-    border-color: rgba(96, 165, 250, 0.6) !important;
+.dark #resultsArea li:hover,
+.theme-dark .group-card li:hover,
+.dark .group-card li:hover {
+    background: #334155 !important;
+    border-color: #60a5fa !important;
 }
-.theme-dark .group-card [contenteditable] {
+
+/* أسماء الطلاب بخط أبيض ناصع وعريض وواضح جداً */
+.theme-dark #resultsArea li span.font-bold,
+.dark #resultsArea li span.font-bold,
+.theme-dark .group-card li span.font-bold,
+.dark .group-card li span.font-bold,
+.theme-dark .group-card [contenteditable],
+.dark .group-card [contenteditable] {
     color: #ffffff !important;
-    font-weight: 700;
+    font-weight: 800 !important;
+    font-size: 11px !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
 }
-.theme-dark .group-card .bg-amber-100\/80 {
-    background: rgba(85, 60, 20, 0.9) !important;
-    color: #fde68a !important;
-    border: 1px solid rgba(251, 191, 36, 0.5) !important;
+
+/* شارات المرحلة والشعبة */
+.theme-dark .clay-badge,
+.dark .clay-badge {
+    background: #0f172a !important;
+    color: #93c5fd !important;
+    border: 1px solid #3b82f6 !important;
 }
-.theme-dark .group-card .bg-pink-50\/80 {
-    background: rgba(80, 25, 50, 0.9) !important;
+
+/* شارات الأمهات */
+.theme-dark .group-card [class*="bg-pink-50"],
+.dark .group-card [class*="bg-pink-50"],
+.theme-dark .group-card [class*="bg-pink-950"],
+.dark .group-card [class*="bg-pink-950"] {
     color: #fbcfe8 !important;
-    border: 1px solid rgba(244, 114, 182, 0.5) !important;
-}
-.theme-dark .group-card .bg-emerald-50\/80 {
-    background: rgba(16, 75, 55, 0.9) !important;
-    color: #6ee7b7 !important;
-    border: 1px solid rgba(52, 211, 153, 0.5) !important;
 }
 
 /* Notices and Filters in Dark Mode */
-.theme-dark #relativesTabNotice {
+.theme-dark #relativesTabNotice,
+.dark #relativesTabNotice {
     background: rgba(40, 30, 75, 0.9) !important;
     border: 1.5px solid rgba(129, 140, 248, 0.45) !important;
 }
-.theme-dark #ui-relatives-tab-desc {
+.theme-dark #ui-relatives-tab-desc,
+.dark #ui-relatives-tab-desc {
     color: #c7d2fe !important;
 }
-.theme-dark #solitaryTabNotice {
+.theme-dark #solitaryTabNotice,
+.dark #solitaryTabNotice {
     background: rgba(75, 20, 35, 0.9) !important;
     border: 1.5px solid rgba(251, 113, 133, 0.45) !important;
 }
-.theme-dark #ui-solitary-tab-desc {
+.theme-dark #ui-solitary-tab-desc,
+.dark #ui-solitary-tab-desc {
     color: #fecdd3 !important;
 }
-.theme-dark #searchFilter {
+.theme-dark #duplicatesTabNotice,
+.dark #duplicatesTabNotice {
+    background: rgba(19, 78, 74, 0.9) !important;
+    border: 1.5px solid rgba(45, 212, 191, 0.45) !important;
+}
+.theme-dark #ui-duplicates-tab-desc,
+.dark #ui-duplicates-tab-desc {
+    color: #99f6e4 !important;
+}
+.theme-dark #searchFilter,
+.dark #searchFilter {
     background: #1e293b !important;
     color: #f8fafc !important;
     border: 1.5px solid #475569 !important;
 }
-.theme-dark #searchFilter::placeholder {
+.theme-dark #searchFilter::placeholder,
+.dark #searchFilter::placeholder {
     color: #94a3b8 !important;
 }
-.theme-dark select option {
+
+/* حاويات خيارات الشريط الجانبي في الوضع الداكن */
+.theme-dark #sidebarCol .bg-slate-100\/60,
+.dark #sidebarCol .bg-slate-100\/60,
+.theme-dark #sidebarCol .bg-slate-100\/50,
+.dark #sidebarCol .bg-slate-100\/50,
+.theme-dark #sidebarCol [class*="bg-slate-100"],
+.dark #sidebarCol [class*="bg-slate-100"] {
+    background: rgba(15, 23, 42, 0.85) !important;
+    border: 1px solid rgba(51, 65, 85, 0.8) !important;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark #ui-relatives-mode-label,
+.dark #ui-relatives-mode-label {
+    color: #a5b4fc !important;
+    font-weight: 800 !important;
+    text-shadow: 0 0 8px rgba(165, 180, 252, 0.3) !important;
+}
+
+.theme-dark #ui-grandpa-level-label,
+.dark #ui-grandpa-level-label,
+.theme-dark #ui-sep-label,
+.dark #ui-sep-label,
+.theme-dark #ui-match-label,
+.dark #ui-match-label {
+    color: #94a3b8 !important;
+    font-weight: 700 !important;
+}
+
+.theme-dark #ui-prefix-label,
+.dark #ui-prefix-label {
+    color: #e2e8f0 !important;
+    font-weight: 700 !important;
+}
+
+/* القوائم المنسدلة داخل الشريط الجانبي بالوضع الداكن */
+.theme-dark #sidebarCol select.clay-input,
+.dark #sidebarCol select.clay-input {
+    background-color: #1e293b !important;
+    border: 1.5px solid #475569 !important;
+    color: #f8fafc !important;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5) !important;
+}
+.theme-dark #sidebarCol select.clay-input:hover,
+.dark #sidebarCol select.clay-input:hover,
+.theme-dark #sidebarCol select.clay-input:focus,
+.dark #sidebarCol select.clay-input:focus {
+    border-color: #818cf8 !important;
+    box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.25) !important;
+}
+
+.theme-dark select option,
+.dark select option {
     background-color: #0f172a !important;
     color: #f8fafc !important;
 }
@@ -583,11 +1008,152 @@ html[dir="ltr"] #sidebarCol {
     transform-origin: left center;
 }
 
+/* قائمة اللغات المنسدلة - ضمان ظهورها داخل الشاشة بشكل مثالي على كل الأجهزة */
+#langMenu {
+    z-index: 9999 !important;
+    transform-origin: top;
+    animation: dropdownFadeIn 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+html[dir="rtl"] #langMenu {
+    right: 0 !important;
+    left: auto !important;
+}
+html[dir="ltr"] #langMenu {
+    left: 0 !important;
+    right: auto !important;
+}
+#langMenu button {
+    transition: all 0.12s ease;
+}
+#langMenu button:hover {
+    padding-inline-start: 1rem;
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 .sidebar-is-closed #sidebarCol {
     display: none !important;
 }
 .sidebar-is-closed #resultsCol {
     grid-column: span 12 / span 12 !important;
+}
+
+/* وضع ملء الشاشة لعرض النتائج والأسماء فقط (Fullscreen Results Focus Mode) */
+body.results-focus-mode {
+    overflow: hidden !important;
+}
+body.results-focus-mode > div:first-of-type,
+body.results-focus-mode header,
+body.results-focus-mode #statsBar,
+body.results-focus-mode #mobileViewToggle,
+body.results-focus-mode #sidebarCol,
+body.results-focus-mode footer {
+    display: none !important;
+}
+
+body.results-focus-mode main {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body.results-focus-mode #resultsCol {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw !important;
+    z-index: 99999 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 14px 20px !important;
+    box-shadow: none !important;
+    border: none !important;
+    overflow-y: auto !important;
+    background: #f1f5f9 !important;
+}
+.theme-dark body.results-focus-mode #resultsCol {
+    background: #0b1120 !important;
+}
+
+body.results-focus-mode #resultsArea {
+    max-height: calc(100vh - 110px) !important;
+    height: auto !important;
+}
+
+/* تمييز زر ملء الشاشة عند التفعيل */
+.clay-btn-active {
+    background: #fee2e2 !important;
+    color: #b91c1c !important;
+    border-color: #fca5a5 !important;
+}
+.theme-dark .clay-btn-active {
+    background: #451a1a !important;
+    color: #fca5a5 !important;
+    border-color: #ef4444 !important;
+}
+
+/* ==========================================================================
+   Footer High-Contrast Dark Mode Styling
+   ========================================================================== */
+.theme-dark footer,
+.dark footer {
+    border-color: rgba(71, 85, 105, 0.5) !important;
+}
+.theme-dark footer p,
+.dark footer p {
+    color: #cbd5e1 !important;
+}
+.theme-dark footer p.font-extrabold,
+.dark footer p.font-extrabold {
+    color: #ffffff !important;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6) !important;
+}
+.theme-dark footer span.font-bold,
+.dark footer span.font-bold {
+    color: #38bdf8 !important;
+    font-weight: 800 !important;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.4) !important;
+}
+.theme-dark footer a[href^="tel"],
+.dark footer a[href^="tel"] {
+    color: #22d3ee !important;
+    font-weight: 800 !important;
+    text-shadow: 0 0 10px rgba(34, 211, 238, 0.4) !important;
+}
+.theme-dark footer a[href*="viber"],
+.dark footer a[href*="viber"] {
+    background: #1e293b !important;
+    border-color: #a855f7 !important;
+    color: #c084fc !important;
+    box-shadow: 0 2px 8px rgba(168, 85, 247, 0.25) !important;
+}
+.theme-dark footer a[href*="t.me"],
+.dark footer a[href*="t.me"] {
+    background: #1e293b !important;
+    border-color: #38bdf8 !important;
+    color: #38bdf8 !important;
+    box-shadow: 0 2px 8px rgba(56, 189, 248, 0.25) !important;
+}
+.theme-dark footer a[href*="wa.me"],
+.dark footer a[href*="wa.me"] {
+    background: #1e293b !important;
+    border-color: #34d399 !important;
+    color: #34d399 !important;
+    box-shadow: 0 2px 8px rgba(52, 211, 153, 0.25) !important;
 }
 
 @media print {

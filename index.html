@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>دیارکرنا قوتابیان</title>
+
+    <!-- تسريع فوري 0 ثانية: تطبيق الوضع الداكن واللغة قبل أول إطار للرسم (Zero-Flash Pre-hydration) -->
+    <script>
+        (function() {
+            try {
+                const theme = localStorage.getItem('siblings_theme') || 'blue';
+                const root = document.documentElement;
+                if (theme === 'dark') {
+                    root.className = 'theme-dark dark';
+                } else {
+                    root.className = 'theme-' + theme;
+                }
+                const lang = localStorage.getItem('siblings_lang') || 'ku_ba';
+                root.dir = (lang === 'en') ? 'ltr' : 'rtl';
+                root.lang = (lang === 'ku_ba' || lang === 'ku_so') ? 'ku' : lang;
+            } catch(e) {}
+        })();
+    </script>
     
     <!-- ميزات تثبيت التطبيق على أي جهاز (PWA Support) -->
     <link rel="manifest" href="manifest.json">
@@ -46,20 +64,20 @@
 <body class="flex flex-col justify-between p-2.5 sm:p-4 md:p-5 min-h-screen">
 
     <!-- شريط الإعدادات والتحكم العلوي المتناسق بتصميم كلاي مورفيزم الهادئ (Clay Top Bar) -->
-    <div class="container mx-auto max-w-7xl mb-2.5 flex justify-between items-center flex-wrap gap-2 no-print">
+    <div class="container mx-auto max-w-7xl mb-2.5 flex justify-between items-center flex-wrap gap-2 no-print relative z-40">
         
         <!-- زر اللغات الموحد المنسدل بتصميم كلاي -->
-        <div class="relative inline-block text-left">
-            <button onclick="toggleDropdown('langMenu')" id="langBtn" class="clay-btn-sec px-2.5 py-1.5 text-xs font-bold flex items-center gap-1.5">
+        <div class="relative inline-block text-right">
+            <button onclick="toggleDropdown('langMenu')" id="langBtn" class="clay-btn-sec px-2.5 py-1.5 text-xs font-bold flex items-center gap-1.5 shadow-xs">
                 <span>🌐</span>
                 <span id="currentLangLabel">بادینی</span>
                 <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div id="langMenu" class="hidden absolute right-0 sm:right-auto sm:left-0 mt-2 w-44 rounded-2xl shadow-xl bg-white dark:bg-slate-800 ring-1 ring-black/5 dark:ring-white/10 z-50 p-1.5 clay-card text-xs">
-                <button onclick="selectLang('ku_ba')" class="block w-full text-right px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-700/60 rounded-xl font-bold">بادینی</button>
-                <button onclick="selectLang('ku_so')" class="block w-full text-right px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-700/60 rounded-xl font-bold">سۆرانی</button>
-                <button onclick="selectLang('ar')" class="block w-full text-right px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-700/60 rounded-xl font-bold">العربية</button>
-                <button onclick="selectLang('en')" class="block w-full text-left px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-700/60 rounded-xl font-bold">English</button>
+            <div id="langMenu" class="hidden absolute top-full mt-1.5 w-40 sm:w-44 rounded-2xl shadow-2xl bg-white dark:bg-slate-800 ring-1 ring-black/5 dark:ring-white/10 z-[100] p-1.5 clay-card text-xs">
+                <button onclick="selectLang('ku_ba')" class="block w-full text-right px-3 py-2 hover:bg-blue-50 dark:hover:bg-slate-700/60 rounded-xl font-bold text-slate-800 dark:text-slate-100 transition">بادینی</button>
+                <button onclick="selectLang('ku_so')" class="block w-full text-right px-3 py-2 hover:bg-blue-50 dark:hover:bg-slate-700/60 rounded-xl font-bold text-slate-800 dark:text-slate-100 transition">سۆرانی</button>
+                <button onclick="selectLang('ar')" class="block w-full text-right px-3 py-2 hover:bg-blue-50 dark:hover:bg-slate-700/60 rounded-xl font-bold text-slate-800 dark:text-slate-100 transition">العربية</button>
+                <button onclick="selectLang('en')" class="block w-full text-left px-3 py-2 hover:bg-blue-50 dark:hover:bg-slate-700/60 rounded-xl font-bold text-slate-800 dark:text-slate-100 transition">English</button>
             </div>
         </div>
 
@@ -83,19 +101,19 @@
     </div>
 
     <!-- رأس التطبيق والعنوان التوضيحي -->
-    <header class="container mx-auto max-w-7xl mb-3 text-center no-print">
-        <h1 id="ui-title" class="text-lg sm:text-2xl md:text-3xl font-extrabold text-blue-900/90 dark:text-blue-200 mb-0.5 leading-tight tracking-tight">
+    <header class="container mx-auto max-w-7xl mb-2.5 text-center no-print">
+        <h1 id="ui-title" class="text-sm sm:text-lg md:text-[22px] font-extrabold text-blue-900/90 dark:text-blue-200 mb-0.5 leading-tight tracking-tight">
             لێگەڕیان ل دیڤ خوشک و برایان و کەسوکاران و قوتابیێن ب تنێ
         </h1>
-        <p id="ui-subtitle" class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium px-2">
-            کەشفکرنا خویشک و برایێن ئێک باب، و جوداکرنا مرۆڤان ب پشتبەستن ل سەر باپیرێ 3 و 4 یان ناڤێ دەیکێ
+        <p id="ui-subtitle" class="text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 font-medium px-2">
+            دیارکرنا خویشک و برایێن ئێک باب، و جوداکرنا کەسوکاران ب پشتبەستن ل سەر باپیرێ 3 و 4 یان ناڤێ دەیکێ
         </p>
     </header>
 
     <!-- لوحة الإحصائيات الذكية كلاي مورفيزم بالألوان الهادئة 40% لكل بطاقة والمتجاوبة -->
-    <section id="statsBar" class="container mx-auto max-w-7xl mb-3.5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3.5 no-print">
+    <section id="statsBar" class="container mx-auto max-w-7xl mb-3.5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3 no-print">
         <!-- 1. إجمالي الطلاب (لون أزرق هادئ 40%) -->
-        <div class="clay-card stat-card-blue p-2.5 sm:p-3 text-center transition hover:scale-[1.01] cursor-pointer" onclick="switchResultTab('siblings')">
+        <div class="clay-card stat-card-blue p-2.5 sm:p-3 text-center transition hover:scale-[1.01] cursor-pointer" onclick="switchResultTab('all')" title="نیشاندانا هەمی ناڤان / عرض كافة الأسماء">
             <p id="stat-total-title" class="text-[10px] sm:text-[11px] text-blue-900/90 dark:text-blue-200 font-bold truncate">سەرجەمێ قوتابیان</p>
             <p id="stat-total" class="text-lg sm:text-2xl font-extrabold text-blue-600/95 dark:text-blue-300 mt-0.5">0</p>
         </div>
@@ -115,11 +133,18 @@
             <p id="stat-twins" class="text-lg sm:text-2xl font-extrabold text-amber-600/95 dark:text-amber-300 mt-0.5">0</p>
         </div>
         <!-- 5. ميزة كشف الطلاب الوحيدين (لون وردي هادئ 40%) -->
-        <div class="clay-card stat-card-rose p-2.5 sm:p-3 text-center transition hover:scale-[1.01] cursor-pointer col-span-2 sm:col-span-1" onclick="switchResultTab('solitary')">
+        <div class="clay-card stat-card-rose p-2.5 sm:p-3 text-center transition hover:scale-[1.01] cursor-pointer" onclick="switchResultTab('solitary')">
             <p id="stat-solitary-title" class="text-[10px] sm:text-[11px] text-rose-900/90 dark:text-rose-200 font-bold truncate flex items-center justify-center gap-1">
-                <span>👤</span> <span id="stat-solitary-label">ب تنێ (بێ مرۆڤ)</span>
+                <span>👤</span> <span id="stat-solitary-label">ب تنێ</span>
             </p>
             <p id="stat-solitary" class="text-lg sm:text-2xl font-extrabold text-rose-500/95 dark:text-rose-300 mt-0.5">0</p>
+        </div>
+        <!-- 6. كشف الأسماء المتشابهة والمطابقة (لون فيروزي هادئ 40%) -->
+        <div class="clay-card stat-card-teal p-2.5 sm:p-3 text-center transition hover:scale-[1.01] cursor-pointer" onclick="switchResultTab('duplicates')">
+            <p id="stat-duplicates-title" class="text-[10px] sm:text-[11px] text-teal-900/90 dark:text-teal-200 font-bold truncate flex items-center justify-center gap-1">
+                <span>👥</span> <span id="stat-duplicates-label">ناڤێن وەکهەڤ</span>
+            </p>
+            <p id="stat-duplicates" class="text-lg sm:text-2xl font-extrabold text-teal-600/95 dark:text-teal-300 mt-0.5">0</p>
         </div>
     </section>
 
@@ -188,8 +213,8 @@
                         <!-- إعدادات الفواصل ومطابقة الإخوة -->
                         <div class="grid grid-cols-2 gap-1">
                             <div>
-                                <label id="ui-sep-label" class="block text-[9px] font-bold text-slate-500 dark:text-slate-400 mb-0.5">جوداکەر:</label>
-                                <select id="dataSeparator" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-slate-50 dark:bg-slate-700 cursor-pointer">
+                                <label id="ui-sep-label" class="block text-[9px] font-bold text-slate-600 dark:text-slate-300 mb-0.5">جوداکەر:</label>
+                                <select id="dataSeparator" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 cursor-pointer">
                                     <option id="opt-sep-auto" value="auto">ئۆتۆماتیک</option>
                                     <option id="opt-sep-tab" value="tab">Tab</option>
                                     <option id="opt-sep-comma" value="comma">فاریزە ( , )</option>
@@ -197,8 +222,8 @@
                                 </select>
                             </div>
                             <div>
-                                <label id="ui-match-label" class="block text-[9px] font-bold text-slate-500 dark:text-slate-400 mb-0.5">هەڤبەری:</label>
-                                <select id="matchType" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-slate-50 dark:bg-slate-700 cursor-pointer">
+                                <label id="ui-match-label" class="block text-[9px] font-bold text-slate-600 dark:text-slate-300 mb-0.5">هەڤبەری:</label>
+                                <select id="matchType" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 cursor-pointer">
                                     <option id="opt-match-rest" value="all-except-first">پاشماوە</option>
                                     <option id="opt-match-last2" value="last-two">دوو ناڤ</option>
                                     <option id="opt-match-family" value="last-one">بنەمالە</option>
@@ -207,17 +232,17 @@
                         </div>
 
                         <!-- إعدادات الأقارب والجد 3 و 4 والأم -->
-                        <div class="p-2 bg-slate-100/60 dark:bg-slate-800/60 rounded-xl border border-slate-200/50 dark:border-slate-700/50 space-y-1">
-                            <label id="ui-relatives-mode-label" class="block text-[9px] font-bold text-indigo-900/90 dark:text-indigo-300">رێکا مرۆڤان:</label>
-                            <select id="relativesSearchMode" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-white dark:bg-slate-700 cursor-pointer font-medium">
+                        <div class="p-2 bg-slate-100/80 dark:bg-slate-900/90 rounded-xl border border-slate-200/80 dark:border-slate-700/80 space-y-1">
+                            <label id="ui-relatives-mode-label" class="block text-[9px] font-bold text-indigo-900/90 dark:text-indigo-200">رێکا کەسوکاران:</label>
+                            <select id="relativesSearchMode" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 cursor-pointer font-medium">
                                 <option id="opt-rel-paternal" value="father-grandpa" selected>🌿 باپیرێ 3 و 4 (باب)</option>
                                 <option id="opt-rel-maternal" value="mother">🌸 ناڤێ دەیکێ</option>
                                 <option id="opt-rel-both" value="both">🔀 باب و دەیک پێکڤە</option>
                             </select>
 
                             <div id="grandpaMatchBox">
-                                <label id="ui-grandpa-level-label" class="block text-[9px] font-bold text-slate-500 dark:text-slate-400 mb-0.5">رێکا دیتنا باپیران:</label>
-                                <select id="grandpaMatchDepth" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-white dark:bg-slate-700 cursor-pointer">
+                                <label id="ui-grandpa-level-label" class="block text-[9px] font-bold text-slate-600 dark:text-slate-300 mb-0.5">رێکا دیتنا باپیران:</label>
+                                <select id="grandpaMatchDepth" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 cursor-pointer">
                                     <option id="opt-grandpa-34" value="grandpa-3-4" selected>باپیرێ 3 و 4 (پێشنیارکری)</option>
                                     <option id="opt-grandpa-3" value="grandpa-3">باپیرێ 3 بتنێ</option>
                                     <option id="opt-grandpa-4" value="grandpa-4">باپیرێ 4 / لەقەب</option>
@@ -227,12 +252,12 @@
                         </div>
 
                         <!-- خيارات إضافية -->
-                        <div class="flex items-center justify-between bg-slate-100/50 dark:bg-slate-800/50 p-1 rounded-xl text-xs flex-wrap gap-1">
+                        <div class="flex items-center justify-between bg-slate-100/80 dark:bg-slate-900/90 p-1.5 rounded-xl text-xs flex-wrap gap-1 border border-slate-200/80 dark:border-slate-700/80">
                             <label class="flex items-center gap-1 cursor-pointer select-none">
                                 <input type="checkbox" id="stripPrefixOpt" onchange="processNames()" checked class="rounded text-blue-600 focus:ring-0 w-3 h-3">
-                                <span id="ui-prefix-label" class="font-semibold text-[9px]">پێشگر و (ال)</span>
+                                <span id="ui-prefix-label" class="font-bold text-[9px] text-slate-700 dark:text-slate-200">پێشگر و (ال)</span>
                             </label>
-                            <select id="resultsSort" onchange="processNames()" class="clay-input p-1 text-[9px] cursor-pointer">
+                            <select id="resultsSort" onchange="processNames()" class="clay-input p-1 text-[9px] bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 cursor-pointer">
                                 <option id="ui-sort-default" value="count-desc">زێدەترین</option>
                                 <option id="ui-sort-alpha" value="alpha">ئەبجەدی</option>
                             </select>
@@ -286,62 +311,117 @@
                     <p class="text-xs text-slate-600" id="printReportMeta"></p>
                 </div>
 
-                <!-- شريط التبويبات والتصفية العلوي للنتائج (3 تبويبات متكاملة) -->
-                <div class="flex flex-wrap justify-between items-center mb-3 pb-2 border-b border-slate-100 dark:border-slate-800 gap-2 no-print">
+                <!-- شريط التبويبات والفلترة العلوي المتناسق (لوحة متوازنة من عمودين متساويين) -->
+                <div class="space-y-2 mb-3 pb-2 border-b border-slate-200/60 dark:border-slate-800/80 no-print">
                     
-                    <!-- تبويبات التبديل بين الإخوة، الأقارب، والطلاب الوحيدين + زر الخطوط الثلاث ☰ عند انغلاق اللوحة الجانبية -->
-                    <div class="flex flex-wrap items-center gap-1.5 tab-buttons">
-                        <!-- زر الخطوط الثلاث ☰ لفتح اللوحة الجانبية في مكانها إذا كانت مغلقة -->
-                        <button onclick="toggleSidebarInPlace()" id="reopenSidebarBtn" title="ڤەکرنا بەشێ دەستکاریێ ژ لایەکی" class="p-1.5 rounded-xl clay-btn-sec hidden items-center justify-center text-blue-600 font-bold text-xs hover:bg-slate-200 transition shadow-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <!-- شبكة التبويبات والفلترة المتناسقة (2 أعمدة × 3 صفوف متوازنة بالكامل) -->
+                    <div class="grid grid-cols-2 gap-1.5 w-full">
+                        <!-- 1. كافة الأسماء -->
+                        <button id="tab-all-btn" onclick="switchResultTab('all')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-slate-700 dark:text-slate-200 shadow-2xs">
+                            <span class="text-sm">📚</span>
+                            <span id="tab-all-label">هەمی ناڤ</span>
                         </button>
 
-                        <!-- تبويب 1: الإخوة الأشقاء -->
-                        <button id="tab-siblings-btn" onclick="switchResultTab('siblings')" class="px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn text-white flex items-center gap-1">
-                            <span>👨‍👩‍👦</span>
+                        <!-- 2. الإخوة الأشقاء -->
+                        <button id="tab-siblings-btn" onclick="switchResultTab('siblings')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn text-white shadow-2xs">
+                            <span class="text-sm">👨‍👩‍👦</span>
                             <span id="tab-siblings-label">خویشک و برا</span>
                         </button>
-                        <!-- تبويب 2: الأقارب وأبناء العم -->
-                        <button id="tab-relatives-btn" onclick="switchResultTab('relatives')" class="px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn-sec flex items-center gap-1">
-                            <span>🌿</span>
+
+                        <!-- 3. الأقارب وأبناء العم -->
+                        <button id="tab-relatives-btn" onclick="switchResultTab('relatives')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-indigo-700 dark:text-indigo-300 shadow-2xs">
+                            <span class="text-sm">🌿</span>
                             <span id="tab-relatives-label">پسمام و کەسوکار</span>
                         </button>
-                        <!-- تبويب 3: الطلاب الوحيدين (بدون إخوة وبدون أقارب) -->
-                        <button id="tab-solitary-btn" onclick="switchResultTab('solitary')" class="px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl text-[11px] font-bold transition-all clay-btn-sec flex items-center gap-1 text-rose-700 dark:text-rose-300">
-                            <span>👤</span>
-                            <span id="tab-solitary-label">ب تنێ (بێ مرۆڤ)</span>
-                        </button>
-                    </div>
 
-                    <!-- عداد المجموعات وفلتر المراحل -->
-                    <div class="flex items-center gap-1">
-                        <select id="gradeFilter" onchange="filterByGrade()" class="clay-input p-1 text-[9px] hidden cursor-pointer">
+                        <!-- 4. الأسماء المتشابهة والمطابقة -->
+                        <button id="tab-duplicates-btn" onclick="switchResultTab('duplicates')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-teal-700 dark:text-teal-300 shadow-2xs">
+                            <span class="text-sm">👥</span>
+                            <span id="tab-duplicates-label">ناڤێن وەکهەڤ</span>
+                        </button>
+
+                        <!-- 5. الطلاب الوحيدين (بدون إخوة وبدون أقارب) -->
+                        <button id="tab-solitary-btn" onclick="switchResultTab('solitary')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-rose-700 dark:text-rose-300 shadow-2xs">
+                            <span class="text-sm">👤</span>
+                            <span id="tab-solitary-label">ب تنێ</span>
+                        </button>
+
+                        <!-- 6. قائمة اختيار المرحلة (فلتر المراحل المتطور) -->
+                        <div class="relative w-full text-right no-print" id="gradeDropdownWrapper">
+                            <button type="button" onclick="toggleGradeDropdown(event)" id="gradeDropdownBtn" 
+                                    class="hidden w-full py-2 px-2.5 text-[11px] sm:text-[12px] font-extrabold text-emerald-800 dark:text-emerald-300 border border-emerald-400/80 dark:border-emerald-700/80 rounded-xl shadow-2xs items-center justify-center gap-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 transition">
+                                <span class="text-sm">🏷️</span>
+                                <span id="selectedGradeLabel">هەمی قۆناغ</span>
+                                <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 transition-transform duration-200" id="gradeDropdownArrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <!-- القائمة المنسدلة العائمة -->
+                            <div id="gradeDropdownMenu" class="hidden absolute right-0 mt-1.5 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-md rounded-xl shadow-xl border border-emerald-200 dark:border-emerald-900/60 p-1 z-50 max-h-56 overflow-y-auto custom-scroll space-y-0.5">
+                                <!-- يتم تعبئتها ديناميكياً -->
+                            </div>
+                        </div>
+
+                        <!-- الحقل المخفي للتوافقية مع الفلترة -->
+                        <select id="gradeFilter" onchange="filterByGrade()" class="hidden">
                             <option id="ui-all-grades" value="all">هەمی قۆناغ</option>
                         </select>
-                        <span id="resultsCount" class="clay-badge text-blue-800 dark:text-blue-300 text-[10px] px-2 py-1 font-bold hidden">
-                            0 خێزان
-                        </span>
+                    </div>
+
+                    <!-- شريط الحالة والأدوات السفلي (عداد المجموعات وزر ملء الشاشة) -->
+                    <div class="flex items-center justify-between gap-1.5 pt-0.5">
+                        <!-- اليمين: زر القائمة الجانبية + عداد النتائج والمجموعات -->
+                        <div class="flex items-center gap-1.5 min-w-0">
+                            <!-- زر الخطوط الثلاث ☰ لفتح اللوحة الجانبية عند انغلاقها -->
+                            <button onclick="toggleSidebarInPlace()" id="reopenSidebarBtn" title="ڤەکرنا بەشێ دەستکاریێ ژ لایەکی" class="p-1.5 rounded-xl clay-btn-sec hidden items-center justify-center text-blue-600 font-bold text-xs hover:bg-slate-200 transition shadow-xs">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                            </button>
+
+                            <!-- عداد المجموعات والنتائج بتصميم بارز وواضح -->
+                            <span id="resultsCount" class="clay-badge text-blue-800 dark:text-blue-300 text-[10.5px] sm:text-[11.5px] px-2.5 py-1 font-extrabold hidden border border-blue-200/80 dark:border-blue-800/60 truncate">
+                                0 خێزان
+                            </span>
+                        </div>
+
+                        <!-- اليسار: زر ملء الشاشة لعرض النتائج فقط -->
+                        <div class="flex items-center gap-1 flex-shrink-0">
+                            <button onclick="toggleResultsFullscreen()" id="resultsFullscreenBtn" title="ملء الشاشة / تمامێ شاشەیێ" class="clay-btn-sec px-2.5 py-1 text-[10px] sm:text-[11px] font-extrabold flex items-center gap-1 shadow-xs hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                                <span id="resultsFullscreenIcon">⛶</span>
+                                <span id="ui-fullscreen-btn">تمامێ شاشەیێ</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- إشعار خاص بقسم الأقارب -->
-                <div id="relativesTabNotice" class="hidden mb-2.5 p-2 bg-indigo-50/80 dark:bg-slate-800/80 rounded-xl border border-indigo-100 dark:border-indigo-900 text-xs flex items-center justify-between no-print">
-                    <div class="flex items-center gap-1.5">
-                        <span class="text-sm">ℹ️</span>
-                        <span id="ui-relatives-tab-desc" class="text-indigo-900 dark:text-indigo-200 font-medium text-[10px] leading-relaxed">
+                <div id="relativesTabNotice" class="hidden mb-2 p-1.5 sm:p-2 bg-indigo-50/80 dark:bg-slate-800/80 rounded-xl border border-indigo-100 dark:border-indigo-900 text-xs flex items-center justify-between no-print">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                        <span class="text-xs">ℹ️</span>
+                        <span id="ui-relatives-tab-desc" class="text-indigo-900 dark:text-indigo-200 font-medium text-[9px] sm:text-[10px] leading-relaxed">
                             قسم الأقارب يعرض فقط الطلاب المرتبطين كأبناء عمومة أو خؤولة (من آباء مختلفين / أمهات مختلفات) مع استبعاد الإخوة المباشرين.
                         </span>
                     </div>
+                    <button onclick="document.getElementById('relativesTabNotice').classList.add('hidden')" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xs font-bold px-1.5 transition">✕</button>
                 </div>
 
                 <!-- إشعار خاص بقسم الطلاب الوحيدين (بدون إخوة وبدون أقارب) -->
-                <div id="solitaryTabNotice" class="hidden mb-2.5 p-2 bg-rose-50/80 dark:bg-slate-800/80 rounded-xl border border-rose-200/70 dark:border-rose-900/50 text-xs flex items-center justify-between no-print">
-                    <div class="flex items-center gap-1.5">
-                        <span class="text-sm">👤</span>
-                        <span id="ui-solitary-tab-desc" class="text-rose-900 dark:text-rose-200 font-medium text-[10px] leading-relaxed">
+                <div id="solitaryTabNotice" class="hidden mb-2 p-1.5 sm:p-2 bg-rose-50/80 dark:bg-slate-800/80 rounded-xl border border-rose-200/70 dark:border-rose-900/50 text-xs flex items-center justify-between no-print">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                        <span class="text-xs">👤</span>
+                        <span id="ui-solitary-tab-desc" class="text-rose-900 dark:text-rose-200 font-medium text-[9px] sm:text-[10px] leading-relaxed">
                             ئەڤ بەشە وان قوتابیان نیشان ددەت یێن کو چو خویشک و برایێن ئێک باب و چو پسمام و کەسوکار ل قوتابخانێ نینن (ب تەواوی ب تنێ).
                         </span>
                     </div>
+                    <button onclick="document.getElementById('solitaryTabNotice').classList.add('hidden')" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xs font-bold px-1.5 transition">✕</button>
+                </div>
+
+                <!-- إشعار خاص بقسم الأسماء المتشابهة والمطابقة -->
+                <div id="duplicatesTabNotice" class="hidden mb-2 p-1.5 sm:p-2 bg-teal-50/80 dark:bg-slate-800/80 rounded-xl border border-teal-200/70 dark:border-teal-900/50 text-xs flex items-center justify-between no-print">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                        <span class="text-xs">👥</span>
+                        <span id="ui-duplicates-tab-desc" class="text-teal-900 dark:text-teal-200 font-medium text-[9px] sm:text-[10px] leading-relaxed">
+                            ئەڤ بەشە وان قوتابیان نیشان ددەت یێن کو ناڤێن وان وەکهەڤن د ناڤبەرا قۆناغ و پۆلێن جودا دا.
+                        </span>
+                    </div>
+                    <button onclick="document.getElementById('duplicatesTabNotice').classList.add('hidden')" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xs font-bold px-1.5 transition">✕</button>
                 </div>
 
                 <!-- شريط تصفية البحث التفاعلي والحي -->
@@ -445,10 +525,45 @@
         </div>
     </div>
 
-    <!-- التذييل كلاي مورفيزم -->
-    <footer class="text-center text-xs text-slate-500 py-2.5 no-print">
-        <div id="ui-footer-text" class="clay-badge inline-block px-3 py-1.5 font-medium text-[10px]">
-            🔒 هەمی کردار د ناڤا مۆبایل یان کۆمپیوتەرا تە دا ب شێوەیەکێ پاراستی دهێنە ئەنجامدان.
+    <!-- التذييل كلاي مورفيزم وحقوق الملكية والتواصل -->
+    <footer class="container mx-auto max-w-7xl text-center py-4 px-2 space-y-2 no-print border-t border-slate-200/60 dark:border-slate-800/80 mt-4">
+        <!-- النص الرئيسي للحقوق -->
+        <p class="text-xs sm:text-sm font-extrabold text-slate-700 dark:text-white">
+            هەمى ماف پاراستینە
+        </p>
+        
+        <!-- اسم الأستاذ وصاحب الفكرة -->
+        <p class="text-[11px] sm:text-xs text-slate-600 dark:text-slate-200 font-medium">
+            ئەڤ وێبسایتە هاتیە دروستکرن ژ لایێ ماموستا: <span class="font-bold text-blue-900/90 dark:text-sky-300">طاهر محمود محمد</span>
+        </p>
+        
+        <!-- رقم الهاتف والملاحظات -->
+        <p class="text-[11px] sm:text-xs text-slate-600 dark:text-slate-200">
+            تێبینی، ڕەخنە یان پەیوەندی بکه: 
+            <a href="tel:07503727069" dir="ltr" class="font-bold text-blue-600 dark:text-cyan-300 hover:underline tracking-wider">
+                07503727069
+            </a>
+        </p>
+
+        <!-- أيقونات التواصل الاجتماعي المباشرة (فايبر، تيليجرام، واتساب) -->
+        <div class="flex items-center justify-center gap-3 pt-1">
+            <!-- فايبر (Viber) -->
+            <a href="viber://chat?number=%2B9647503727069" title="Viber: 07503727069" target="_blank" rel="noopener noreferrer" 
+               class="w-8 h-8 rounded-full bg-purple-50 hover:bg-purple-100 dark:bg-slate-800 dark:hover:bg-purple-950 text-purple-600 dark:text-purple-400 flex items-center justify-center transition transform hover:scale-110 shadow-xs border border-purple-200/60 dark:border-purple-800/50">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 2.22.607 4.304 1.674 6.096L.26 23.498a.5.5 0 0 0 .618.618l5.402-1.414A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm5.667 16.488c-.287.822-1.398 1.488-2.27 1.572-.6.058-1.39-.08-3.418-.946-2.585-1.104-4.296-3.7-4.428-3.876-.128-.175-1.054-1.402-1.054-2.673 0-1.272.668-1.897.906-2.155.238-.258.52-.323.693-.323.174 0 .348.002.5.01.16.008.375-.06.586.446.216.518.736 1.796.8 1.927.065.13.108.283.022.456-.087.172-.13.28-.26.43-.13.153-.272.34-.388.457-.13.13-.266.27-.114.53.152.26 1.003 1.654 2.15 2.677 1.478 1.317 2.723 1.724 3.11 1.916.388.193.615.16.843-.1.228-.26.974-1.134 1.234-1.523.26-.39.52-.325.867-.196.347.13 2.2 1.037 2.578 1.225.378.188.63.282.72.438.09.155.09.9-.197 1.722z"/></svg>
+            </a>
+
+            <!-- تيليجرام (Telegram) -->
+            <a href="https://t.me/+9647503727069" title="Telegram: 07503727069" target="_blank" rel="noopener noreferrer" 
+               class="w-8 h-8 rounded-full bg-sky-50 hover:bg-sky-100 dark:bg-slate-800 dark:hover:bg-sky-950 text-sky-500 dark:text-sky-400 flex items-center justify-center transition transform hover:scale-110 shadow-xs border border-sky-200/60 dark:border-sky-800/50">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.536-.194 1.006.131.868.968z"/></svg>
+            </a>
+
+            <!-- واتساب (WhatsApp) -->
+            <a href="https://wa.me/9647503727069" title="WhatsApp: 07503727069" target="_blank" rel="noopener noreferrer" 
+               class="w-8 h-8 rounded-full bg-emerald-50 hover:bg-emerald-100 dark:bg-slate-800 dark:hover:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center transition transform hover:scale-110 shadow-xs border border-emerald-200/60 dark:border-emerald-800/50">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
         </div>
     </footer>
 
