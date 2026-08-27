@@ -110,6 +110,31 @@ const translations = {
         fullscreen_btn: "تمامێ شاشەیێ",
         exit_fullscreen_btn: "دەرکەفتن",
         fullscreen_activated: "دۆخێ تەرکیز ل سەر ناڤان هاتە چالاککرن",
+        btn_analytics: "شیکاری و گراف",
+        btn_print_studio: "راپۆرت و چاپ",
+        btn_slips: "کارت",
+        report_modal_title: "ڕێکخستنا راپۆرتێ و چاپکرنا فەرمی",
+        report_modal_desc: "تایبەتمەندیێن سەرپەڕێ فەرمی، هەلبژارتنا ستوونان، و شێوازێ چاپێ",
+        school_info_title: "زانیاریێن سەرپەڕێ راپۆرتێ (قوتابخانە و پەروەردە)",
+        school_name_label: "ناڤێ قوتابخانەیێ:",
+        directorate_label: "پەروەردە / رێڤەبەری:",
+        year_label: "ساڵا خاندنێ:",
+        principal_label: "ناڤێ رێڤەبەری / سەرپەرشتیاری:",
+        report_type_title: "شێوازێ راپۆرتێ و قۆناغ:",
+        report_cols_title: "ستونێن دیار د راپۆرتێ دا:",
+        col_index: "هەژمارا رێزبەندیێ (#)",
+        col_mother: "ناڤێ دەیکێ",
+        col_grade: "پۆل و شعبە",
+        col_family: "سەردێڕێ خێزانێ و هێما",
+        btn_slips_action: "کارتێن خێزانان",
+        btn_do_print: "چاپکرن / PDF",
+        analytics_title: "شیکاری و ئامارێن هویر یێن قوتابخانەیێ",
+        analytics_desc: "مخططات بيانية تفاعلية، كشف العوائل الأكثر عدداً، وتوزيع الإخوة على المراحل",
+        analytics_dist_title: "دابەشبوونا قوتابیان ل گۆرەی پۆلان",
+        analytics_top_families_title: "بنەماڵ و لەقەبێن هەرە زۆر (Top 10)",
+        analytics_grade_density_title: "خەستی و هەژمارا خوشک و برایان د قۆناغان دا",
+        family_slip_parent_sign: "واژوویا دەیک و بابان (توقيع ولي الأمر): ....................",
+        family_slip_note: "تێبینی: ئەڤ کارتە پشتبەستنێ ل سەر تۆمارێن فەرمی یێن قوتابخانەیێ دکەت.",
         dir: "rtl"
     },
     ku_so: {
@@ -223,6 +248,31 @@ const translations = {
         fullscreen_btn: "پڕاوپڕی شاشە",
         exit_fullscreen_btn: "دەرچوون",
         fullscreen_activated: "دۆخی سەرنجدان لەسەر ناوەکان چالاککرا",
+        btn_analytics: "شیکاری و گراف",
+        btn_print_studio: "ڕاپۆرت و چاپ",
+        btn_slips: "کارتەکان",
+        report_modal_title: "ڕێکخستنی ڕاپۆرت و چاپی فەرمی",
+        report_modal_desc: "تایبەتمەندییەکانی سەرپەڕە، هەڵبژاردنی ستوونەکان، و شێوازی چاپ",
+        school_info_title: "زانیارییەکانی سەرپەڕەی ڕاپۆرت (قوتابخانە و پەروەردە)",
+        school_name_label: "ناوی قوتابخانە:",
+        directorate_label: "پەروەردە / بەڕێوەبەرایەتی:",
+        year_label: "ساڵی خوێندن:",
+        principal_label: "ناوی بەڕێوەبەر / سەرپەرشتیار:",
+        report_type_title: "شێوازی ڕاپۆرت و قۆناغ:",
+        report_cols_title: "ستوونە دیارەکان لە ڕاپۆرتدا:",
+        col_index: "ژمارەی ڕیزبەندی (#)",
+        col_mother: "ناوی دایک",
+        col_grade: "پۆل و شعبە",
+        col_family: "سەردێڕی خێزان",
+        btn_slips_action: "کارتەکانی خێزان",
+        btn_do_print: "چاپکردن / PDF",
+        analytics_title: "شیکاری و ئاماری وردی قوتابخانە",
+        analytics_desc: "مخططاتی گرافیکی کارلێکەر، دۆزینەوەی زۆرترین خێزانەکان و دابەشبوونیان",
+        analytics_dist_title: "دابەشبوونی قوتابیان بەپێی پۆلەکان",
+        analytics_top_families_title: "بنەماڵە و نازناوە هەرە زۆرەکان (Top 10)",
+        analytics_grade_density_title: "چڕی و ژمارەی خوشک و براکان لە قۆناغەکاندا",
+        family_slip_parent_sign: "واژووی دایک و باوک (توقيع ولي الأمر): ....................",
+        family_slip_note: "تێبینی: ئەم کارتە پشت بە تۆمارە فەرمییەکانی قوتابخانە دەبەستێت.",
         dir: "rtl"
     },
     ar: {
@@ -336,6 +386,31 @@ const translations = {
         fullscreen_btn: "ملء الشاشة",
         exit_fullscreen_btn: "إلغاء ملء الشاشة",
         fullscreen_activated: "تم تفعيل وضع ملء الشاشة للنتائج",
+        btn_analytics: "لوحة الإحصائيات",
+        btn_print_studio: "التقارير والطباعة",
+        btn_slips: "بطاقات العائلات",
+        report_modal_title: "إعدادات التقرير والطباعة الرسمية",
+        report_modal_desc: "ترويسة المدرسة الرسمية، تخصيص الأعمدة المطبوعة، ونمط التقرير",
+        school_info_title: "بيانات ترويسة التقرير (المدرسة والمديرية)",
+        school_name_label: "اسم المدرسة:",
+        directorate_label: "التربية / المديرية:",
+        year_label: "العام الدراسي:",
+        principal_label: "اسم المدير / المشرف:",
+        report_type_title: "نوع التقرير ونطاق المرحلة:",
+        report_cols_title: "الأعمدة المضمنة في التقرير:",
+        col_index: "التسلسل الرقمي (#)",
+        col_mother: "اسم الأم",
+        col_grade: "الصف والشعبة",
+        col_family: "ترويسة العائلة والرمز",
+        btn_slips_action: "بطاقات العائلات",
+        btn_do_print: "طباعة / تصدير PDF",
+        analytics_title: "لوحة التحليلات والإحصائيات المدرسية الشاملة",
+        analytics_desc: "مخططات بيانية تفاعلية، ترتيب العوائل الأكثر عدداً، وتوزيع الإخوة على المراحل",
+        analytics_dist_title: "توزيع وتصنيف الطلاب والنسب المئوية",
+        analytics_top_families_title: "العوائل والألقاب الأكثر عدداً في المدرسة (Top 10)",
+        analytics_grade_density_title: "كثافة وتواجد الإخوة في المراحل الدراسية",
+        family_slip_parent_sign: "توقيع ولي الأمر (واژوویا دەیک و بابان): ....................",
+        family_slip_note: "ملاحظة: هذه البطاقة مستخرجة اعتماداً على السجلات المدرسية الرسمية.",
         dir: "rtl"
     },
     en: {
@@ -449,6 +524,31 @@ const translations = {
         fullscreen_btn: "Fullscreen",
         exit_fullscreen_btn: "Exit Fullscreen",
         fullscreen_activated: "Fullscreen results mode enabled",
+        btn_analytics: "Analytics",
+        btn_print_studio: "Print Studio",
+        btn_slips: "Family Slips",
+        report_modal_title: "Official School Report & Print Studio",
+        report_modal_desc: "School Header Customization, Column Selection, and Printable Slips",
+        school_info_title: "Official Report Header Information",
+        school_name_label: "School Name:",
+        directorate_label: "Directorate / District:",
+        year_label: "Academic Year:",
+        principal_label: "Principal / Supervisor Name:",
+        report_type_title: "Report Scope & Grade:",
+        report_cols_title: "Included Columns:",
+        col_index: "Index Number (#)",
+        col_mother: "Mother Name",
+        col_grade: "Grade & Section",
+        col_family: "Family Header & Badge",
+        btn_slips_action: "Family Slips",
+        btn_do_print: "Print / Save PDF",
+        analytics_title: "School Demographic & Sibling Analytics",
+        analytics_desc: "Interactive visual charts, Top Clan Leaderboard, and Grade Sibling Density",
+        analytics_dist_title: "Student Classification & Percentage Breakdown",
+        analytics_top_families_title: "Top 10 Most Populous Surnames & Clans",
+        analytics_grade_density_title: "Grade-by-Grade Sibling Density Matrix",
+        family_slip_parent_sign: "Parent Signature: ....................",
+        family_slip_note: "Note: Extracted from official school registration database.",
         dir: "ltr"
     }
 };
@@ -669,7 +769,30 @@ function changeLanguage(lang) {
         'stat-solitary-label': dict.stat_solitary,
         'stat-duplicates-label': dict.stat_duplicates,
         'ui-btn-install-app': dict.btn_install_app || "دانانا بەرنامەی",
-        'ui-fullscreen-btn': isResultsFullscreen ? (dict.exit_fullscreen_btn || "دەرکەفتن") : (dict.fullscreen_btn || "تمامێ شاشەیێ")
+        'ui-fullscreen-btn': isResultsFullscreen ? (dict.exit_fullscreen_btn || "دەرکەفتن") : (dict.fullscreen_btn || "تمامێ شاشەیێ"),
+        'ui-btn-analytics': dict.btn_analytics || "شیکاری و گراف",
+        'ui-btn-print-studio': dict.btn_print_studio || "راپۆرت و چاپ",
+        'ui-btn-slips': dict.btn_slips || "کارت",
+        'ui-report-modal-title': dict.report_modal_title || "ڕێکخستنا راپۆرتێ و چاپکرنا فەرمی",
+        'ui-report-modal-desc': dict.report_modal_desc || "تایبەتمەندیێن سەرپەڕێ فەرمی، هەلبژارتنا ستوونان، و شێوازێ چاپێ",
+        'ui-report-school-info-title': dict.school_info_title || "زانیاریێن سەرپەڕێ راپۆرتێ (قوتابخانە و پەروەردە)",
+        'ui-report-school-name-label': dict.school_name_label || "ناڤێ قوتابخانەیێ:",
+        'ui-report-directorate-label': dict.directorate_label || "پەروەردە / رێڤەبەری:",
+        'ui-report-year-label': dict.year_label || "ساڵا خاندنێ:",
+        'ui-report-principal-label': dict.principal_label || "ناڤێ رێڤەبەری / سەرپەرشتیاری:",
+        'ui-report-type-title': dict.report_type_title || "شێوازێ راپۆرتێ و قۆناغ:",
+        'ui-report-cols-title': dict.report_cols_title || "ستونێن دیار د راپۆرتێ دا:",
+        'ui-col-index': dict.col_index || "هەژمارا رێزبەندیێ (#)",
+        'ui-col-mother': dict.col_mother || "ناڤێ دەیکێ",
+        'ui-col-grade': dict.col_grade || "پۆل و شعبە",
+        'ui-col-family': dict.col_family || "سەردێڕێ خێزانێ و هێما",
+        'ui-btn-slips-action': dict.btn_slips_action || "کارتێن خێزانان",
+        'ui-btn-do-print': dict.btn_do_print || "چاپکرن / PDF",
+        'ui-analytics-title': dict.analytics_title || "شیکاری و ئامارێن هویر یێن قوتابخانەیێ",
+        'ui-analytics-desc': dict.analytics_desc || "مخططات بيانية تفاعلية، كشف العوائل الأكثر عدداً، وتوزيع الإخوة على المراحل",
+        'ui-analytics-dist-title': dict.analytics_dist_title || "دابەشبوونا قوتابیان ل گۆرەی پۆلان",
+        'ui-analytics-top-families-title': dict.analytics_top_families_title || "بنەماڵ و لەقەبێن هەرە زۆر (Top 10)",
+        'ui-analytics-grade-density-title': dict.analytics_grade_density_title || "خەستی و هەژمارا خوشک و برایان د قۆناغان دا"
     };
 
     for (const [id, text] of Object.entries(idsMap)) {
@@ -1693,7 +1816,9 @@ function renderSiblingsList(groups) {
                         return `
                             <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1.5 bg-slate-50/90 dark:bg-slate-800/60 rounded hover:bg-white dark:hover:bg-slate-800 transition shadow-2xs border border-slate-200/60 dark:border-slate-700/50 gap-1 min-h-[24px]">
                                 <div class="flex flex-wrap items-center gap-1 min-w-0">
-                                    <span class="w-3.5 h-3.5 rounded bg-blue-100/70 dark:bg-slate-700 text-blue-600 dark:text-blue-300 flex items-center justify-center text-[7.5px] font-bold">👤</span>
+                                    <span class="student-avatar-box w-4 h-4 rounded bg-blue-100/90 dark:bg-slate-700/90 text-blue-600 dark:text-sky-300 border border-blue-200/60 dark:border-blue-400/40 flex items-center justify-center shadow-xs">
+                                        <svg class="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                                    </span>
                                     <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                                     ${isTwin ? `<span class="bg-amber-100/90 text-amber-800 dark:bg-amber-950 dark:text-amber-300 text-[7.5px] px-1 py-0.1 rounded font-bold border border-amber-200 dark:border-amber-800/50">${dict.twin_warn}</span>` : ''}
                                     ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
@@ -1775,7 +1900,9 @@ function renderRelativesList(groups) {
                                     ${branchStudents.map(student => `
                                         <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1 bg-white/95 dark:bg-slate-800/90 rounded border border-slate-100/80 dark:border-slate-700/60 shadow-2xs hover:bg-slate-50 transition gap-1 min-h-[23px]">
                                             <div class="flex flex-wrap items-center gap-1 min-w-0">
-                                                <span class="w-3.5 h-3.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300 flex items-center justify-center text-[7.5px] font-bold">👤</span>
+                                                <span class="student-avatar-box w-4 h-4 rounded bg-indigo-100/90 dark:bg-slate-700/90 text-indigo-600 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-400/40 flex items-center justify-center shadow-xs">
+                                                    <svg class="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                                                </span>
                                                 <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                                                 ${student.mother ? `
                                                     <span class="text-[7.5px] bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">
@@ -1827,7 +1954,9 @@ function renderSolitaryList(students) {
                 
                 <div class="flex flex-wrap items-center justify-between text-[10.5px] gap-1 min-h-[23px]">
                     <div class="flex flex-wrap items-center gap-1 min-w-0">
-                        <span class="w-3.5 h-3.5 rounded bg-rose-100/80 dark:bg-rose-950 text-rose-600 dark:text-rose-300 flex items-center justify-center font-bold text-[7.5px]">👤</span>
+                        <span class="student-avatar-box w-4 h-4 rounded bg-rose-100/90 dark:bg-slate-700/90 text-rose-600 dark:text-rose-300 border border-rose-200/60 dark:border-rose-400/40 flex items-center justify-center shadow-xs">
+                            <svg class="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                        </span>
                         <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                         ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
                         <span class="bg-rose-100/80 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-[7.5px] px-1 py-0.1 rounded font-bold border border-rose-200 dark:border-rose-800/50">بێ کەسوکار</span>
@@ -1879,7 +2008,9 @@ function renderDuplicatesList(groups) {
                         return `
                             <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1.5 bg-slate-50/90 dark:bg-slate-800/60 rounded hover:bg-white dark:hover:bg-slate-800 transition shadow-2xs border border-slate-200/60 dark:border-slate-700/50 gap-1 min-h-[24px]">
                                 <div class="flex flex-wrap items-center gap-1 min-w-0">
-                                    <span class="w-3.5 h-3.5 rounded bg-teal-100/70 dark:bg-slate-700 text-teal-600 dark:text-teal-300 flex items-center justify-center text-[7.5px] font-bold">👤</span>
+                                    <span class="student-avatar-box w-4 h-4 rounded bg-teal-100/90 dark:bg-slate-700/90 text-teal-600 dark:text-teal-300 border border-teal-200/60 dark:border-teal-400/40 flex items-center justify-center shadow-xs">
+                                        <svg class="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                                    </span>
                                     <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                                     ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
                                 </div>
@@ -1937,7 +2068,7 @@ function renderAllStudentsList(students) {
                 
                 <div class="flex flex-wrap items-center justify-between text-[10.5px] gap-1 min-h-[23px]">
                     <div class="flex flex-wrap items-center gap-1 min-w-0">
-                        <span class="w-4 h-4 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center font-extrabold text-[7.5px]">${idx + 1}</span>
+                        <span class="student-avatar-box w-4 h-4 rounded bg-slate-200/90 dark:bg-slate-700/90 text-slate-700 dark:text-amber-300 border border-slate-300/70 dark:border-amber-400/40 flex items-center justify-center font-extrabold text-[8px] shadow-xs">${idx + 1}</span>
                         <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                         ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
                     </div>
@@ -2137,29 +2268,717 @@ function exportToCSV() {
     showToast(dict.btn_excel);
 }
 
-function printReport() {
-    if (studentPool.length === 0) return;
-    const dict = translations[currentLang];
-    const titleEl = document.getElementById('printReportTitle');
-    const metaEl = document.getElementById('printReportMeta');
-    
-    if (activeTab === 'all') {
-        if (titleEl) titleEl.textContent = `📚 ${dict.tab_all || 'کافة الأسماء'}`;
-        if (metaEl) metaEl.textContent = `${dict.stat_total}: ${studentPool.length} ${dict.students_suffix} | ${new Date().toLocaleDateString()}`;
-    } else if (activeTab === 'siblings') {
-        if (titleEl) titleEl.textContent = `📋 ${dict.tab_siblings}`;
-        if (metaEl) metaEl.textContent = `${dict.badge_groups_sib}: ${siblingResults.length} | ${dict.stat_siblings}: ${siblingResults.reduce((acc, g) => acc + g.students.length, 0)} ${dict.students_suffix} | ${new Date().toLocaleDateString()}`;
-    } else if (activeTab === 'relatives') {
-        if (titleEl) titleEl.textContent = `🌿 ${dict.tab_relatives}`;
-        if (metaEl) metaEl.textContent = `${dict.badge_groups_rel}: ${relativeResults.length} | ${dict.stat_relatives}: ${relativeResults.reduce((acc, g) => acc + g.totalCount, 0)} ${dict.students_suffix} | ${new Date().toLocaleDateString()}`;
-    } else if (activeTab === 'solitary') {
-        if (titleEl) titleEl.textContent = `👤 ${dict.tab_solitary}`;
-        if (metaEl) metaEl.textContent = `${dict.badge_groups_sol}: ${solitaryResults.length} ${dict.students_suffix} | ${new Date().toLocaleDateString()}`;
-    } else if (activeTab === 'duplicates') {
-        if (titleEl) titleEl.textContent = `👥 ${dict.tab_duplicates}`;
-        if (metaEl) metaEl.textContent = `${dict.badge_groups_dup}: ${duplicateResults.length} | ${dict.stat_duplicates}: ${duplicateResults.reduce((acc, g) => acc + g.students.length, 0)} ${dict.students_suffix} | ${new Date().toLocaleDateString()}`;
+// 📗 تصدير ملف إكسل رسمي مطابق 100% لتصميم بطاقات وكروت العائلات
+function exportToExcelXLSX() {
+    if (studentPool.length === 0) {
+        showToast(translations[currentLang].results_empty_title);
+        return;
     }
-    window.print();
+
+    const dict = translations[currentLang];
+    const schoolName = localStorage.getItem('report_school_name') || 'قوتابخانە';
+    const academicYear = localStorage.getItem('report_academic_year') || '2025 - 2026';
+    const signLabel = dict.family_slip_parent_sign || 'واژوویا دەیک و بابان (توقيع ولي الأمر): ....................';
+    const currentDate = new Date().toLocaleDateString();
+
+    // نتحقق إن كان المستخدم يرغب بتصدير بطاقات HTML الملونة والمؤطرة تماماً داخل إكسل
+    exportStyledFamilyCardsToExcel();
+}
+
+// دالة تصدير كروت وبطاقات العائلات إلى ملف إكسل بتنسيق HTML/XML المعتمد من مايكروسوفت إكسل مع كافة الإطارات والتنسيقات
+function exportStyledFamilyCardsToExcel() {
+    const dict = translations[currentLang];
+    const schoolName = localStorage.getItem('report_school_name') || 'قوتابخانە';
+    const academicYear = localStorage.getItem('report_academic_year') || '2025 - 2026';
+    const signLabel = dict.family_slip_parent_sign || 'واژوویا دەیک و بابان (توقيع ولي الأمر): ....................';
+    const currentDate = new Date().toLocaleDateString();
+
+    let excelHtml = `
+        <html xmlns:o="urn:schemas-microsoft-com:office:office" 
+              xmlns:x="urn:schemas-microsoft-com:office:excel" 
+              xmlns="http://www.w3.org/TR/REC-html40">
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <!--[if gte mso 9]>
+            <xml>
+                <x:ExcelWorkbook>
+                    <x:ExcelWorksheets>
+                        <x:ExcelWorksheet>
+                            <x:Name>کارتێن خێزانان - بطاقات العائلات</x:Name>
+                            <x:WorksheetOptions>
+                                <x:DisplayRightToLeft/>
+                            </x:WorksheetOptions>
+                        </x:ExcelWorksheet>
+                    </x:ExcelWorksheets>
+                </x:ExcelWorkbook>
+            </xml>
+            <![endif]-->
+            <style>
+                body { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; direction: rtl; background: #ffffff; }
+                .card-table { width: 100%; border-collapse: collapse; margin-bottom: 25px; border: 2px dashed #0f172a; background: #ffffff; }
+                .card-top { font-size: 11pt; font-weight: bold; color: #1e293b; padding: 8px 12px; background: #f8fafc; }
+                .card-header-title { font-size: 14pt; font-weight: 900; color: #0f172a; padding: 10px 12px; border-top: 1px solid #cbd5e1; border-bottom: 2.5px solid #0f172a; }
+                .card-badge { font-size: 12pt; font-weight: 900; text-align: center; background: #f1f5f9; border: 1.5px solid #94a3b8; padding: 4px 10px; }
+                .student-row td { padding: 8px 12px; border-bottom: 1px solid #e2e8f0; font-size: 11pt; }
+                .student-name { font-weight: bold; color: #0f172a; }
+                .student-mother { font-size: 9.5pt; color: #64748b; margin-right: 6px; }
+                .student-grade { font-weight: 800; color: #1e40af; text-align: left; }
+                .card-footer { font-size: 10pt; font-weight: bold; color: #334155; padding: 10px 12px; background: #f8fafc; border-top: 1.5px solid #cbd5e1; }
+                .spacer-row { height: 20px; }
+            </style>
+        </head>
+        <body>
+    `;
+
+    siblingResults.forEach((group, idx) => {
+        excelHtml += `
+            <table class="card-table" border="1" cellpadding="6" cellspacing="0">
+                <!-- السطر العلوي: اسم الكارت والمدرسة -->
+                <tr>
+                    <td colspan="2" class="card-top">
+                        کارت #${idx + 1} | ${schoolName} (${academicYear})
+                    </td>
+                </tr>
+
+                <!-- رأس الكارت: اسم العائلة وعدد الطلاب -->
+                <tr>
+                    <td class="card-header-title">
+                        👥 ${dict.family_label || 'بنەمالە / باپیرێ هەڤپشک:'} ${group.sharedName}
+                    </td>
+                    <td class="card-badge" style="width: 140px;">
+                        ${group.students.length} ${dict.students_suffix || 'قوتابی'}
+                    </td>
+                </tr>
+
+                <!-- قائمة طلاب العائلة -->
+        `;
+
+        group.students.forEach((s, sIdx) => {
+            excelHtml += `
+                <tr class="student-row">
+                    <td>
+                        <span class="student-name">${sIdx + 1}. ${s.name}</span>
+                        ${s.mother ? `<span class="student-mother">(دەیک: ${s.mother})</span>` : ''}
+                    </td>
+                    <td class="student-grade">
+                        ${dict.grade_label || 'پۆل'}: ${s.grade} / ${s.section}
+                    </td>
+                </tr>
+            `;
+        });
+
+        excelHtml += `
+                <!-- تذييل الكارت: التوقيع والتاريخ -->
+                <tr>
+                    <td class="card-footer">
+                        ${signLabel}
+                    </td>
+                    <td class="card-footer" style="text-align: left;">
+                        ${currentDate}
+                    </td>
+                </tr>
+            </table>
+            <br>
+        `;
+    });
+
+    excelHtml += `
+        </body>
+        </html>
+    `;
+
+    // تنزيل ملف الإكسل المنسق
+    const blob = new Blob(['\uFEFF' + excelHtml], { type: 'application/vnd.ms-excel;charset=utf-8' });
+    const link = document.createElement('a');
+    const cleanSchoolName = schoolName.replace(/[\/\\:*?"<>|]/g, '_').trim();
+    link.href = URL.createObjectURL(blob);
+    link.download = `${cleanSchoolName}_Family_Cards.xls`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    showToast('XLS: تم تصدير كروت العائلات المنسقة والمؤطرة للإكسل بنجاح!');
+}
+
+// 🖨️ 2. إدارة وإعدادات نافذة التقارير الرسمية والطباعة
+function printReport() {
+    if (studentPool.length === 0) {
+        showToast(translations[currentLang].results_empty_title || "چو داتا نینن بۆ چاپێ");
+        return;
+    }
+    const dict = translations[currentLang];
+    const schoolName = localStorage.getItem('report_school_name') || '';
+    const directorate = localStorage.getItem('report_directorate') || '';
+    const academicYear = localStorage.getItem('report_academic_year') || '2025 - 2026';
+    const principalName = localStorage.getItem('report_principal') || '';
+
+    const printHeader = document.getElementById('printHeader');
+    if (printHeader) {
+        printHeader.className = "print-only-header official-school-header";
+        printHeader.classList.remove('hidden');
+        printHeader.innerHTML = `
+            <div style="text-align: right; width: 33%;">
+                <p style="font-size: 11pt; font-weight: 800; margin: 0;">${directorate || 'رێڤەبەریا پەروەردێ'}</p>
+                <p style="font-size: 10pt; font-weight: 700; margin: 2px 0;">قوتابخانا: ${schoolName || 'یا بنەڕەتی'}</p>
+                <p style="font-size: 9pt; color: #475569; margin: 0;">ساڵا خاندنێ: ${academicYear}</p>
+            </div>
+            <div style="text-align: center; width: 34%;">
+                <h2 style="font-size: 13pt; font-weight: 900; margin: 0; padding-bottom: 2px;">راپۆرتا فەرمی یا قوتابخانەیێ</h2>
+                <p style="font-size: 8.5pt; color: #64748b; margin: 0;">${dict.stat_total}: ${studentPool.length} | مێژوو: ${new Date().toLocaleDateString()}</p>
+            </div>
+            <div style="text-align: left; width: 33%;">
+                <p style="font-size: 9pt; font-weight: 700; margin: 0;">رێڤەبەر: ${principalName || '....................'}</p>
+                <p style="font-size: 8.5pt; color: #64748b; margin: 2px 0;">واژوو و مۆر: ....................</p>
+            </div>
+        `;
+    }
+
+    setTimeout(() => {
+        window.print();
+    }, 100);
+}
+
+// دالة مقارنة وترتيب المراحل الدراسية بطريقة دقيقة 100% من الصف الأول إلى السادس
+function compareGrades(a, b) {
+    if (!a && !b) return 0;
+    if (!a) return 1;
+    if (!b) return -1;
+
+    const rankA = getGradeRank(a);
+    const rankB = getGradeRank(b);
+
+    if (rankA !== rankB) return rankA - rankB;
+    return String(a).localeCompare(String(b));
+}
+
+function getGradeEmoji(rank) {
+    const emojis = { 1: '1️⃣', 2: '2️⃣', 3: '3️⃣', 4: '4️⃣', 5: '5️⃣', 6: '6️⃣', 7: '7️⃣', 8: '8️⃣', 9: '9️⃣', 10: '🔟', 11: '1️⃣1️⃣', 12: '1️⃣2️⃣' };
+    return emojis[rank] || '📍';
+}
+
+function toggleReportGradeDropdown(e) {
+    if (e) e.stopPropagation();
+    const menu = document.getElementById('reportGradeDropdownMenu');
+    const arrow = document.getElementById('reportGradeDropdownArrow');
+    if (!menu) return;
+    const isHidden = menu.classList.contains('hidden');
+    if (isHidden) {
+        menu.classList.remove('hidden');
+        if (arrow) arrow.style.transform = 'rotate(180deg)';
+    } else {
+        menu.classList.add('hidden');
+        if (arrow) arrow.style.transform = 'rotate(0deg)';
+    }
+}
+
+function selectReportGradeOption(val, label) {
+    const hiddenInput = document.getElementById('reportGradeFilterSelect');
+    const selectedLabel = document.getElementById('reportSelectedGradeLabel');
+    const menu = document.getElementById('reportGradeDropdownMenu');
+    const arrow = document.getElementById('reportGradeDropdownArrow');
+
+    if (hiddenInput) hiddenInput.value = val;
+    if (selectedLabel) selectedLabel.innerHTML = label;
+    if (menu) menu.classList.add('hidden');
+    if (arrow) arrow.style.transform = 'rotate(0deg)';
+
+    const items = menu ? menu.querySelectorAll('.report-grade-dropdown-item') : [];
+    items.forEach(btn => {
+        if (btn.dataset.value === val) btn.classList.add('active');
+        else btn.classList.remove('active');
+    });
+}
+
+// إغلاق القائمة المنسدلة عند النقر خارجها
+document.addEventListener('click', (e) => {
+    const wrapper = document.getElementById('reportGradeDropdownWrapper');
+    const menu = document.getElementById('reportGradeDropdownMenu');
+    const arrow = document.getElementById('reportGradeDropdownArrow');
+    if (wrapper && !wrapper.contains(e.target) && menu && !menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
+        if (arrow) arrow.style.transform = 'rotate(0deg)';
+    }
+});
+
+function openReportConfigModal() {
+    const modal = document.getElementById('exportPrintModal');
+    if (!modal) return;
+    
+    try {
+        // استرجاع البيانات المحفوظة
+        const schInput = document.getElementById('reportSchoolName');
+        if (schInput) schInput.value = localStorage.getItem('report_school_name') || '';
+        
+        const dirInput = document.getElementById('reportDirectorate');
+        if (dirInput) dirInput.value = localStorage.getItem('report_directorate') || '';
+        
+        const yearInput = document.getElementById('reportAcademicYear');
+        if (yearInput) yearInput.value = localStorage.getItem('report_academic_year') || '2025 - 2026';
+        
+        const prinInput = document.getElementById('reportPrincipalName');
+        if (prinInput) prinInput.value = localStorage.getItem('report_principal') || '';
+
+        // تعبئة القائمة المنسدلة الأنيقة بكافة المراحل لتظهر كاملة دفعة واحدة دون أي تمرير
+        const menu = document.getElementById('reportGradeDropdownMenu');
+        const hiddenInput = document.getElementById('reportGradeFilterSelect');
+        const selectedLabel = document.getElementById('reportSelectedGradeLabel');
+
+        const currentVal = hiddenInput ? (hiddenInput.value || 'all') : 'all';
+        const dict = translations[currentLang];
+        const allGradesLabel = dict.all_grades || 'هەمی قۆناغێن قوتابخانەیێ';
+
+        // حساب عدد الطلاب لكل مرحلة
+        const gradeCounts = {};
+        studentPool.forEach(s => {
+            if (s.grade && s.grade.trim() !== '' && s.grade !== '-') {
+                const g = s.grade.trim();
+                gradeCounts[g] = (gradeCounts[g] || 0) + 1;
+            }
+        });
+
+        const uniqueGrades = Object.keys(gradeCounts);
+        uniqueGrades.sort(compareGrades);
+
+        if (menu) {
+            let menuHtml = `
+                <!-- خيار كافة المراحل -->
+                <button type="button" data-value="all" onclick="selectReportGradeOption('all', '🏷️ ${allGradesLabel}')" 
+                        class="report-grade-dropdown-item ${currentVal === 'all' ? 'active' : ''}">
+                    <span class="flex items-center gap-2 min-w-0">
+                        <span class="text-sm">🏷️</span>
+                        <span class="truncate font-black">${allGradesLabel}</span>
+                    </span>
+                    <span class="text-[9px] px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-200 font-black">
+                        ${studentPool.length} ${dict.students_suffix || 'قوتابی'}
+                    </span>
+                </button>
+            `;
+
+            uniqueGrades.forEach(g => {
+                const rank = getGradeRank(g);
+                const emoji = getGradeEmoji(rank);
+                const isAct = (currentVal === g);
+                const safeGrade = g.replace(/'/g, "\\'");
+                const count = gradeCounts[g];
+
+                menuHtml += `
+                    <button type="button" data-value="${safeGrade}" onclick="selectReportGradeOption('${safeGrade}', '${emoji} قۆناغا: ${safeGrade}')" 
+                            class="report-grade-dropdown-item ${isAct ? 'active' : ''}">
+                        <span class="flex items-center gap-2 min-w-0">
+                            <span class="text-sm">${emoji}</span>
+                            <span class="truncate font-bold">قۆناغا: <span class="font-extrabold">${g}</span></span>
+                        </span>
+                        <span class="text-[9px] px-1.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-bold">
+                            ${count} ${dict.students_suffix || 'قوتابی'}
+                        </span>
+                    </button>
+                `;
+            });
+
+            menu.innerHTML = menuHtml;
+        }
+
+        if (currentVal === 'all') {
+            if (selectedLabel) selectedLabel.textContent = `🏷️ ${allGradesLabel}`;
+        } else if (uniqueGrades.includes(currentVal)) {
+            const rank = getGradeRank(currentVal);
+            const emoji = getGradeEmoji(rank);
+            if (selectedLabel) selectedLabel.textContent = `${emoji} قۆناغا: ${currentVal}`;
+        } else {
+            if (hiddenInput) hiddenInput.value = 'all';
+            if (selectedLabel) selectedLabel.textContent = `🏷️ ${allGradesLabel}`;
+        }
+    } catch (e) {
+        console.error("openReportConfigModal error:", e);
+    }
+
+    modal.classList.remove('hidden');
+}
+
+function closeReportConfigModal() {
+    const modal = document.getElementById('exportPrintModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+// تطبيق التقرير الرسمي والطباعة
+function applyOfficialPrintReport() {
+    if (studentPool.length === 0) {
+        showToast(translations[currentLang].results_empty_title || "چو داتا نینن بۆ چاپێ");
+        closeReportConfigModal();
+        return;
+    }
+
+    try {
+        // حفظ البيانات
+        const schoolName = (document.getElementById('reportSchoolName')?.value || '').trim();
+        const directorate = (document.getElementById('reportDirectorate')?.value || '').trim();
+        const academicYear = (document.getElementById('reportAcademicYear')?.value || '2025 - 2026').trim();
+        const principalName = (document.getElementById('reportPrincipalName')?.value || '').trim();
+
+        localStorage.setItem('report_school_name', schoolName);
+        localStorage.setItem('report_directorate', directorate);
+        localStorage.setItem('report_academic_year', academicYear);
+        localStorage.setItem('report_principal', principalName);
+
+        const scope = document.getElementById('reportScopeSelect')?.value || 'all-sections';
+        const selectedGrade = document.getElementById('reportGradeFilterSelect')?.value || 'all';
+
+        closeReportConfigModal();
+
+        // تطبيق النطاق المطلوب
+        if (scope === 'all-sections') {
+            switchResultTab('all');
+        } else if (scope === 'siblings-only') {
+            switchResultTab('siblings');
+        } else if (scope === 'relatives-only') {
+            switchResultTab('relatives');
+        } else if (scope === 'solitary-only') {
+            switchResultTab('solitary');
+        }
+
+        // فلترة المرحلة إذا تم تحديدها
+        const gradeFilter = document.getElementById('gradeFilter');
+        if (selectedGrade && selectedGrade !== 'all') {
+            if (gradeFilter) {
+                gradeFilter.value = selectedGrade;
+                filterByGrade();
+            }
+        } else {
+            if (gradeFilter && gradeFilter.value !== 'all') {
+                gradeFilter.value = 'all';
+                filterByGrade();
+            }
+        }
+
+        // بناء ترويسة المدرسة الرسمية المنسقة بأعلى معايير الترويسات الحكومية الملكية الفخمة
+        const printHeader = document.getElementById('printHeader');
+        if (printHeader) {
+            printHeader.className = "print-only-header";
+            printHeader.classList.remove('hidden');
+            printHeader.innerHTML = `
+                <div style="width: 100% !important; border-bottom: 3px double #0f172a !important; padding-bottom: 12px !important; margin-bottom: 16px !important; direction: rtl !important; font-family: 'Segoe UI', Tahoma, Arial, sans-serif !important;">
+                    <table style="width: 100% !important; border-collapse: collapse !important; border: none !important;">
+                        <tr>
+                            <!-- 1. العمود الأيمن: معلومات الوزارة والمديرية والمدرسة -->
+                            <td style="width: 35% !important; text-align: right !important; vertical-align: middle !important; border: none !important; padding: 0 !important; line-height: 1.55 !important;">
+                                <p style="font-size: 10.5pt; font-weight: 800; color: #0f172a; margin: 0 0 2px 0;">حکومەتا هەرێما کوردستانێ</p>
+                                <p style="font-size: 9.5pt; font-weight: 700; color: #334155; margin: 0 0 2px 0;">وەزارەتا پەروەردێ - ${directorate || 'رێڤەبەریا پەروەردێ'}</p>
+                                <p style="font-size: 11pt; font-weight: 900; color: #0f172a; margin: 0 0 2px 0;">قوتابخانا: <span style="color: #1e40af;">${schoolName || 'یا بنەڕەتی'}</span></p>
+                                <p style="font-size: 9pt; font-weight: 600; color: #64748b; margin: 0;">ساڵا خاندنێ: <b>${academicYear || '2025 - 2026'}</b></p>
+                            </td>
+
+                            <!-- 2. العمود الأوسط: الشعار الكوردي الرسمي والعنوان الملكي المؤطر -->
+                            <td style="width: 30% !important; text-align: center !important; vertical-align: middle !important; border: none !important; padding: 0 !important;">
+                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                    <!-- شعار شمس كوردستان الفخم المتجهي SVG -->
+                                    <svg width="38" height="38" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 4px;">
+                                        <circle cx="50" cy="50" r="22" fill="#facc15" stroke="#ca8a04" stroke-width="2"/>
+                                        <path d="M50 6 L50 24 M50 76 L50 94 M6 50 L24 50 M76 50 L94 50 M18 18 L32 32 M68 68 L82 82 M18 82 L32 68 M68 32 L82 18" stroke="#ca8a04" stroke-width="3.5" stroke-linecap="round"/>
+                                        <path d="M28 12 L36 26 M64 74 L72 88 M12 28 L26 36 M74 64 L88 72 M12 72 L26 64 M74 36 L88 28 M28 88 L36 74 M64 26 L72 12" stroke="#eab308" stroke-width="2.5" stroke-linecap="round"/>
+                                        <circle cx="50" cy="50" r="13" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+                                        <text x="50" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="900" fill="#0f172a" text-anchor="middle">KRG</text>
+                                    </svg>
+
+                                    <!-- بطاقة عنوان التقرير الملكية المحاطة بإطار مزدوج -->
+                                    <div style="border: 2px solid #0f172a; padding: 4.5px 16px; border-radius: 8px; background: #f8fafc; box-shadow: 0 1px 3px rgba(0,0,0,0.06); display: inline-block;">
+                                        <h2 style="font-size: 12.5pt; font-weight: 900; color: #0f172a; margin: 0; white-space: nowrap; letter-spacing: -0.3px;">
+                                            📋 راپۆرتا فەرمی یا قوتابیان
+                                        </h2>
+                                    </div>
+
+                                    <!-- معلومات التاريخ والصف المختار -->
+                                    <div style="font-size: 8.5pt; font-weight: 700; color: #475569; margin-top: 5px;">
+                                        ${selectedGrade && selectedGrade !== 'all' ? `<span style="background: #e0f2fe; color: #0369a1; padding: 1.5px 6px; border-radius: 4px; font-weight: 800; border: 1px solid #bae6fd;">قۆناغا: ${selectedGrade}</span> • ` : ''}<span>مێژوو: ${new Date().toLocaleDateString()}</span>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <!-- 3. العمود الأيسر: الإدارة المدرسية والتوقيع والختم -->
+                            <td style="width: 35% !important; text-align: left !important; vertical-align: middle !important; border: none !important; padding: 0 !important; line-height: 1.55 !important;">
+                                <p style="font-size: 10pt; font-weight: 800; color: #0f172a; margin: 0 0 2px 0;">کارگێڕیا قوتابخانەیێ</p>
+                                <p style="font-size: 10.5pt; font-weight: 900; color: #1e40af; margin: 0 0 3px 0;">رێڤەبەر: ${principalName || '....................'}</p>
+                                <p style="font-size: 8.5pt; font-weight: 600; color: #475569; margin: 0 0 2px 0;">واژوو و مۆرا فەرمی: ....................</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            `;
+        }
+
+        const cleanUpHeader = () => {
+            const pH = document.getElementById('printHeader');
+            if (pH) {
+                pH.classList.add('hidden');
+                pH.innerHTML = '';
+            }
+        };
+
+        window.addEventListener('afterprint', cleanUpHeader, { once: true });
+
+        setTimeout(() => {
+            window.print();
+            setTimeout(cleanUpHeader, 600);
+        }, 120);
+    } catch (err) {
+        console.error("applyOfficialPrintReport error:", err);
+        closeReportConfigModal();
+        window.print();
+    }
+}
+
+// 🎫 3. طباعة بطاقات وكروت العائلات المصغرة (Family Slips)
+function printFamilySlips() {
+    if (siblingResults.length === 0) {
+        showToast(translations[currentLang].results_empty_title);
+        return;
+    }
+
+    const dict = translations[currentLang];
+    const schoolName = localStorage.getItem('report_school_name') || 'قوتابخانە';
+    const academicYear = localStorage.getItem('report_academic_year') || '2025 - 2026';
+    const signLabel = dict.family_slip_parent_sign || 'واژوویا دەیک و بابان (توقيع ولي الأمر): ....................';
+
+    const printHeader = document.getElementById('printHeader');
+    if (printHeader) {
+        printHeader.className = "print-only-header";
+        printHeader.classList.remove('hidden');
+        printHeader.innerHTML = `
+            <h2 style="font-size: 13pt; font-weight: 900; text-align: center; margin: 0 0 5px 0;">
+                🎫 کارتێن خێزانان یێن خویشک و برایان - ${schoolName} (${academicYear})
+            </h2>
+            <p style="font-size: 9pt; text-align: center; color: #64748b; margin: 0 0 10px 0;">
+                (هاتیە ئامادەکرن بۆ ڕادەستکرن و مراجعەتا دەیک و بابان)
+            </p>
+        `;
+    }
+
+    const resultsArea = document.getElementById('resultsArea');
+    const oldHtml = resultsArea.innerHTML;
+    const oldClass = resultsArea.className;
+
+    let slipsHtml = '<div class="family-slips-grid">';
+    siblingResults.forEach((group, idx) => {
+        slipsHtml += `
+            <div class="family-slip-card">
+                <!-- السطر العلوي: اسم الكارت والمدرسة -->
+                <div style="text-align: right; font-size: 8.5pt; font-weight: 800; color: #1e293b; margin-bottom: 3px;">
+                    کارت #${idx + 1} | ${schoolName}
+                </div>
+
+                <!-- رأس الكارت: اسم العائلة والبادج -->
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; gap: 8px;">
+                    <h4 style="font-size: 11pt; font-weight: 900; color: #0f172a; margin: 0; line-height: 1.3;">
+                        👥 ${dict.family_label} ${group.sharedName}
+                    </h4>
+                    <div class="family-slip-badge">
+                        <span style="font-size: 11pt; font-weight: 900; color: #0f172a; display: block; line-height: 1;">${group.students.length}</span>
+                        <span style="font-size: 7.5pt; font-weight: 700; color: #475569;">${dict.students_suffix}</span>
+                    </div>
+                </div>
+
+                <!-- خط فاصل عريض -->
+                <div style="border-bottom: 2px solid #0f172a; margin-bottom: 6px;"></div>
+
+                <!-- قائمة طلاب العائلة -->
+                <div style="margin-bottom: 6px;">
+                    ${group.students.map((s, sIdx) => `
+                        <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 4.5px 0; border-bottom: 1px solid #e2e8f0; gap: 6px;">
+                            <div style="display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap;">
+                                <span style="font-size: 9.5pt; font-weight: 900; color: #0f172a;">${sIdx + 1}. ${s.name}</span>
+                                ${s.mother ? `<span style="font-size: 8pt; font-weight: 600; color: #64748b;">(دەیک: ${s.mother})</span>` : ''}
+                            </div>
+                            <span style="font-size: 9pt; font-weight: 800; color: #0f172a; white-space: nowrap;">
+                                ${dict.grade_label} ${s.grade} / ${s.section}
+                            </span>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <!-- تذييل الكارت: التوقيع والتاريخ -->
+                <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 6px; font-size: 8pt; font-weight: 700; color: #334155;">
+                    <span>${signLabel}</span>
+                    <span style="font-family: monospace; font-size: 8pt;">${new Date().toLocaleDateString()}</span>
+                </div>
+            </div>
+        `;
+    });
+    slipsHtml += '</div>';
+
+    resultsArea.className = "flex-grow";
+    resultsArea.innerHTML = slipsHtml;
+
+    setTimeout(() => {
+        window.print();
+        setTimeout(() => {
+            resultsArea.className = oldClass;
+            resultsArea.innerHTML = oldHtml;
+            const pH = document.getElementById('printHeader');
+            if (pH) {
+                pH.classList.add('hidden');
+                pH.innerHTML = '';
+            }
+        }, 800);
+    }, 120);
+}
+
+// 📈 4. نافذة الإحصائيات والمخططات البيانية التفاعلية (Analytics Dashboard)
+function openAnalyticsModal() {
+    const modal = document.getElementById('analyticsModal');
+    if (!modal) return;
+    try {
+        renderAnalyticsDashboard();
+    } catch (err) {
+        console.error("renderAnalyticsDashboard error:", err);
+    }
+    modal.classList.remove('hidden');
+}
+
+function closeAnalyticsModal() {
+    const modal = document.getElementById('analyticsModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+function renderAnalyticsDashboard() {
+    const dict = translations[currentLang];
+    const totalStudents = studentPool.length;
+    const totalSiblings = siblingResults.reduce((acc, g) => acc + g.students.length, 0);
+    const totalRelatives = relativeResults.reduce((acc, g) => acc + g.totalCount, 0);
+    const totalSolitary = solitaryResults.length;
+    const totalFamilies = siblingResults.length;
+    const totalTwins = document.querySelectorAll('[class*="bg-amber-100"]').length;
+
+    // 1. بطاقات الإحصاءات السريعة
+    const statCards = document.getElementById('analyticsStatCards');
+    if (statCards) {
+        statCards.innerHTML = `
+            <div class="p-2.5 rounded-xl bg-blue-50 dark:bg-slate-800 border border-blue-200 dark:border-blue-800 text-center">
+                <span class="text-xs text-blue-600 dark:text-blue-400 font-bold block">${dict.stat_total}</span>
+                <span class="text-lg font-black text-blue-900 dark:text-blue-200">${totalStudents}</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-emerald-50 dark:bg-slate-800 border border-emerald-200 dark:border-emerald-800 text-center">
+                <span class="text-xs text-emerald-600 dark:text-emerald-400 font-bold block">${dict.stat_siblings}</span>
+                <span class="text-lg font-black text-emerald-900 dark:text-emerald-200">${totalSiblings} <small class="text-[9px]">(${totalFamilies} خێزان)</small></span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-indigo-50 dark:bg-slate-800 border border-indigo-200 dark:border-indigo-800 text-center">
+                <span class="text-xs text-indigo-600 dark:text-indigo-400 font-bold block">${dict.stat_relatives}</span>
+                <span class="text-lg font-black text-indigo-900 dark:text-indigo-200">${totalRelatives}</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-rose-50 dark:bg-slate-800 border border-rose-200 dark:border-rose-800 text-center">
+                <span class="text-xs text-rose-600 dark:text-rose-400 font-bold block">${dict.stat_solitary}</span>
+                <span class="text-lg font-black text-rose-900 dark:text-rose-200">${totalSolitary}</span>
+            </div>
+        `;
+    }
+
+    const totalBadge = document.getElementById('analyticsTotalBadge');
+    if (totalBadge) totalBadge.textContent = `${totalStudents} ${dict.students_suffix}`;
+
+    // 2. مخطط توزيع الفئات
+    const categoryBars = document.getElementById('analyticsCategoryBars');
+    if (categoryBars && totalStudents > 0) {
+        const sibPct = ((totalSiblings / totalStudents) * 100).toFixed(1);
+        const relPct = ((totalRelatives / totalStudents) * 100).toFixed(1);
+        const solPct = ((totalSolitary / totalStudents) * 100).toFixed(1);
+
+        categoryBars.innerHTML = `
+            <div class="space-y-1">
+                <div class="flex justify-between text-[10.5px] font-bold">
+                    <span class="text-blue-700 dark:text-blue-300">👨‍👩‍👦 ${dict.tab_siblings} (${totalSiblings})</span>
+                    <span>${sibPct}%</span>
+                </div>
+                <div class="chart-bar-track"><div class="chart-bar-fill bg-blue-500" style="width: ${sibPct}%;"></div></div>
+            </div>
+            <div class="space-y-1">
+                <div class="flex justify-between text-[10.5px] font-bold">
+                    <span class="text-indigo-700 dark:text-indigo-300">🌿 ${dict.tab_relatives} (${totalRelatives})</span>
+                    <span>${relPct}%</span>
+                </div>
+                <div class="chart-bar-track"><div class="chart-bar-fill bg-indigo-500" style="width: ${relPct}%;"></div></div>
+            </div>
+            <div class="space-y-1">
+                <div class="flex justify-between text-[10.5px] font-bold">
+                    <span class="text-rose-700 dark:text-rose-300">👤 ${dict.tab_solitary} (${totalSolitary})</span>
+                    <span>${solPct}%</span>
+                </div>
+                <div class="chart-bar-track"><div class="chart-bar-fill bg-rose-500" style="width: ${solPct}%;"></div></div>
+            </div>
+        `;
+    }
+
+    // 3. ترتيب العوائل والألقاب الأكثر عدداً في المدرسة (Top 10 Surnames)
+    const topFamiliesList = document.getElementById('analyticsTopFamiliesList');
+    if (topFamiliesList) {
+        const surnameFreq = {};
+        studentPool.forEach(s => {
+            const parts = s.name.trim().split(/\s+/);
+            if (parts.length >= 3) {
+                // اسم الجد الثالث أو اللقب الأخير
+                const surname = parts[parts.length - 1];
+                if (surname.length > 2) {
+                    surnameFreq[surname] = (surnameFreq[surname] || 0) + 1;
+                }
+            }
+        });
+
+        const sortedSurnames = Object.entries(surnameFreq)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 10);
+
+        if (sortedSurnames.length === 0) {
+            topFamiliesList.innerHTML = '<p class="text-slate-400 text-center py-4 text-[10px]">چو ناڤ نەهاتنە دیتن</p>';
+        } else {
+            const maxFreq = sortedSurnames[0][1];
+            topFamiliesList.innerHTML = sortedSurnames.map(([name, count], rIdx) => {
+                const barWidth = ((count / maxFreq) * 100).toFixed(0);
+                const rankMedal = rIdx === 0 ? '🥇' : rIdx === 1 ? '🥈' : rIdx === 2 ? '🥉' : `#${rIdx + 1}`;
+                return `
+                    <div class="p-1 rounded bg-white dark:bg-slate-700/60 border border-slate-200/60 dark:border-slate-600/60 flex items-center justify-between gap-1.5">
+                        <div class="flex items-center gap-1 min-w-0">
+                            <span class="text-[9.5px] font-bold">${rankMedal}</span>
+                            <span class="font-extrabold text-slate-800 dark:text-slate-100 text-[10.5px] truncate">${name}</span>
+                        </div>
+                        <div class="flex items-center gap-1 flex-shrink-0">
+                            <div class="w-16 h-2 bg-slate-200 dark:bg-slate-600 rounded-full overflow-hidden">
+                                <div class="h-full bg-indigo-500 rounded-full" style="width: ${barWidth}%;"></div>
+                            </div>
+                            <span class="text-[10px] font-bold text-indigo-600 dark:text-indigo-300 w-6 text-left">${count}</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+    }
+
+    // 4. جدول كثافة الإخوة حسب المراحل والشعب
+    const gradeTable = document.getElementById('analyticsGradeTableBody');
+    if (gradeTable) {
+        const gradesMap = {};
+        studentPool.forEach(s => {
+            const g = s.grade || 'نەدیار';
+            if (!gradesMap[g]) gradesMap[g] = { total: 0, siblings: 0 };
+            gradesMap[g].total++;
+        });
+
+        siblingResults.forEach(group => {
+            group.students.forEach(s => {
+                const g = s.grade || 'نەدیار';
+                if (gradesMap[g]) gradesMap[g].siblings++;
+            });
+        });
+
+        const sortedGradeKeys = Object.keys(gradesMap).sort(compareGrades);
+        gradeTable.innerHTML = sortedGradeKeys.map(g => {
+            const data = gradesMap[g];
+            const ratio = data.total > 0 ? ((data.siblings / data.total) * 100).toFixed(0) : 0;
+            return `
+                <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
+                    <td class="py-1 px-1.5 font-extrabold text-slate-800 dark:text-slate-100">${g}</td>
+                    <td class="py-1 px-1.5 font-bold text-slate-600 dark:text-slate-300">${data.total}</td>
+                    <td class="py-1 px-1.5 font-bold text-blue-600 dark:text-blue-400">${data.siblings}</td>
+                    <td class="py-1 px-1.5 font-extrabold text-emerald-600 dark:text-emerald-400">${ratio}%</td>
+                </tr>
+            `;
+        }).join('');
+    }
 }
 
 function copyFamilyCard(index) {

@@ -860,6 +860,21 @@ button, a, select, input, textarea, .clay-btn, .clay-btn-sec, .stat-card, .group
     border: 1px solid #3b82f6 !important;
 }
 
+/* أيقونة وصندوق الطالب الفخم عالي التباين في الوضع الداكن والفاتح */
+.student-avatar-box {
+    flex-shrink: 0;
+    transition: transform 0.1s ease;
+}
+.theme-dark .student-avatar-box,
+.dark .student-avatar-box {
+    background: #1e293b !important;
+    box-shadow: 0 0 8px rgba(96, 165, 250, 0.15);
+}
+.theme-dark .student-avatar-box svg,
+.dark .student-avatar-box svg {
+    filter: drop-shadow(0 0 2px currentColor);
+}
+
 /* شارات الأمهات */
 .theme-dark .group-card [class*="bg-pink-50"],
 .dark .group-card [class*="bg-pink-50"],
@@ -1156,6 +1171,11 @@ body.results-focus-mode #resultsArea {
     box-shadow: 0 2px 8px rgba(52, 211, 153, 0.25) !important;
 }
 
+/* إخفاء ترويسة الطباعة الرسمية تماماً عن شاشة الموقع العادية */
+#printHeader, .print-only-header {
+    display: none !important;
+}
+
 @media print {
     @page {
         size: A4 portrait;
@@ -1171,8 +1191,12 @@ body.results-focus-mode #resultsArea {
         margin: 0 !important;
         font-size: 10pt !important;
     }
-    header, footer, .clay-top-bar, #statsBar, #mobileViewToggle, #sidebarCol, #dataInputModal, .no-print, .tab-buttons, button, #history-container, #relativesTabNotice, #solitaryTabNotice, #searchFilterContainer {
+    header, header *, footer, footer *, .clay-top-bar, #statsBar, #mobileViewToggle, #sidebarCol, #dataInputModal, #exportPrintModal, #analyticsModal, .no-print, .tab-buttons, button, #history-container, #relativesTabNotice, #solitaryTabNotice, #searchFilterContainer, .backdrop-blur-xs, #ui-title, #ui-subtitle {
         display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     main, .container, #mainGrid, #resultsCol, #resultsArea {
         display: block !important;
@@ -1208,14 +1232,149 @@ body.results-focus-mode #resultsArea {
         padding: 4px 0 !important;
         background: transparent !important;
     }
-    .print-only-header {
+    #printHeader, .print-only-header {
         display: block !important;
-        text-align: center;
-        margin-bottom: 15px;
-        padding-bottom: 8px;
-        border-bottom: 2px solid #0f172a;
+        margin-bottom: 14px !important;
+    }
+    .official-school-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+        margin-bottom: 16px !important;
+        padding-bottom: 12px !important;
+        border-bottom: 2.5px solid #0f172a !important;
+        direction: rtl !important;
+        font-family: 'Segoe UI', Tahoma, Arial, sans-serif !important;
+    }
+    .family-slips-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px !important;
+    }
+    .family-slip-card {
+        border: 1.5px dashed #1e293b !important;
+        border-radius: 12px !important;
+        padding: 12px 14px !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        background: #ffffff !important;
+        box-shadow: none !important;
+        color: #0f172a !important;
+    }
+    .family-slip-badge {
+        border: 1px solid #94a3b8 !important;
+        border-radius: 8px !important;
+        padding: 3px 8px !important;
+        text-align: center !important;
+        min-width: 44px !important;
+        background: #f8fafc !important;
     }
     span, p, div, li {
         color: #000000 !important;
     }
+}
+
+/* بطاقات أزرار العنبر كلاي مورفيزم */
+.clay-btn-amber-40 {
+    background: rgba(254, 243, 199, 0.95);
+    color: #b45309 !important;
+    border: 1.5px solid rgba(252, 211, 77, 0.85);
+    box-shadow: 2px 3px 8px rgba(252, 211, 77, 0.4), inset -2px -2px 3px rgba(255, 255, 255, 0.9), inset 2px 2px 3px rgba(245, 158, 11, 0.15);
+    border-radius: 12px;
+    transition: transform 0.06s cubic-bezier(0.2, 0, 0, 1), filter 0.06s ease !important;
+    cursor: pointer;
+}
+.clay-btn-amber-40:hover {
+    background: rgba(253, 230, 138, 1);
+    transform: translateY(-1px) translateZ(0);
+}
+.clay-btn-amber-40:active {
+    transform: scale(0.95) translateZ(0) !important;
+}
+.theme-dark .clay-btn-amber-40 {
+    background: rgba(85, 45, 10, 0.95) !important;
+    color: #fde68a !important;
+    border: 1.5px solid #fbbf24 !important;
+    box-shadow: 0 4px 10px rgba(245, 158, 11, 0.3), inset 0 0 5px rgba(251, 191, 36, 0.2) !important;
+}
+
+/* تنسيقات الرسوم البيانية والأشرطة المئوية في لوحة الإحصائيات */
+.chart-bar-track {
+    background: rgba(226, 232, 240, 0.7);
+    border-radius: 9999px;
+    overflow: hidden;
+    height: 8px;
+}
+.theme-dark .chart-bar-track {
+    background: rgba(51, 65, 85, 0.7);
+}
+.chart-bar-fill {
+    height: 100%;
+    border-radius: 9999px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* تنسيقات القائمة المنسدلة الذكية للمراحل داخل نافذة التقرير (تفتح للأعلى وتظهر كاملة 100% دون أي تمرير) */
+.report-grade-dropdown-menu {
+    position: absolute;
+    bottom: calc(100% + 4px);
+    right: 0;
+    left: 0;
+    z-index: 70;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.25), 0 8px 12px -6px rgba(0, 0, 0, 0.15);
+    border: 1.5px solid #93c5fd;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-height: none !important;
+    overflow: visible !important;
+}
+.theme-dark .report-grade-dropdown-menu {
+    background: #0f172a;
+    border-color: #2563eb;
+    box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.7);
+}
+.report-grade-dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6.5px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #1e293b;
+    background: transparent;
+    border: 1px solid transparent;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    text-align: right;
+    width: 100%;
+}
+.report-grade-dropdown-item:hover {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border-color: #bfdbfe;
+    transform: translateX(-2px);
+}
+.report-grade-dropdown-item.active {
+    background: #dbeafe;
+    color: #1e40af;
+    border-color: #60a5fa;
+    font-weight: 900;
+}
+.theme-dark .report-grade-dropdown-item {
+    color: #f1f5f9;
+}
+.theme-dark .report-grade-dropdown-item:hover {
+    background: #1e293b;
+    color: #93c5fd;
+    border-color: #3b82f6;
+}
+.theme-dark .report-grade-dropdown-item.active {
+    background: #1e3a8a;
+    color: #bfdbfe;
+    border-color: #60a5fa;
 }

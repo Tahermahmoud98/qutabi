@@ -272,23 +272,33 @@
                         <span id="ui-btn-detect-text">دیارکرن</span>
                     </button>
                     
+                    <!-- أزرار التصدير والطباعة المتقدمة والإحصائيات -->
                     <div class="grid grid-cols-2 gap-1">
-                        <button id="ui-btn-excel" onclick="exportToCSV()" class="clay-btn-green-40 py-1.5 text-[10px] font-bold flex items-center justify-center gap-1">
-                            <span>📥</span>
-                            <span>CSV</span>
+                        <!-- زر لوحة الإحصائيات والرسوم البيانية -->
+                        <button onclick="openAnalyticsModal()" class="clay-btn-amber-40 py-1.5 text-[10px] font-extrabold flex items-center justify-center gap-1 shadow-2xs">
+                            <span>📈</span>
+                            <span id="ui-btn-analytics">شیکاری و گراف</span>
                         </button>
-                        <!-- زر كشف الأشخاص الوحيدين (بدون إخوة وبدون أقارب) -->
-                        <button id="ui-btn-singletons" onclick="switchResultTab('solitary');" class="clay-btn-rose-40 py-1.5 text-[10px] font-bold flex items-center justify-center gap-1">
-                            <span>👤</span>
-                            <span id="ui-btn-singletons-text">ب تنێ</span>
+                        <!-- زر استوديو التقارير والطباعة الاحترافية -->
+                        <button onclick="openReportConfigModal()" class="clay-btn-purple-40 py-1.5 text-[10px] font-extrabold flex items-center justify-center gap-1 shadow-2xs">
+                            <span>🖨️</span>
+                            <span id="ui-btn-print-studio">راپۆرت و چاپ</span>
                         </button>
                     </div>
-                    <div class="grid grid-cols-2 gap-1">
-                        <button id="ui-btn-print" onclick="printReport()" class="clay-btn-purple-40 py-1.5 text-[10px] font-bold flex items-center justify-center gap-1">
-                            <span>📑</span>
-                            <span>چاپ</span>
+
+                    <div class="grid grid-cols-3 gap-1">
+                        <!-- زر تصدير إكسل XLSX الاحترافي متعدد الصفحات -->
+                        <button id="ui-btn-excel-xlsx" onclick="exportToExcelXLSX()" title="تصدير ملف إكسل رسمي منسق (.xlsx)" class="clay-btn-green-40 py-1 text-[9.5px] font-bold flex items-center justify-center gap-0.5">
+                            <span>📗</span>
+                            <span>XLSX</span>
                         </button>
-                        <button id="ui-btn-clear" onclick="clearAll()" class="clay-btn-red-40 py-1.5 text-[10px] font-bold flex items-center justify-center gap-1">
+                        <!-- زر كروت العائلات المصغرة -->
+                        <button onclick="printFamilySlips()" title="چاپکرنا کارتێن خێزانان بۆ دەیک و بابان" class="clay-btn-blue-40 py-1 text-[9.5px] font-bold flex items-center justify-center gap-0.5">
+                            <span>🎫</span>
+                            <span id="ui-btn-slips">کارت</span>
+                        </button>
+                        <!-- زر مسح الكل -->
+                        <button id="ui-btn-clear" onclick="clearAll()" class="clay-btn-red-40 py-1 text-[9.5px] font-bold flex items-center justify-center gap-0.5">
                             <span>🗑️</span>
                             <span>پاککرن</span>
                         </button>
@@ -520,6 +530,237 @@
                         <span>⚡</span> <span id="ui-modal-save-detect">پاشەکەفت و شیکار</span>
                     </button>
                 </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- نافذة إعدادات التقارير والطباعة المتقدمة (Official Print & Report Studio Modal) -->
+    <div id="exportPrintModal" onclick="if(event.target === this) closeReportConfigModal();" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-xs p-2 sm:p-4 no-print">
+        <div class="clay-card bg-white/95 dark:bg-slate-900/95 w-full max-w-xl p-4 sm:p-5 rounded-2xl shadow-2xl flex flex-col max-h-[92vh] custom-scroll overflow-y-auto border border-slate-200 dark:border-slate-800">
+            
+            <!-- رأس النافذة -->
+            <div class="flex items-center justify-between pb-2.5 border-b border-slate-200/70 dark:border-slate-700/70 mb-3">
+                <div class="flex items-center gap-2">
+                    <span class="text-xl">🖨️</span>
+                    <div>
+                        <h3 id="ui-report-modal-title" class="text-xs sm:text-sm font-extrabold text-blue-900 dark:text-blue-200">
+                            ڕێکخستنا راپۆرتێ و چاپکرنا فەرمی
+                        </h3>
+                        <p id="ui-report-modal-desc" class="text-[9px] text-slate-500 dark:text-slate-400">
+                            تایبەتمەندیێن سەرپەڕێ فەرمی، هەلبژارتنا ستوونان، و شێوازێ چاپێ
+                        </p>
+                    </div>
+                </div>
+                <button onclick="closeReportConfigModal()" class="w-7 h-7 rounded-full clay-btn-sec flex items-center justify-center text-slate-500 hover:text-red-500 font-bold text-base leading-none transition">
+                    &times;
+                </button>
+            </div>
+
+            <!-- معلومات ترويسة المدرسة (Official School Header Info) -->
+            <div class="p-3 bg-slate-50/80 dark:bg-slate-800/80 rounded-xl border border-slate-200/80 dark:border-slate-700/80 space-y-2 mb-3">
+                <h4 id="ui-report-school-info-title" class="text-[10.5px] font-extrabold text-slate-800 dark:text-slate-200 flex items-center gap-1">
+                    <span>🏛️</span> <span>زانیاریێن سەرپەڕێ راپۆرتێ (قوتابخانە و پەروەردە)</span>
+                </h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <div>
+                        <label id="ui-report-school-name-label" class="block text-[9.5px] font-bold text-slate-600 dark:text-slate-300 mb-0.5">ناڤێ قوتابخانەیێ:</label>
+                        <input type="text" id="reportSchoolName" placeholder="بۆ نموونە: قوتابخانا زاخۆ یا نموونەیی" 
+                               class="clay-input w-full p-1.5 text-xs bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100">
+                    </div>
+                    <div>
+                        <label id="ui-report-directorate-label" class="block text-[9.5px] font-bold text-slate-600 dark:text-slate-300 mb-0.5">پەروەردە / رێڤەبەری:</label>
+                        <input type="text" id="reportDirectorate" placeholder="بۆ نموونە: رێڤەبەریا پەروەردا دهۆک" 
+                               class="clay-input w-full p-1.5 text-xs bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <div>
+                        <label id="ui-report-year-label" class="block text-[9.5px] font-bold text-slate-600 dark:text-slate-300 mb-0.5">ساڵا خاندنێ:</label>
+                        <input type="text" id="reportAcademicYear" placeholder="2025 - 2026" 
+                               class="clay-input w-full p-1.5 text-xs bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100">
+                    </div>
+                    <div>
+                        <label id="ui-report-principal-label" class="block text-[9.5px] font-bold text-slate-600 dark:text-slate-300 mb-0.5">ناڤێ رێڤەبەری / سەرپەرشتیاری:</label>
+                        <input type="text" id="reportPrincipalName" placeholder="ناڤێ بەڕێزێ رێڤەبەری" 
+                               class="clay-input w-full p-1.5 text-xs bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100">
+                    </div>
+                </div>
+            </div>
+
+            <!-- تخصيص خيارات التقرير وأعمدة الطباعة (Column & Filter Customization) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+                <!-- شێوازێ راپۆرتێ -->
+                <div class="p-3 bg-slate-50/80 dark:bg-slate-800/80 rounded-xl border border-slate-200/80 dark:border-slate-700/80 space-y-1.5">
+                    <h4 id="ui-report-type-title" class="text-[10px] font-extrabold text-slate-800 dark:text-slate-200 flex items-center gap-1">
+                        <span>📑</span> <span>شێوازێ راپۆرتێ و قۆناغ:</span>
+                    </h4>
+                    <select id="reportScopeSelect" class="clay-input w-full p-1.5 text-xs bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 cursor-pointer">
+                        <option value="all-sections" id="opt-scope-all">راپۆرتا گشتی (هەمی پشکێن ئەنجامان)</option>
+                        <option value="siblings-only" id="opt-scope-sib">خویشک و برایێن ئێکجارەکی (الأشقاء)</option>
+                        <option value="relatives-only" id="opt-scope-rel">پسمام و کەسوکار (الأقارب)</option>
+                        <option value="solitary-only" id="opt-scope-sol">قوتابیێن ب تنێ (المنفردين)</option>
+                        <option value="current-tab" id="opt-scope-current">بەشێ نوکە ل سەر شاشەیێ ڤەکری</option>
+                    </select>
+
+                    <!-- دياركرنا قۆناغێ ب شێوازێ لیستا هەلبژارتنێ یا کامل و ئاشکرا بێی سکرۆڵکرن -->
+                    <div class="pt-1 relative" id="reportGradeDropdownWrapper">
+                        <label id="ui-report-grade-filter-label" class="block text-[9.5px] font-bold text-slate-600 dark:text-slate-300 mb-1">دیارکرنا قۆناغێ بۆ چاپێ (بژاردەیی):</label>
+                        
+                        <!-- زر فتح القائمة المنسدلة -->
+                        <button type="button" onclick="toggleReportGradeDropdown(event)" id="reportGradeDropdownBtn"
+                                class="clay-input w-full p-2 text-xs bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 cursor-pointer flex items-center justify-between rounded-xl border border-slate-300 dark:border-slate-700 shadow-2xs hover:border-blue-400 dark:hover:border-blue-500 transition">
+                            <span class="flex items-center gap-1.5 min-w-0">
+                                <span class="text-sm">🏷️</span>
+                                <span id="reportSelectedGradeLabel" class="font-extrabold truncate text-blue-900 dark:text-blue-200">هەمی قۆناغێن قوتابخانەیێ</span>
+                            </span>
+                            <svg class="w-3.5 h-3.5 text-slate-500 dark:text-slate-400 transition-transform duration-200" id="reportGradeDropdownArrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+
+                        <!-- القائمة المنسدلة الذكية (تفتح للأعلى وتظهر كافة الصفوف دفعة واحدة دون الحاجة لأي سكرول) -->
+                        <div id="reportGradeDropdownMenu" class="report-grade-dropdown-menu hidden">
+                            <!-- يتم تعبئتها ديناميكياً لتظهر كافة المراحل بالكامل -->
+                        </div>
+
+                        <!-- الحقل المخفي للربط مع باقي الدوال البرمجية -->
+                        <input type="hidden" id="reportGradeFilterSelect" value="all">
+                    </div>
+                </div>
+
+                <!-- ستوونێن دیارکری د راپۆرتێ دا -->
+                <div class="p-3 bg-slate-50/80 dark:bg-slate-800/80 rounded-xl border border-slate-200/80 dark:border-slate-700/80 space-y-1.5">
+                    <h4 id="ui-report-cols-title" class="text-[10px] font-extrabold text-slate-800 dark:text-slate-200 flex items-center gap-1">
+                        <span>☑️</span> <span>ستونێن دیار د راپۆرتێ دا:</span>
+                    </h4>
+                    <div class="space-y-1 text-xs">
+                        <label class="flex items-center gap-1.5 cursor-pointer">
+                            <input type="checkbox" id="colShowIndex" checked class="rounded text-blue-600">
+                            <span id="ui-col-index" class="text-[10.5px] font-bold text-slate-700 dark:text-slate-200">هەژمارا رێزبەندیێ (#)</span>
+                        </label>
+                        <label class="flex items-center gap-1.5 cursor-pointer">
+                            <input type="checkbox" id="colShowMother" checked class="rounded text-pink-600">
+                            <span id="ui-col-mother" class="text-[10.5px] font-bold text-slate-700 dark:text-slate-200">ناڤێ دەیکێ</span>
+                        </label>
+                        <label class="flex items-center gap-1.5 cursor-pointer">
+                            <input type="checkbox" id="colShowGrade" checked class="rounded text-emerald-600">
+                            <span id="ui-col-grade" class="text-[10.5px] font-bold text-slate-700 dark:text-slate-200">پۆل و شعبە</span>
+                        </label>
+                        <label class="flex items-center gap-1.5 cursor-pointer">
+                            <input type="checkbox" id="colShowFamilyHeader" checked class="rounded text-indigo-600">
+                            <span id="ui-col-family" class="text-[10.5px] font-bold text-slate-700 dark:text-slate-200">سەردێڕێ خێزانێ و هێما</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أزرار الإجراءات للطباعة والتصدير -->
+            <div class="flex flex-wrap items-center justify-between gap-1.5 pt-2.5 border-t border-slate-200/70 dark:border-slate-700/70">
+                <button onclick="closeReportConfigModal()" class="clay-btn-sec py-1.5 px-3 text-xs font-bold">
+                    داخستن
+                </button>
+
+                <div class="flex flex-wrap items-center gap-1.5">
+                    <!-- زر كروت العائلات -->
+                    <button onclick="closeReportConfigModal(); printFamilySlips();" class="clay-btn-blue-40 py-1.5 px-3 text-xs font-extrabold flex items-center gap-1 shadow-xs">
+                        <span>🎫</span> <span id="ui-btn-slips-action">کارتێن خێزانان</span>
+                    </button>
+                    <!-- زر تصدير إكسل XLSX المنسق -->
+                    <button onclick="closeReportConfigModal(); exportToExcelXLSX();" class="clay-btn-green-40 py-1.5 px-3 text-xs font-extrabold flex items-center gap-1 shadow-xs">
+                        <span>📗</span> <span>تصدير XLSX</span>
+                    </button>
+                    <!-- زر الطباعة وتوليد PDF الرسمي -->
+                    <button onclick="applyOfficialPrintReport()" class="clay-btn py-1.5 px-4 text-xs font-extrabold flex items-center gap-1 shadow-sm">
+                        <span>🖨️</span> <span id="ui-btn-do-print">چاپکرن / PDF</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- نافذة لوحة الإحصائيات والمخططات البيانية التفاعلية (Analytics & Charts Dashboard) -->
+    <div id="analyticsModal" onclick="if(event.target === this) closeAnalyticsModal();" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-xs p-2 sm:p-4 no-print">
+        <div class="clay-card bg-white/95 dark:bg-slate-900/95 w-full max-w-3xl p-4 sm:p-5 rounded-2xl shadow-2xl flex flex-col max-h-[92vh] custom-scroll overflow-y-auto border border-slate-200 dark:border-slate-800">
+            
+            <!-- رأس لوحة الإحصائيات -->
+            <div class="flex items-center justify-between pb-2.5 border-b border-slate-200/70 dark:border-slate-700/70 mb-3">
+                <div class="flex items-center gap-2">
+                    <span class="text-xl">📈</span>
+                    <div>
+                        <h3 id="ui-analytics-title" class="text-xs sm:text-sm font-extrabold text-amber-900 dark:text-amber-200">
+                            شیکاری و ئامارێن هویر یێن قوتابخانەیێ
+                        </h3>
+                        <p id="ui-analytics-desc" class="text-[9px] text-slate-500 dark:text-slate-400">
+                            مخططات بيانية تفاعلية، كشف العوائل الأكثر عدداً، وتوزيع الإخوة على المراحل
+                        </p>
+                    </div>
+                </div>
+                <button onclick="closeAnalyticsModal()" class="w-7 h-7 rounded-full clay-btn-sec flex items-center justify-center text-slate-500 hover:text-red-500 font-bold text-base leading-none transition">
+                    &times;
+                </button>
+            </div>
+
+            <!-- بطاقات الإحصاءات السريعة في الأعلى -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3" id="analyticsStatCards">
+                <!-- يتم تعبئتها ديناميكياً -->
+            </div>
+
+            <!-- شريحتين: 1. مخطط النسب والتوزيع + 2. قائمة العوائل الأكثر عدداً -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3">
+                <!-- 1. مخطط توزيع الفئات -->
+                <div class="p-3 bg-slate-50/80 dark:bg-slate-800/80 rounded-xl border border-slate-200/80 dark:border-slate-700/80 space-y-2">
+                    <h4 id="ui-analytics-dist-title" class="text-[11px] font-extrabold text-slate-800 dark:text-slate-200 flex items-center justify-between">
+                        <span>📊 دابەشبوونا قوتابیان ل گۆرەی پۆلان</span>
+                        <span id="analyticsTotalBadge" class="clay-badge text-[8px] text-blue-700 dark:text-blue-300">0 قوتابی</span>
+                    </h4>
+                    <div id="analyticsCategoryBars" class="space-y-1.5 text-xs pt-1">
+                        <!-- أشرطة النسب المئوية الملونة -->
+                    </div>
+                </div>
+
+                <!-- 2. العوائل والألقاب الأكثر عدداً في المدرسة (Top Surnames Leaderboard) -->
+                <div class="p-3 bg-slate-50/80 dark:bg-slate-800/80 rounded-xl border border-slate-200/80 dark:border-slate-700/80 space-y-2">
+                    <h4 id="ui-analytics-top-families-title" class="text-[11px] font-extrabold text-indigo-900 dark:text-indigo-200 flex items-center justify-between">
+                        <span>👑 بنەماڵ و لەقەبێن هەرە زۆر (Top 10)</span>
+                        <span class="text-[8px] text-slate-500 dark:text-slate-400 font-bold">هەژمارا قوتابیان</span>
+                    </h4>
+                    <div id="analyticsTopFamiliesList" class="space-y-1 text-xs max-h-48 overflow-y-auto custom-scroll pr-0.5">
+                        <!-- قائمة العوائل الأكثر عدداً -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. جدول كثافة الإخوة في المراحل والشعب -->
+            <div class="p-3 bg-slate-50/80 dark:bg-slate-800/80 rounded-xl border border-slate-200/80 dark:border-slate-700/80 space-y-2 mb-3">
+                <h4 id="ui-analytics-grade-density-title" class="text-[11px] font-extrabold text-emerald-900 dark:text-emerald-200 flex items-center justify-between">
+                    <span>🏷️ خەستی و هەژمارا خوشک و برایان د قۆناغان دا</span>
+                    <span class="text-[8px] text-slate-500 dark:text-slate-400 font-bold">ب پێی پۆلان</span>
+                </h4>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-right text-[10.5px]">
+                        <thead>
+                            <tr class="border-b border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400">
+                                <th class="py-1 px-1.5 font-bold">قۆناغ</th>
+                                <th class="py-1 px-1.5 font-bold">سەرجەم</th>
+                                <th class="py-1 px-1.5 font-bold">خویشک و برا</th>
+                                <th class="py-1 px-1.5 font-bold">رێژە (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="analyticsGradeTableBody" class="divide-y divide-slate-100 dark:divide-slate-800">
+                            <!-- صفوف المراحل -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- زر إغلاق النافذة -->
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200/70 dark:border-slate-700/70">
+                <button onclick="closeAnalyticsModal()" class="clay-btn-sec py-1.5 px-4 text-xs font-bold">
+                    داخستن
+                </button>
+                <button onclick="closeAnalyticsModal(); openReportConfigModal();" class="clay-btn py-1.5 px-3.5 text-xs font-bold flex items-center gap-1 shadow-sm">
+                    <span>🖨️</span> <span>چاپکرنا راپۆرتێ</span>
+                </button>
             </div>
 
         </div>
