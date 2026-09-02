@@ -357,40 +357,46 @@
                 <!-- شريط التبويبات والفلترة العلوي المتناسق (لوحة متوازنة من عمودين متساويين) -->
                 <div class="space-y-2 mb-3 pb-2 border-b border-slate-200/60 dark:border-slate-800/80 no-print">
                     
-                    <!-- شبكة التبويبات والفلترة المتناسقة (2 أعمدة × 3 صفوف متوازنة بالكامل) -->
+                    <!-- شبكة التبويبات المتناسقة (عرض كامل دفعة واحدة بدون شريط تمرير) -->
                     <div class="grid grid-cols-2 gap-1.5 w-full">
                         <!-- 1. كافة الأسماء -->
-                        <button id="tab-all-btn" onclick="switchResultTab('all')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-slate-700 dark:text-slate-200 shadow-2xs">
+                        <button id="tab-all-btn" onclick="switchResultTab('all')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-slate-700 dark:text-slate-200 shadow-2xs whitespace-nowrap">
                             <span class="text-sm">📚</span>
                             <span id="tab-all-label">هەمی ناڤ</span>
                         </button>
 
                         <!-- 2. الإخوة الأشقاء -->
-                        <button id="tab-siblings-btn" onclick="switchResultTab('siblings')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn text-white shadow-2xs">
+                        <button id="tab-siblings-btn" onclick="switchResultTab('siblings')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn text-white shadow-2xs whitespace-nowrap">
                             <span class="text-sm">👨‍👩‍👦</span>
                             <span id="tab-siblings-label">خویشک و برا</span>
                         </button>
 
                         <!-- 3. الأقارب وأبناء العم -->
-                        <button id="tab-relatives-btn" onclick="switchResultTab('relatives')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-indigo-700 dark:text-indigo-300 shadow-2xs">
+                        <button id="tab-relatives-btn" onclick="switchResultTab('relatives')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-indigo-700 dark:text-indigo-300 shadow-2xs whitespace-nowrap">
                             <span class="text-sm">🌿</span>
                             <span id="tab-relatives-label">پسمام و کەسوکار</span>
                         </button>
 
                         <!-- 4. الأسماء المتشابهة والمطابقة -->
-                        <button id="tab-duplicates-btn" onclick="switchResultTab('duplicates')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-teal-700 dark:text-teal-300 shadow-2xs">
+                        <button id="tab-duplicates-btn" onclick="switchResultTab('duplicates')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-teal-700 dark:text-teal-300 shadow-2xs whitespace-nowrap">
                             <span class="text-sm">👥</span>
                             <span id="tab-duplicates-label">ناڤێن وەکهەڤ</span>
                         </button>
 
                         <!-- 5. الطلاب الوحيدين (بدون إخوة وبدون أقارب) -->
-                        <button id="tab-solitary-btn" onclick="switchResultTab('solitary')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-rose-700 dark:text-rose-300 shadow-2xs">
+                        <button id="tab-solitary-btn" onclick="switchResultTab('solitary')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-rose-700 dark:text-rose-300 shadow-2xs whitespace-nowrap">
                             <span class="text-sm">👤</span>
                             <span id="tab-solitary-label">ب تنێ</span>
                         </button>
 
-                        <!-- 6. الإحصائيات والمخططات البيانية (Analytics Tab) -->
-                        <button id="tab-analytics-btn" onclick="switchResultTab('analytics')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-amber-700 dark:text-amber-300 shadow-2xs">
+                        <!-- 6. الإخوة في صفوف مختلفة / دوامين مختلفين -->
+                        <button id="tab-diff-grades-btn" onclick="switchResultTab('diff_grades')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-purple-700 dark:text-purple-300 shadow-2xs whitespace-nowrap">
+                            <span class="text-sm">🌗</span>
+                            <span id="tab-diff-grades-label">دەوامێن جودا</span>
+                        </button>
+
+                        <!-- 7. الإحصائيات والمخططات البيانية (يمتد على كامل العرض) -->
+                        <button id="tab-analytics-btn" onclick="switchResultTab('analytics')" class="col-span-2 w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-amber-700 dark:text-amber-300 shadow-2xs whitespace-nowrap">
                             <span class="text-sm">📊</span>
                             <span id="tab-analytics-label">ئامار و شیکاری</span>
                         </button>
@@ -419,6 +425,17 @@
                             </button>
                         </div>
                     </div>
+                </div>
+
+                <!-- إشعار خاص بقسم الإخوة في صفوف مختلفة -->
+                <div id="diffGradesTabNotice" class="hidden mb-2 p-1.5 sm:p-2 bg-purple-50/80 dark:bg-slate-800/80 rounded-xl border border-purple-200/70 dark:border-purple-900/50 text-xs flex items-center justify-between no-print">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                        <span class="text-xs">🏫</span>
+                        <span id="ui-diff-grades-tab-desc" class="text-purple-900 dark:text-purple-200 font-medium text-[9px] sm:text-[10px] leading-relaxed">
+                            ئەڤ بەشە بتنێ وان خێزانێن خویشک و برایان نیشان ددەت یێن کو د قۆناغ و پۆلێن جودا دا دخوینن بۆ ئاسانکرنا لێگەڕیان و دیارکرنێ.
+                        </span>
+                    </div>
+                    <button onclick="document.getElementById('diffGradesTabNotice').classList.add('hidden')" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xs font-bold px-1.5 transition">✕</button>
                 </div>
 
                 <!-- إشعار خاص بقسم الأقارب -->
