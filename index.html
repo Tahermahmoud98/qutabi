@@ -251,6 +251,34 @@
                             </div>
                         </div>
 
+                        <!-- إعدادات نظام الدوام (دوام واحد / دوامين صباحي ومسائي) -->
+                        <div class="p-2 bg-slate-100/80 dark:bg-slate-900/90 rounded-xl border border-slate-200/80 dark:border-slate-700/80 space-y-1.5" id="shiftSettingsCard">
+                            <div class="flex items-center justify-between">
+                                <label id="ui-shift-mode-label" class="block text-[9px] font-bold text-amber-900/90 dark:text-amber-300">شێوازێ دەوامێ:</label>
+                                <span class="text-[9px]">🌗</span>
+                            </div>
+                            <select id="shiftMode" onchange="toggleShiftModeSettings(); processNames();" class="clay-input w-full p-1 text-[10px] bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 cursor-pointer font-bold">
+                                <option id="opt-shift-single" value="single" selected>☀️ دەواما ئێک (دوام واحد)</option>
+                                <option id="opt-shift-double" value="double">🌗 دوو دەوام (سپێدە و ئێڤار)</option>
+                            </select>
+
+                            <!-- خيارات تفصيلية عند اختيار دوامين -->
+                            <div id="doubleShiftConfig" class="hidden space-y-1.5 pt-1 border-t border-slate-200/60 dark:border-slate-800/80">
+                                <div>
+                                    <label id="ui-shift-morning-label" class="block text-[8.5px] font-bold text-amber-800 dark:text-amber-400 mb-0.5">☀️ شعبێن دەواما سپێدێ (الصباحي):</label>
+                                    <input type="text" id="morningSectionsInput" value="أ, ب, A, B, 1, 2" oninput="processNames()" class="clay-input w-full p-1 text-[9.5px] bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100" placeholder="أ, ب أو A, B...">
+                                </div>
+                                <div>
+                                    <label id="ui-shift-evening-label" class="block text-[8.5px] font-bold text-indigo-800 dark:text-indigo-400 mb-0.5">🌙 شعبێن دەواما ئێڤارێ (المسائي):</label>
+                                    <input type="text" id="eveningSectionsInput" value="ج, د, C, D, 3, 4" oninput="processNames()" class="clay-input w-full p-1 text-[9.5px] bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100" placeholder="ج, د أو C, D...">
+                                </div>
+                                <div id="detectedSectionsContainer" class="hidden">
+                                    <label class="block text-[8px] font-bold text-slate-500 dark:text-slate-400 mb-0.5">شعبێن بەردەست (کلیک بکە بۆ دیارکرنێ):</label>
+                                    <div id="detectedSectionsChips" class="flex flex-wrap gap-1"></div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- خيارات إضافية -->
                         <div class="flex items-center justify-between bg-slate-100/80 dark:bg-slate-900/90 p-1.5 rounded-xl text-xs flex-wrap gap-1 border border-slate-200/80 dark:border-slate-700/80">
                             <label class="flex items-center gap-1 cursor-pointer select-none">
@@ -286,19 +314,24 @@
                         </button>
                     </div>
 
-                    <div class="grid grid-cols-3 gap-1">
+                    <div class="grid grid-cols-4 gap-1">
                         <!-- زر تصدير إكسل XLSX الاحترافي متعدد الصفحات -->
-                        <button id="ui-btn-excel-xlsx" onclick="exportToExcelXLSX()" title="تصدير ملف إكسل رسمي منسق (.xlsx)" class="clay-btn-green-40 py-1 text-[9.5px] font-bold flex items-center justify-center gap-0.5">
+                        <button id="ui-btn-excel-xlsx" onclick="exportToExcelXLSX()" title="تصدير ملف إكسل رسمي منسق (.xlsx)" class="clay-btn-green-40 py-1 text-[9px] font-bold flex items-center justify-center gap-0.5">
                             <span>📗</span>
                             <span>XLSX</span>
                         </button>
+                        <!-- زر حفظ كملف HTML مستقل -->
+                        <button id="ui-btn-export-html" onclick="exportToHTML()" title="حفظ وتصدير التقرير كملف HTML كامل ومستقل" class="clay-btn-amber-40 py-1 text-[9px] font-bold flex items-center justify-center gap-0.5">
+                            <span>🌐</span>
+                            <span>HTML</span>
+                        </button>
                         <!-- زر كروت العائلات المصغرة -->
-                        <button onclick="printFamilySlips()" title="چاپکرنا کارتێن خێزانان بۆ دەیک و بابان" class="clay-btn-blue-40 py-1 text-[9.5px] font-bold flex items-center justify-center gap-0.5">
+                        <button onclick="printFamilySlips()" title="چاپکرنا کارتێن خێزانان بۆ دەیک و بابان" class="clay-btn-blue-40 py-1 text-[9px] font-bold flex items-center justify-center gap-0.5">
                             <span>🎫</span>
                             <span id="ui-btn-slips">کارت</span>
                         </button>
                         <!-- زر مسح الكل -->
-                        <button id="ui-btn-clear" onclick="clearAll()" class="clay-btn-red-40 py-1 text-[9.5px] font-bold flex items-center justify-center gap-0.5">
+                        <button id="ui-btn-clear" onclick="clearAll()" class="clay-btn-red-40 py-1 text-[9px] font-bold flex items-center justify-center gap-0.5">
                             <span>🗑️</span>
                             <span>پاککرن</span>
                         </button>
@@ -356,24 +389,11 @@
                             <span id="tab-solitary-label">ب تنێ</span>
                         </button>
 
-                        <!-- 6. قائمة اختيار المرحلة (فلتر المراحل المتطور) -->
-                        <div class="relative w-full text-right no-print" id="gradeDropdownWrapper">
-                            <button type="button" onclick="toggleGradeDropdown(event)" id="gradeDropdownBtn" 
-                                    class="hidden w-full py-2 px-2.5 text-[11px] sm:text-[12px] font-extrabold text-emerald-800 dark:text-emerald-300 border border-emerald-400/80 dark:border-emerald-700/80 rounded-xl shadow-2xs items-center justify-center gap-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 transition">
-                                <span class="text-sm">🏷️</span>
-                                <span id="selectedGradeLabel">هەمی قۆناغ</span>
-                                <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 transition-transform duration-200" id="gradeDropdownArrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-                            </button>
-                            <!-- القائمة المنسدلة العائمة -->
-                            <div id="gradeDropdownMenu" class="hidden absolute right-0 mt-1.5 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-md rounded-xl shadow-xl border border-emerald-200 dark:border-emerald-900/60 p-1 z-50 max-h-56 overflow-y-auto custom-scroll space-y-0.5">
-                                <!-- يتم تعبئتها ديناميكياً -->
-                            </div>
-                        </div>
-
-                        <!-- الحقل المخفي للتوافقية مع الفلترة -->
-                        <select id="gradeFilter" onchange="filterByGrade()" class="hidden">
-                            <option id="ui-all-grades" value="all">هەمی قۆناغ</option>
-                        </select>
+                        <!-- 6. الإحصائيات والمخططات البيانية (Analytics Tab) -->
+                        <button id="tab-analytics-btn" onclick="switchResultTab('analytics')" class="w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-amber-700 dark:text-amber-300 shadow-2xs">
+                            <span class="text-sm">📊</span>
+                            <span id="tab-analytics-label">ئامار و شیکاری</span>
+                        </button>
                     </div>
 
                     <!-- شريط الحالة والأدوات السفلي (عداد المجموعات وزر ملء الشاشة) -->
@@ -434,10 +454,44 @@
                     <button onclick="document.getElementById('duplicatesTabNotice').classList.add('hidden')" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xs font-bold px-1.5 transition">✕</button>
                 </div>
 
-                <!-- شريط تصفية البحث التفاعلي والحي -->
-                <div id="searchFilterContainer" class="mb-3 hidden no-print">
-                    <input type="text" id="searchFilter" oninput="filterResults()" placeholder="..." 
-                           class="clay-input w-full p-2 text-xs focus:ring-0">
+                <!-- شريط تصفية البحث التفاعلي والحي وفلترة الدوام وفلترة المراحل -->
+                <div id="searchFilterContainer" class="mb-3 hidden no-print space-y-1.5">
+                    <div class="flex items-center gap-1.5 flex-wrap">
+                        <div class="flex-1 min-w-[180px]">
+                            <input type="text" id="searchFilter" oninput="filterResults()" placeholder="..." 
+                                   class="clay-input w-full p-2 text-xs focus:ring-0">
+                        </div>
+
+                        <!-- قائمة اختيار المرحلة (فلتر المراحل المتطور) -->
+                        <div class="relative min-w-[140px] text-right no-print" id="gradeDropdownWrapper">
+                            <button type="button" onclick="toggleGradeDropdown(event)" id="gradeDropdownBtn" 
+                                    class="hidden w-full py-2 px-2.5 text-[11px] font-extrabold text-emerald-800 dark:text-emerald-300 border border-emerald-400/80 dark:border-emerald-700/80 rounded-xl shadow-2xs items-center justify-between gap-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 transition">
+                                <span class="flex items-center gap-1 truncate">
+                                    <span>🏷️</span>
+                                    <span id="selectedGradeLabel">هەمی قۆناغ</span>
+                                </span>
+                                <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 transition-transform duration-200" id="gradeDropdownArrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <!-- القائمة المنسدلة العائمة -->
+                            <div id="gradeDropdownMenu" class="hidden absolute right-0 mt-1.5 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-md rounded-xl shadow-xl border border-emerald-200 dark:border-emerald-900/60 p-1 z-50 max-h-56 overflow-y-auto custom-scroll space-y-0.5">
+                                <!-- يتم تعبئتها ديناميكياً -->
+                            </div>
+                        </div>
+
+                        <!-- الحقل المخفي للتوافقية مع الفلترة -->
+                        <select id="gradeFilter" onchange="filterByGrade()" class="hidden">
+                            <option id="ui-all-grades" value="all">هەمی قۆناغ</option>
+                        </select>
+
+                        <div id="shiftFilterWrapper" class="hidden min-w-[140px]">
+                            <select id="shiftFilterSelect" onchange="filterResults()" class="clay-input w-full p-2 text-[11px] bg-amber-50/90 dark:bg-amber-950/50 text-amber-900 dark:text-amber-200 border-amber-300 dark:border-amber-700/60 font-bold cursor-pointer">
+                                <option id="opt-filter-all-shifts" value="all">🔄 هەمی دەوام</option>
+                                <option id="opt-filter-split-shifts" value="split">⚠️ دەوامێن جودا بتنێ</option>
+                                <option id="opt-filter-morning-shifts" value="morning">☀️ سپێدە بتنێ</option>
+                                <option id="opt-filter-evening-shifts" value="evening">🌙 ئێڤار بتنێ</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- مساحة العرض التفاعلية للنتائج مع تمرير ناعم -->
@@ -668,6 +722,10 @@
                     <button onclick="closeReportConfigModal(); exportToExcelXLSX();" class="clay-btn-green-40 py-1.5 px-3 text-xs font-extrabold flex items-center gap-1 shadow-xs">
                         <span>📗</span> <span>تصدير XLSX</span>
                     </button>
+                    <!-- زر حفظ كملف HTML كامل -->
+                    <button onclick="closeReportConfigModal(); exportToHTML();" class="clay-btn-amber-40 py-1.5 px-3 text-xs font-extrabold flex items-center gap-1 shadow-xs">
+                        <span>🌐</span> <span id="ui-btn-export-html-action">پاشەکەفتکرن وەک HTML</span>
+                    </button>
                     <!-- زر الطباعة وتوليد PDF الرسمي -->
                     <button onclick="applyOfficialPrintReport()" class="clay-btn py-1.5 px-4 text-xs font-extrabold flex items-center gap-1 shadow-sm">
                         <span>🖨️</span> <span id="ui-btn-do-print">چاپکرن / PDF</span>
@@ -814,6 +872,8 @@
         <span id="toastMsg">تمت العملية بنجاح</span>
     </div>
 
+    <!-- مكتبة قراءة وتصدير ملفات الإكسل SheetJS (XLSX) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <!-- ربط ملف المنطق البرمجي الخارجي JS -->
     <script src="script.js"></script>
 </body>

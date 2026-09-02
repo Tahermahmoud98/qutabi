@@ -1,4 +1,4 @@
-const CACHE_NAME = 'siblings-detector-v2';
+const CACHE_NAME = 'siblings-detector-v8';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

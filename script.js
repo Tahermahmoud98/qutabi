@@ -18,8 +18,8 @@ const translations = {
         modal_clear: "پاککرن",
         instructions_title: "چەوانیا داخلكرنا داتایان / مەلەفێ ئێکسل:",
         instruction_1: "تۆ دشێی مەلەفێ إکسل (XLSX, XLS, CSV, TXT) بهاڤێژیە ڤێرێ یان کلیک بکە بۆ هەلبژارتنا مەلەفی ژ ئامیرێ خۆ.",
-        example_1: "ناڤێ قوتابی (سێیانە/چوارانە)، ناڤێ دەیکێ (ب بژاردەیی)، پۆل، شعبە",
-        placeholder_input: "ناڤێ قوتابی، ناڤێ دەیکێ (ب بژاردەیی)، پۆل، شعبە ل ڤێرێ ب لکینه...\nنموونە ب ناڤێ دەیکێ:\nئەحمەد عەلی حەسەن محەمەد، لەیلا عومەر فەتاح، دوو، ج\nسارا عەلی حەسەن محەمەد، لەیلا عومەر فەتاح، چار، د\n\nیان بێی ناڤێ دەیکێ:\nخالد ولید حسن محمد، دوو، ج",
+        example_1: "ناوی تەواو، ناوی تەواوی دایک، ڕەگەز (کوڕ/کچ)، پۆل، هۆبە",
+        placeholder_input: "ناوی تەواو، ناوی تەواوی دایک، ڕەگەز (کوڕ/کچ)، پۆل، هۆبە\nنموونە:\nئەحمەد عەلی حەسەن محەمەد، لەیلا عومەر فەتاح، کوڕ، 2، A\nسارا عەلی حەسەن محەمەد، لەیلا عومەر فەتاح، کچ، 4، B\nخالد ولید حسن محمد، نەرمین ئەحمەد، کوڕ، 2، C",
         sep_label: "جوداکەر:",
         sep_auto: "ئۆتۆماتیک",
         sep_tab: "Tab",
@@ -54,6 +54,7 @@ const translations = {
         tab_relatives: "پسمام و کەسوکار",
         tab_solitary: "ب تنێ",
         tab_duplicates: "ناڤێن وەکهەڤ",
+        tab_analytics: "ئامار و شیکاری",
         all_grades: "هەمی قۆناغ",
         all_title: "لیستا گشتی یا قوتابیان",
         all_names_desc: "لیستا هەمی قوتابیێن قوتابخانەیێ ب ڕێزبەندی و هویربینی",
@@ -135,6 +136,33 @@ const translations = {
         analytics_grade_density_title: "خەستی و هەژمارا خوشک و برایان د قۆناغان دا",
         family_slip_parent_sign: "واژوویا دەیک و بابان (توقيع ولي الأمر): ....................",
         family_slip_note: "تێبینی: ئەڤ کارتە پشتبەستنێ ل سەر تۆمارێن فەرمی یێن قوتابخانەیێ دکەت.",
+        btn_export_html: "HTML",
+        btn_export_html_action: "پاشەکەفتکرن وەک HTML",
+        html_export_success: "مەلەفێ HTML ب سەرکەفتی هاتە پاشەکەفتکرن و دابەزاندن!",
+        shift_settings_title: "شێوازێ دەوامێ و دەوامێن جودا",
+        shift_mode_label: "شێوازێ دەوامێ:",
+        shift_single: "☀️ دەواما ئێک (دوام واحد)",
+        shift_double: "🌗 دوو دەوام (سپێدە و ئێڤار)",
+        shift_morning_label: "☀️ شعبێن دەواما سپێدێ (الصباحي):",
+        shift_evening_label: "🌙 شعبێن دەواما ئێڤارێ (المسائي):",
+        shift_split_badge: "⚠️ دەوامێن جودا (سپێدە + ئێڤار)",
+        shift_same_morning: "☀️ هەمان دەوام (سپێدە)",
+        shift_same_evening: "🌙 هەمان دەوام (ئێڤار)",
+        shift_tag_morning: "سپێدە",
+        shift_tag_evening: "ئێڤار",
+        shift_filter_all: "🔄 هەمی دەوام",
+        shift_filter_split: "⚠️ دەوامێن جودا بتنێ",
+        shift_filter_morning: "☀️ سپێدە بتنێ",
+        shift_filter_evening: "🌙 ئێڤار بتنێ",
+        stat_split_shifts: "دەوامێن جودا",
+        stat_males: "کوڕ (نێر)",
+        stat_females: "کچ (مێ)",
+        gender_table_title: "خشتەیا هەژمارا کچ و کوڕان ل گۆرەی پۆل و قۆناغان",
+        gender_table_desc: "دابەشبوونا جێندەری د ناڤبەرا کچ و کوڕان دا بۆ هەر قۆناغەکێ",
+        boys_ratio: "رێژەیا کوڕان",
+        girls_ratio: "رێژەیا کچان",
+        section_table_title: "خشتەیا هویر یا هەمی پۆل و شعبان (دەوام، کچ، کوڕ و خویشک و برا)",
+        section_table_desc: "ئامارا بەرفرەھ یا هەر شعبەکێ ب جودا دگەل جۆرێ دەوامێ و دابەشبوونا جێندەری",
         dir: "rtl"
     },
     ku_so: {
@@ -156,8 +184,8 @@ const translations = {
         modal_clear: "سڕینەوە",
         instructions_title: "چۆنیەتی داخلکردنی زانیارییەکان / مەلەفی ئێکسڵ:",
         instruction_1: "دەتوانیت مەلەفی إکسڵ (XLSX, XLS, CSV, TXT) بهاوێژیتە ئێرە یان کلیک بکە بۆ دیاریکردنی مەلەف لە ئامێرەکەت.",
-        example_1: "ناوی قوتابی (سێیانە/چوارانە)، ناوی دایک (بە بژاردەیی)، پۆل، شعبە",
-        placeholder_input: "ناوی قوتابی، ناوی دایک (بە بژاردەیی)، پۆل، شعبە لێرە لک بدە...\nنموونە بە ناوی دایک:\nئەحمەد عەلی حەسەن محەمەد، لەیلا عومەر فەتاح، دووەم، ج\nسارا عەلی حەسەن محەمەد، لەیلا عومەر فەتاح، چوارەم، د\n\nیان بەبێ ناوی دایک:\nخالید وەلید حەسەن محەمەد، دووەم، ج",
+        example_1: "ناوی تەواو، ناوی تەواوی دایک، ڕەگەز (کوڕ/کچ)، پۆل، هۆبە",
+        placeholder_input: "ناوی تەواو، ناوی تەواوی دایک، ڕەگەز (کوڕ/کچ)، پۆل، هۆبە\nنموونە:\nئەحمەد عەلی حەسەن محەمەد، لەیلا عومەر فەتاح، کوڕ، 2، A\nسارا عەلی حەسەن محەمەد، لەیلا عومەر فەتاح، کچ، 4، B\nخالید وەلید حەسەن محەمەد، نەرمین ئەحمەد، کوڕ، 2، C",
         sep_label: "جیاکەرەوە:",
         sep_auto: "ئۆتۆماتیک",
         sep_tab: "Tab",
@@ -192,6 +220,7 @@ const translations = {
         tab_relatives: "ئامۆزا و خزم",
         tab_solitary: "تەنیا (بێ خزم)",
         tab_duplicates: "ناوە لێکچووەکان",
+        tab_analytics: "ئامار و شیکاری",
         all_grades: "هەموو قۆناغەکان",
         all_title: "لیستی گشتی قوتابیان",
         all_names_desc: "لیستی هەموو قوتابییانی قوتابخانە بە ڕێزبەندی",
@@ -273,6 +302,33 @@ const translations = {
         analytics_grade_density_title: "چڕی و ژمارەی خوشک و براکان لە قۆناغەکاندا",
         family_slip_parent_sign: "واژووی دایک و باوک (توقيع ولي الأمر): ....................",
         family_slip_note: "تێبینی: ئەم کارتە پشت بە تۆمارە فەرمییەکانی قوتابخانە دەبەستێت.",
+        btn_export_html: "HTML",
+        btn_export_html_action: "پاشەکەوتکردن وەک HTML",
+        html_export_success: "مەلەفی HTML بە سەرکەوتوویی پاشەکەوتکرا و دابەزێندرا!",
+        shift_settings_title: "شێوازی دەوام و دەوامی جیاواز",
+        shift_mode_label: "شێوازی دەوام:",
+        shift_single: "☀️ یەک دەوام (دوام واحد)",
+        shift_double: "🌗 دوو دەوام (بەیانی و ئێوارە)",
+        shift_morning_label: "☀️ شعبەکانی دەوامی بەیانی (الصباحي):",
+        shift_evening_label: "🌙 شعبەکانی دەوامی ئێوارە (المسائي):",
+        shift_split_badge: "⚠️ دەوامی جیاواز (بەیانی + ئێوارە)",
+        shift_same_morning: "☀️ هەمان دەوام (بەیانی)",
+        shift_same_evening: "🌙 هەمان دەوام (ئێوارە)",
+        shift_tag_morning: "بەیانی",
+        shift_tag_evening: "ئێوارە",
+        shift_filter_all: "🔄 هەموو دەوامەکان",
+        shift_filter_split: "⚠️ تەنها دەوامی جیاواز",
+        shift_filter_morning: "☀️ تەنها بەیانی",
+        shift_filter_evening: "🌙 تەنها ئێوارە",
+        stat_split_shifts: "دەوامی جیاواز",
+        stat_males: "کوڕ (نێر)",
+        stat_females: "کچ (مێ)",
+        gender_table_title: "خشتەی ژمارەی کچ و کوڕ بەپێی پۆل و قۆناغەکان",
+        gender_table_desc: "دابەشبوونی ڕەگەزی لە نێوان کچ و کوڕدا بۆ هەر قۆناغێک",
+        boys_ratio: "ڕێژەی کوڕان",
+        girls_ratio: "ڕێژەی کچان",
+        section_table_title: "خشتەی وردی هەموو پۆل و هۆبەکان (دەوام، کچ، کوڕ و خوشک و برا)",
+        section_table_desc: "ئاماری تەواوی هەر هۆبەیەک بە جیا لەگەڵ جۆری دەوام و دابەشبوونی ڕەگەزی",
         dir: "rtl"
     },
     ar: {
@@ -294,8 +350,8 @@ const translations = {
         modal_clear: "مسح",
         instructions_title: "طريقة إدخال البيانات / رفع ملف إكسل:",
         instruction_1: "يمكنك سحب وإفلات أي ملف إكسل (XLSX, XLS, CSV, TXT) هنا أو الضغط لاختيار ملف من جهازك.",
-        example_1: "اسم الطالب (ثلاثي أو رباعي)، اسم الأم (اختياري)، الصف، الشعبة",
-        placeholder_input: "الصق أو اكتب: اسم الطالب، اسم الأم (اختياري)، الصف، الشعبة...\nمثال بوجود اسم الأم:\nأحمد علي حسن محمد، ليلى عمر عبد الله، الثاني، ج\nسارة علي حسن محمد، ليلى عمر عبد الله، الرابع، د\n\nأو بدون اسم الأم:\nخالد وليد حسن محمد، الثاني، ج",
+        example_1: "الاسم الكامل، اسم الأم، الجنس (ذكر/أنثى)، الصف، الشعبة",
+        placeholder_input: "الاسم الكامل، اسم الأم، الجنس (ذكر/أنثى)، الصف، الشعبة...\nمثال:\nأحمد علي حسن محمد، ليلى عمر عبد الله، ذكر، الثاني، أ\nسارة علي حسن محمد، ليلى عمر عبد الله، أنثى، الرابع، ب\nخالد وليد حسن محمد، نسرين أحمد، ذكر، الثاني، ج",
         sep_label: "فاصل:",
         sep_auto: "تلقائي",
         sep_tab: "Tab",
@@ -330,6 +386,7 @@ const translations = {
         tab_relatives: "الأقارب والعمومة",
         tab_solitary: "وحيدين (بدون أقارب)",
         tab_duplicates: "الأسماء المتشابهة",
+        tab_analytics: "الإحصائيات والتحليلات",
         all_grades: "كل المراحل",
         all_title: "القائمة العامة للطلاب",
         all_names_desc: "قائمة بكافة أسماء طلاب المدرسة مرتبة ومفصلة",
@@ -411,6 +468,33 @@ const translations = {
         analytics_grade_density_title: "كثافة وتواجد الإخوة في المراحل الدراسية",
         family_slip_parent_sign: "توقيع ولي الأمر (واژوویا دەیک و بابان): ....................",
         family_slip_note: "ملاحظة: هذه البطاقة مستخرجة اعتماداً على السجلات المدرسية الرسمية.",
+        btn_export_html: "HTML",
+        btn_export_html_action: "حفظ كملف HTML",
+        html_export_success: "تم حفظ وتصدير ملف HTML بنجاح!",
+        shift_settings_title: "نظام الدوام وتوزيع الشُعب",
+        shift_mode_label: "نظام دوام المدرسة:",
+        shift_single: "☀️ دوام واحد (اعتيادي)",
+        shift_double: "🌗 دوامين (صباحي ومسائي)",
+        shift_morning_label: "☀️ شُعب الدوام الصباحي:",
+        shift_evening_label: "🌙 شُعب الدوام المسائي:",
+        shift_split_badge: "⚠️ دوامين مختلفين (صباحي + مسائي)",
+        shift_same_morning: "☀️ نفس الدوام (صباحي)",
+        shift_same_evening: "🌙 نفس الدوام (مسائي)",
+        shift_tag_morning: "صباحي",
+        shift_tag_evening: "مسائي",
+        shift_filter_all: "🔄 كل أنواع الدوام",
+        shift_filter_split: "⚠️ إخوة في دوامين مختلفين",
+        shift_filter_morning: "☀️ دوام صباحي فقط",
+        shift_filter_evening: "🌙 دوام مسائي فقط",
+        stat_split_shifts: "دوامين مختلفين",
+        stat_males: "الذكور (بنين)",
+        stat_females: "الإناث (بنات)",
+        gender_table_title: "جدول إحصائية أعداد الذكور والإناث لكل صف ومرحلة",
+        gender_table_desc: "التوزيع الديمغرافي للجنسين (بنين وبنات) والنسب المئوية لكل مرحلة دراسية",
+        boys_ratio: "نسبة البنين",
+        girls_ratio: "نسبة البنات",
+        section_table_title: "جدول إحصائية الشُعب التفصيلي لكل صف (الدوام، البنين، البنات، والإخوة)",
+        section_table_desc: "إحصائيات تفصيلية ودقيقة لكل شعبة على حدة مع نوع الدوام والتوزيع الديمغرافي",
         dir: "rtl"
     },
     en: {
@@ -432,8 +516,8 @@ const translations = {
         modal_clear: "Clear",
         instructions_title: "How to enter data / Upload Excel:",
         instruction_1: "Drag and drop any Excel file (XLSX, XLS, CSV, TXT) here or click to select from your device.",
-        example_1: "Student Name (3-4 parts), Mother's Name (optional), Grade, Section",
-        placeholder_input: "Paste or type: Student Name, Mother Name (optional), Grade, Section...\nExample with Mother:\nAhmed Ali Hassan Mohammed, Layla Omar Abdullah, 2nd, C\nSara Ali Hassan Mohammed, Layla Omar Abdullah, 4th, D\n\nOr without Mother:\nKhaled Waleed Hassan, 2nd, C",
+        example_1: "Student Name, Mother's Name, Gender (Male/Female), Grade, Section",
+        placeholder_input: "Student Full Name, Mother Full Name, Gender (Male/Female), Grade, Section...\nExample:\nAhmed Ali Hassan Mohammed, Layla Omar Abdullah, Male, 2nd, A\nSara Ali Hassan Mohammed, Layla Omar Abdullah, Female, 4th, B\nKhaled Waleed Hassan, Nisreen Ahmed, Male, 2nd, C",
         sep_label: "Separator:",
         sep_auto: "Auto",
         sep_tab: "Tab",
@@ -468,6 +552,7 @@ const translations = {
         tab_relatives: "Relatives & Cousins",
         tab_solitary: "Solitary (No Relatives)",
         tab_duplicates: "Duplicate Names",
+        tab_analytics: "Statistics & Charts",
         all_grades: "All Grades",
         all_title: "All Students List",
         all_names_desc: "Full list of all registered school students",
@@ -549,6 +634,31 @@ const translations = {
         analytics_grade_density_title: "Grade-by-Grade Sibling Density Matrix",
         family_slip_parent_sign: "Parent Signature: ....................",
         family_slip_note: "Note: Extracted from official school registration database.",
+        btn_export_html: "HTML",
+        btn_export_html_action: "Save as HTML",
+        html_export_success: "HTML file saved and exported successfully!",
+        shift_settings_title: "School Shifts & Sections",
+        shift_mode_label: "School Shift System:",
+        shift_single: "☀️ Single Shift (Standard)",
+        shift_double: "🌗 Double Shift (Morning & Evening)",
+        shift_morning_label: "☀️ Morning Shift Sections:",
+        shift_evening_label: "🌙 Evening Shift Sections:",
+        shift_split_badge: "⚠️ Split Shifts (Morning + Evening)",
+        shift_same_morning: "☀️ Same Shift (Morning)",
+        shift_same_evening: "🌙 Same Shift (Evening)",
+        shift_tag_morning: "Morning",
+        shift_tag_evening: "Evening",
+        shift_filter_all: "🔄 All Shifts",
+        shift_filter_split: "⚠️ Split Shifts Only",
+        shift_filter_morning: "☀️ Morning Only",
+        shift_filter_evening: "🌙 Evening Only",
+        stat_split_shifts: "Split Shifts",
+        stat_males: "Males (Boys)",
+        stat_females: "Females (Girls)",
+        gender_table_title: "Male & Female Student Count Breakdown by Grade",
+        gender_table_desc: "Gender demographic distribution and ratio across all academic grades",
+        boys_ratio: "Boys %",
+        girls_ratio: "Girls %",
         dir: "ltr"
     }
 };
@@ -762,6 +872,7 @@ function changeLanguage(lang) {
         'tab-relatives-label': dict.tab_relatives,
         'tab-solitary-label': dict.tab_solitary,
         'tab-duplicates-label': dict.tab_duplicates,
+        'tab-analytics-label': dict.tab_analytics || "ئامار و شیکاری",
         'stat-total-title': dict.stat_total,
         'stat-siblings-title': dict.stat_siblings,
         'stat-relatives-title': dict.stat_relatives,
@@ -787,12 +898,22 @@ function changeLanguage(lang) {
         'ui-col-grade': dict.col_grade || "پۆل و شعبە",
         'ui-col-family': dict.col_family || "سەردێڕێ خێزانێ و هێما",
         'ui-btn-slips-action': dict.btn_slips_action || "کارتێن خێزانان",
+        'ui-btn-export-html-action': dict.btn_export_html_action || "پاشەکەفتکرن وەک HTML",
         'ui-btn-do-print': dict.btn_do_print || "چاپکرن / PDF",
         'ui-analytics-title': dict.analytics_title || "شیکاری و ئامارێن هویر یێن قوتابخانەیێ",
         'ui-analytics-desc': dict.analytics_desc || "مخططات بيانية تفاعلية، كشف العوائل الأكثر عدداً، وتوزيع الإخوة على المراحل",
         'ui-analytics-dist-title': dict.analytics_dist_title || "دابەشبوونا قوتابیان ل گۆرەی پۆلان",
         'ui-analytics-top-families-title': dict.analytics_top_families_title || "بنەماڵ و لەقەبێن هەرە زۆر (Top 10)",
-        'ui-analytics-grade-density-title': dict.analytics_grade_density_title || "خەستی و هەژمارا خوشک و برایان د قۆناغان دا"
+        'ui-analytics-grade-density-title': dict.analytics_grade_density_title || "خەستی و هەژمارا خوشک و برایان د قۆناغان دا",
+        'ui-shift-mode-label': dict.shift_mode_label || "شێوازێ دەوامێ:",
+        'opt-shift-single': dict.shift_single || "☀️ دەواما ئێک (دوام واحد)",
+        'opt-shift-double': dict.shift_double || "🌗 دوو دەوام (سپێدە و ئێڤار)",
+        'ui-shift-morning-label': dict.shift_morning_label || "☀️ شعبێن دەواما سپێدێ (الصباحي):",
+        'ui-shift-evening-label': dict.shift_evening_label || "🌙 شعبێن دەواما ئێڤارێ (المسائي):",
+        'opt-filter-all-shifts': dict.shift_filter_all || "🔄 هەمی دەوام",
+        'opt-filter-split-shifts': dict.shift_filter_split || "⚠️ دەوامێن جودا بتنێ",
+        'opt-filter-morning-shifts': dict.shift_filter_morning || "☀️ سپێدە بتنێ",
+        'opt-filter-evening-shifts': dict.shift_filter_evening || "🌙 ئێڤار بتنێ"
     };
 
     for (const [id, text] of Object.entries(idsMap)) {
@@ -1165,6 +1286,348 @@ function levenshteinDistance(s1, s2) {
     return currRow[len2];
 }
 
+// 🌗 إدارة نظام الدوام (دوام واحد / دوامين صباحي ومسائي) وفحص الشعب
+function toggleShiftModeSettings() {
+    const shiftSelect = document.getElementById('shiftMode');
+    const mode = shiftSelect ? shiftSelect.value : 'single';
+    const configEl = document.getElementById('doubleShiftConfig');
+    const filterWrapper = document.getElementById('shiftFilterWrapper');
+    
+    if (mode === 'double') {
+        if (configEl) configEl.classList.remove('hidden');
+        if (filterWrapper) filterWrapper.classList.remove('hidden');
+    } else {
+        if (configEl) configEl.classList.add('hidden');
+        if (filterWrapper) filterWrapper.classList.add('hidden');
+        const filterSelect = document.getElementById('shiftFilterSelect');
+        if (filterSelect) filterSelect.value = 'all';
+    }
+    localStorage.setItem('siblings_shift_mode', mode);
+}
+
+function getShiftConfig() {
+    const shiftSelect = document.getElementById('shiftMode');
+    const mode = shiftSelect ? shiftSelect.value : (localStorage.getItem('siblings_shift_mode') || 'single');
+    const morningInput = document.getElementById('morningSectionsInput');
+    const eveningInput = document.getElementById('eveningSectionsInput');
+
+    const morningRaw = morningInput ? morningInput.value : 'أ, ب, A, B, 1, 2';
+    const eveningRaw = eveningInput ? eveningInput.value : 'ج, د, C, D, 3, 4';
+
+    function cleanList(str) {
+        return (str || '')
+            .split(/[,;\s،]+/)
+            .map(s => normalizeSectionStr(s))
+            .filter(s => s.length > 0);
+    }
+
+    return {
+        mode: mode,
+        morningList: cleanList(morningRaw),
+        eveningList: cleanList(eveningRaw)
+    };
+}
+
+function normalizeSectionStr(s) {
+    if (!s) return '';
+    return String(s)
+        .trim()
+        .replace(/^(شعبة|شعبة|پۆلا|پۆل|الصف|صف)\s+/i, '')
+        .replace(/[أإآ]/g, 'ا')
+        .replace(/[ىيی]/g, 'ي')
+        .replace(/[كک]/g, 'ك')
+        .replace(/[هة]/g, 'ه')
+        .replace(/[١-٩]/g, d => '123456789'['١٢٣٤٥٦٧٨٩'.indexOf(d)])
+        .replace(/[۱-۹]/g, d => '123456789'['۱۲۳۴۵۶۷۸۹'.indexOf(d)])
+        .toLowerCase();
+}
+
+function getStudentShift(sectionStr, morningList, eveningList) {
+    if (!sectionStr || sectionStr === '-' || sectionStr === 'N/A' || sectionStr === 'دیارنەکری') return 'unknown';
+    const cleanSec = normalizeSectionStr(sectionStr);
+    if (!cleanSec) return 'unknown';
+
+    // فحص التطابق مع شعب الدوام الصباحي
+    for (const m of morningList) {
+        if (cleanSec === m || cleanSec.includes(m)) return 'morning';
+    }
+    // فحص التطابق مع شعب الدوام المسائي
+    for (const e of eveningList) {
+        if (cleanSec === e || cleanSec.includes(e)) return 'evening';
+    }
+    return 'unknown';
+}
+
+function updateDetectedSectionsChips() {
+    const container = document.getElementById('detectedSectionsContainer');
+    const chipsDiv = document.getElementById('detectedSectionsChips');
+    if (!container || !chipsDiv) return;
+
+    const sectionsMap = {};
+    studentPool.forEach(s => {
+        if (s.section && s.section !== '-' && s.section !== 'N/A' && s.section !== 'دیارنەکری' && s.section.trim() !== '') {
+            const sec = s.section.trim();
+            sectionsMap[sec] = (sectionsMap[sec] || 0) + 1;
+        }
+    });
+
+    const uniqueSections = Object.keys(sectionsMap);
+    if (uniqueSections.length === 0) {
+        container.classList.add('hidden');
+        return;
+    }
+
+    container.classList.remove('hidden');
+    const { morningList, eveningList } = getShiftConfig();
+
+    chipsDiv.innerHTML = uniqueSections.map(sec => {
+        const normSec = normalizeSectionStr(sec);
+        const isMorning = morningList.some(m => normSec === m || normSec.includes(m));
+        const isEvening = eveningList.some(e => normSec === e || normSec.includes(e));
+        
+        let badgeColor = "bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border-slate-300 dark:border-slate-700";
+        if (isMorning) {
+            badgeColor = "bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 border-amber-400 dark:border-amber-700";
+        } else if (isEvening) {
+            badgeColor = "bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 border-indigo-400 dark:border-indigo-700";
+        }
+
+        const safeSec = sec.replace(/'/g, "\\'");
+        return `
+            <div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-lg border text-[8.5px] font-bold ${badgeColor}">
+                <span>${sec}</span>
+                <span class="text-[7.5px] opacity-75">(${sectionsMap[sec]})</span>
+                <button type="button" onclick="setSectionShift('${safeSec}', 'morning')" title="تعيين كدوام صباحي ☀️" class="hover:scale-125 transition text-[9px] p-0.2">☀️</button>
+                <button type="button" onclick="setSectionShift('${safeSec}', 'evening')" title="تعيين كدوام مسائي 🌙" class="hover:scale-125 transition text-[9px] p-0.2">🌙</button>
+            </div>
+        `;
+    }).join('');
+}
+
+function setSectionShift(section, shiftType) {
+    const morningInput = document.getElementById('morningSectionsInput');
+    const eveningInput = document.getElementById('eveningSectionsInput');
+    if (!morningInput || !eveningInput) return;
+
+    let morningArr = morningInput.value.split(/[,;\s،]+/).map(s => s.trim()).filter(s => s.length > 0 && s !== section);
+    let eveningArr = eveningInput.value.split(/[,;\s،]+/).map(s => s.trim()).filter(s => s.length > 0 && s !== section);
+
+    if (shiftType === 'morning') {
+        morningArr.push(section);
+    } else if (shiftType === 'evening') {
+        eveningArr.push(section);
+    }
+
+    morningInput.value = morningArr.join(', ');
+    eveningInput.value = eveningArr.join(', ');
+    processNames();
+}
+
+function parseGenderValue(val, fallbackName) {
+    if (!val) return detectStudentGender(fallbackName);
+    const clean = String(val).trim().toLowerCase();
+    if (['مێ', 'مي', 'کچ', 'كچ', 'أنثى', 'انثى', 'بنت', 'female', 'f', 'girl', 'انثي', 'م'].includes(clean)) {
+        return 'female';
+    }
+    if (['نێر', 'نير', 'کوڕ', 'كور', 'ذكر', 'ولد', 'male', 'm', 'boy', 'ن'].includes(clean)) {
+        return 'male';
+    }
+    return detectStudentGender(fallbackName);
+}
+
+function isHeaderRow(lineOrParts) {
+    const str = (Array.isArray(lineOrParts) ? lineOrParts.join(' ') : String(lineOrParts)).toLowerCase();
+    return (
+        (str.includes('تەواو') && str.includes('دایک')) ||
+        (str.includes('ڕەگەز') || str.includes('رەگەز')) ||
+        (str.includes('ناوی') && str.includes('پۆل')) ||
+        (str.includes('اسم') && str.includes('ام')) ||
+        (str.includes('اسم') && str.includes('صف')) ||
+        (str.includes('الجنس') || str.includes('الشعبة') || str.includes('شعبة')) ||
+        (str.includes('student') && str.includes('mother')) ||
+        (str.includes('gender') && str.includes('grade'))
+    );
+}
+
+function openDataModal(defaultTab = 'paste') {
+    const modal = document.getElementById('dataInputModal');
+    if (modal) modal.classList.remove('hidden');
+    switchModalTab(defaultTab);
+}
+
+function closeDataModal() {
+    const modal = document.getElementById('dataInputModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+function saveModalAndDetect() {
+    closeDataModal();
+    processNames();
+    showToast("داتا هاتنە شیکارکرن و پاشەکەفتکرن! / تم تحليل وحفظ البيانات بنجاح!");
+}
+
+function handleModalBackdropClick(e) {
+    if (e.target.id === 'dataInputModal') {
+        closeDataModal();
+    }
+}
+
+function onInputChanged() {
+    const namesInput = document.getElementById('namesInput');
+    const counter = document.getElementById('modalLineCounter');
+    if (namesInput && counter) {
+        const lines = namesInput.value.split('\n').filter(l => l.trim().length > 0);
+        counter.textContent = `${lines.length} ${translations[currentLang].students_suffix || 'دێڕ'}`;
+    }
+}
+
+function switchModalTab(tab) {
+    const uploadSec = document.getElementById('modalUploadSection');
+    const pasteSec = document.getElementById('modalPasteSection');
+    const uploadBtn = document.getElementById('modal-tab-upload-btn');
+    const pasteBtn = document.getElementById('modal-tab-paste-btn');
+
+    if (tab === 'upload') {
+        if (uploadSec) uploadSec.classList.remove('hidden');
+        if (pasteSec) pasteSec.classList.add('hidden');
+        if (uploadBtn) {
+            uploadBtn.className = "flex-1 py-1.5 px-2.5 rounded-xl text-xs font-bold transition clay-btn flex items-center justify-center gap-1 shadow-xs";
+        }
+        if (pasteBtn) {
+            pasteBtn.className = "flex-1 py-1.5 px-2.5 rounded-xl text-xs font-bold transition clay-btn-sec flex items-center justify-center gap-1";
+        }
+    } else {
+        if (uploadSec) uploadSec.classList.add('hidden');
+        if (pasteSec) pasteSec.classList.remove('hidden');
+        if (pasteBtn) {
+            pasteBtn.className = "flex-1 py-1.5 px-2.5 rounded-xl text-xs font-bold transition clay-btn flex items-center justify-center gap-1 shadow-xs";
+        }
+        if (uploadBtn) {
+            uploadBtn.className = "flex-1 py-1.5 px-2.5 rounded-xl text-xs font-bold transition clay-btn-sec flex items-center justify-center gap-1";
+        }
+    }
+}
+
+function handleFileInput(e) {
+    const file = e.target.files ? e.target.files[0] : null;
+    if (!file) return;
+    readExcelOrTextFile(file);
+}
+
+function handleFileDrop(e) {
+    e.preventDefault();
+    const dropZone = document.getElementById('dropZone');
+    if (dropZone) dropZone.classList.remove('drag-over');
+
+    const file = e.dataTransfer && e.dataTransfer.files ? e.dataTransfer.files[0] : null;
+    if (!file) return;
+    readExcelOrTextFile(file);
+}
+
+function readExcelOrTextFile(file) {
+    const fileName = file.name.toLowerCase();
+    
+    if (fileName.endsWith('.txt') || fileName.endsWith('.csv') || fileName.endsWith('.tsv')) {
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+            const content = evt.target.result;
+            const namesInput = document.getElementById('namesInput');
+            if (namesInput) {
+                namesInput.value = content;
+                onInputChanged();
+                switchModalTab('paste');
+                showToast("فایلی دەق بە سەرکەوتوویی بارکرا! / تم تحميل الملف بنجاح!");
+            }
+        };
+        reader.readAsText(file);
+        return;
+    }
+
+    if (typeof XLSX === 'undefined') {
+        showToast("تکایە چاوەڕێ بکە تا کتێبخانەی ئێکسل بار دەبێت... / يرجى الانتظار لتحميل مكتبة الإكسل");
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function(evt) {
+        try {
+            const data = new Uint8Array(evt.target.result);
+            const workbook = XLSX.read(data, { type: 'array' });
+            const firstSheetName = workbook.SheetNames[0];
+            const worksheet = workbook.Sheets[firstSheetName];
+            
+            const rows = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: '' });
+            if (!rows || rows.length === 0) {
+                showToast("مەلەفێ ئێکسل بەتالە! / ملف الإكسل فارغ!");
+                return;
+            }
+
+            // ترتيب الأعمدة المطلوب:
+            // 1. ناوی تەواو | 2. ناوی تەواوی دایک | 3. ڕەگەز | 4. پۆل | 5. هۆبە
+            let colNameIdx = 0;
+            let colMotherIdx = 1;
+            let colGenderIdx = 2;
+            let colGradeIdx = 3;
+            let colSectionIdx = 4;
+
+            let startRow = 0;
+            const headerRow = rows[0].map(c => String(c || '').trim().toLowerCase());
+            
+            let foundHeader = false;
+            headerRow.forEach((colText, idx) => {
+                if (colText.includes('ناوی تەواو') || colText.includes('ناوی قوتابی') || (colText.includes('ناو') && !colText.includes('دایک')) || colText.includes('اسم الطالب') || colText.includes('الاسم الكامل') || colText.includes('student')) {
+                    colNameIdx = idx;
+                    foundHeader = true;
+                } else if (colText.includes('دایک') || colText.includes('ام') || colText.includes('mother')) {
+                    colMotherIdx = idx;
+                    foundHeader = true;
+                } else if (colText.includes('ڕەگەز') || colText.includes('رەگەز') || colText.includes('جنس') || colText.includes('gender') || colText.includes('sex')) {
+                    colGenderIdx = idx;
+                    foundHeader = true;
+                } else if (colText.includes('پۆل') || colText.includes('صف') || colText.includes('مرحلة') || colText.includes('قۆناغ') || colText.includes('grade') || colText.includes('class')) {
+                    colGradeIdx = idx;
+                    foundHeader = true;
+                } else if (colText.includes('هۆبە') || colText.includes('شعبة') || colText.includes('شعبە') || colText.includes('section')) {
+                    colSectionIdx = idx;
+                    foundHeader = true;
+                }
+            });
+
+            if (foundHeader) {
+                startRow = 1;
+            }
+
+            const formattedLines = [];
+            for (let i = startRow; i < rows.length; i++) {
+                const r = rows[i];
+                if (!r || r.length === 0) continue;
+                
+                const sName = String(r[colNameIdx] || '').trim();
+                if (!sName || sName === '-' || sName.toLowerCase() === 'null') continue;
+
+                const sMother = String(r[colMotherIdx] || '').trim();
+                const sGender = String(r[colGenderIdx] || '').trim();
+                const sGrade = String(r[colGradeIdx] || '').trim();
+                const sSection = String(r[colSectionIdx] || '').trim();
+
+                formattedLines.push(`${sName}, ${sMother}, ${sGender}, ${sGrade}, ${sSection}`);
+            }
+
+            const namesInput = document.getElementById('namesInput');
+            if (namesInput) {
+                namesInput.value = formattedLines.join('\n');
+                onInputChanged();
+                switchModalTab('paste');
+                showToast(`سەرکەفتیانە ${formattedLines.length} قوتابی ژ ئێکسلێ هاتنە وەرگرتن! / تم استيراد ${formattedLines.length} طالب من الإكسل بنجاح!`);
+            }
+        } catch (err) {
+            console.error("Excel Read Error:", err);
+            showToast("خەلەتەک د خواندنا مەلەفێ ئێکسلێ دا رویدا! / حدث خطأ أثناء قراءة ملف الإكسل");
+        }
+    };
+    reader.readAsArrayBuffer(file);
+}
+
 function processNames() {
     const rawInput = document.getElementById('namesInput').value;
     const lines = rawInput.split('\n').map(line => line.trim()).filter(line => line.length > 0);
@@ -1177,6 +1640,7 @@ function processNames() {
     studentPool = [];
     const sepMode = document.getElementById('dataSeparator').value;
 
+    let rowIndex = 0;
     lines.forEach((line, index) => {
         let parts = [];
         let sep = ',';
@@ -1190,27 +1654,60 @@ function processNames() {
 
         parts = line.split(sep).map(p => p.trim());
         
+        // فحص وتخطي سطر العناوين / الترويسة
+        if (index === 0 && isHeaderRow(parts)) {
+            return;
+        }
+
         let name = parts[0] || '';
         let mother = '';
+        let gender = '';
         let grade = currentLang === 'en' ? 'N/A' : (currentLang === 'ar' ? 'غير محدد' : 'دیارنەکری');
         let section = currentLang === 'en' ? 'N/A' : (currentLang === 'ar' ? 'غير محدد' : 'دیارنەکری');
         let guardian = '';
 
-        if (parts.length >= 4) {
+        if (!name || name === '-' || name.toLowerCase() === 'null') return;
+
+        if (parts.length >= 5) {
+            // الترتيب الدقيق: 1. ناوی تەواو | 2. ناوی تەواوی دایک | 3. ڕەگەز | 4. پۆل | 5. هۆبە
             mother = parts[1] || '';
-            grade = parts[2] || grade;
-            section = parts[3] || section;
-            guardian = parts[4] || '';
+            gender = parseGenderValue(parts[2], name);
+            grade = parts[3] || grade;
+            section = parts[4] || section;
+            if (parts.length >= 6) {
+                guardian = parts[5] || '';
+            }
+        } else if (parts.length === 4) {
+            const p1 = parts[1].toLowerCase().trim();
+            const p2 = parts[2].toLowerCase().trim();
+            if (['نێر', 'نير', 'کوڕ', 'ذكر', 'مێ', 'مي', 'کچ', 'أنثى', 'انثى', 'male', 'female', 'm', 'f'].includes(p1)) {
+                gender = parseGenderValue(parts[1], name);
+                grade = parts[2] || grade;
+                section = parts[3] || section;
+            } else if (['نێر', 'نير', 'کوڕ', 'ذكر', 'مێ', 'مي', 'کچ', 'أنثى', 'انثى', 'male', 'female', 'm', 'f'].includes(p2)) {
+                mother = parts[1] || '';
+                gender = parseGenderValue(parts[2], name);
+                grade = parts[3] || grade;
+            } else {
+                mother = parts[1] || '';
+                gender = detectStudentGender(name);
+                grade = parts[2] || grade;
+                section = parts[3] || section;
+            }
         } else if (parts.length === 3) {
             grade = parts[1] || grade;
             section = parts[2] || section;
+            gender = detectStudentGender(name);
         } else if (parts.length === 2) {
             grade = parts[1] || grade;
+            gender = detectStudentGender(name);
+        } else {
+            gender = detectStudentGender(name);
         }
 
-        if (name) {
-            studentPool.push({ id: index, name, grade, section, mother, guardian });
-        }
+        if (!gender) gender = detectStudentGender(name);
+
+        studentPool.push({ id: rowIndex++, name, grade, section, mother, gender, guardian });
     });
 
     const relMode = document.getElementById('relativesSearchMode').value;
@@ -1481,6 +1978,7 @@ function renderEngine() {
         else mobBadge.classList.add('hidden');
     }
 
+    updateDetectedSectionsChips();
     populateGradeFilter();
     displayResults();
 }
@@ -1492,6 +1990,7 @@ function switchResultTab(tab) {
     const relBtn = document.getElementById('tab-relatives-btn');
     const solBtn = document.getElementById('tab-solitary-btn');
     const dupBtn = document.getElementById('tab-duplicates-btn');
+    const anaBtn = document.getElementById('tab-analytics-btn');
     const relNotice = document.getElementById('relativesTabNotice');
     const solNotice = document.getElementById('solitaryTabNotice');
     const dupNotice = document.getElementById('duplicatesTabNotice');
@@ -1502,6 +2001,7 @@ function switchResultTab(tab) {
     if (relBtn) relBtn.className = `${secClass} text-indigo-700 dark:text-indigo-300`;
     if (solBtn) solBtn.className = `${secClass} text-rose-700 dark:text-rose-300`;
     if (dupBtn) dupBtn.className = `${secClass} text-teal-700 dark:text-teal-300`;
+    if (anaBtn) anaBtn.className = `${secClass} text-amber-700 dark:text-amber-300`;
 
     if (relNotice) relNotice.classList.add('hidden');
     if (solNotice) solNotice.classList.add('hidden');
@@ -1521,6 +2021,8 @@ function switchResultTab(tab) {
     } else if (tab === 'duplicates') {
         if (dupBtn) dupBtn.className = `${activeBase} bg-teal-600 dark:bg-teal-700`;
         if (dupNotice) dupNotice.classList.remove('hidden');
+    } else if (tab === 'analytics') {
+        if (anaBtn) anaBtn.className = `${activeBase} bg-amber-600 dark:bg-amber-700`;
     }
 
     displayResults();
@@ -1731,6 +2233,25 @@ function displayResults() {
     } else if (activeTab === 'duplicates') {
         currentResults = duplicateResults;
         badgeLabel = dict.badge_groups_dup;
+    } else if (activeTab === 'analytics') {
+        if (studentPool.length === 0) {
+            resultsArea.className = "flex-grow flex flex-col justify-center items-center text-slate-400 py-10 text-center";
+            resultsArea.innerHTML = `
+                <div class="w-14 h-14 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xl mb-2.5 text-slate-400">
+                    📊
+                </div>
+                <p class="font-bold text-slate-700 dark:text-slate-200 text-xs sm:text-sm">${dict.results_empty_title}</p>
+                <p class="text-[11px] mt-1 text-slate-500 max-w-sm">${dict.results_empty_desc}</p>`;
+            resultsCount.classList.add('hidden');
+            searchFilterContainer.classList.add('hidden');
+            return;
+        }
+        resultsCount.textContent = `📊 ${dict.tab_analytics || 'ئامار و شیکاری'}`;
+        resultsCount.classList.remove('hidden');
+        searchFilterContainer.classList.add('hidden');
+        resultsArea.className = "flex-grow space-y-3 pl-0.5 pr-0.5 py-1 custom-scroll";
+        renderInlineAnalytics();
+        return;
     }
 
     if (currentResults.length === 0) {
@@ -1784,48 +2305,81 @@ function displayResults() {
 function renderSiblingsList(groups) {
     const resultsArea = document.getElementById('resultsArea');
     const dict = translations[currentLang];
+    const shiftConfig = getShiftConfig();
+    const isDoubleShift = shiftConfig.mode === 'double';
     let htmlContent = '';
 
     groups.forEach((group, groupIdx) => {
+        let hasMorning = false;
+        let hasEvening = false;
+        let groupShiftStatus = 'unknown';
+
+        if (isDoubleShift) {
+            group.students.forEach(s => {
+                const sh = getStudentShift(s.section, shiftConfig.morningList, shiftConfig.eveningList);
+                s.shift = sh;
+                if (sh === 'morning') hasMorning = true;
+                if (sh === 'evening') hasEvening = true;
+            });
+
+            if (hasMorning && hasEvening) {
+                groupShiftStatus = 'split';
+            } else if (hasMorning && !hasEvening) {
+                groupShiftStatus = 'morning';
+            } else if (hasEvening && !hasMorning) {
+                groupShiftStatus = 'evening';
+            }
+        }
+
+        const isSplit = groupShiftStatus === 'split';
+        const cardClass = isSplit ? 'group-card group-card-sibling group-card-split-shift' : 'group-card group-card-sibling';
+
         htmlContent += `
-            <div class="group-card group-card-sibling transition duration-150" 
+            <div class="${cardClass} transition duration-150" 
                  data-shared="${group.sharedName}" 
-                 data-search-pool="${group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ')}">
+                 data-shift-status="${groupShiftStatus}"
+                 data-search-pool="${group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''} ${s.shift || ''}`).join(' ')}">
                 
-                <!-- رأس بطاقة الإخوة الأشقاء فائق الصغر -->
+                <!-- رأس بطاقة الإخوة الأشقاء -->
                 <div class="group-card-header flex flex-wrap justify-between items-center gap-1">
-                    <div class="flex items-center gap-1 min-w-0">
-                        <span class="text-xs">👨‍👩‍👦</span>
+                    <div class="flex items-center gap-1 min-w-0 flex-wrap">
+                        <span class="text-xs">${isSplit ? '⚠️' : '👨‍👩‍👦'}</span>
                         <span class="text-[8px] text-slate-500 dark:text-slate-400 font-bold">${dict.family_label}</span>
-                        <span class="text-xs font-extrabold text-blue-900/90 dark:text-blue-200 tracking-tight">${group.sharedName}</span>
+                        <span class="text-xs font-extrabold ${isSplit ? 'text-amber-900 dark:text-amber-200' : 'text-blue-900/90 dark:text-blue-200'} tracking-tight">${group.sharedName}</span>
+                        ${isSplit ? `<span class="clay-badge text-[8px] text-amber-900 dark:text-amber-100 bg-amber-200/90 dark:bg-amber-900/90 px-1.5 py-0.2 font-extrabold border border-amber-400 dark:border-amber-600 shadow-2xs">${dict.shift_split_badge || '⚠️ دەوامێن جودا'}</span>` : ''}
+                        ${groupShiftStatus === 'morning' ? `<span class="clay-badge text-[7.5px] text-amber-800 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 px-1.5 py-0.2 font-bold border border-amber-200/80">${dict.shift_same_morning || '☀️ سپێدە'}</span>` : ''}
+                        ${groupShiftStatus === 'evening' ? `<span class="clay-badge text-[7.5px] text-indigo-800 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/40 px-1.5 py-0.2 font-bold border border-indigo-200/80">${dict.shift_same_evening || '🌙 ئێڤار'}</span>` : ''}
                     </div>
                     <div class="flex items-center gap-1">
                         <button onclick="copyFamilyCard(${groupIdx})" class="clay-btn-sec text-[8px] px-1.5 py-0.2 font-bold shadow-2xs no-print flex items-center gap-0.5">
                             <span>📋</span> <span>${dict.copy_btn}</span>
                         </button>
-                        <span class="clay-badge text-[8px] text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-950/50 px-1.5 py-0.2 font-bold border border-blue-200/60 dark:border-blue-800/40">
+                        <span class="clay-badge text-[8px] ${isSplit ? 'text-amber-800 dark:text-amber-200 bg-amber-100 dark:bg-amber-950/60 border-amber-300' : 'text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-950/50 border-blue-200/60 dark:border-blue-800/40'} px-1.5 py-0.2 font-bold border">
                             👥 ${dict.siblings_count} ${group.students.length}
                         </span>
                     </div>
                 </div>
                 
-                <!-- قائمة الطلاب الإخوة فائقة الصغر -->
+                <!-- قائمة الطلاب الإخوة -->
                 <ul class="space-y-0.5">
                     ${group.students.map((student) => {
                         const isTwin = group.students.filter(s => s.grade === student.grade).length > 1;
+                        const studentShift = isDoubleShift ? (student.shift || getStudentShift(student.section, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
                         return `
                             <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1.5 bg-slate-50/90 dark:bg-slate-800/60 rounded hover:bg-white dark:hover:bg-slate-800 transition shadow-2xs border border-slate-200/60 dark:border-slate-700/50 gap-1 min-h-[24px]">
                                 <div class="flex flex-wrap items-center gap-1 min-w-0">
-                                    <span class="student-avatar-box w-4 h-4 rounded bg-blue-100/90 dark:bg-slate-700/90 text-blue-600 dark:text-sky-300 border border-blue-200/60 dark:border-blue-400/40 flex items-center justify-center shadow-xs">
+                                    <span class="student-avatar-box w-4 h-4 rounded ${isSplit ? (studentShift === 'morning' ? 'bg-amber-100 text-amber-700 border-amber-300' : 'bg-indigo-100 text-indigo-700 border-indigo-300') : 'bg-blue-100/90 dark:bg-slate-700/90 text-blue-600 dark:text-sky-300 border-blue-200/60 dark:border-blue-400/40'} flex items-center justify-center shadow-xs">
                                         <svg class="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
                                     </span>
                                     <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                                     ${isTwin ? `<span class="bg-amber-100/90 text-amber-800 dark:bg-amber-950 dark:text-amber-300 text-[7.5px] px-1 py-0.1 rounded font-bold border border-amber-200 dark:border-amber-800/50">${dict.twin_warn}</span>` : ''}
                                     ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
+                                    ${isDoubleShift && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>` : ''}
+                                    ${isDoubleShift && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>` : ''}
                                 </div>
                                 <div class="flex items-center gap-0.5 flex-shrink-0">
                                     <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
-                                    <span class="clay-badge text-[7.5px] text-emerald-700 dark:text-emerald-300 bg-emerald-50/80 dark:bg-emerald-950/50 px-1 py-0.1 font-bold border border-emerald-200/60 dark:border-emerald-800/50">${dict.section_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'section', this.innerText)" class="font-extrabold">${student.section}</span></span>
+                                    <span class="clay-badge text-[7.5px] ${studentShift === 'morning' ? 'text-amber-800 dark:text-amber-300 bg-amber-50/90 border-amber-300' : (studentShift === 'evening' ? 'text-indigo-800 dark:text-indigo-300 bg-indigo-50/90 border-indigo-300' : 'text-emerald-700 dark:text-emerald-300 bg-emerald-50/80 dark:bg-emerald-950/50 border-emerald-200/60 dark:border-emerald-800/50')} px-1 py-0.1 font-bold border">${dict.section_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'section', this.innerText)" class="font-extrabold">${student.section}</span></span>
                                     <button onclick="removeStudent(${student.id})" class="w-3.5 h-3.5 rounded text-red-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950 flex items-center justify-center text-[10px] font-bold transition no-print">×</button>
                                 </div>
                             </li>
@@ -2217,6 +2771,49 @@ function filterByGrade() {
     }
 }
 
+// 🔍 فلترة النتائج الحية حسب البحث النصي ونظام الدوام
+function filterResults() {
+    const query = (document.getElementById('searchFilter')?.value || '').trim().toLowerCase();
+    const shiftFilter = document.getElementById('shiftFilterSelect')?.value || 'all';
+    const shiftConfig = getShiftConfig();
+    const isDoubleShift = shiftConfig.mode === 'double';
+    const resultsArea = document.getElementById('resultsArea');
+    if (!resultsArea) return;
+
+    const cards = resultsArea.querySelectorAll('.group-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+        const searchPool = (card.getAttribute('data-search-pool') || card.getAttribute('data-shared') || '').toLowerCase();
+        const cardShift = card.getAttribute('data-shift-status') || 'unknown';
+
+        const matchesSearch = !query || searchPool.includes(query);
+        let matchesShift = true;
+        
+        if (isDoubleShift && shiftFilter !== 'all') {
+            if (shiftFilter === 'split') {
+                matchesShift = (cardShift === 'split');
+            } else if (shiftFilter === 'morning') {
+                matchesShift = (cardShift === 'morning' || cardShift === 'split' || searchPool.includes('morning') || searchPool.includes('سپێدە') || searchPool.includes('صباحي'));
+            } else if (shiftFilter === 'evening') {
+                matchesShift = (cardShift === 'evening' || cardShift === 'split' || searchPool.includes('evening') || searchPool.includes('ئێڤار') || searchPool.includes('مسائي'));
+            }
+        }
+
+        if (matchesSearch && matchesShift) {
+            card.style.display = '';
+            visibleCount++;
+        } else {
+            card.style.display = 'none';
+        }
+    });
+
+    const resultsCount = document.getElementById('resultsCount');
+    if (resultsCount && (query || (isDoubleShift && shiftFilter !== 'all'))) {
+        resultsCount.textContent = `${visibleCount} ${translations[currentLang].groups_suffix || 'کۆم'}`;
+    }
+}
+
 function exportToCSV() {
     if (studentPool.length === 0) return;
     const dict = translations[currentLang];
@@ -2283,6 +2880,1545 @@ function exportToExcelXLSX() {
 
     // نتحقق إن كان المستخدم يرغب بتصدير بطاقات HTML الملونة والمؤطرة تماماً داخل إكسل
     exportStyledFamilyCardsToExcel();
+}
+
+// 🌐 تصدير وحفظ التقرير كملف HTML مطابق 100% لتصميم الموقع بأسلوب Claymorphism التفاعلي
+function exportToHTML() {
+    if (studentPool.length === 0) {
+        showToast(translations[currentLang].results_empty_title || "چو داتا نینن");
+        return;
+    }
+
+    const dict = translations[currentLang];
+    const isRtl = dict.dir === 'rtl';
+    const schoolName = localStorage.getItem('report_school_name') || 'قوتابخانە';
+    const directorate = localStorage.getItem('report_directorate') || '';
+    const academicYear = localStorage.getItem('report_academic_year') || '2025 - 2026';
+    const principalName = localStorage.getItem('report_principal') || '';
+    const currentDate = new Date().toLocaleDateString();
+    const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+    // حساب الإحصائيات
+    const totalStudents = studentPool.length;
+    const totalSiblingGroups = siblingResults.length;
+    const totalSiblingStudents = siblingResults.reduce((acc, g) => acc + g.students.length, 0);
+    const totalRelativeGroups = relativeResults.length;
+    const totalRelativeStudents = relativeResults.reduce((acc, g) => acc + (g.totalCount || Object.values(g.branches || {}).reduce((a,b)=>a+b.length, 0)), 0);
+    const totalSolitaryStudents = solitaryResults.length;
+    const totalDuplicateGroups = duplicateResults.length;
+    const totalDuplicatesCount = duplicateResults.reduce((acc, g) => acc + g.students.length, 0);
+
+    // حساب التوائم
+    let twinCount = 0;
+    siblingResults.forEach(group => {
+        const gradesInFamily = {};
+        group.students.forEach(s => {
+            if (s.grade && s.grade !== '-') {
+                gradesInFamily[s.grade] = (gradesInFamily[s.grade] || 0) + 1;
+            }
+        });
+        Object.values(gradesInFamily).forEach(cnt => {
+            if (cnt > 1) twinCount += cnt;
+        });
+    });
+
+    // قائمة المراحل الفريدة
+    const gradeCounts = {};
+    studentPool.forEach(s => {
+        if (s.grade && s.grade.trim() !== '' && s.grade !== '-') {
+            const g = s.grade.trim();
+            gradeCounts[g] = (gradeCounts[g] || 0) + 1;
+        }
+    });
+    const uniqueGrades = Object.keys(gradeCounts).sort(compareGrades);
+
+    // دالة حماية النصوص
+    function escapeHtml(str) {
+        if (!str && str !== 0) return '';
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#039;');
+    }
+
+    // 1. بطاقات الإخوة الأشقاء
+    const shiftConfig = getShiftConfig();
+    const isDoubleShift = shiftConfig.mode === 'double';
+    let siblingsHtml = '';
+    if (siblingResults.length === 0) {
+        siblingsHtml = `<div class="empty-state-box">🔍 <p class="empty-title">${escapeHtml(dict.results_empty_title)}</p><p class="empty-desc">${escapeHtml(dict.results_empty_desc)}</p></div>`;
+    } else {
+        siblingResults.forEach((group, idx) => {
+            let hasMorning = false;
+            let hasEvening = false;
+            let groupShiftStatus = 'unknown';
+
+            if (isDoubleShift) {
+                group.students.forEach(s => {
+                    const sh = getStudentShift(s.section, shiftConfig.morningList, shiftConfig.eveningList);
+                    s.shift = sh;
+                    if (sh === 'morning') hasMorning = true;
+                    if (sh === 'evening') hasEvening = true;
+                });
+
+                if (hasMorning && hasEvening) {
+                    groupShiftStatus = 'split';
+                } else if (hasMorning && !hasEvening) {
+                    groupShiftStatus = 'morning';
+                } else if (hasEvening && !hasMorning) {
+                    groupShiftStatus = 'evening';
+                }
+            }
+
+            const isSplit = groupShiftStatus === 'split';
+            const cardClass = isSplit ? 'group-card group-card-sibling group-card-split-shift' : 'group-card group-card-sibling';
+            const searchPool = group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''} ${s.shift || ''}`).join(' ');
+            const gradesList = group.students.map(s => s.grade || '').join(' ');
+
+            siblingsHtml += `
+            <div class="${cardClass}" data-family="${escapeHtml(group.sharedName)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(gradesList)}">
+                <div class="group-card-header">
+                    <div class="header-main-info">
+                        <span class="header-icon">${isSplit ? '⚠️' : '👨‍👩‍👦'}</span>
+                        <span class="header-label">${escapeHtml(dict.family_label || 'بنەمالە / باپیرێ هەڤپشک:')}</span>
+                        <span class="header-name ${isSplit ? 'text-amber-theme' : 'text-blue-theme'}">${escapeHtml(group.sharedName)}</span>
+                        ${isSplit ? `<span class="clay-badge badge-amber font-extrabold">${escapeHtml(dict.shift_split_badge || '⚠️ دەوامێن جودا')}</span>` : ''}
+                        ${groupShiftStatus === 'morning' ? `<span class="clay-badge badge-amber">${escapeHtml(dict.shift_same_morning || '☀️ سپێدە')}</span>` : ''}
+                        ${groupShiftStatus === 'evening' ? `<span class="clay-badge badge-indigo">${escapeHtml(dict.shift_same_evening || '🌙 ئێڤار')}</span>` : ''}
+                    </div>
+                    <div class="header-actions">
+                        <button onclick="copyGroupCard(this)" class="clay-btn-sec action-pill no-print">
+                            <span>📋</span> <span>${escapeHtml(dict.copy_btn || 'کۆپی')}</span>
+                        </button>
+                        <span class="clay-badge ${isSplit ? 'badge-amber' : 'badge-blue'}">
+                            👥 ${escapeHtml(dict.siblings_count || 'قوتابی:')} <strong>${group.students.length}</strong>
+                        </span>
+                    </div>
+                </div>
+                <ul class="students-list">
+            `;
+            group.students.forEach((s, sIdx) => {
+                const isTwin = group.students.filter(st => st.grade === s.grade).length > 1;
+                const studentShift = isDoubleShift ? (s.shift || getStudentShift(s.section, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
+                siblingsHtml += `
+                    <li class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(s.name + ' ' + (s.mother || '') + ' ' + (s.grade || '') + ' ' + (s.section || ''))}">
+                        <div class="student-info-side">
+                            <span class="student-avatar-box ${isSplit ? (studentShift === 'morning' ? 'avatar-amber' : 'avatar-indigo') : 'avatar-blue'}">👤</span>
+                            <span class="student-name">${escapeHtml(s.name)}</span>
+                            ${isTwin ? `<span class="tag-twin">${escapeHtml(dict.twin_warn || '⚠️ دووانە؟')}</span>` : ''}
+                            ${s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
+                            ${isDoubleShift && studentShift === 'morning' ? `<span class="tag-shift-morning">☀️ ${escapeHtml(dict.shift_tag_morning || 'سپێدە')}</span>` : ''}
+                            ${isDoubleShift && studentShift === 'evening' ? `<span class="tag-shift-evening">🌙 ${escapeHtml(dict.shift_tag_evening || 'ئێڤار')}</span>` : ''}
+                        </div>
+                        <div class="student-meta-side">
+                            <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
+                            <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
+                        </div>
+                    </li>
+                `;
+            });
+            siblingsHtml += `
+                </ul>
+            </div>
+            `;
+        });
+    }
+
+    // 2. بطاقات الأقارب والعمومة
+    let relativesHtml = '';
+    if (relativeResults.length === 0) {
+        relativesHtml = `<div class="empty-state-box">🔍 <p class="empty-title">${escapeHtml(dict.results_empty_title)}</p><p class="empty-desc">${escapeHtml(dict.results_empty_desc)}</p></div>`;
+    } else {
+        relativeResults.forEach((group, idx) => {
+            const isMaternal = group.type === 'maternal';
+            const cardClass = isMaternal ? 'group-card-maternal' : 'group-card-paternal';
+            const tagColorClass = isMaternal ? 'text-pink-theme' : 'text-indigo-theme';
+            const badgeThemeClass = isMaternal ? 'badge-pink' : 'badge-indigo';
+            const icon = isMaternal ? '🌸' : '🌿';
+            const relCategory = isMaternal ? (dict.maternal_card_title || 'ژ لایێ دەیکێ') : (dict.paternal_card_title || 'ژ لایێ بابێ');
+            const totalGroupCount = group.totalCount || Object.values(group.branches || {}).reduce((a,b)=>a+b.length, 0);
+            const allBranchStudents = Object.values(group.branches || {}).flatMap(b => b);
+            const searchPool = allBranchStudents.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ');
+            const gradesList = allBranchStudents.map(s => s.grade || '').join(' ');
+
+            relativesHtml += `
+            <div class="group-card ${cardClass}" data-family="${escapeHtml(group.sharedKey)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(gradesList)}">
+                <div class="group-card-header">
+                    <div class="header-main-info">
+                        <span class="header-icon">${icon}</span>
+                        <span class="header-label">${escapeHtml(relCategory)}</span>
+                        <span class="header-name ${tagColorClass}">${escapeHtml(group.sharedKey)}</span>
+                    </div>
+                    <div class="header-actions">
+                        <button onclick="copyGroupCard(this)" class="clay-btn-sec action-pill no-print">
+                            <span>📋</span> <span>${escapeHtml(dict.copy_btn || 'کۆپی')}</span>
+                        </button>
+                        <span class="clay-badge ${badgeThemeClass}">
+                            👥 ${escapeHtml(dict.siblings_count || 'قوتابی:')} <strong>${totalGroupCount}</strong>
+                        </span>
+                    </div>
+                </div>
+                <div class="branches-wrapper">
+            `;
+            if (group.branches) {
+                Object.keys(group.branches).forEach(branchKey => {
+                    const branchStudents = group.branches[branchKey];
+                    const branchBoxClass = isMaternal ? 'branch-box-maternal' : 'branch-box-paternal';
+                    relativesHtml += `
+                    <div class="branch-box ${branchBoxClass}">
+                        <div class="branch-box-header">
+                            <div class="branch-title-wrap">
+                                <span>${isMaternal ? '🌸' : '🌿'}</span>
+                                <span class="branch-label">${isMaternal ? escapeHtml(dict.branch_label || 'دەیک:') : escapeHtml(dict.father_branch || 'تایا بابێ:')}</span>
+                                <strong class="${tagColorClass}">${escapeHtml(branchKey)}</strong>
+                            </div>
+                            <span class="clay-badge badge-neutral-soft">
+                                ${branchStudents.length} ${escapeHtml(dict.students_suffix || 'قوتابی')}
+                            </span>
+                        </div>
+                        <ul class="students-list">
+                    `;
+                    branchStudents.forEach(s => {
+                        relativesHtml += `
+                            <li class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(s.name + ' ' + (s.mother || '') + ' ' + (s.grade || '') + ' ' + (s.section || ''))}">
+                                <div class="student-info-side">
+                                    <span class="student-avatar-box ${isMaternal ? 'avatar-pink' : 'avatar-indigo'}">👤</span>
+                                    <span class="student-name">${escapeHtml(s.name)}</span>
+                                    ${s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
+                                </div>
+                                <div class="student-meta-side">
+                                    <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
+                                    <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
+                                </div>
+                            </li>
+                        `;
+                    });
+                    relativesHtml += `
+                        </ul>
+                    </div>
+                    `;
+                });
+            }
+            relativesHtml += `
+                </div>
+            </div>
+            `;
+        });
+    }
+
+    // 3. بطاقات الوحيدين
+    let solitaryHtml = '';
+    if (solitaryResults.length === 0) {
+        solitaryHtml = `<div class="empty-state-box">👤 <p class="empty-title">${escapeHtml(dict.no_singletons || 'چو قوتابیێن ب تنێ نینن')}</p></div>`;
+    } else {
+        solitaryResults.forEach((s) => {
+            const searchPool = `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`;
+            solitaryHtml += `
+            <div class="group-card group-card-solitary" data-family="${escapeHtml(s.name)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(s.grade || '')}">
+                <div class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(searchPool)}">
+                    <div class="student-info-side">
+                        <span class="student-avatar-box avatar-rose">👤</span>
+                        <span class="student-name">${escapeHtml(s.name)}</span>
+                        ${s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
+                        <span class="tag-solitary">${escapeHtml(dict.csv_solitary_type || 'ب تنێ')}</span>
+                    </div>
+                    <div class="student-meta-side">
+                        <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
+                        <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
+                    </div>
+                </div>
+            </div>
+            `;
+        });
+    }
+
+    // 4. بطاقات السجل العام لكافة الطلاب
+    let allStudentsHtml = '';
+    studentPool.forEach((s, sIdx) => {
+        const searchPool = `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`;
+        allStudentsHtml += `
+        <div class="group-card group-card-all" data-family="${escapeHtml(s.name)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(s.grade || '')}">
+            <div class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(searchPool)}">
+                <div class="student-info-side">
+                    <span class="student-index-badge">#${sIdx + 1}</span>
+                    <span class="student-avatar-box avatar-slate">👤</span>
+                    <span class="student-name">${escapeHtml(s.name)}</span>
+                    ${s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
+                </div>
+                <div class="student-meta-side">
+                    <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
+                    <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
+                </div>
+            </div>
+        </div>
+        `;
+    });
+
+    // 5. بطاقات الأسماء المتشابهة
+    let duplicatesHtml = '';
+    if (duplicateResults.length === 0) {
+        duplicatesHtml = `<div class="empty-state-box">🔁 <p class="empty-title">${escapeHtml(dict.no_duplicates || 'چو ناڤێن وەکهەڤ نینن')}</p></div>`;
+    } else {
+        duplicateResults.forEach((group, idx) => {
+            const searchPool = group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ');
+            const gradesList = group.students.map(s => s.grade || '').join(' ');
+            duplicatesHtml += `
+            <div class="group-card group-card-duplicate" data-family="${escapeHtml(group.sharedName)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(gradesList)}">
+                <div class="group-card-header">
+                    <div class="header-main-info">
+                        <span class="header-icon">🔁</span>
+                        <span class="header-label">${escapeHtml(dict.tab_duplicates || 'ناڤێن وەکهەڤ:')}</span>
+                        <span class="header-name text-teal-theme">${escapeHtml(group.sharedName)}</span>
+                    </div>
+                    <div class="header-actions">
+                        <button onclick="copyGroupCard(this)" class="clay-btn-sec action-pill no-print">
+                            <span>📋</span> <span>${escapeHtml(dict.copy_btn || 'کۆپی')}</span>
+                        </button>
+                        <span class="clay-badge badge-teal">
+                            👥 ${escapeHtml(dict.siblings_count || 'قوتابی:')} <strong>${group.students.length}</strong>
+                        </span>
+                    </div>
+                </div>
+                <ul class="students-list">
+            `;
+            group.students.forEach((s) => {
+                duplicatesHtml += `
+                    <li class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(s.name + ' ' + (s.mother || '') + ' ' + (s.grade || '') + ' ' + (s.section || ''))}">
+                        <div class="student-info-side">
+                            <span class="student-avatar-box avatar-teal">👤</span>
+                            <span class="student-name">${escapeHtml(s.name)}</span>
+                            ${s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
+                        </div>
+                        <div class="student-meta-side">
+                            <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
+                            <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
+                        </div>
+                    </li>
+                `;
+            });
+            duplicatesHtml += `
+                </ul>
+            </div>
+            `;
+        });
+    }
+
+    // بناء قائمة المراحل المنسدلة
+    let gradesOptionsHtml = `<button type="button" class="grade-item active" onclick="setGradeFilter('all', '🏷️ ${escapeHtml(dict.all_grades || 'هەمی قۆناغ')}')"><span>🏷️ ${escapeHtml(dict.all_grades || 'هەمی قۆناغ')}</span> <span>(${totalStudents})</span></button>`;
+    uniqueGrades.forEach(g => {
+        const rank = getGradeRank(g);
+        const emoji = getGradeEmoji(rank);
+        const count = gradeCounts[g];
+        gradesOptionsHtml += `<button type="button" class="grade-item" onclick="setGradeFilter('${escapeHtml(g)}', '${emoji} ${escapeHtml(g)}')"><span>${emoji} ${escapeHtml(g)}</span> <span>(${count})</span></button>`;
+    });
+
+    // بناء الوثيقة الكاملة بتصميم Claymorphism المطابق للموقع الأصلي
+    const fullHtmlDoc = `<!DOCTYPE html>
+<html lang="${currentLang.startsWith('ku') ? 'ku' : currentLang}" dir="${isRtl ? 'rtl' : 'ltr'}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>${escapeHtml(schoolName || 'School Report')} - Claymorphism Standalone Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* نظام ألوان Claymorphism المطابق 100% لتصميم الموقع */
+        :root {
+            --clay-bg: #edf2f7;
+            --clay-primary: #5a8fee;
+            --clay-primary-hover: #4a7fdc;
+            --clay-shadow-color: rgba(165, 180, 200, 0.28);
+            --clay-inner-shadow: rgba(165, 180, 200, 0.15);
+            --clay-card-bg: rgba(255, 255, 255, 0.94);
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --font-family: 'Noto Kufi Arabic', 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Tahoma, Arial, sans-serif;
+        }
+
+        .theme-green {
+            --clay-bg: #edf6f2;
+            --clay-primary: #38b289;
+            --clay-primary-hover: #2c9a74;
+            --clay-shadow-color: rgba(160, 190, 175, 0.28);
+            --clay-inner-shadow: rgba(160, 190, 175, 0.15);
+        }
+        .theme-pink {
+            --clay-bg: #faf0f3;
+            --clay-primary: #e06d99;
+            --clay-primary-hover: #cc5b86;
+            --clay-shadow-color: rgba(210, 175, 190, 0.28);
+            --clay-inner-shadow: rgba(210, 175, 190, 0.15);
+        }
+        .theme-purple {
+            --clay-bg: #f5f0fb;
+            --clay-primary: #8d75dc;
+            --clay-primary-hover: #7b62ca;
+            --clay-shadow-color: rgba(185, 170, 215, 0.28);
+            --clay-inner-shadow: rgba(185, 170, 215, 0.15);
+        }
+        .theme-dark {
+            --clay-bg: #0b1120;
+            --clay-card-bg: rgba(21, 30, 48, 0.95);
+            --clay-primary: #3b82f6;
+            --clay-primary-hover: #60a5fa;
+            --clay-shadow-color: rgba(0, 0, 0, 0.6);
+            --clay-inner-shadow: rgba(0, 0, 0, 0.35);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            color: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--clay-bg);
+            color: var(--text-main);
+            min-height: 100vh;
+            direction: ${isRtl ? 'rtl' : 'ltr'};
+            padding: 12px sm:padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: background-color 0.15s ease, color 0.15s ease;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* 3D Calm Clay Cards */
+        .clay-card {
+            background: var(--clay-card-bg);
+            border-radius: 20px;
+            box-shadow: 
+                6px 10px 20px var(--clay-shadow-color),
+                -6px -6px 20px rgba(255, 255, 255, 0.85),
+                inset -3px -3px 6px var(--clay-inner-shadow),
+                inset 3px 3px 6px rgba(255, 255, 255, 0.85);
+            border: 1.5px solid rgba(255, 255, 255, 0.65);
+            transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.08s ease;
+            padding: 16px;
+        }
+        .theme-dark .clay-card {
+            background: rgba(21, 30, 48, 0.95);
+            box-shadow: 
+                6px 10px 24px var(--clay-shadow-color),
+                -3px -3px 12px rgba(255, 255, 255, 0.02),
+                inset -2px -2px 6px rgba(0, 0, 0, 0.5),
+                inset 2px 2px 6px rgba(255, 255, 255, 0.05);
+            border: 1.5px solid rgba(71, 85, 105, 0.6);
+        }
+
+        /* شريط التحكم العلوي والألوان */
+        .top-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .top-app-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .top-brand-icon {
+            font-size: 24px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            padding: 4px 8px;
+            box-shadow: 2px 3px 8px var(--clay-shadow-color);
+        }
+        .theme-dark .top-brand-icon {
+            background: rgba(30, 41, 59, 0.9);
+        }
+        .top-brand-title {
+            font-size: 16px;
+            font-weight: 900;
+            color: var(--clay-primary);
+        }
+        .top-brand-sub {
+            font-size: 11px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .top-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .theme-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            transition: transform 0.1s ease;
+        }
+        .theme-dot:hover { transform: scale(1.15); }
+        .theme-dot-blue { background: #60a5fa; }
+        .theme-dot-green { background: #34d399; }
+        .theme-dot-pink { background: #f472b6; }
+        .theme-dot-purple { background: #a78bfa; }
+
+        /* الأزرار بنمط Claymorphism */
+        .clay-btn {
+            background: var(--clay-primary);
+            border-radius: 12px;
+            box-shadow: 
+                3px 5px 12px var(--clay-shadow-color),
+                inset -2px -2px 5px rgba(0, 0, 0, 0.15),
+                inset 2px 2px 5px rgba(255, 255, 255, 0.22);
+            border: 1.5px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 11.5px;
+            font-weight: 800;
+            padding: 7px 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: filter 0.08s ease, transform 0.08s ease;
+        }
+        .clay-btn:hover { filter: brightness(1.06); transform: translateY(-1px); }
+        .clay-btn:active { transform: scale(0.96); }
+
+        .clay-btn-sec {
+            background: #e6ebf2;
+            color: #374151;
+            border-radius: 12px;
+            box-shadow: 
+                2px 4px 8px var(--clay-shadow-color),
+                inset -2px -2px 4px rgba(0, 0, 0, 0.05),
+                inset 2px 2px 4px rgba(255, 255, 255, 0.85);
+            border: 1.5px solid rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 7px 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: filter 0.08s ease, transform 0.08s ease;
+        }
+        .theme-dark .clay-btn-sec {
+            background: #1e293b;
+            color: #e2e8f0;
+            box-shadow: 2px 4px 8px var(--clay-shadow-color), inset -2px -2px 4px rgba(0, 0, 0, 0.3), inset 2px 2px 4px rgba(255, 255, 255, 0.06);
+            border: 1.5px solid #475569;
+        }
+        .clay-btn-sec:hover { filter: brightness(1.06); transform: translateY(-1px); }
+        .clay-btn-sec:active { transform: scale(0.96); }
+
+        /* شريط كروت الإحصائيات الستة الملونة 3D Clay */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+        @media (min-width: 640px) {
+            .stats-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (min-width: 1024px) {
+            .stats-grid { grid-template-columns: repeat(6, 1fr); }
+        }
+
+        .stat-card {
+            border-radius: 16px;
+            padding: 10px 12px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.1s ease;
+        }
+        .stat-card-title {
+            font-size: 10px;
+            font-weight: 800;
+            margin-bottom: 2px;
+        }
+        .stat-card-num {
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+        .stat-card-sub {
+            font-size: 9px;
+            font-weight: 700;
+            opacity: 0.85;
+            margin-top: 2px;
+        }
+
+        .stat-card-blue {
+            background: rgba(219, 234, 254, 0.94);
+            border: 1.5px solid rgba(147, 197, 253, 0.85);
+            box-shadow: 4px 6px 14px rgba(147, 197, 253, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(59, 130, 246, 0.12);
+            color: #1e40af;
+        }
+        .stat-card-green {
+            background: rgba(209, 250, 229, 0.94);
+            border: 1.5px solid rgba(110, 231, 183, 0.85);
+            box-shadow: 4px 6px 14px rgba(110, 231, 183, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(16, 185, 129, 0.12);
+            color: #065f46;
+        }
+        .stat-card-purple {
+            background: rgba(224, 231, 255, 0.94);
+            border: 1.5px solid rgba(165, 180, 252, 0.85);
+            box-shadow: 4px 6px 14px rgba(165, 180, 252, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(99, 102, 241, 0.12);
+            color: #3730a3;
+        }
+        .stat-card-amber {
+            background: rgba(254, 243, 199, 0.94);
+            border: 1.5px solid rgba(252, 211, 77, 0.85);
+            box-shadow: 4px 6px 14px rgba(252, 211, 77, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(245, 158, 11, 0.12);
+            color: #92400e;
+        }
+        .stat-card-rose {
+            background: rgba(255, 228, 230, 0.94);
+            border: 1.5px solid rgba(253, 164, 175, 0.85);
+            box-shadow: 4px 6px 14px rgba(253, 164, 175, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(244, 63, 94, 0.12);
+            color: #9f1239;
+        }
+        .stat-card-teal {
+            background: rgba(204, 251, 241, 0.94);
+            border: 1.5px solid rgba(94, 234, 212, 0.85);
+            box-shadow: 4px 6px 14px rgba(94, 234, 212, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(20, 184, 166, 0.12);
+            color: #115e59;
+        }
+
+        .theme-dark .stat-card-blue {
+            background: rgba(24, 48, 88, 0.92);
+            border: 1.5px solid #60a5fa;
+            color: #93c5fd;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+        }
+        .theme-dark .stat-card-green {
+            background: rgba(14, 60, 45, 0.92);
+            border: 1.5px solid #34d399;
+            color: #6ee7b7;
+            box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+        }
+        .theme-dark .stat-card-purple {
+            background: rgba(45, 34, 85, 0.92);
+            border: 1.5px solid #818cf8;
+            color: #c7d2fe;
+            box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+        }
+        .theme-dark .stat-card-amber {
+            background: rgba(70, 48, 16, 0.92);
+            border: 1.5px solid #fbbf24;
+            color: #fde68a;
+            box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+        }
+        .theme-dark .stat-card-rose {
+            background: rgba(75, 20, 38, 0.92);
+            border: 1.5px solid #fb7185;
+            color: #fecdd3;
+            box-shadow: 0 4px 14px rgba(244, 63, 94, 0.35);
+        }
+        .theme-dark .stat-card-teal {
+            background: rgba(19, 78, 74, 0.92);
+            border: 1.5px solid #2dd4bf;
+            color: #99f6e4;
+            box-shadow: 0 4px 14px rgba(20, 184, 166, 0.35);
+        }
+
+        /* شريط التبويبات المتناسق */
+        .tab-bar-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+        }
+        .tab-buttons-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
+        }
+        @media (min-width: 640px) {
+            .tab-buttons-row { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (min-width: 860px) {
+            .tab-buttons-row { grid-template-columns: repeat(5, 1fr); }
+        }
+
+        .tab-btn {
+            padding: 8px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            cursor: pointer;
+            transition: all 0.1s ease;
+            font-family: inherit;
+            border: none;
+        }
+
+        /* شريط البحث وفلترة المراحل */
+        .filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+        .search-box-wrap {
+            position: relative;
+            flex: 1;
+            min-width: 220px;
+        }
+        .clay-input {
+            background: #f8fafc;
+            border-radius: 12px;
+            box-shadow: inset 2px 2px 4px var(--clay-inner-shadow), inset -2px -2px 4px rgba(255, 255, 255, 0.9);
+            border: 1.5px solid #cbd5e1;
+            padding: 7px 12px;
+            font-size: 12px;
+            font-family: inherit;
+            width: 100%;
+            color: var(--text-main);
+            outline: none;
+            transition: border-color 0.15s ease;
+        }
+        .theme-dark .clay-input {
+            background: #1e293b;
+            color: #f1f5f9;
+            border: 1.5px solid #475569;
+            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.4), inset -1px -1px 3px rgba(255,255,255,0.05);
+        }
+        .clay-input:focus { border-color: var(--clay-primary); }
+
+        /* القائمة المنسدلة للمراحل */
+        .grade-dropdown-wrapper {
+            position: relative;
+            min-width: 170px;
+        }
+        .grade-btn {
+            background: linear-gradient(135deg, rgba(236, 253, 245, 0.95), rgba(209, 250, 229, 0.8));
+            border: 1.5px solid #10b981;
+            color: #065f46;
+            padding: 7px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 800;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-family: inherit;
+        }
+        .theme-dark .grade-btn {
+            background: linear-gradient(135deg, rgba(6, 78, 59, 0.95), rgba(15, 23, 42, 0.8));
+            border: 1.5px solid #34d399;
+            color: #6ee7b7;
+        }
+        .grade-menu {
+            position: absolute;
+            top: calc(100% + 4px);
+            ${isRtl ? 'right: 0;' : 'left: 0;'}
+            width: 220px;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 6px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border: 1px solid #cbd5e1;
+            z-index: 50;
+            display: none;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+        .theme-dark .grade-menu {
+            background: #0f172a;
+            border: 1.5px solid #334155;
+        }
+        .grade-menu.open { display: block; }
+        .grade-item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px 8px;
+            border-radius: 8px;
+            font-size: 10.5px;
+            font-weight: 700;
+            border: none;
+            background: none;
+            cursor: pointer;
+            color: var(--text-main);
+            font-family: inherit;
+            text-align: ${isRtl ? 'right' : 'left'};
+        }
+        .grade-item:hover { background: rgba(209, 250, 229, 0.6); color: #047857; }
+        .grade-item.active { background: #10b981; color: #ffffff; }
+
+        /* منطقة النتائج والبطاقات */
+        .results-scroll-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            min-height: 380px;
+        }
+
+        .tab-section {
+            display: none;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .tab-section.active {
+            display: flex;
+        }
+
+        /* تصميم كروت المجموعات (Group Cards) المطابق تماماً لتصميم الموقع */
+        .group-card {
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 2px 8px rgba(100, 116, 139, 0.08);
+            padding: 6px 8px;
+            transition: transform 0.08s ease, box-shadow 0.08s ease;
+        }
+        .theme-dark .group-card {
+            background: #0f172a;
+            border: 1.5px solid #334155;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+        }
+
+        /* كروت الإخوة الأشقاء */
+        .group-card-sibling {
+            border: 1px solid #60a5fa;
+            box-shadow: 0 2px 10px rgba(59, 130, 246, 0.1);
+        }
+        .group-card-sibling .group-card-header {
+            background: linear-gradient(135deg, rgba(239, 246, 255, 0.95), rgba(219, 234, 254, 0.8));
+            border: 1px solid rgba(147, 197, 253, 0.6);
+        }
+        .theme-dark .group-card-sibling {
+            border: 1.5px solid #3b82f6;
+        }
+        .theme-dark .group-card-sibling .group-card-header {
+            background: linear-gradient(135deg, #1e3a8a, #172554);
+            border: 1px solid #3b82f6;
+        }
+
+        /* كروت أقارب الأب */
+        .group-card-paternal {
+            border: 1px solid #818cf8;
+            box-shadow: 0 2px 10px rgba(99, 102, 241, 0.1);
+        }
+        .group-card-paternal .group-card-header {
+            background: linear-gradient(135deg, rgba(238, 242, 255, 0.95), rgba(224, 231, 255, 0.8));
+            border: 1px solid rgba(165, 180, 252, 0.6);
+        }
+        .theme-dark .group-card-paternal {
+            border: 1.5px solid #818cf8;
+        }
+        .theme-dark .group-card-paternal .group-card-header {
+            background: linear-gradient(135deg, #312e81, #1e1b4b);
+            border: 1px solid #818cf8;
+        }
+
+        /* كروت أقارب الأم */
+        .group-card-maternal {
+            border: 1px solid #f472b6;
+            box-shadow: 0 2px 10px rgba(236, 72, 153, 0.1);
+        }
+        .group-card-maternal .group-card-header {
+            background: linear-gradient(135deg, rgba(253, 242, 248, 0.95), rgba(252, 231, 243, 0.8));
+            border: 1px solid rgba(249, 168, 212, 0.6);
+        }
+        .theme-dark .group-card-maternal {
+            border: 1.5px solid #f472b6;
+        }
+        .theme-dark .group-card-maternal .group-card-header {
+            background: linear-gradient(135deg, #831843, #500724);
+            border: 1px solid #f472b6;
+        }
+
+        /* كروت الوحيدين والمتشابهين والعامة */
+        .group-card-solitary {
+            border: 1px solid #fb7185;
+            box-shadow: 0 2px 10px rgba(244, 63, 94, 0.1);
+        }
+        .theme-dark .group-card-solitary {
+            border: 1.5px solid #fb7185;
+        }
+
+        .group-card-duplicate {
+            border: 1px solid #14b8a6;
+            box-shadow: 0 2px 10px rgba(20, 184, 166, 0.1);
+        }
+        .group-card-duplicate .group-card-header {
+            background: linear-gradient(135deg, rgba(240, 253, 250, 0.95), rgba(204, 251, 241, 0.8));
+            border: 1px solid rgba(153, 246, 228, 0.6);
+        }
+        .theme-dark .group-card-duplicate .group-card-header {
+            background: linear-gradient(135deg, #134e4a, #042f2e);
+            border: 1px solid #14b8a6;
+        }
+
+        .group-card-all {
+            border: 1px solid #94a3b8;
+            padding: 5px 8px;
+        }
+
+        .group-card-header {
+            border-radius: 8px;
+            padding: 4px 8px;
+            margin-bottom: 4px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 6px;
+        }
+        .header-main-info {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .header-icon { font-size: 13px; }
+        .header-label { font-size: 8.5px; font-weight: 700; color: #64748b; }
+        .theme-dark .header-label { color: #94a3b8; }
+        .header-name { font-size: 12px; font-weight: 900; }
+        .text-blue-theme { color: #1e3a8a; }
+        .theme-dark .text-blue-theme { color: #bfdbfe; }
+        .text-indigo-theme { color: #312e81; }
+        .theme-dark .text-indigo-theme { color: #c7d2fe; }
+        .text-pink-theme { color: #831843; }
+        .theme-dark .text-pink-theme { color: #fbcfe8; }
+        .text-teal-theme { color: #134e4a; }
+        .theme-dark .text-teal-theme { color: #99f6e4; }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .action-pill {
+            font-size: 8px;
+            padding: 2px 6px;
+            border-radius: 8px;
+        }
+
+        /* صفوف وقائمة الطلاب (Student Items) */
+        .students-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .student-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px 6px;
+            background: #f8fafc;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            gap: 4px;
+            font-size: 11px;
+            transition: background-color 0.08s ease;
+        }
+        .theme-dark .student-item {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(71, 85, 105, 0.6);
+        }
+        .student-item:hover {
+            background: #f1f5f9;
+        }
+        .theme-dark .student-item:hover {
+            background: rgba(51, 65, 85, 0.9);
+        }
+
+        .student-info-side {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .student-index-badge {
+            font-size: 9px;
+            font-weight: 800;
+            color: #94a3b8;
+            min-width: 20px;
+        }
+        .student-avatar-box {
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .avatar-blue { background: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; }
+        .avatar-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+        .avatar-indigo { background: #e0e7ff; color: #4338ca; border: 1px solid #c7d2fe; }
+        .avatar-pink { background: #fce7f3; color: #be185d; border: 1px solid #fbcfe8; }
+        .avatar-rose { background: #ffe4e6; color: #e11d48; border: 1px solid #fecdd3; }
+        .avatar-teal { background: #ccfbf1; color: #0f766e; border: 1px solid #99f6e4; }
+        .avatar-slate { background: #e2e8f0; color: #475569; border: 1px solid #cbd5e1; }
+
+        .group-card-split-shift {
+            border: 1.8px solid #f59e0b !important;
+            box-shadow: 0 3px 14px rgba(245, 158, 11, 0.25) !important;
+        }
+        .group-card-split-shift .group-card-header {
+            background: linear-gradient(135deg, rgba(254, 243, 199, 0.98), rgba(253, 230, 138, 0.9)) !important;
+            border: 1.2px solid rgba(245, 158, 11, 0.75) !important;
+        }
+        .theme-dark .group-card-split-shift {
+            border: 1.8px solid #f59e0b !important;
+            box-shadow: 0 4px 18px rgba(245, 158, 11, 0.35) !important;
+        }
+        .theme-dark .group-card-split-shift .group-card-header {
+            background: linear-gradient(135deg, #78350f, #451a03) !important;
+            border: 1.2px solid #f59e0b !important;
+        }
+
+        .text-amber-theme { color: #78350f; }
+        .theme-dark .text-amber-theme { color: #fde68a; }
+
+        .tag-shift-morning {
+            background: #fef3c7;
+            color: #92400e;
+            font-size: 7.5px;
+            font-weight: 800;
+            padding: 1px 5px;
+            border-radius: 4px;
+            border: 1px solid #fde68a;
+        }
+        .theme-dark .tag-shift-morning {
+            background: #451a03;
+            color: #fde68a;
+            border-color: #78350f;
+        }
+
+        .tag-shift-evening {
+            background: #e0e7ff;
+            color: #3730a3;
+            font-size: 7.5px;
+            font-weight: 800;
+            padding: 1px 5px;
+            border-radius: 4px;
+            border: 1px solid #c7d2fe;
+        }
+        .theme-dark .tag-shift-evening {
+            background: #1e1b4b;
+            color: #c7d2fe;
+            border-color: #3730a3;
+        }
+
+        .badge-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+        .theme-dark .badge-amber { background: #451a03; color: #fde68a; border-color: #78350f; }
+
+        .student-name {
+            font-weight: 800;
+            color: var(--text-main);
+            font-size: 11.5px;
+        }
+
+        .tag-twin {
+            background: rgba(254, 243, 199, 0.9);
+            color: #92400e;
+            font-size: 8px;
+            font-weight: 800;
+            padding: 1px 4px;
+            border-radius: 4px;
+            border: 1px solid #fde68a;
+        }
+        .theme-dark .tag-twin {
+            background: #451a03;
+            color: #fde68a;
+            border-color: #78350f;
+        }
+
+        .tag-mother {
+            background: #fdf2f8;
+            color: #be185d;
+            font-size: 8px;
+            font-weight: 700;
+            padding: 1px 4px;
+            border-radius: 4px;
+            border: 1px solid #fbcfe8;
+        }
+        .theme-dark .tag-mother {
+            background: #500724;
+            color: #fbcfe8;
+            border-color: #831843;
+        }
+
+        .tag-solitary {
+            background: #ffe4e6;
+            color: #e11d48;
+            font-size: 8px;
+            font-weight: 800;
+            padding: 1px 4px;
+            border-radius: 4px;
+            border: 1px solid #fecdd3;
+        }
+
+        .student-meta-side {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+
+        /* الشارات الناعمة (Clay Badges) */
+        .clay-badge {
+            font-size: 8px;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+        }
+        .badge-blue { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+        .badge-indigo { background: #eef2ff; color: #4338ca; border: 1px solid #c7d2fe; }
+        .badge-pink { background: #fdf2f8; color: #be185d; border: 1px solid #fbcfe8; }
+        .badge-teal { background: #f0fdf4; color: #0f766e; border: 1px solid #99f6e4; }
+        .badge-blue-soft { background: #eff6ff; color: #1e40af; border: 1px solid #dbeafe; }
+        .badge-green-soft { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+        .badge-neutral-soft { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
+
+        .theme-dark .badge-blue { background: #172554; color: #93c5fd; border-color: #1e40af; }
+        .theme-dark .badge-indigo { background: #1e1b4b; color: #c7d2fe; border-color: #3730a3; }
+        .theme-dark .badge-pink { background: #500724; color: #fbcfe8; border-color: #831843; }
+        .theme-dark .badge-teal { background: #042f2e; color: #99f6e4; border-color: #115e59; }
+        .theme-dark .badge-blue-soft { background: #1e293b; color: #93c5fd; border-color: #334155; }
+        .theme-dark .badge-green-soft { background: #064e3b; color: #6ee7b7; border-color: #047857; }
+        .theme-dark .badge-neutral-soft { background: #1e293b; color: #cbd5e1; border-color: #334155; }
+
+        /* فروع الأقارب داخل الكارت */
+        .branches-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .branch-box {
+            border-radius: 8px;
+            padding: 4px 6px;
+            border: 1px solid #e2e8f0;
+        }
+        .branch-box-paternal { background: rgba(238, 242, 255, 0.4); border-color: #e0e7ff; }
+        .branch-box-maternal { background: rgba(253, 242, 248, 0.4); border-color: #fce7f3; }
+        .theme-dark .branch-box-paternal { background: rgba(30, 27, 75, 0.4); border-color: #312e81; }
+        .theme-dark .branch-box-maternal { background: rgba(80, 7, 36, 0.4); border-color: #831843; }
+
+        .branch-box-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3px;
+            padding-bottom: 2px;
+            border-bottom: 1px dashed rgba(148, 163, 184, 0.3);
+        }
+        .branch-title-wrap {
+            font-size: 9.5px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .branch-label { color: #64748b; font-size: 8.5px; }
+
+        .empty-state-box {
+            text-align: center;
+            padding: 30px 10px;
+            color: #94a3b8;
+            font-size: 24px;
+        }
+        .empty-title { font-size: 13px; font-weight: 800; color: var(--text-main); margin-top: 4px; }
+        .empty-desc { font-size: 10px; color: var(--text-muted); }
+
+        /* Toast الإشعارات المنبثقة */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            ${isRtl ? 'left: 20px;' : 'right: 20px;'}
+            background: rgba(15, 23, 42, 0.92);
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.2s ease;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* تذييل التقرير الرسمي */
+        .official-footer-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 14px;
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(148, 163, 184, 0.2);
+            margin-top: 10px;
+        }
+
+        /* تنسيقات الطباعة الرسمية الورقية */
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+                padding: 0 !important;
+            }
+            .no-print, .top-toolbar, .tab-bar-container, .filter-row, .theme-dot, .clay-btn, .action-pill {
+                display: none !important;
+            }
+            .clay-card {
+                box-shadow: none !important;
+                border: 1px solid #cbd5e1 !important;
+                padding: 10px !important;
+            }
+            .tab-section {
+                display: flex !important;
+                margin-bottom: 20px;
+            }
+            .group-card {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                box-shadow: none !important;
+                border: 1px solid #94a3b8 !important;
+                margin-bottom: 8px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        
+        <!-- شريط الإعدادات والتحكم العلوي المتناسق بتصميم كلاي مورفيزم الهادئ (Clay Top Bar) -->
+        <header class="top-toolbar no-print">
+            <div class="top-app-brand">
+                <span class="top-brand-icon">👨‍👩‍👧‍👦</span>
+                <div>
+                    <h1 class="top-brand-title">${escapeHtml(schoolName || 'راپۆرتا فەرمی یا قوتابخانەیێ')}</h1>
+                    <p class="top-brand-sub">${escapeHtml(directorate || 'رێڤەبەریا پەروەردێ')} | ${escapeHtml(dict.year_label || 'ساڵا خاندنێ:')} ${escapeHtml(academicYear)}</p>
+                </div>
+            </div>
+
+            <div class="top-controls">
+                <!-- ألوان التصميم المبهجة -->
+                <button type="button" onclick="setAppTheme('blue')" title="Blue" class="theme-dot theme-dot-blue"></button>
+                <button type="button" onclick="setAppTheme('green')" title="Green" class="theme-dot theme-dot-green"></button>
+                <button type="button" onclick="setAppTheme('pink')" title="Pink" class="theme-dot theme-dot-pink"></button>
+                <button type="button" onclick="setAppTheme('purple')" title="Purple" class="theme-dot theme-dot-purple"></button>
+                
+                <!-- زر التبديل للوضع الليلي -->
+                <button type="button" onclick="toggleDarkMode()" class="clay-btn-sec">
+                    <span>🌓</span>
+                    <span id="darkToggleLabel">${isRtl ? 'داكن / فاتح' : 'Dark Mode'}</span>
+                </button>
+
+                <!-- زر الطباعة وتوليد PDF -->
+                <button type="button" onclick="window.print()" class="clay-btn">
+                    <span>🖨️</span>
+                    <span>${escapeHtml(dict.btn_print || 'چاپکرن')}</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- كروت الإحصائيات الستة الملونة 3D Clay -->
+        <section class="stats-grid no-print">
+            <!-- 1. إجمالي الطلاب -->
+            <div class="stat-card stat-card-blue">
+                <div class="stat-card-title">📊 ${escapeHtml(dict.stat_total || 'إجمالي الطلاب')}</div>
+                <div class="stat-card-num">${totalStudents}</div>
+                <div class="stat-card-sub">${totalStudents} ${escapeHtml(dict.students_suffix || 'قوتابی')}</div>
+            </div>
+            <!-- 2. الإخوة الأشقاء -->
+            <div class="stat-card stat-card-green">
+                <div class="stat-card-title">👨‍👩‍👧‍👦 ${escapeHtml(dict.stat_siblings || 'خویشک و برا')}</div>
+                <div class="stat-card-num">${totalSiblingStudents}</div>
+                <div class="stat-card-sub">${totalSiblingGroups} ${escapeHtml(dict.badge_groups_sib || 'خێزان')}</div>
+            </div>
+            <!-- 3. الأقارب والعمومة -->
+            <div class="stat-card stat-card-purple">
+                <div class="stat-card-title">🌿 ${escapeHtml(dict.stat_relatives || 'پسمام و کەسوکار')}</div>
+                <div class="stat-card-num">${totalRelativeStudents}</div>
+                <div class="stat-card-sub">${totalRelativeGroups} ${escapeHtml(dict.badge_groups_rel || 'کۆم')}</div>
+            </div>
+            <!-- 4. التوائم -->
+            <div class="stat-card stat-card-amber">
+                <div class="stat-card-title">⚠️ ${escapeHtml(dict.stat_twins || 'دووانە')}</div>
+                <div class="stat-card-num">${twinCount}</div>
+                <div class="stat-card-sub">${twinCount > 0 ? (isRtl ? 'قوتابیێن دووانە' : 'Twins') : '-'}</div>
+            </div>
+            <!-- 5. الطلاب الوحيدين -->
+            <div class="stat-card stat-card-rose">
+                <div class="stat-card-title">👤 ${escapeHtml(dict.stat_solitary || 'ب تنێ')}</div>
+                <div class="stat-card-num">${totalSolitaryStudents}</div>
+                <div class="stat-card-sub">${totalSolitaryStudents} ${escapeHtml(dict.students_suffix || 'قوتابی')}</div>
+            </div>
+            <!-- 6. الأسماء المتشابهة -->
+            <div class="stat-card stat-card-teal">
+                <div class="stat-card-title">🔁 ${escapeHtml(dict.stat_duplicates || 'ناڤێن وەکهەڤ')}</div>
+                <div class="stat-card-num">${totalDuplicatesCount}</div>
+                <div class="stat-card-sub">${totalDuplicateGroups} ${escapeHtml(dict.badge_groups_dup || 'کۆم')}</div>
+            </div>
+        </section>
+
+        <!-- البطاقة الرئيسية الكبرى للنتائج والتقارير بتصميم Claymorphism -->
+        <main class="clay-card">
+            
+            <!-- شريط التبويبات والفلترة العلوي -->
+            <div class="tab-bar-container no-print">
+                <!-- أزرار التبويبات الخمسة -->
+                <div class="tab-buttons-row">
+                    <button type="button" id="btn-tab-siblings" class="tab-btn clay-btn" onclick="switchReportTab('siblings')">
+                        <span>👨‍👩‍👧‍👦</span> <span>${escapeHtml(dict.tab_siblings || 'خویشک و برا')} (${totalSiblingGroups})</span>
+                    </button>
+                    <button type="button" id="btn-tab-relatives" class="tab-btn clay-btn-sec" onclick="switchReportTab('relatives')">
+                        <span>🌿</span> <span>${escapeHtml(dict.tab_relatives || 'پسمام و کەسوکار')} (${totalRelativeGroups})</span>
+                    </button>
+                    <button type="button" id="btn-tab-solitary" class="tab-btn clay-btn-sec" onclick="switchReportTab('solitary')">
+                        <span>👤</span> <span>${escapeHtml(dict.tab_solitary || 'ب تنێ')} (${totalSolitaryStudents})</span>
+                    </button>
+                    <button type="button" id="btn-tab-all" class="tab-btn clay-btn-sec" onclick="switchReportTab('all')">
+                        <span>📑</span> <span>${escapeHtml(dict.tab_all || 'هەمی ناڤ')} (${totalStudents})</span>
+                    </button>
+                    <button type="button" id="btn-tab-duplicates" class="tab-btn clay-btn-sec" onclick="switchReportTab('duplicates')">
+                        <span>🔁</span> <span>${escapeHtml(dict.tab_duplicates || 'ناڤێن وەکهەڤ')} (${totalDuplicateGroups})</span>
+                    </button>
+                </div>
+
+                <!-- شريط البحث السريع والفلترة حسب المراحل -->
+                <div class="filter-row">
+                    <div class="search-box-wrap">
+                        <input type="text" id="reportSearchInput" class="clay-input" placeholder="🔍 ${escapeHtml(dict.placeholder_search || 'گەڕیانا بلەز...')}" oninput="applyFilters()">
+                    </div>
+
+                    <div class="grade-dropdown-wrapper">
+                        <button type="button" id="gradeFilterBtn" class="grade-btn" onclick="toggleGradeMenu(event)">
+                            <span id="selectedGradeText">🏷️ ${escapeHtml(dict.all_grades || 'هەمی قۆناغ')}</span>
+                            <span>▼</span>
+                        </button>
+                        <div id="gradeFilterMenu" class="grade-menu">
+                            ${gradesOptionsHtml}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- حاوية عرض النتائج والبطاقات -->
+            <div class="results-scroll-panel">
+                
+                <!-- 1. قسم الإخوة الأشقاء -->
+                <div id="section-siblings" class="tab-section active">
+                    ${siblingsHtml}
+                </div>
+
+                <!-- 2. قسم الأقارب والعمومة -->
+                <div id="section-relatives" class="tab-section">
+                    ${relativesHtml}
+                </div>
+
+                <!-- 3. قسم الوحيدين -->
+                <div id="section-solitary" class="tab-section">
+                    ${solitaryHtml}
+                </div>
+
+                <!-- 4. قسم جميع الأسماء -->
+                <div id="section-all" class="tab-section">
+                    ${allStudentsHtml}
+                </div>
+
+                <!-- 5. قسم الأسماء المتشابهة -->
+                <div id="section-duplicates" class="tab-section">
+                    ${duplicatesHtml}
+                </div>
+
+            </div>
+
+            <!-- التذييل الرسمي -->
+            <footer class="official-footer-bar">
+                <div>
+                    <span>🔒 ${escapeHtml(dict.footer_text || 'هەمی کردار د ناڤا بەرنامەی دا ب شێوەیەکێ پاراستی دهێنە ئەنجامدان.')}</span>
+                </div>
+                <div>
+                    <span>${escapeHtml(dict.principal_label || 'رێڤەبەر:')} <strong>${escapeHtml(principalName || '....................')}</strong> | مێژوو: ${escapeHtml(currentDate)} - ${escapeHtml(currentTime)}</span>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- عنصر Toast للإشعارات المنبثقة عند النسخ -->
+    <div id="appToast" class="toast">
+        <span>✅</span>
+        <span id="toastText">${escapeHtml(dict.copy_success || 'کارت ب سەرکەفتی هاتە کۆپیکرن!')}</span>
+    </div>
+
+    <!-- كود الجافاسكربت الداخلي للتفاعل الكامل أوفلاين دون إنترنت -->
+    <script>
+        let currentTab = 'siblings';
+        let currentGrade = 'all';
+
+        function switchReportTab(tabKey) {
+            currentTab = tabKey;
+            
+            // تحديث أزرار التبويبات
+            const tabKeys = ['siblings', 'relatives', 'solitary', 'all', 'duplicates'];
+            tabKeys.forEach(key => {
+                const btn = document.getElementById('btn-tab-' + key);
+                const section = document.getElementById('section-' + key);
+                if (btn) {
+                    btn.className = (key === tabKey) ? 'tab-btn clay-btn' : 'tab-btn clay-btn-sec';
+                }
+                if (section) {
+                    if (key === tabKey) section.classList.add('active');
+                    else section.classList.remove('active');
+                }
+            });
+
+            applyFilters();
+        }
+
+        function toggleGradeMenu(e) {
+            if (e) e.stopPropagation();
+            const menu = document.getElementById('gradeFilterMenu');
+            if (menu) menu.classList.toggle('open');
+        }
+
+        document.addEventListener('click', () => {
+            const menu = document.getElementById('gradeFilterMenu');
+            if (menu) menu.classList.remove('open');
+        });
+
+        function setGradeFilter(gradeVal, label) {
+            currentGrade = gradeVal;
+            const labelEl = document.getElementById('selectedGradeText');
+            if (labelEl) labelEl.textContent = label;
+            
+            document.querySelectorAll('.grade-item').forEach(item => {
+                if (item.getAttribute('onclick').includes("'" + gradeVal + "'")) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const q = (document.getElementById('reportSearchInput')?.value || '').trim().toLowerCase();
+            const activeSection = document.getElementById('section-' + currentTab);
+            if (!activeSection) return;
+
+            const cards = activeSection.querySelectorAll('.group-card');
+            cards.forEach(card => {
+                const searchPool = (card.getAttribute('data-search') || '').toLowerCase();
+                const gradesPool = (card.getAttribute('data-grades') || '');
+                
+                const matchesSearch = !q || searchPool.includes(q);
+                const matchesGrade = (currentGrade === 'all') || gradesPool.includes(currentGrade);
+
+                if (matchesSearch && matchesGrade) {
+                    card.style.display = '';
+                    // تصفية أسطر الطلاب الداخلية
+                    const studentItems = card.querySelectorAll('.student-item');
+                    studentItems.forEach(item => {
+                        const itemGrade = item.getAttribute('data-grade') || '';
+                        const itemSearch = (item.getAttribute('data-search') || '').toLowerCase();
+                        const sMatch = !q || itemSearch.includes(q);
+                        const gMatch = (currentGrade === 'all') || (itemGrade === currentGrade);
+                        item.style.display = (sMatch && gMatch) ? '' : 'none';
+                    });
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function copyGroupCard(btn) {
+            const card = btn.closest('.group-card');
+            if (!card) return;
+            const text = card.innerText.replace(/📋.*\\n/g, '').trim();
+            navigator.clipboard.writeText(text).then(() => {
+                showToast("${escapeHtml(dict.copy_success || 'کارت ب سەرکەفتی هاتە کۆپیکرن!')}");
+            }).catch(() => {
+                showToast("تم النسخ!");
+            });
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('appToast');
+            const toastText = document.getElementById('toastText');
+            if (toast && toastText) {
+                toastText.textContent = msg;
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 2000);
+            }
+        }
+
+        function setAppTheme(themeName) {
+            document.body.className = '';
+            if (themeName !== 'blue') {
+                document.body.classList.add('theme-' + themeName);
+            }
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('theme-dark');
+        }
+    <\/script>
+</body>
+</html>`;
+
+    // تنزيل ملف HTML المستقل المطابق لتصميم الموقع
+    const blob = new Blob(['\uFEFF' + fullHtmlDoc], { type: 'text/html;charset=utf-8' });
+    const link = document.createElement('a');
+    const cleanSchoolName = (schoolName || 'School').replace(/[\/\\:*?"<>|]/g, '_').trim();
+    const dateStr = new Date().toISOString().slice(0, 10);
+    link.href = URL.createObjectURL(blob);
+    link.download = `${cleanSchoolName}_Clay_Report_${dateStr}.html`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    showToast(dict.html_export_success || 'تم حفظ وتصدير ملف HTML بنجاح!');
 }
 
 // دالة تصدير كروت وبطاقات العائلات إلى ملف إكسل بتنسيق HTML/XML المعتمد من مايكروسوفت إكسل مع كافة الإطارات والتنسيقات
@@ -2837,6 +4973,633 @@ function closeAnalyticsModal() {
     if (modal) modal.classList.add('hidden');
 }
 
+// 👦👧 خوارزمية ذكية لكشف وتصنيف جنس الطالب (ذكر / أنثى - کوڕ / کچ)
+const femaleNamesSet = new Set([
+    'فاطمة', 'فاطمه', 'زهراء', 'زينب', 'مريم', 'سارة', 'ساره', 'عائشة', 'عائشه', 'خديجة', 'خديجه', 'نور', 'هدى', 'اية', 'آية',
+    'ريم', 'لينا', 'رانيا', 'روان', 'شهد', 'ملاك', 'اسراء', 'إسراء', 'دعاء', 'ضحى', 'رغد', 'حنين', 'تبارك', 'يقين', 'بنين',
+    'شيرين', 'روژين', 'روژین', 'هێلین', 'هيلين', 'دڵڤین', 'دلڤین', 'دلڤين', 'ڕۆژان', 'روژان', 'ئاڤان', 'افان', 'پەروین', 'پروين',
+    'نێرگز', 'نيرگز', 'لافا', 'بێریڤان', 'بيريفان', 'شیلان', 'شيلان', 'سۆزان', 'سوزان', 'ژیان', 'هاوژین', 'گولستان', 'گلستان',
+    'کانی', 'كانى', 'سنور', 'تەلار', 'چیمەن', 'خەندە', 'شنۆ', 'ئەسمەر', 'لەیلا', 'ليلى', 'ليلا', 'ژینۆ', 'ژينو', 'پێشەنگ',
+    'لانە', 'لانه', 'هانا', 'ڕاز', 'راز', 'جوان', 'شەمام', 'سۆما', 'بەهار', 'بهار', 'دیلان', 'ديلان', 'نیان', 'سروشت', 'سروور',
+    'ئەلەند', 'ئەڤین', 'افين', 'فرمێسک', 'سێوە', 'دالیا', 'دريا', 'دەریا', 'ئاواز', 'ژوان', 'شەونم', 'گولێ', 'سولین', 'سولين',
+    'جوانا', 'دیانا', 'ساندرا', 'هێرۆ', 'لارا', 'تارا', 'دانا', 'دینا', 'رۆژگار', 'چنار', 'سروە', 'پەیمان', 'شیرین', 'روشن',
+    'أمل', 'منار', 'وفاء', 'هناء', 'سمية', 'إيمان', 'صفاء', 'نجلاء', 'شيماء', 'ابتسام', 'إلهام', 'رجاء', 'ثناء', 'سهام', 'كوثر'
+]);
+
+const maleNamesSet = new Set([
+    'احمد', 'أحمد', 'محمد', 'علي', 'على', 'عمر', 'عثمان', 'يوسف', 'ابراهيم', 'إبراهيم', 'خالد', 'وليد', 'حسن', 'حسين',
+    'مصطفى', 'بلال', 'عبدالله', 'عبدالرحمن', 'عبدالكريم', 'عبدالعزيز', 'سعد', 'سعيد', 'ماجد', 'مهند', 'ياسر', 'حمزة', 'حمزه',
+    'كاوة', 'كاوه', 'هێرش', 'هيرش', 'ئاراس', 'اراس', 'سەنگەر', 'سنگر', 'دڵشاد', 'دلشاد', 'شڤان', 'شفان', 'رێبوار', 'ريبوار',
+    'بەهزاد', 'بهزاد', 'فاروق', 'کاروان', 'كاروان', 'هێمن', 'هيمن', 'ئامانج', 'امانج', 'زانا', 'هۆگر', 'هوگر', 'بەختیار',
+    'پشتیوان', 'پشتيوان', 'ڕێباز', 'ريباز', 'شوان', 'هۆزان', 'هوزان', 'نەبەز', 'سیروان', 'سيروان', 'بژار', 'سامان', 'دلاوەر',
+    'ئالان', 'الان', 'ڕێبین', 'ريبين', 'كارۆخ', 'گۆران', 'شاخەوان', 'فەرهاد', 'كامەران', 'ئارام', 'ارام', 'مەریوان', 'بڕوا',
+    'دەوەن', 'مەردان', 'نەوزاد', 'ئەردەلان', 'پۆڵا', 'دیاری', 'هەڤاڵ', 'هەندرێن', 'ڕەوەند', 'لاوژە', 'شازاد', 'سەركەوت'
+]);
+
+function detectStudentGender(name) {
+    if (!name) return 'male';
+    const clean = normalizeText(name).trim();
+    const firstWord = clean.split(' ')[0] || '';
+    
+    if (femaleNamesSet.has(firstWord)) return 'female';
+    if (maleNamesSet.has(firstWord)) return 'male';
+
+    if (firstWord.endsWith('ة') || firstWord.endsWith('ه') || firstWord.endsWith('اء') || 
+        firstWord.endsWith('ى') || firstWord.endsWith('خاتون') || firstWord.endsWith('ناز') ||
+        firstWord.endsWith('ڤين') || firstWord.endsWith('ڤین') || firstWord.endsWith('گل') ||
+        firstWord.endsWith('گول') || firstWord.endsWith('ستان')) {
+        return 'female';
+    }
+
+    return 'male';
+}
+
+// 📊 4. قسم الإحصائيات والمخططات البيانية المدمج (Inline Analytics Dashboard)
+function renderInlineAnalytics() {
+    const resultsArea = document.getElementById('resultsArea');
+    if (!resultsArea) return;
+    const dict = translations[currentLang];
+
+    const totalStudents = studentPool.length;
+    const totalSiblings = siblingResults.reduce((acc, g) => acc + g.students.length, 0);
+    const totalRelatives = relativeResults.reduce((acc, g) => acc + (g.totalCount || 0), 0);
+    const totalSolitary = solitaryResults.length;
+    const totalFamilies = siblingResults.length;
+    const totalDuplicates = duplicateResults.reduce((acc, g) => acc + g.students.length, 0);
+    
+    // حساب أعداد الذكور والإناث الكلية ولكل مرحلة
+    let totalMales = 0;
+    let totalFemales = 0;
+    
+    studentPool.forEach(s => {
+        const gender = s.gender || detectStudentGender(s.name);
+        s.gender = gender;
+        if (gender === 'female') totalFemales++;
+        else totalMales++;
+    });
+
+    const malesPct = totalStudents > 0 ? ((totalMales / totalStudents) * 100).toFixed(1) : 0;
+    const femalesPct = totalStudents > 0 ? ((totalFemales / totalStudents) * 100).toFixed(1) : 0;
+
+    // حساب التوائم
+    let twinCount = 0;
+    siblingResults.forEach(group => {
+        const gradesInFamily = {};
+        group.students.forEach(s => {
+            if (s.grade && s.grade !== '-') {
+                gradesInFamily[s.grade] = (gradesInFamily[s.grade] || 0) + 1;
+            }
+        });
+        Object.values(gradesInFamily).forEach(cnt => {
+            if (cnt > 1) twinCount += cnt;
+        });
+    });
+
+    // حساب الدوام والدوامين المختلفين
+    const shiftConfig = getShiftConfig();
+    const isDoubleShift = shiftConfig.mode === 'double';
+    let splitShiftFamilyCount = 0;
+    let morningStudentsCount = 0;
+    let eveningStudentsCount = 0;
+
+    if (isDoubleShift) {
+        studentPool.forEach(s => {
+            const sh = getStudentShift(s.section, shiftConfig.morningList, shiftConfig.eveningList);
+            if (sh === 'morning') morningStudentsCount++;
+            else if (sh === 'evening') eveningStudentsCount++;
+        });
+
+        siblingResults.forEach(group => {
+            let hasM = false, hasE = false;
+            group.students.forEach(s => {
+                const sh = getStudentShift(s.section, shiftConfig.morningList, shiftConfig.eveningList);
+                if (sh === 'morning') hasM = true;
+                if (sh === 'evening') hasE = true;
+            });
+            if (hasM && hasE) splitShiftFamilyCount++;
+        });
+    }
+
+    const sibPct = totalStudents > 0 ? ((totalSiblings / totalStudents) * 100).toFixed(1) : 0;
+    const relPct = totalStudents > 0 ? ((totalRelatives / totalStudents) * 100).toFixed(1) : 0;
+    const solPct = totalStudents > 0 ? ((totalSolitary / totalStudents) * 100).toFixed(1) : 0;
+    const dupPct = totalStudents > 0 ? ((totalDuplicates / totalStudents) * 100).toFixed(1) : 0;
+
+    // حساب تكرار الألقاب / العوائل
+    const surnameFreq = {};
+    studentPool.forEach(s => {
+        const parts = s.name.trim().split(/\s+/);
+        if (parts.length >= 3) {
+            const surname = parts[parts.length - 1];
+            if (surname.length > 2) {
+                surnameFreq[surname] = (surnameFreq[surname] || 0) + 1;
+            }
+        }
+    });
+    const sortedSurnames = Object.entries(surnameFreq)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10);
+    const maxSurnameCount = sortedSurnames.length > 0 ? sortedSurnames[0][1] : 1;
+
+    // حساب إحصاءات المراحل (إخوة + أقارب + وحيدين + ذكور وإناث)
+    const gradesMap = {};
+    studentPool.forEach(s => {
+        const g = s.grade || 'نەدیار';
+        if (!gradesMap[g]) {
+            gradesMap[g] = { 
+                total: 0, 
+                siblings: 0, 
+                relatives: 0, 
+                solitary: 0, 
+                males: 0, 
+                females: 0, 
+                sections: new Set() 
+            };
+        }
+        gradesMap[g].total++;
+        if (s.gender === 'female') gradesMap[g].females++;
+        else gradesMap[g].males++;
+        if (s.section && s.section !== '-') gradesMap[g].sections.add(s.section);
+    });
+
+    siblingResults.forEach(group => {
+        group.students.forEach(s => {
+            const g = s.grade || 'نەدیار';
+            if (gradesMap[g]) gradesMap[g].siblings++;
+        });
+    });
+    relativeResults.forEach(group => {
+        Object.values(group.branches || {}).forEach(branchStudents => {
+            branchStudents.forEach(s => {
+                const g = s.grade || 'نەدیار';
+                if (gradesMap[g]) gradesMap[g].relatives++;
+            });
+        });
+    });
+    solitaryResults.forEach(s => {
+        const g = s.grade || 'نەدیار';
+        if (gradesMap[g]) gradesMap[g].solitary++;
+    });
+
+    // حساب إحصاءات الشُعب التفصيلية (Grade + Section)
+    const sectionsBreakdownMap = {};
+    studentPool.forEach(s => {
+        const g = s.grade || 'نەدیار';
+        const sec = (s.section && s.section !== '-') ? s.section : (currentLang === 'en' ? 'General' : (currentLang === 'ar' ? 'عام' : 'گشتی'));
+        const key = `${g}___${sec}`;
+        
+        if (!sectionsBreakdownMap[key]) {
+            const sh = getStudentShift(sec, shiftConfig.morningList, shiftConfig.eveningList);
+            sectionsBreakdownMap[key] = {
+                grade: g,
+                section: sec,
+                total: 0,
+                males: 0,
+                females: 0,
+                siblings: 0,
+                relatives: 0,
+                shift: sh
+            };
+        }
+        sectionsBreakdownMap[key].total++;
+        if (s.gender === 'female') sectionsBreakdownMap[key].females++;
+        else sectionsBreakdownMap[key].males++;
+    });
+
+    siblingResults.forEach(group => {
+        group.students.forEach(s => {
+            const g = s.grade || 'نەدیار';
+            const sec = (s.section && s.section !== '-') ? s.section : (currentLang === 'en' ? 'General' : (currentLang === 'ar' ? 'عام' : 'گشتی'));
+            const key = `${g}___${sec}`;
+            if (sectionsBreakdownMap[key]) sectionsBreakdownMap[key].siblings++;
+        });
+    });
+
+    relativeResults.forEach(group => {
+        Object.values(group.branches || {}).forEach(branchStudents => {
+            branchStudents.forEach(s => {
+                const g = s.grade || 'نەدیار';
+                const sec = (s.section && s.section !== '-') ? s.section : (currentLang === 'en' ? 'General' : (currentLang === 'ar' ? 'عام' : 'گشتی'));
+                const key = `${g}___${sec}`;
+                if (sectionsBreakdownMap[key]) sectionsBreakdownMap[key].relatives++;
+            });
+        });
+    });
+
+    const sortedSectionKeys = Object.keys(sectionsBreakdownMap).sort((a, b) => {
+        const itemA = sectionsBreakdownMap[a];
+        const itemB = sectionsBreakdownMap[b];
+        const rankA = getGradeRank(itemA.grade);
+        const rankB = getGradeRank(itemB.grade);
+        if (rankA !== rankB) return rankA - rankB;
+        return itemA.section.localeCompare(itemB.section);
+    });
+
+    const sortedGradeKeys = Object.keys(gradesMap).sort((a, b) => {
+        const rankA = getGradeRank(a);
+        const rankB = getGradeRank(b);
+        if (rankA !== rankB) return rankA - rankB;
+        return a.localeCompare(b);
+    });
+
+    let html = `
+        <div class="space-y-3 w-full animate-fade-in">
+            
+            <!-- شريط العنوان والأدوات السريعة -->
+            <div class="flex flex-wrap items-center justify-between gap-2 p-2.5 rounded-2xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200/80 dark:border-amber-900/50 shadow-2xs">
+                <div class="flex items-center gap-2">
+                    <span class="text-xl">📊</span>
+                    <div>
+                        <h3 class="text-xs sm:text-sm font-black text-amber-950 dark:text-amber-200">${dict.analytics_title || "شیکاری و ئامارێن هویر یێن قوتابخانەیێ"}</h3>
+                        <p class="text-[9px] text-amber-800/80 dark:text-amber-300/80">${dict.analytics_desc || "مخططات بيانية تفاعلية، ترتيب العوائل الأكثر عدداً، وتوزيع الإخوة على المراحل والشعب"}</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-1.5 no-print">
+                    <button onclick="window.print()" class="clay-btn text-[9px] font-black px-2.5 py-1 text-white flex items-center gap-1 shadow-xs">
+                        <span>🖨️</span> <span>${dict.btn_do_print || 'چاپکرن'}</span>
+                    </button>
+                    <button onclick="openAnalyticsModal()" class="clay-btn-sec text-[9px] font-black px-2 py-1 flex items-center gap-1 shadow-xs">
+                        <span>🔍</span> <span>شاشەیا مەزن</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- بطاقات الإحصاءات الستة 3D Claymorphism KPI Cards -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+                <!-- 1. إجمالي الطلاب -->
+                <div class="stat-card stat-card-blue p-2.5 rounded-2xl flex flex-col items-center text-center justify-between min-h-[75px]">
+                    <span class="text-[9.5px] font-bold opacity-90">📚 ${dict.stat_total}</span>
+                    <span class="text-lg sm:text-xl font-black">${totalStudents}</span>
+                    <span class="text-[8px] opacity-75">100%</span>
+                </div>
+
+                <!-- 2. الذكور (بنين) -->
+                <div class="stat-card stat-card-indigo p-2.5 rounded-2xl flex flex-col items-center text-center justify-between min-h-[75px]">
+                    <span class="text-[9.5px] font-bold opacity-90">👦 ${dict.stat_males || 'الذكور'}</span>
+                    <span class="text-lg sm:text-xl font-black">${totalMales}</span>
+                    <span class="text-[8px] opacity-75">${malesPct}%</span>
+                </div>
+
+                <!-- 3. الإناث (بنات) -->
+                <div class="stat-card stat-card-pink p-2.5 rounded-2xl flex flex-col items-center text-center justify-between min-h-[75px]">
+                    <span class="text-[9.5px] font-bold opacity-90">👧 ${dict.stat_females || 'الإناث'}</span>
+                    <span class="text-lg sm:text-xl font-black">${totalFemales}</span>
+                    <span class="text-[8px] opacity-75">${femalesPct}%</span>
+                </div>
+
+                <!-- 4. الإخوة الأشقاء -->
+                <div class="stat-card stat-card-amber p-2.5 rounded-2xl flex flex-col items-center text-center justify-between min-h-[75px]">
+                    <span class="text-[9.5px] font-bold opacity-90">👨‍👩‍👦 ${dict.stat_siblings}</span>
+                    <span class="text-lg sm:text-xl font-black">${totalSiblings}</span>
+                    <span class="text-[8px] opacity-75">${totalFamilies} ${dict.groups_suffix || 'خێزان'} (${sibPct}%)</span>
+                </div>
+
+                <!-- 5. الأقارب والعمومة -->
+                <div class="stat-card stat-card-teal p-2.5 rounded-2xl flex flex-col items-center text-center justify-between min-h-[75px]">
+                    <span class="text-[9.5px] font-bold opacity-90">🌿 ${dict.stat_relatives}</span>
+                    <span class="text-lg sm:text-xl font-black">${totalRelatives}</span>
+                    <span class="text-[8px] opacity-75">${relativeResults.length} ${dict.groups_suffix || 'کۆم'}</span>
+                </div>
+
+                <!-- 6. الوحيدين أو الدوامين -->
+                ${isDoubleShift ? `
+                <div class="stat-card stat-card-amber p-2.5 rounded-2xl flex flex-col items-center text-center justify-between min-h-[75px] border-2 border-amber-500">
+                    <span class="text-[9.5px] font-bold opacity-90">🌗 ${dict.stat_split_shifts || 'دەوامێن جودا'}</span>
+                    <span class="text-lg sm:text-xl font-black text-amber-900 dark:text-amber-200">${splitShiftFamilyCount}</span>
+                    <span class="text-[8px] opacity-75">${dict.shift_split_badge || 'دوامين مختلفين'}</span>
+                </div>
+                ` : `
+                <div class="stat-card stat-card-rose p-2.5 rounded-2xl flex flex-col items-center text-center justify-between min-h-[75px]">
+                    <span class="text-[9.5px] font-bold opacity-90">👤 ${dict.stat_solitary}</span>
+                    <span class="text-lg sm:text-xl font-black">${totalSolitary}</span>
+                    <span class="text-[8px] opacity-75">${solPct}%</span>
+                </div>
+                `}
+            </div>
+
+            <!-- جدول 1: إحصائية الشُعب التفصيلي لكل صف ومرحلة (Detailed Section Matrix) -->
+            <div class="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-2.5">
+                <div class="flex items-center justify-between pb-1.5 border-b border-slate-100 dark:border-slate-800 flex-wrap gap-2">
+                    <div class="flex items-center gap-2">
+                        <span class="text-base">📑</span>
+                        <div>
+                            <span class="text-xs font-black text-slate-800 dark:text-slate-100 block">
+                                ${dict.section_table_title || "جدول إحصائية الشُعب التفصيلي لكل صف"}
+                            </span>
+                            <span class="text-[8.5px] text-slate-500 dark:text-slate-400">
+                                ${dict.section_table_desc || "إحصائيات تفصيلية ودقيقة لكل شعبة على حدة مع نوع الدوام والتوزيع الديمغرافي"}
+                            </span>
+                        </div>
+                    </div>
+                    <span class="text-[9px] font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 px-2 py-0.5 rounded-lg border border-indigo-200/60 dark:border-indigo-800/40">
+                        ${sortedSectionKeys.length} ${dict.section_label || 'شعبە'}
+                    </span>
+                </div>
+
+                <div class="overflow-x-auto custom-scroll">
+                    <table class="w-full text-right text-[10.5px]">
+                        <thead>
+                            <tr class="bg-slate-100/90 dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 font-black border-b border-slate-200 dark:border-slate-700">
+                                <th class="py-2 px-2.5 rounded-r-lg">${dict.grade_label || 'الصف / المرحلة'}</th>
+                                <th class="py-2 px-2.5 text-center">${dict.section_label || 'الشعبة'}</th>
+                                ${isDoubleShift ? `<th class="py-2 px-2.5 text-center">الدوام</th>` : ''}
+                                <th class="py-2 px-2.5 text-center text-indigo-700 dark:text-indigo-400">👦 ${dict.stat_males || 'الذكور'}</th>
+                                <th class="py-2 px-2.5 text-center text-pink-700 dark:text-pink-400">👧 ${dict.stat_females || 'الإناث'}</th>
+                                <th class="py-2 px-2.5 text-center text-blue-700 dark:text-blue-400">👨‍👩‍👦 ${dict.stat_siblings || 'الإخوة'}</th>
+                                <th class="py-2 px-2.5 text-center font-black text-slate-900 dark:text-slate-100">👥 ${dict.stat_total || 'المجموع'}</th>
+                                <th class="py-2 px-2.5 rounded-l-lg text-center min-w-[110px]">⚖️ ${dict.boys_ratio || 'التوزيع'}</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-800/80">
+                            ${sortedSectionKeys.map(k => {
+                                const item = sectionsBreakdownMap[k];
+                                const bRatio = item.total > 0 ? ((item.males / item.total) * 100).toFixed(0) : 0;
+                                const gRatio = item.total > 0 ? ((item.females / item.total) * 100).toFixed(0) : 0;
+                                
+                                let shiftBadge = '-';
+                                if (item.shift === 'morning') {
+                                    shiftBadge = `<span class="px-1.5 py-0.2 rounded-md bg-amber-100 dark:bg-amber-950 text-amber-900 dark:text-amber-200 text-[8.5px] font-bold">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>`;
+                                } else if (item.shift === 'evening') {
+                                    shiftBadge = `<span class="px-1.5 py-0.2 rounded-md bg-indigo-100 dark:bg-indigo-950 text-indigo-900 dark:text-indigo-200 text-[8.5px] font-bold">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>`;
+                                }
+
+                                return `
+                                    <tr class="hover:bg-slate-50/90 dark:hover:bg-slate-800/50 transition">
+                                        <td class="py-2 px-2.5 font-black text-slate-800 dark:text-slate-100">${item.grade}</td>
+                                        <td class="py-2 px-2.5 text-center font-black text-indigo-700 dark:text-indigo-300">
+                                            <span class="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">${item.section}</span>
+                                        </td>
+                                        ${isDoubleShift ? `<td class="py-2 px-2.5 text-center">${shiftBadge}</td>` : ''}
+                                        <td class="py-2 px-2.5 text-center font-extrabold text-indigo-700 dark:text-indigo-400 bg-indigo-50/20 dark:bg-indigo-950/10">${item.males}</td>
+                                        <td class="py-2 px-2.5 text-center font-extrabold text-pink-700 dark:text-pink-400 bg-pink-50/20 dark:bg-pink-950/10">${item.females}</td>
+                                        <td class="py-2 px-2.5 text-center font-bold text-blue-700 dark:text-blue-400">${item.siblings}</td>
+                                        <td class="py-2 px-2.5 text-center font-black text-slate-900 dark:text-slate-100">${item.total}</td>
+                                        <td class="py-2 px-2.5 text-center">
+                                            <div class="flex items-center gap-1 w-full max-w-[120px] mx-auto bg-slate-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden p-0.5">
+                                                <div class="bg-indigo-500 h-full rounded-r-full transition-all" style="width: ${bRatio}%;" title="ذكور: ${bRatio}%"></div>
+                                                <div class="bg-pink-500 h-full rounded-l-full transition-all" style="width: ${gRatio}%;" title="إناث: ${gRatio}%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                `;
+                            }).join('')}
+                        </tbody>
+                        <tfoot>
+                            <tr class="bg-slate-100/95 dark:bg-slate-800/95 font-black text-slate-900 dark:text-slate-100 border-t-2 border-slate-300 dark:border-slate-600">
+                                <td class="py-2 px-2.5 rounded-r-lg font-black" colspan="${isDoubleShift ? 3 : 2}">🌟 ${dict.stat_total || 'المجموع الكلي للشُعب'}</td>
+                                <td class="py-2 px-2.5 text-center text-indigo-700 dark:text-indigo-300">${totalMales}</td>
+                                <td class="py-2 px-2.5 text-center text-pink-700 dark:text-pink-300">${totalFemales}</td>
+                                <td class="py-2 px-2.5 text-center text-blue-700 dark:text-blue-300">${totalSiblings}</td>
+                                <td class="py-2 px-2.5 text-center font-black">${totalStudents}</td>
+                                <td class="py-2 px-2.5 rounded-l-lg text-center">
+                                    <div class="flex items-center gap-1 w-full max-w-[120px] mx-auto bg-slate-300 dark:bg-slate-600 h-2.5 rounded-full overflow-hidden p-0.5">
+                                        <div class="bg-indigo-600 h-full rounded-r-full" style="width: ${malesPct}%;"></div>
+                                        <div class="bg-pink-600 h-full rounded-l-full" style="width: ${femalesPct}%;"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <!-- جدول 2: إحصائية الذكور والإناث من كل صف ومرحلة (Gender Demographic Matrix by Grade) -->
+            <div class="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-2.5">
+                <div class="flex items-center justify-between pb-1.5 border-b border-slate-100 dark:border-slate-800 flex-wrap gap-2">
+                    <div class="flex items-center gap-2">
+                        <span class="text-base">🚻</span>
+                        <div>
+                            <span class="text-xs font-black text-slate-800 dark:text-slate-100 block">
+                                ${dict.gender_table_title || "جدول إحصائية أعداد الذكور والإناث لكل صف ومرحلة"}
+                            </span>
+                            <span class="text-[8.5px] text-slate-500 dark:text-slate-400">
+                                ${dict.gender_table_desc || "التوزيع الديمغرافي للجنسين (بنين وبنات) والنسب المئوية لكل مرحلة دراسية"}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-1.5 text-[9px] font-bold">
+                        <span class="px-2 py-0.5 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-800/40">
+                            👦 ${dict.stat_males || 'الذكور'}: <strong>${totalMales}</strong> (${malesPct}%)
+                        </span>
+                        <span class="px-2 py-0.5 rounded-lg bg-pink-50 dark:bg-pink-950/50 text-pink-700 dark:text-pink-300 border border-pink-200/60 dark:border-pink-800/40">
+                            👧 ${dict.stat_females || 'الإناث'}: <strong>${totalFemales}</strong> (${femalesPct}%)
+                        </span>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto custom-scroll">
+                    <table class="w-full text-right text-[10.5px]">
+                        <thead>
+                            <tr class="bg-slate-100/90 dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 font-black border-b border-slate-200 dark:border-slate-700">
+                                <th class="py-2 px-2.5 rounded-r-lg">${dict.grade_label || 'الصف / المرحلة'}</th>
+                                <th class="py-2 px-2.5 text-center text-indigo-700 dark:text-indigo-400">👦 ${dict.stat_males || 'الذكور (بنين)'}</th>
+                                <th class="py-2 px-2.5 text-center text-pink-700 dark:text-pink-400">👧 ${dict.stat_females || 'الإناث (بنات)'}</th>
+                                <th class="py-2 px-2.5 text-center font-black text-slate-800 dark:text-slate-100">👥 ${dict.stat_total || 'المجموع'}</th>
+                                <th class="py-2 px-2.5 text-center">${dict.boys_ratio || 'نسبة الذكور'}</th>
+                                <th class="py-2 px-2.5 text-center">${dict.girls_ratio || 'نسبة الإناث'}</th>
+                                <th class="py-2 px-2.5 rounded-l-lg text-center min-w-[120px]">⚖️ ${dict.gender_ratio || 'التوزيع البصري'}</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-800/80">
+                            ${sortedGradeKeys.map(g => {
+                                const data = gradesMap[g];
+                                const bRatio = data.total > 0 ? ((data.males / data.total) * 100).toFixed(0) : 0;
+                                const gRatio = data.total > 0 ? ((data.females / data.total) * 100).toFixed(0) : 0;
+                                return `
+                                    <tr class="hover:bg-slate-50/90 dark:hover:bg-slate-800/50 transition">
+                                        <td class="py-2 px-2.5 font-black text-slate-800 dark:text-slate-100">${g}</td>
+                                        <td class="py-2 px-2.5 text-center font-extrabold text-indigo-700 dark:text-indigo-400 bg-indigo-50/30 dark:bg-indigo-950/20">${data.males}</td>
+                                        <td class="py-2 px-2.5 text-center font-extrabold text-pink-700 dark:text-pink-400 bg-pink-50/30 dark:bg-pink-950/20">${data.females}</td>
+                                        <td class="py-2 px-2.5 text-center font-black text-slate-900 dark:text-slate-100">${data.total}</td>
+                                        <td class="py-2 px-2.5 text-center font-bold text-indigo-600 dark:text-indigo-400">${bRatio}%</td>
+                                        <td class="py-2 px-2.5 text-center font-bold text-pink-600 dark:text-pink-400">${gRatio}%</td>
+                                        <td class="py-2 px-2.5 text-center">
+                                            <div class="flex items-center gap-1 w-full max-w-[130px] mx-auto bg-slate-200 dark:bg-slate-700 h-2.5 rounded-full overflow-hidden p-0.5">
+                                                <div class="bg-indigo-500 h-full rounded-r-full transition-all" style="width: ${bRatio}%;" title="ذكور: ${bRatio}%"></div>
+                                                <div class="bg-pink-500 h-full rounded-l-full transition-all" style="width: ${gRatio}%;" title="إناث: ${gRatio}%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                `;
+                            }).join('')}
+                        </tbody>
+                        <tfoot>
+                            <tr class="bg-slate-100/95 dark:bg-slate-800/95 font-black text-slate-900 dark:text-slate-100 border-t-2 border-slate-300 dark:border-slate-600">
+                                <td class="py-2 px-2.5 rounded-r-lg font-black">🌟 ${dict.stat_total || 'المجموع العام للمدرسة'}</td>
+                                <td class="py-2 px-2.5 text-center text-indigo-700 dark:text-indigo-300">${totalMales}</td>
+                                <td class="py-2 px-2.5 text-center text-pink-700 dark:text-pink-300">${totalFemales}</td>
+                                <td class="py-2 px-2.5 text-center font-black">${totalStudents}</td>
+                                <td class="py-2 px-2.5 text-center text-indigo-700 dark:text-indigo-300">${malesPct}%</td>
+                                <td class="py-2 px-2.5 text-center text-pink-700 dark:text-pink-300">${femalesPct}%</td>
+                                <td class="py-2 px-2.5 rounded-l-lg text-center">
+                                    <div class="flex items-center gap-1 w-full max-w-[130px] mx-auto bg-slate-300 dark:bg-slate-600 h-3 rounded-full overflow-hidden p-0.5">
+                                        <div class="bg-indigo-600 h-full rounded-r-full" style="width: ${malesPct}%;"></div>
+                                        <div class="bg-pink-600 h-full rounded-l-full" style="width: ${femalesPct}%;"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <!-- شبكة التحليلات: مخطط التوزيع والنسب + قائمة العوائل الأكثر عدداً -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                
+                <!-- عمود 1: نسب التوزيع الديمغرافي وتوزيع الدوام -->
+                <div class="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-2.5">
+                    <div class="flex items-center justify-between pb-1 border-b border-slate-100 dark:border-slate-800">
+                        <span class="text-xs font-black text-slate-800 dark:text-slate-100 flex items-center gap-1">
+                            <span>📈</span> <span>${dict.analytics_dist_title || "توزيع وتصنيف الطلاب والنسب المئوية"}</span>
+                        </span>
+                        <span class="text-[9px] font-bold text-slate-500">${totalStudents} ${dict.students_suffix}</span>
+                    </div>
+
+                    <div class="space-y-2">
+                        <!-- شريط الإخوة الأشقاء -->
+                        <div class="space-y-0.5">
+                            <div class="flex justify-between text-[10px] font-extrabold">
+                                <span class="text-blue-700 dark:text-blue-300">👨‍👩‍👦 ${dict.tab_siblings} (${totalSiblings})</span>
+                                <span class="text-blue-700 dark:text-blue-300">${sibPct}%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden p-0.5 border border-slate-200/60 dark:border-slate-700/60">
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-full rounded-full transition-all duration-500" style="width: ${sibPct}%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- شريط الأقارب -->
+                        <div class="space-y-0.5">
+                            <div class="flex justify-between text-[10px] font-extrabold">
+                                <span class="text-indigo-700 dark:text-indigo-300">🌿 ${dict.tab_relatives} (${totalRelatives})</span>
+                                <span class="text-indigo-700 dark:text-indigo-300">${relPct}%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden p-0.5 border border-slate-200/60 dark:border-slate-700/60">
+                                <div class="bg-gradient-to-r from-indigo-500 to-indigo-600 h-full rounded-full transition-all duration-500" style="width: ${relPct}%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- شريط الوحيدين -->
+                        <div class="space-y-0.5">
+                            <div class="flex justify-between text-[10px] font-extrabold">
+                                <span class="text-rose-700 dark:text-rose-300">👤 ${dict.tab_solitary} (${totalSolitary})</span>
+                                <span class="text-rose-700 dark:text-rose-300">${solPct}%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden p-0.5 border border-slate-200/60 dark:border-slate-700/60">
+                                <div class="bg-gradient-to-r from-rose-500 to-rose-600 h-full rounded-full transition-all duration-500" style="width: ${solPct}%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- توزيع الدوام الصباحي والمسائي إن وجد -->
+                        ${isDoubleShift ? `
+                        <div class="pt-2 border-t border-slate-100 dark:border-slate-800 space-y-1">
+                            <span class="text-[10px] font-black text-amber-800 dark:text-amber-200 block">🌗 ${dict.shift_settings_title || 'دابەشبوونا دەوامێ'}:</span>
+                            <div class="grid grid-cols-2 gap-2 text-center">
+                                <div class="p-1.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800">
+                                    <span class="text-[9px] font-bold block text-amber-800 dark:text-amber-300">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>
+                                    <span class="text-xs font-black text-amber-950 dark:text-amber-100">${morningStudentsCount} <small>(${totalStudents > 0 ? ((morningStudentsCount/totalStudents)*100).toFixed(0) : 0}%)</small></span>
+                                </div>
+                                <div class="p-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800">
+                                    <span class="text-[9px] font-bold block text-indigo-800 dark:text-indigo-300">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>
+                                    <span class="text-xs font-black text-indigo-950 dark:text-indigo-100">${eveningStudentsCount} <small>(${totalStudents > 0 ? ((eveningStudentsCount/totalStudents)*100).toFixed(0) : 0}%)</small></span>
+                                </div>
+                            </div>
+                        </div>
+                        ` : ''}
+                    </div>
+                </div>
+
+                <!-- عمود 2: قائمة العوائل والألقاب الأكثر عدداً (Top 10 Leaderboard) -->
+                <div class="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-2">
+                    <div class="flex items-center justify-between pb-1 border-b border-slate-100 dark:border-slate-800">
+                        <span class="text-xs font-black text-slate-800 dark:text-slate-100 flex items-center gap-1">
+                            <span>🏆</span> <span>${dict.analytics_top_families_title || "العوائل والألقاب الأكثر عدداً (Top 10)"}</span>
+                        </span>
+                        <span class="text-[9px] font-bold text-amber-600 dark:text-amber-400">Top 10</span>
+                    </div>
+
+                    <div class="space-y-1 max-h-56 overflow-y-auto custom-scroll pr-0.5">
+                        ${sortedSurnames.length === 0 ? `
+                            <p class="text-slate-400 text-center py-4 text-[10px]">چو ناڤ نەهاتنە دیتن</p>
+                        ` : sortedSurnames.map(([name, count], rIdx) => {
+                            const barWidth = ((count / maxSurnameCount) * 100).toFixed(0);
+                            const rankBadge = rIdx === 0 ? '🥇' : (rIdx === 1 ? '🥈' : (rIdx === 2 ? '🥉' : `#${rIdx + 1}`));
+                            const rankBg = rIdx === 0 ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-300' : (rIdx === 1 ? 'bg-slate-50 dark:bg-slate-800 border-slate-300' : (rIdx === 2 ? 'bg-amber-50/50 dark:bg-amber-950/20 border-amber-200' : 'bg-white dark:bg-slate-800/60 border-slate-200/60'));
+                            return `
+                                <div class="p-1.5 rounded-xl border ${rankBg} flex items-center justify-between gap-2 text-[10px] shadow-2xs">
+                                    <div class="flex items-center gap-1.5 min-w-0">
+                                        <span class="font-black text-xs">${rankBadge}</span>
+                                        <span class="font-black text-slate-800 dark:text-slate-100 truncate">${name}</span>
+                                    </div>
+                                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                                        <div class="w-16 bg-slate-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+                                            <div class="bg-indigo-500 h-full rounded-full" style="width: ${barWidth}%;"></div>
+                                        </div>
+                                        <span class="font-black text-indigo-700 dark:text-indigo-300 min-w-[28px] text-left">${count} ${dict.students_suffix || 'قوتابی'}</span>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </div>
+            </div>
+
+            <!-- جدول 3: مصفوفة المراحل الدراسية وكثافة الإخوة والأقارب (Grade Density Table) -->
+            <div class="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-2">
+                <div class="flex items-center justify-between pb-1 border-b border-slate-100 dark:border-slate-800">
+                    <span class="text-xs font-black text-slate-800 dark:text-slate-100 flex items-center gap-1">
+                        <span>🏫</span> <span>${dict.analytics_grade_density_title || "خەستی و هەژمارا خوشک و برایان د قۆناغان دا"}</span>
+                    </span>
+                    <span class="text-[9px] font-bold text-slate-500">${sortedGradeKeys.length} ${dict.grade_label || 'قۆناغ'}</span>
+                </div>
+
+                <div class="overflow-x-auto custom-scroll">
+                    <table class="w-full text-right text-[10px]">
+                        <thead>
+                            <tr class="bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 font-extrabold border-b border-slate-200 dark:border-slate-700">
+                                <th class="py-1.5 px-2 rounded-r-lg">${dict.grade_label || 'قۆناغ'}</th>
+                                <th class="py-1.5 px-2 text-center">${dict.stat_total || 'سەرجەم'}</th>
+                                <th class="py-1.5 px-2 text-center text-blue-600 dark:text-blue-400">${dict.stat_siblings || 'خویشک و برا'}</th>
+                                <th class="py-1.5 px-2 text-center text-indigo-600 dark:text-indigo-400">${dict.stat_relatives || 'پسمام'}</th>
+                                <th class="py-1.5 px-2 text-center text-rose-600 dark:text-rose-400">${dict.stat_solitary || 'ب تنێ'}</th>
+                                <th class="py-1.5 px-2 text-center">${dict.section_label || 'شعبە'}</th>
+                                <th class="py-1.5 px-2 rounded-l-lg text-center font-black">${dict.stat_siblings || 'نسبة الإخوة'}</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                            ${sortedGradeKeys.map(g => {
+                                const data = gradesMap[g];
+                                const ratio = data.total > 0 ? ((data.siblings / data.total) * 100).toFixed(0) : 0;
+                                const secCount = data.sections.size;
+                                return `
+                                    <tr class="hover:bg-slate-50/80 dark:hover:bg-slate-800/50 transition">
+                                        <td class="py-1.5 px-2 font-black text-slate-800 dark:text-slate-100">${g}</td>
+                                        <td class="py-1.5 px-2 text-center font-bold">${data.total}</td>
+                                        <td class="py-1.5 px-2 text-center font-extrabold text-blue-600 dark:text-blue-400">${data.siblings}</td>
+                                        <td class="py-1.5 px-2 text-center font-bold text-indigo-600 dark:text-indigo-400">${data.relatives}</td>
+                                        <td class="py-1.5 px-2 text-center font-bold text-rose-600 dark:text-rose-400">${data.solitary}</td>
+                                        <td class="py-1.5 px-2 text-center font-bold text-slate-500">${secCount > 0 ? secCount : '-'}</td>
+                                        <td class="py-1.5 px-2 text-center font-black text-emerald-600 dark:text-emerald-400">
+                                            <div class="inline-flex items-center gap-1">
+                                                <span>${ratio}%</span>
+                                                <div class="w-10 bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden hidden sm:block">
+                                                    <div class="bg-emerald-500 h-full rounded-full" style="width: ${ratio}%;"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                `;
+                            }).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    `;
+
+    resultsArea.innerHTML = html;
+}
+
 function renderAnalyticsDashboard() {
     const dict = translations[currentLang];
     const totalStudents = studentPool.length;
@@ -3240,6 +6003,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }[savedLang];
     }
     changeLanguage(savedLang);
+
+    const savedShiftMode = localStorage.getItem('siblings_shift_mode') || 'single';
+    const shiftSelect = document.getElementById('shiftMode');
+    if (shiftSelect) {
+        shiftSelect.value = savedShiftMode;
+        toggleShiftModeSettings();
+    }
 
     const backup = localStorage.getItem('siblings_backup');
     if (backup) {
