@@ -26,9 +26,9 @@ const translations = {
         sep_comma: "فاریزە ( , )",
         sep_semicolon: "خاڵدار ( ; )",
         match_label: "هەڤبەری:",
-        match_rest: "پاشماوە",
-        match_last2: "دوو ناڤ",
-        match_family: "بنەمالە",
+        match_rest: "ژبلی ناڤێ ئێکێ",
+        match_last2: "دوو ناڤێن دووماهیێ",
+        match_family: "ناڤێ دووماهیێ (بنەماڵە)",
         relatives_mode_label: "رێکا کەسوکاران:",
         relatives_badge: "کەسوکار",
         grandpa_level_label: "رێکا دیتنا باپیران:",
@@ -53,7 +53,8 @@ const translations = {
         tab_siblings: "خویشک و برا",
         tab_diff_grades: "پۆلێن جودا",
         tab_split_shifts: "دەوامێن جودا",
-        tab_relatives: "پسمام و کەسوکار",
+        tab_relatives: "کەسوکار (باب)",
+        tab_maternal: "کەسوکار (دەیک)",
         tab_solitary: "ب تنێ",
         tab_duplicates: "ناڤێن وەکهەڤ",
         tab_analytics: "ئامار و شیکاری",
@@ -62,7 +63,8 @@ const translations = {
         all_names_desc: "لیستا هەمی قوتابیێن قوتابخانەیێ ب ڕێزبەندی و هویربینی",
         diff_grades_tab_desc: "ئەڤ بەشە بتنێ وان خێزانێن خویشک و برایان نیشان ددەت یێن کو د قۆناغ و پۆلێن جودا دا دخوینن بۆ ئاسانکرنا لێگەڕیان و دیارکرنێ.",
         split_shifts_tab_desc: "ئەڤ بەشە وان خێزانێن خویشک و برایان نیشان ددەت یێن کو ئێک د دەواما سپێدێ دایە و یێ دی د دەواما ئێڤاری دایە بۆ ئاسانکرنا گوهۆڕین و رێکخستنا دەوامێ وان.",
-        relatives_tab_desc: "بەشێ کەسوکاران بتنێ پسمام و کەسوکاران (ژ بابێن جودا یان دەیکێن جودا) نیشان ددەت و خویشک و برایێن ئێک باب ل ڤێرێ نینن.",
+        relatives_tab_desc: "بەشێ کەسوکاران بتنێ پسمام و کەسوکاران (ژ بابێن جودا یان باپیرێ 3 و 4) نیشان ددەت.",
+        maternal_tab_desc: "ئەڤ بەشە وان قوتابیان نیشان ددەت یێن کو ل سەر ئاستێ باب و باپیرێ دەیکێ کەسوکارن (پسمامێن دەیکێ، خاڵۆزا و میتۆزا).",
         solitary_tab_desc: "ئەڤ بەشە وان قوتابیان نیشان ددەت یێن کو چو خویشک و برایێن ئێک باب و چو پسمام و کەسوکار ل قوتابخانێ نینن (ب تەواوی ب تنێ).",
         duplicates_tab_desc: "ئەڤ بەشە وان قوتابیان نیشان ددەت یێن کو ناڤێن وان ب تەواوی یان تا رادەیەکی زۆر وەکهەڤن ل سەرانسەری قوتابخانێ.",
         placeholder_search: "گەڕیانا بلەز...",
@@ -73,11 +75,12 @@ const translations = {
         badge_groups_sib: "خێزانێن خویشک و برا",
         badge_groups_diff_grades: "خێزانێن پۆلێن جودا",
         badge_groups_split_shifts: "خێزانێن دەوامێن جودا",
-        badge_groups_rel: "کۆمێن پسمام و کەسوکاران",
+        badge_groups_rel: "کۆمێن کەسوکاران (باب)",
+        badge_groups_maternal: "کۆمێن کەسوکاران (دەیک)",
         badge_groups_sol: "قوتابیێن ب تنێ",
         badge_groups_dup: "کۆمێن ناڤێن وەکهەڤ",
         family_label: "بنەمالە / باپیرێ هەڤپشک:",
-        maternal_family_label: "دەیکا هەڤپشک:",
+        maternal_family_label: "باب و باپیرێ دەیکێ:",
         siblings_count: "قوتابی:",
         grade_label: "پۆل:",
         section_label: "شعبە:",
@@ -93,7 +96,8 @@ const translations = {
         dark_mode_light: "رووناهی",
         twin_warn: "⚠️ دووانە؟",
         father_branch: "تایا بابێ: ",
-        branch_label: "تاعێ بابێ / لق:",
+        maternal_branch_label: "دایک و خێزان: ",
+        branch_label: "دایک و خێزان: ",
         students_suffix: "قوتابی",
         groups_suffix: "کۆم",
         copy_btn: "📋 کۆپی",
@@ -104,15 +108,15 @@ const translations = {
         duplicates_title: "لیستا ناڤێن وەکهەڤ و لێکچوو:",
         no_duplicates: "چو ناڤێن وەکهەڤ نەهاتنە دیتن",
         csv_paternal_type: "ژ لایێ بابێ (باپیرێ 3 و 4)",
-        csv_maternal_type: "ژ لایێ دەیکێ",
+        csv_maternal_type: "ژ لایێ دەیکێ (باب و باپیرێ دەیکێ)",
         csv_solitary_type: "ب تنێ (بێ خویشک و بێ کەسوکار)",
         csv_duplicates_type: "ناڤێ وەکهەڤ",
         csv_type: "جۆرێ کەسوکاریێ",
-        csv_shared: "باپیرێ هەڤپشک / دەیک",
+        csv_shared: "باپیرێ هەڤپشک / باپیرێ دەیکێ",
         csv_branch: "تاع / باب",
         csv_name: "ناڤێ قوتابی",
-        paternal_card_title: "قرابەتا ژ لایێ بابێ (باپیرێ 3 و 4):",
-        maternal_card_title: "قرابەتا ژ لایێ دەیکێ (دەیکا هەڤپشک):",
+        paternal_card_title: "کەسوکارێن ژ لایێ بابێ (باپیرێ 3 و 4):",
+        maternal_card_title: "کەسوکارێن ژ لایێ دەیکێ (باب و باپیرێ دەیکێ):",
         btn_install_app: "دانانا بەرنامەی",
         fullscreen_btn: "تمامێ شاشەیێ",
         exit_fullscreen_btn: "دەرکەفتن",
@@ -225,7 +229,8 @@ const translations = {
         tab_siblings: "خوشک و برا",
         tab_diff_grades: "پۆلی جیاواز",
         tab_split_shifts: "دەوامی جیاواز",
-        tab_relatives: "ئامۆزا و خزم",
+        tab_relatives: "خزمەکان (باوک)",
+        tab_maternal: "خزمەکان (دایک)",
         tab_solitary: "تەنیا (بێ خزم)",
         tab_duplicates: "ناوە لێکچووەکان",
         tab_analytics: "ئامار و شیکاری",
@@ -234,7 +239,8 @@ const translations = {
         all_names_desc: "لیستی هەموو قوتابییانی قوتابخانە بە ڕێزبەندی",
         diff_grades_tab_desc: "ئەم بەشە تەنها ئەو خێزانانەی خوشک و برا پیشان دەدات کە لە قۆناغ و پۆلی جیاوازدا دەخوێنن بۆ ئاسانکاری لە گەڕان.",
         split_shifts_tab_desc: "ئەم بەشە ئەو خێزانانەی خوشک و برا پیشان دەدات کە یەکێکیان لە دەوامی بەیانییە و ئەوی تریان لە دەوامی ئێوارەیە بۆ ئاسانکاری لە ڕێکخستنی دەوامیان.",
-        relatives_tab_desc: "بەشی خزمەکان تەنها ئامۆزا و خزمانی باوک یان دایک (لە باوکی جیاواز) پیشان دەدات.",
+        relatives_tab_desc: "بەشی خزمەکان تەنها ئامۆزا و خزمانی باوک (باپیرەی 3 و 4) پیشان دەدات.",
+        maternal_tab_desc: "ئەم بەشە ئەو قوتابیانە پیشان دەدات کە لە ڕێگەی باوک و باپیرەی دایکەوە خزمیشن (ئامۆزا و خاڵۆزاکانی دایک).",
         solitary_tab_desc: "ئەم بەشە ئەو قوتابیانە پیشان دەدات کە هیچ خوشک، برا و خزمێکیان لە قوتابخانەدا نییە.",
         duplicates_tab_desc: "ئەم بەشە ئەو قوتابیانە پیشان دەدات کە ناوی تەواویان یان بەشێکی ناویان لە یەکتر دەچێت.",
         placeholder_search: "گەڕانی خێرا...",
@@ -245,11 +251,12 @@ const translations = {
         badge_groups_sib: "خێزانەکانی خوشک و برا",
         badge_groups_diff_grades: "خێزانی پۆلی جیاواز",
         badge_groups_split_shifts: "خێزانی دەوامی جیاواز",
-        badge_groups_rel: "کۆمەڵەی ئامۆزا و خزمەکان",
+        badge_groups_rel: "کۆمەڵەی خزمەکانی باوک",
+        badge_groups_maternal: "کۆمەڵەی خزمەکانی دایک",
         badge_groups_sol: "قوتابیانی تەنیا",
         badge_groups_dup: "کۆمەڵەی ناوە لێکچووەکان",
         family_label: "بنەماڵە / باپیرەی هاوبەش:",
-        maternal_family_label: "دایکی هاوبەش:",
+        maternal_family_label: "باوک و باپیرەی دایک:",
         siblings_count: "قوتابی:",
         grade_label: "پۆل:",
         section_label: "شعبە:",
@@ -265,7 +272,8 @@ const translations = {
         dark_mode_light: "ڕووناک",
         twin_warn: "⚠️ دووانە؟",
         father_branch: "لقی باوک: ",
-        branch_label: "لقی باوک / سەرپەرشتیار:",
+        maternal_branch_label: "دایک و خێزان: ",
+        branch_label: "دایک و خێزان: ",
         students_suffix: "قوتابی",
         groups_suffix: "کۆمەڵە",
         copy_btn: "📋 کۆپی",
@@ -276,11 +284,15 @@ const translations = {
         duplicates_title: "لیستی ناوە لێکچووەکان:",
         no_duplicates: "هیچ ناوێکی لێکچوو نەدۆزرایەوە",
         csv_paternal_type: "لە لایەنی باوک (ناوی 3 و 4)",
-        csv_maternal_type: "لە لایەنی دایک",
+        csv_maternal_type: "لە لایەنی دایک (باوک و باپیرەی دایک)",
         csv_solitary_type: "تەنیا (بێ خوشک و بێ خزم)",
         csv_duplicates_type: "ناوی لێکچوو",
         csv_type: "جۆری خزمایەتی",
-        csv_shared: "باپیرەی هاوبەش / دایک",
+        csv_shared: "باپیرەی هاوبەش / باپیرەی دایک",
+        csv_branch: "لق / باوک",
+        csv_name: "ناوی قوتابی",
+        paternal_card_title: "خزمەکانی لای باوک (باپیرەی 3 و 4):",
+        maternal_card_title: "خزمەکانی لای دایک (باوک و باپیرەی دایک):",
         csv_branch: "لق / باوک",
         csv_name: "ناوی قوتابی",
         paternal_card_title: "خزمایەتی لە لایەنی باوک (ناوی 3 و 4):",
@@ -397,7 +409,8 @@ const translations = {
         tab_siblings: "الإخوة الأشقاء",
         tab_diff_grades: "صفوف مختلفة",
         tab_split_shifts: "دوامين مختلفين",
-        tab_relatives: "الأقارب والعمومة",
+        tab_relatives: "أقارب جهة الأب",
+        tab_maternal: "أقارب جهة الأم",
         tab_solitary: "وحيدين (بدون أقارب)",
         tab_duplicates: "الأسماء المتشابهة",
         tab_analytics: "الإحصائيات والتحليلات",
@@ -406,7 +419,8 @@ const translations = {
         all_names_desc: "قائمة بكافة أسماء طلاب المدرسة مرتبة ومفصلة",
         diff_grades_tab_desc: "هذا القسم مخصص لعرض عائلات الإخوة والأخوات المسجلين في صفوف ومراحل دراسية مختلفة لتسهيل البحث والمتابعة بدقة.",
         split_shifts_tab_desc: "هذا القسم يظهر عائلات الإخوة الذين يداوم أحدهم في الفترة الصباحية والآخر في الفترة المسائية لمساعدة الإدارة في تنسيق ونقل دوامهم.",
-        relatives_tab_desc: "قسم الأقارب يعرض فقط الطلاب المرتبطين كأبناء عمومة أو خؤولة (من آباء مختلفين / أمهات مختلفات) مع استبعاد الإخوة المباشرين.",
+        relatives_tab_desc: "قسم الأقارب يعرض فقط الطلاب المرتبطين كأبناء عمومة من جهة الأب (الجد 3 و 4) مع استبعاد الإخوة المباشرين.",
+        maternal_tab_desc: "يعرض هذا القسم الطلاب المرتبطين كأقارب عن طريق أب وجد الأم (أبناء الخالات والأخوال والأقارب من جهة الأم).",
         solitary_tab_desc: "هذا القسم يعرض الطلاب الذين ليس لديهم أي إخوة أشقاء ولا أبناء عمومة أو خؤولة مسجلين في المدرسة (وحيدون تماماً).",
         duplicates_tab_desc: "هذا القسم يكتشف ويعرض الطلاب الذين تتشابه أو تتطابق أسماؤهم بالكامل لمراجعة التكرارات.",
         placeholder_search: "بحث سريع...",
@@ -417,11 +431,12 @@ const translations = {
         badge_groups_sib: "عائلات الإخوة الأشقاء",
         badge_groups_diff_grades: "عائلات في صفوف مختلفة",
         badge_groups_split_shifts: "عائلات بدوامين مختلفين",
-        badge_groups_rel: "مجموعات الأقارب والعمومة",
+        badge_groups_rel: "مجموعات أقارب الأب",
+        badge_groups_maternal: "مجموعات أقارب الأم",
         badge_groups_sol: "طلاب وحيدين تماماً",
         badge_groups_dup: "مجموعات الأسماء المتشابهة",
         family_label: "الجد المشترك / العائلة:",
-        maternal_family_label: "الأم المشتركة:",
+        maternal_family_label: "أب وجد الأم:",
         siblings_count: "طلاب:",
         grade_label: "الصف:",
         section_label: "الشعبة:",
@@ -437,7 +452,8 @@ const translations = {
         dark_mode_light: "فاتح",
         twin_warn: "⚠️ توأم؟",
         father_branch: "فرع الأب: ",
-        branch_label: "فرع الأب / ولي الأمر:",
+        maternal_branch_label: "الأم والعائلة: ",
+        branch_label: "الأم والعائلة: ",
         students_suffix: "طلاب",
         groups_suffix: "مجموعات",
         copy_btn: "📋 نسخ",
@@ -448,15 +464,15 @@ const translations = {
         duplicates_title: "قائمة الأسماء المتشابهة والمطابقة:",
         no_duplicates: "لا توجد أسماء متشابهة",
         csv_paternal_type: "جهة الأب (الاسم 3 و 4)",
-        csv_maternal_type: "جهة الأم",
+        csv_maternal_type: "جهة الأم (أب وجد الأم)",
         csv_solitary_type: "وحيد تماماً (بدون إخوة وبدون أقارب)",
         csv_duplicates_type: "اسم متشابه",
         csv_type: "نوع القرابة",
-        csv_shared: "الجد المشترك / الأم",
+        csv_shared: "الجد المشترك / أب وجد الأم",
         csv_branch: "الفرع / الأب",
         csv_name: "اسم الطالب",
         paternal_card_title: "قرابة من جهة الأب (الاسم 3 و 4):",
-        maternal_card_title: "قرابة من جهة الأم (الأم المشتركة):",
+        maternal_card_title: "أقارب جهة الأم (أب وجد الأم):",
         btn_install_app: "تثبيت التطبيق",
         fullscreen_btn: "ملء الشاشة",
         exit_fullscreen_btn: "إلغاء ملء الشاشة",
@@ -569,7 +585,8 @@ const translations = {
         tab_siblings: "Direct Siblings",
         tab_diff_grades: "Diff Grades",
         tab_split_shifts: "Split Shifts",
-        tab_relatives: "Relatives & Cousins",
+        tab_relatives: "Paternal Relatives",
+        tab_maternal: "Maternal Relatives",
         tab_solitary: "Solitary (No Relatives)",
         tab_duplicates: "Duplicate Names",
         tab_analytics: "Statistics & Charts",
@@ -578,7 +595,8 @@ const translations = {
         all_names_desc: "Full list of all registered school students",
         diff_grades_tab_desc: "This tab displays sibling families with children enrolled in different grades and classes for easier search.",
         split_shifts_tab_desc: "This tab displays sibling families where one child attends the morning shift and another attends the evening shift to help coordinate schedules.",
-        relatives_tab_desc: "The Relatives section only displays students connected as cousins/relatives across different parent branches (excluding direct siblings).",
+        relatives_tab_desc: "The Relatives section displays students connected as cousins on father's side (3rd & 4th grandpas).",
+        maternal_tab_desc: "This tab displays students connected as maternal cousins/relatives through mother's father and grandfather.",
         solitary_tab_desc: "This section displays solitary students who have zero direct siblings and zero cousins/relatives in the school.",
         duplicates_tab_desc: "This section detects and displays students with duplicate or identical full names across the school.",
         placeholder_search: "Quick search...",
@@ -589,11 +607,12 @@ const translations = {
         badge_groups_sib: "Sibling Families",
         badge_groups_diff_grades: "Diff-grade families",
         badge_groups_split_shifts: "Split-shift families",
-        badge_groups_rel: "Relative Groups",
+        badge_groups_rel: "Paternal Groups",
+        badge_groups_maternal: "Maternal Groups",
         badge_groups_sol: "Solitary Students",
         badge_groups_dup: "Duplicate Groups",
         family_label: "Shared Grandfather / Family:",
-        maternal_family_label: "Shared Mother:",
+        maternal_family_label: "Mother's Father & Grandpa:",
         siblings_count: "Students:",
         grade_label: "Grade:",
         section_label: "Section:",
@@ -609,7 +628,8 @@ const translations = {
         dark_mode_light: "Light",
         twin_warn: "⚠️ Twin?",
         father_branch: "Father's Branch: ",
-        branch_label: "Father's Branch / Parent:",
+        maternal_branch_label: "Mother & Family: ",
+        branch_label: "Mother & Family: ",
         students_suffix: "students",
         groups_suffix: "groups",
         copy_btn: "📋 Copy",
@@ -620,15 +640,15 @@ const translations = {
         duplicates_title: "List of Duplicate & Identical Names:",
         no_duplicates: "No duplicate names found",
         csv_paternal_type: "Via Father (3rd & 4th Grandfather)",
-        csv_maternal_type: "Via Mother",
+        csv_maternal_type: "Via Mother (Mother's Father & Grandpa)",
         csv_solitary_type: "Solitary (No Siblings & No Relatives)",
         csv_duplicates_type: "Duplicate Name",
         csv_type: "Relationship Type",
-        csv_shared: "Shared Grandfather / Mother",
+        csv_shared: "Shared Grandfather / Mother's Grandpa",
         csv_branch: "Branch / Father",
         csv_name: "Student Name",
         paternal_card_title: "Paternal Relatives (3rd & 4th Grandfather):",
-        maternal_card_title: "Maternal Relatives (Shared Mother):",
+        maternal_card_title: "Maternal Relatives (Mother's Father & Grandpa):",
         btn_install_app: "Install App",
         fullscreen_btn: "Fullscreen",
         exit_fullscreen_btn: "Exit Fullscreen",
@@ -692,6 +712,8 @@ let studentPool = [];
 let siblingResults = [];
 let diffGradesSiblingResults = [];
 let relativeResults = [];
+let paternalResults = [];
+let maternalResults = [];
 let solitaryResults = [];
 let duplicateResults = [];
 let activeTab = 'siblings';
@@ -896,10 +918,12 @@ function changeLanguage(lang) {
         'tab-siblings-label': dict.tab_siblings,
         'tab-diff-grades-label': dict.tab_diff_grades || "پۆلێن جودا",
         'tab-relatives-label': dict.tab_relatives,
+        'tab-maternal-label': dict.tab_maternal || "کەسوکار (دەیک)",
         'tab-solitary-label': dict.tab_solitary,
         'tab-duplicates-label': dict.tab_duplicates,
         'tab-analytics-label': dict.tab_analytics || "ئامار و شیکاری",
         'ui-diff-grades-tab-desc': dict.diff_grades_tab_desc,
+        'ui-maternal-tab-desc': dict.maternal_tab_desc,
         'stat-total-title': dict.stat_total,
         'stat-siblings-title': dict.stat_siblings,
         'stat-relatives-title': dict.stat_relatives,
@@ -1332,6 +1356,13 @@ function toggleShiftModeSettings() {
     }
     localStorage.setItem('siblings_shift_mode', mode);
     updateDiffGradesTabUI();
+    if (typeof studentPool !== 'undefined' && studentPool.length > 0) {
+        const shiftConfig = getShiftConfig();
+        studentPool.forEach(s => {
+            s.shift = getStudentShift(s, shiftConfig.morningList, shiftConfig.eveningList);
+        });
+        renderEngine();
+    }
 }
 
 function updateDiffGradesTabUI() {
@@ -1366,8 +1397,8 @@ function getShiftConfig() {
     const morningInput = document.getElementById('morningSectionsInput');
     const eveningInput = document.getElementById('eveningSectionsInput');
 
-    const morningRaw = morningInput ? morningInput.value : 'أ, ب, A, B, 1, 2';
-    const eveningRaw = eveningInput ? eveningInput.value : 'ج, د, C, D, 3, 4';
+    const morningRaw = morningInput ? morningInput.value : 'أ, ب, A, B, 1, 2, صباحي';
+    const eveningRaw = eveningInput ? eveningInput.value : 'ج, د, C, D, 3, 4, مسائي';
 
     function cleanList(str) {
         return (str || '')
@@ -1397,19 +1428,73 @@ function normalizeSectionStr(s) {
         .toLowerCase();
 }
 
-function getStudentShift(sectionStr, morningList, eveningList) {
-    if (!sectionStr || sectionStr === '-' || sectionStr === 'N/A' || sectionStr === 'دیارنەکری') return 'unknown';
-    const cleanSec = normalizeSectionStr(sectionStr);
-    if (!cleanSec) return 'unknown';
+// 🧠 خوارزمية ذكية وشاملة لتحديد دوام الطالب (صباحي / مسائي)
+function getStudentShift(studentOrSection, morningList, eveningList) {
+    if (!studentOrSection) return 'unknown';
 
-    // فحص التطابق مع شعب الدوام الصباحي
-    for (const m of morningList) {
-        if (cleanSec === m || cleanSec.includes(m)) return 'morning';
+    let sSection = '';
+    let sGrade = '';
+    let sShift = '';
+    let sName = '';
+
+    if (typeof studentOrSection === 'object') {
+        sSection = studentOrSection.section || '';
+        sGrade = studentOrSection.grade || '';
+        sShift = studentOrSection.shift || '';
+        sName = studentOrSection.name || '';
+    } else {
+        sSection = String(studentOrSection);
     }
-    // فحص التطابق مع شعب الدوام المسائي
+
+    // 1. إذا كان الدوام محدداً بشكل صريح
+    if (sShift === 'morning' || sShift === 'evening') return sShift;
+
+    const fullText = normalizeSectionStr(`${sShift} ${sSection} ${sGrade} ${sName}`);
+    
+    // 2. الكشف عن الكلمات الصريحة للدوام الصباحي
+    const morningKeywords = ['صباحي', 'صباحيه', 'الصباحي', 'الصباحية', 'سپيده', 'سپيدي', 'سپێدە', 'سپێدێ', 'بياني', 'بيانيان', 'بەیانی', 'بەیانیان', 'morning', 'am', 'فترة اولي', 'فترة اولى', 'فترة اول', 'دوام اول', 'فتره اولي'];
+    for (const kw of morningKeywords) {
+        if (fullText.includes(normalizeSectionStr(kw))) return 'morning';
+    }
+
+    // 3. الكشف عن الكلمات الصريحة للدوام المسائي
+    const eveningKeywords = ['مسائي', 'مسائيه', 'المسائي', 'المسائية', 'ئيفار', 'ئيفاري', 'ئێڤار', 'ئێڤاری', 'ئيواره', 'ئيواران', 'ئێوارە', 'ئێواران', 'evening', 'pm', 'فترة ثانيه', 'فترة ثانية', 'فترة ثاني', 'دوام ثاني', 'فتره ثانيه'];
+    for (const kw of eveningKeywords) {
+        if (fullText.includes(normalizeSectionStr(kw))) return 'evening';
+    }
+
+    // 4. استخراج رموز الشعبة ومطابقتها الدقيقة
+    const cleanSec = normalizeSectionStr(sSection);
+    if (!cleanSec || cleanSec === '-' || cleanSec === 'n/a' || cleanSec === 'ديارنكري' || cleanSec === 'غير محدد') {
+        return 'unknown';
+    }
+
+    // تقسيم الشعبة إلى مقاطع دقيقة (مثل "1-A" أو "الصف 2 شعبة ج")
+    const secTokens = cleanSec.split(/[\s\-_\/]+/).filter(t => t.length > 0);
+    secTokens.push(cleanSec);
+
+    // فحص المسائي أولاً لضمان عدم الخلط مع أرقام المراحل
+    for (const token of secTokens) {
+        for (const e of eveningList) {
+            if (token === e) return 'evening';
+        }
+    }
+
+    // فحص الصباحي
+    for (const token of secTokens) {
+        for (const m of morningList) {
+            if (token === m) return 'morning';
+        }
+    }
+
+    // فحص الاحتواء الجزئي للأحرف الدقيقة
     for (const e of eveningList) {
-        if (cleanSec === e || cleanSec.includes(e)) return 'evening';
+        if (e.length > 1 && cleanSec.includes(e)) return 'evening';
     }
+    for (const m of morningList) {
+        if (m.length > 1 && cleanSec.includes(m)) return 'morning';
+    }
+
     return 'unknown';
 }
 
@@ -1436,9 +1521,9 @@ function updateDetectedSectionsChips() {
     const { morningList, eveningList } = getShiftConfig();
 
     chipsDiv.innerHTML = uniqueSections.map(sec => {
-        const normSec = normalizeSectionStr(sec);
-        const isMorning = morningList.some(m => normSec === m || normSec.includes(m));
-        const isEvening = eveningList.some(e => normSec === e || normSec.includes(e));
+        const sh = getStudentShift(sec, morningList, eveningList);
+        const isMorning = sh === 'morning';
+        const isEvening = sh === 'evening';
         
         let badgeColor = "bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border-slate-300 dark:border-slate-700";
         if (isMorning) {
@@ -1478,6 +1563,67 @@ function setSectionShift(section, shiftType) {
     processNames();
 }
 
+function isSectionValue(val) {
+    if (!val) return false;
+    const raw = String(val).trim();
+    const clean = raw.replace(/^(شعبة|شعبە|هۆبە|هۆبا|شعبة:|هۆبە:)\s*/i, '').trim().toUpperCase();
+    if (/^[A-Zأإآابجدهوزحطي]$/i.test(clean)) return true;
+    if (/^(شعبة|شعبە|هۆبە|هۆبا)\s*[A-Zأإآابجدهوزحطي0-9]$/i.test(raw)) return true;
+    return false;
+}
+
+function isGradeValue(val) {
+    if (!val) return false;
+    const clean = String(val).trim();
+    if (getGradeRank(clean) !== 999) return true;
+    if (/^(صف|الصف|پۆل|پۆلا|مرحلة|قۆناغ|grade|class)\s*/i.test(clean)) return true;
+    if (/^\d+$/.test(clean) && parseInt(clean, 10) >= 1 && parseInt(clean, 10) <= 12) return true;
+    return false;
+}
+
+function cleanAndDetectGradeAndSection(gradeVal, sectionVal) {
+    let g = (gradeVal || '').trim();
+    let s = (sectionVal || '').trim();
+    const defaultGrade = currentLang === 'en' ? 'N/A' : (currentLang === 'ar' ? 'غير محدد' : 'دیارنەکری');
+    const defaultSection = currentLang === 'en' ? 'N/A' : (currentLang === 'ar' ? 'غير محدد' : 'دیارنەکری');
+
+    if (!g || g === '-' || g.toLowerCase() === 'null' || g === 'غير محدد' || g === 'دیارنەکری' || g === 'N/A') g = '';
+    if (!s || s === '-' || s.toLowerCase() === 'null' || s === 'غير محدد' || s === 'دیارنەکری' || s === 'N/A') s = '';
+
+    // إذا كانت القيمة مدمجة مثل "1-A" أو "الاول / ب" أو "پۆلا 1 - ج"
+    if (g && !s) {
+        const match = g.match(/^(.+?)\s*[-/\\|]\s*([A-Za-zأإآابجدهوزحطي0-9])$/);
+        if (match) {
+            g = match[1].trim();
+            s = match[2].trim();
+        }
+    } else if (s && !g) {
+        const match = s.match(/^(.+?)\s*[-/\\|]\s*([A-Za-zأإآابجدهوزحطي0-9])$/);
+        if (match) {
+            g = match[1].trim();
+            s = match[2].trim();
+        }
+    }
+
+    // إذا كانت الشعبة في حقل الصف والصف في حقل الشعبة -> يتم التبديل التلقائي
+    if (isSectionValue(g) && isGradeValue(s)) {
+        const temp = g;
+        g = s;
+        s = temp;
+    } else if (isSectionValue(g) && (!s || !isGradeValue(g))) {
+        s = g;
+        g = '';
+    } else if (isGradeValue(s) && !g) {
+        g = s;
+        s = '';
+    }
+
+    if (!g) g = defaultGrade;
+    if (!s) s = defaultSection;
+
+    return { grade: g, section: s };
+}
+
 function parseGenderValue(val, fallbackName) {
     if (!val) return detectStudentGender(fallbackName);
     const clean = String(val).trim().toLowerCase();
@@ -1496,9 +1642,11 @@ function isHeaderRow(lineOrParts) {
         (str.includes('تەواو') && str.includes('دایک')) ||
         (str.includes('ڕەگەز') || str.includes('رەگەز')) ||
         (str.includes('ناوی') && str.includes('پۆل')) ||
+        (str.includes('پۆل') && str.includes('هۆبە')) ||
         (str.includes('اسم') && str.includes('ام')) ||
         (str.includes('اسم') && str.includes('صف')) ||
-        (str.includes('الجنس') || str.includes('الشعبة') || str.includes('شعبة')) ||
+        (str.includes('صف') && str.includes('شعبة')) ||
+        (str.includes('الجنس') || str.includes('الشعبة') || str.includes('شعبة') || str.includes('هۆبە')) ||
         (str.includes('student') && str.includes('mother')) ||
         (str.includes('gender') && str.includes('grade'))
     );
@@ -1617,39 +1765,45 @@ function readExcelOrTextFile(file) {
                 return;
             }
 
-            // ترتيب الأعمدة المطلوب:
-            // 1. ناوی تەواو | 2. ناوی تەواوی دایک | 3. ڕەگەز | 4. پۆل | 5. هۆبە
+            // البحث عن سطر العناوين في أول 10 أسطر
+            let headerRowIdx = -1;
+            for (let r = 0; r < Math.min(rows.length, 10); r++) {
+                if (rows[r] && isHeaderRow(rows[r])) {
+                    headerRowIdx = r;
+                    break;
+                }
+            }
+
+            // الترتيب الافتراضي المعتمد:
+            // 0: ناوی تەواو | 1: ناوی تەواوی دایک | 2: ڕەگەز | 3: پۆل | 4: هۆبە | 5: دەوام
             let colNameIdx = 0;
             let colMotherIdx = 1;
             let colGenderIdx = 2;
             let colGradeIdx = 3;
             let colSectionIdx = 4;
+            let colShiftIdx = -1;
 
             let startRow = 0;
-            const headerRow = rows[0].map(c => String(c || '').trim().toLowerCase());
-            
-            let foundHeader = false;
-            headerRow.forEach((colText, idx) => {
-                if (colText.includes('ناوی تەواو') || colText.includes('ناوی قوتابی') || (colText.includes('ناو') && !colText.includes('دایک')) || colText.includes('اسم الطالب') || colText.includes('الاسم الكامل') || colText.includes('student')) {
-                    colNameIdx = idx;
-                    foundHeader = true;
-                } else if (colText.includes('دایک') || colText.includes('ام') || colText.includes('mother')) {
-                    colMotherIdx = idx;
-                    foundHeader = true;
-                } else if (colText.includes('ڕەگەز') || colText.includes('رەگەز') || colText.includes('جنس') || colText.includes('gender') || colText.includes('sex')) {
-                    colGenderIdx = idx;
-                    foundHeader = true;
-                } else if (colText.includes('پۆل') || colText.includes('صف') || colText.includes('مرحلة') || colText.includes('قۆناغ') || colText.includes('grade') || colText.includes('class')) {
-                    colGradeIdx = idx;
-                    foundHeader = true;
-                } else if (colText.includes('هۆبە') || colText.includes('شعبة') || colText.includes('شعبە') || colText.includes('section')) {
-                    colSectionIdx = idx;
-                    foundHeader = true;
-                }
-            });
-
-            if (foundHeader) {
-                startRow = 1;
+            if (headerRowIdx !== -1) {
+                startRow = headerRowIdx + 1;
+                const headerRow = rows[headerRowIdx].map(c => String(c || '').trim().toLowerCase());
+                
+                headerRow.forEach((colText, idx) => {
+                    // فحص اسم الأم أولاً لمنع الخلط مع اسم الطالب (ناوی تەواوی دایک vs ناوی تەواو)
+                    if (colText.includes('دایک') || colText.includes('دايك') || colText.includes('ام') || colText.includes('أم') || colText.includes('mother') || colText.includes('والدة')) {
+                        colMotherIdx = idx;
+                    } else if (colText.includes('ناوی تەواو') || colText.includes('ناوی قوتابی') || colText.includes('ناو') || colText.includes('اسم الطالب') || colText.includes('الاسم الكامل') || colText.includes('الاسم') || colText.includes('student') || colText.includes('name')) {
+                        colNameIdx = idx;
+                    } else if (colText.includes('ڕەگەز') || colText.includes('رەگەز') || colText.includes('جنس') || colText.includes('الجنس') || colText.includes('gender') || colText.includes('sex')) {
+                        colGenderIdx = idx;
+                    } else if (colText.includes('پۆل') || colText.includes('پۆڵ') || colText.includes('صف') || colText.includes('الصف') || colText.includes('مرحلة') || colText.includes('المرحلة') || colText.includes('قۆناغ') || colText.includes('grade') || colText.includes('class')) {
+                        colGradeIdx = idx;
+                    } else if (colText.includes('هۆبە') || colText.includes('هۆبا') || colText.includes('شعبة') || colText.includes('الشعبة') || colText.includes('شعبە') || colText.includes('section')) {
+                        colSectionIdx = idx;
+                    } else if (colText.includes('دوام') || colText.includes('دەوام') || colText.includes('الدوام') || colText.includes('فترة') || colText.includes('فتره') || colText.includes('shift') || colText.includes('period')) {
+                        colShiftIdx = idx;
+                    }
+                });
             }
 
             const formattedLines = [];
@@ -1662,10 +1816,17 @@ function readExcelOrTextFile(file) {
 
                 const sMother = String(r[colMotherIdx] || '').trim();
                 const sGender = String(r[colGenderIdx] || '').trim();
-                const sGrade = String(r[colGradeIdx] || '').trim();
-                const sSection = String(r[colSectionIdx] || '').trim();
+                const rawGrade = String(r[colGradeIdx] || '').trim();
+                const rawSection = String(r[colSectionIdx] || '').trim();
+                const sShift = colShiftIdx !== -1 ? String(r[colShiftIdx] || '').trim() : '';
 
-                formattedLines.push(`${sName}, ${sMother}, ${sGender}, ${sGrade}, ${sSection}`);
+                const { grade: sGrade, section: sSection } = cleanAndDetectGradeAndSection(rawGrade, rawSection);
+
+                if (sShift) {
+                    formattedLines.push(`${sName}, ${sMother}, ${sGender}, ${sGrade}, ${sSection}, ${sShift}`);
+                } else {
+                    formattedLines.push(`${sName}, ${sMother}, ${sGender}, ${sGrade}, ${sSection}`);
+                }
             }
 
             const namesInput = document.getElementById('namesInput');
@@ -1694,6 +1855,7 @@ function processNames() {
 
     studentPool = [];
     const sepMode = document.getElementById('dataSeparator').value;
+    const shiftConfig = getShiftConfig();
 
     let rowIndex = 0;
     lines.forEach((line, index) => {
@@ -1719,18 +1881,26 @@ function processNames() {
         let gender = '';
         let grade = currentLang === 'en' ? 'N/A' : (currentLang === 'ar' ? 'غير محدد' : 'دیارنەکری');
         let section = currentLang === 'en' ? 'N/A' : (currentLang === 'ar' ? 'غير محدد' : 'دیارنەکری');
+        let shift = '';
         let guardian = '';
 
         if (!name || name === '-' || name.toLowerCase() === 'null') return;
 
         if (parts.length >= 5) {
-            // الترتيب الدقيق: 1. ناوی تەواو | 2. ناوی تەواوی دایک | 3. ڕەگەز | 4. پۆل | 5. هۆبە
+            // الترتيب: 1. ناوی تەواو | 2. ناوی دایک | 3. ڕەگەز | 4. پۆل | 5. هۆبە | 6. دەوام یان ولی أمر
             mother = parts[1] || '';
             gender = parseGenderValue(parts[2], name);
             grade = parts[3] || grade;
             section = parts[4] || section;
+            
             if (parts.length >= 6) {
-                guardian = parts[5] || '';
+                const p5 = parts[5].trim();
+                const p5Lower = p5.toLowerCase();
+                if (p5Lower.includes('صباح') || p5Lower.includes('مسائ') || p5Lower.includes('سپێد') || p5Lower.includes('سپيد') || p5Lower.includes('ئێڤار') || p5Lower.includes('ئيفار') || p5Lower.includes('morning') || p5Lower.includes('evening')) {
+                    shift = getStudentShift(p5, shiftConfig.morningList, shiftConfig.eveningList);
+                } else {
+                    guardian = p5;
+                }
             }
         } else if (parts.length === 4) {
             const p1 = parts[1].toLowerCase().trim();
@@ -1762,7 +1932,14 @@ function processNames() {
 
         if (!gender) gender = detectStudentGender(name);
 
-        studentPool.push({ id: rowIndex++, name, grade, section, mother, gender, guardian });
+        const { grade: finalGrade, section: finalSection } = cleanAndDetectGradeAndSection(grade, section);
+        grade = finalGrade;
+        section = finalSection;
+
+        const stObj = { id: rowIndex++, name, grade, section, mother, gender, guardian, shift };
+        stObj.shift = getStudentShift(stObj, shiftConfig.morningList, shiftConfig.eveningList);
+
+        studentPool.push(stObj);
     });
 
     const relMode = document.getElementById('relativesSearchMode').value;
@@ -1803,6 +1980,40 @@ function extractGrandfatherKey(name, depthMode, isStrip) {
     }
 
     return { father, grandpaKey };
+}
+
+function extractMotherGrandfatherKey(motherName, depthMode, isStrip) {
+    if (!motherName || typeof motherName !== 'string') return { motherFather: '', motherGrandpaKey: '', fullMotherRest: '' };
+    const normalized = normalizeText(isStrip ? stripPrefixes(motherName) : motherName);
+    const words = normalized.split(' ').filter(w => w.length > 0);
+
+    if (words.length < 2) {
+        return { motherFather: words[0] || '', motherGrandpaKey: words[0] || '', fullMotherRest: words[0] || '' };
+    }
+
+    const motherFather = words[1]; // اسم والد الأم
+    const fullMotherRest = words.slice(1).join(' '); // اسم أب وجد الأم وما بعده
+
+    let motherGrandpaKey = '';
+    if (depthMode === 'grandpa-3') {
+        // جد الأم المباشر (الكلمة 3 من اسم الأم إذا وجدت أو الكلمة 2)
+        motherGrandpaKey = words[2] || words[1];
+    } else if (depthMode === 'grandpa-4') {
+        // والد جد الأم (الكلمة 4 أو 3 أو 2)
+        motherGrandpaKey = words[3] || words[2] || words[1];
+    } else if (depthMode === 'all-ancestors') {
+        // كافة أسماء أجداد الأم
+        motherGrandpaKey = words.length > 2 ? words.slice(2).join(' ') : words[1];
+    } else {
+        // الافتراضي (grandpa-34): أب وجد الأم معاً (الكلمة 2 و 3 من اسم الأم)
+        if (words.length >= 3) {
+            motherGrandpaKey = words[1] + ' ' + words[2];
+        } else {
+            motherGrandpaKey = words[1];
+        }
+    }
+
+    return { motherFather, motherGrandpaKey, fullMotherRest };
 }
 
 function renderEngine() {
@@ -1856,85 +2067,106 @@ function renderEngine() {
         }
     }
 
-    // 2. كشف الأقارب
+    // 2. كشف الأقارب (جهة الأب وجهة الأم)
+    paternalResults = [];
+    maternalResults = [];
     relativeResults = [];
     let totalRelativesMatched = 0;
+    const paternalStudentIds = new Set();
+    const maternalStudentIds = new Set();
     const relativeStudentIds = new Set();
 
-    if (relSearchMode === 'father-grandpa' || relSearchMode === 'both') {
-        const paternalRelativesMap = {};
+    // أ. كشف الأقارب من جهة الأب (Paternal Relatives - الجد 3 و 4)
+    const paternalRelativesMap = {};
+    studentPool.forEach(student => {
+        const { father, grandpaKey } = extractGrandfatherKey(student.name, grandpaDepth, isStrip);
+        
+        if (grandpaKey && grandpaKey.length > 1) {
+            if (!paternalRelativesMap[grandpaKey]) paternalRelativesMap[grandpaKey] = {};
+            if (!paternalRelativesMap[grandpaKey][father]) paternalRelativesMap[grandpaKey][father] = [];
+            paternalRelativesMap[grandpaKey][father].push(student);
+        }
+    });
 
-        studentPool.forEach(student => {
-            const { father, grandpaKey } = extractGrandfatherKey(student.name, grandpaDepth, isStrip);
-            
-            if (grandpaKey && grandpaKey.length > 1) {
-                if (!paternalRelativesMap[grandpaKey]) paternalRelativesMap[grandpaKey] = {};
-                if (!paternalRelativesMap[grandpaKey][father]) paternalRelativesMap[grandpaKey][father] = [];
-                paternalRelativesMap[grandpaKey][father].push(student);
-            }
-        });
-
-        for (const grandpaKey in paternalRelativesMap) {
-            const fatherBranches = Object.keys(paternalRelativesMap[grandpaKey]);
-            
-            if (fatherBranches.length > 1) {
-                const branches = {};
-                let groupCount = 0;
-                fatherBranches.forEach(father => {
-                    branches[father] = paternalRelativesMap[grandpaKey][father];
-                    groupCount += paternalRelativesMap[grandpaKey][father].length;
-                    paternalRelativesMap[grandpaKey][father].forEach(s => relativeStudentIds.add(s.id));
+    for (const grandpaKey in paternalRelativesMap) {
+        const fatherBranches = Object.keys(paternalRelativesMap[grandpaKey]);
+        
+        if (fatherBranches.length > 1) {
+            const branches = {};
+            let groupCount = 0;
+            fatherBranches.forEach(father => {
+                branches[father] = paternalRelativesMap[grandpaKey][father];
+                groupCount += paternalRelativesMap[grandpaKey][father].length;
+                paternalRelativesMap[grandpaKey][father].forEach(s => {
+                    paternalStudentIds.add(s.id);
+                    relativeStudentIds.add(s.id);
                 });
+            });
 
-                totalRelativesMatched += groupCount;
-                relativeResults.push({
-                    type: 'paternal',
-                    sharedKey: grandpaKey,
-                    branches: branches,
-                    totalCount: groupCount
-                });
-            }
+            paternalResults.push({
+                type: 'paternal',
+                sharedKey: grandpaKey,
+                branches: branches,
+                totalCount: groupCount
+            });
         }
     }
 
-    if (relSearchMode === 'mother' || relSearchMode === 'both') {
-        const maternalRelativesMap = {};
-
-        studentPool.forEach(student => {
-            if (student.mother && student.mother.trim().length > 1) {
-                const motherKey = normalizeText(isStrip ? stripPrefixes(student.mother) : student.mother);
-                const normalizedStudentName = normalizeText(student.name);
+    // ب. كشف الأقارب من جهة الأم (Maternal Relatives - عن طريق اسم أب وجد الأم)
+    const maternalRelativesMap = {};
+    studentPool.forEach(student => {
+        if (student.mother && student.mother.trim().length > 1 && student.mother !== '-' && student.mother !== 'دیارنەکری' && student.mother !== 'غير محدد') {
+            const { motherGrandpaKey } = extractMotherGrandfatherKey(student.mother, grandpaDepth, isStrip);
+            
+            if (motherGrandpaKey && motherGrandpaKey.length > 1) {
+                const normalizedStudentName = normalizeText(isStrip ? stripPrefixes(student.name) : student.name);
                 const words = normalizedStudentName.split(' ');
                 const fatherOrBranch = words.length > 1 ? words.slice(1).join(' ') : student.name;
+                
+                // مفتاح الفرع يجمع اسم الأم مع اسم الأب لتمييز العائلات/الأمهات الأخوات
+                const motherClean = normalizeText(student.mother);
+                const branchKey = `${motherClean} ⟵ (${fatherOrBranch})`;
 
-                if (!maternalRelativesMap[motherKey]) maternalRelativesMap[motherKey] = {};
-                if (!maternalRelativesMap[motherKey][fatherOrBranch]) maternalRelativesMap[motherKey][fatherOrBranch] = [];
-                maternalRelativesMap[motherKey][fatherOrBranch].push(student);
-            }
-        });
-
-        for (const motherKey in maternalRelativesMap) {
-            const branches = Object.keys(maternalRelativesMap[motherKey]);
-            const totalMaternalStudents = Object.values(maternalRelativesMap[motherKey]).reduce((acc, curr) => acc + curr.length, 0);
-
-            if (totalMaternalStudents > 1) {
-                const branchData = {};
-                branches.forEach(b => {
-                    branchData[b] = maternalRelativesMap[motherKey][b];
-                    maternalRelativesMap[motherKey][b].forEach(s => relativeStudentIds.add(s.id));
-                });
-
-                if (relSearchMode === 'mother' || branches.length > 1) {
-                    totalRelativesMatched += totalMaternalStudents;
-                    relativeResults.push({
-                        type: 'maternal',
-                        sharedKey: motherKey,
-                        branches: branchData,
-                        totalCount: totalMaternalStudents
-                    });
-                }
+                if (!maternalRelativesMap[motherGrandpaKey]) maternalRelativesMap[motherGrandpaKey] = {};
+                if (!maternalRelativesMap[motherGrandpaKey][branchKey]) maternalRelativesMap[motherGrandpaKey][branchKey] = [];
+                maternalRelativesMap[motherGrandpaKey][branchKey].push(student);
             }
         }
+    });
+
+    for (const motherGrandpaKey in maternalRelativesMap) {
+        const branches = Object.keys(maternalRelativesMap[motherGrandpaKey]);
+        const totalMaternalStudents = Object.values(maternalRelativesMap[motherGrandpaKey]).reduce((acc, curr) => acc + curr.length, 0);
+
+        // يكونون أقارب حقيقيين إذا كان هناك أكثر من فرع (خالات مختلفات أو آباء مختلفين لنفس الأم)
+        if (branches.length > 1 && totalMaternalStudents > 1) {
+            const branchData = {};
+            branches.forEach(b => {
+                branchData[b] = maternalRelativesMap[motherGrandpaKey][b];
+                maternalRelativesMap[motherGrandpaKey][b].forEach(s => {
+                    maternalStudentIds.add(s.id);
+                    relativeStudentIds.add(s.id);
+                });
+            });
+
+            maternalResults.push({
+                type: 'maternal',
+                sharedKey: motherGrandpaKey,
+                branches: branchData,
+                totalCount: totalMaternalStudents
+            });
+        }
+    }
+
+    if (relSearchMode === 'mother') {
+        relativeResults = maternalResults;
+        totalRelativesMatched = maternalResults.reduce((acc, g) => acc + g.totalCount, 0);
+    } else if (relSearchMode === 'both') {
+        relativeResults = [...paternalResults, ...maternalResults];
+        totalRelativesMatched = paternalResults.reduce((acc, g) => acc + g.totalCount, 0) + maternalResults.reduce((acc, g) => acc + g.totalCount, 0);
+    } else {
+        relativeResults = paternalResults;
+        totalRelativesMatched = paternalResults.reduce((acc, g) => acc + g.totalCount, 0);
     }
 
     // 3. كشف الأشخاص الوحيدين
@@ -2004,11 +2236,15 @@ function renderEngine() {
     const sortMode = document.getElementById('resultsSort').value;
     if (sortMode === 'count-desc') {
         siblingResults.sort((a, b) => b.students.length - a.students.length);
+        paternalResults.sort((a, b) => b.totalCount - a.totalCount);
+        maternalResults.sort((a, b) => b.totalCount - a.totalCount);
         relativeResults.sort((a, b) => b.totalCount - a.totalCount);
         solitaryResults.sort((a, b) => a.name.localeCompare(b.name));
         duplicateResults.sort((a, b) => b.students.length - a.students.length);
     } else {
         siblingResults.sort((a, b) => a.sharedName.localeCompare(b.sharedName));
+        paternalResults.sort((a, b) => a.sharedKey.localeCompare(b.sharedKey));
+        maternalResults.sort((a, b) => a.sharedKey.localeCompare(b.sharedKey));
         relativeResults.sort((a, b) => a.sharedKey.localeCompare(b.sharedKey));
         solitaryResults.sort((a, b) => a.name.localeCompare(b.name));
         duplicateResults.sort((a, b) => a.sharedName.localeCompare(b.sharedName));
@@ -2023,7 +2259,8 @@ function renderEngine() {
             let hasMorning = false;
             let hasEvening = false;
             group.students.forEach(s => {
-                const sh = s.shift || getStudentShift(s.section, shiftConfig.morningList, shiftConfig.eveningList);
+                const sh = s.shift || getStudentShift(s, shiftConfig.morningList, shiftConfig.eveningList);
+                s.shift = sh;
                 if (sh === 'morning') hasMorning = true;
                 if (sh === 'evening') hasEvening = true;
             });
@@ -2069,11 +2306,13 @@ function switchResultTab(tab) {
     const sibBtn = document.getElementById('tab-siblings-btn');
     const diffBtn = document.getElementById('tab-diff-grades-btn');
     const relBtn = document.getElementById('tab-relatives-btn');
+    const matBtn = document.getElementById('tab-maternal-btn');
     const solBtn = document.getElementById('tab-solitary-btn');
     const dupBtn = document.getElementById('tab-duplicates-btn');
     const anaBtn = document.getElementById('tab-analytics-btn');
     const diffNotice = document.getElementById('diffGradesTabNotice');
     const relNotice = document.getElementById('relativesTabNotice');
+    const matNotice = document.getElementById('maternalTabNotice');
     const solNotice = document.getElementById('solitaryTabNotice');
     const dupNotice = document.getElementById('duplicatesTabNotice');
 
@@ -2081,13 +2320,15 @@ function switchResultTab(tab) {
     if (allBtn) allBtn.className = `${secClass} text-slate-700 dark:text-slate-200`;
     if (sibBtn) sibBtn.className = `${secClass} text-blue-700 dark:text-blue-300`;
     if (relBtn) relBtn.className = `${secClass} text-indigo-700 dark:text-indigo-300`;
+    if (matBtn) matBtn.className = `${secClass} text-pink-700 dark:text-pink-300`;
     if (dupBtn) dupBtn.className = `${secClass} text-teal-700 dark:text-teal-300`;
     if (solBtn) solBtn.className = `${secClass} text-rose-700 dark:text-rose-300`;
     if (diffBtn) diffBtn.className = `${secClass} text-purple-700 dark:text-purple-300`;
-    if (anaBtn) anaBtn.className = `col-span-2 w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-amber-700 dark:text-amber-300 shadow-2xs whitespace-nowrap`;
+    if (anaBtn) anaBtn.className = `${secClass} text-amber-700 dark:text-amber-300`;
 
     if (diffNotice) diffNotice.classList.add('hidden');
     if (relNotice) relNotice.classList.add('hidden');
+    if (matNotice) matNotice.classList.add('hidden');
     if (solNotice) solNotice.classList.add('hidden');
     if (dupNotice) dupNotice.classList.add('hidden');
 
@@ -2100,8 +2341,11 @@ function switchResultTab(tab) {
         if (diffBtn) diffBtn.className = `${activeBase} bg-purple-600 dark:bg-purple-700`;
         if (diffNotice) diffNotice.classList.remove('hidden');
     } else if (tab === 'relatives') {
-        if (relBtn) relBtn.className = activeBase;
+        if (relBtn) relBtn.className = `${activeBase} bg-indigo-600 dark:bg-indigo-700`;
         if (relNotice) relNotice.classList.remove('hidden');
+    } else if (tab === 'maternal') {
+        if (matBtn) matBtn.className = `${activeBase} bg-pink-600 dark:bg-pink-700`;
+        if (matNotice) matNotice.classList.remove('hidden');
     } else if (tab === 'solitary') {
         if (solBtn) solBtn.className = `${activeBase} bg-rose-500/90 dark:bg-rose-600`;
         if (solNotice) solNotice.classList.remove('hidden');
@@ -2109,7 +2353,7 @@ function switchResultTab(tab) {
         if (dupBtn) dupBtn.className = `${activeBase} bg-teal-600 dark:bg-teal-700`;
         if (dupNotice) dupNotice.classList.remove('hidden');
     } else if (tab === 'analytics') {
-        if (anaBtn) anaBtn.className = `col-span-2 w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn text-white bg-amber-600 dark:bg-amber-700 shadow-2xs whitespace-nowrap`;
+        if (anaBtn) anaBtn.className = `${activeBase} bg-amber-600 dark:bg-amber-700`;
     }
 
     displayResults();
@@ -2182,7 +2426,11 @@ function populateGradeFilter() {
     
     const gradesSet = new Set();
     studentPool.forEach(s => { 
-        if (s.grade && s.grade.trim() !== '') gradesSet.add(s.grade.trim()); 
+        if (s.grade && s.grade.trim() !== '' && s.grade !== '-' && s.grade !== 'N/A' && s.grade !== 'غير محدد' && s.grade !== 'دیارنەکری') {
+            if (!isSectionValue(s.grade)) {
+                gradesSet.add(s.grade.trim());
+            }
+        } 
     });
     
     // ترتيب المراحل دراسياً وأكاديمياً من الأول إلى الثاني عشر
@@ -2316,8 +2564,11 @@ function displayResults() {
         const isDouble = getShiftConfig().mode === 'double';
         badgeLabel = isDouble ? (dict.badge_groups_split_shifts || 'خێزانێن دەوامێن جودا') : (dict.badge_groups_diff_grades || 'خێزانێن پۆلێن جودا');
     } else if (activeTab === 'relatives') {
-        currentResults = relativeResults;
-        badgeLabel = dict.badge_groups_rel;
+        currentResults = paternalResults.length > 0 ? paternalResults : relativeResults;
+        badgeLabel = dict.badge_groups_rel || 'کۆمێن کەسوکاران (باب)';
+    } else if (activeTab === 'maternal') {
+        currentResults = maternalResults;
+        badgeLabel = dict.badge_groups_maternal || 'کۆمێن کەسوکاران (دەیک)';
     } else if (activeTab === 'solitary') {
         currentResults = solitaryResults;
         badgeLabel = dict.badge_groups_sol;
@@ -2381,7 +2632,9 @@ function displayResults() {
     } else if (activeTab === 'diff_grades') {
         renderSiblingsList(diffGradesSiblingResults);
     } else if (activeTab === 'relatives') {
-        renderRelativesList(relativeResults);
+        renderRelativesList(paternalResults.length > 0 ? paternalResults : relativeResults);
+    } else if (activeTab === 'maternal') {
+        renderRelativesList(maternalResults);
     } else if (activeTab === 'solitary') {
         renderSolitaryList(solitaryResults);
     } else if (activeTab === 'duplicates') {
@@ -2409,7 +2662,7 @@ function renderSiblingsList(groups) {
 
         if (isDoubleShift) {
             group.students.forEach(s => {
-                const sh = getStudentShift(s.section, shiftConfig.morningList, shiftConfig.eveningList);
+                const sh = s.shift || getStudentShift(s, shiftConfig.morningList, shiftConfig.eveningList);
                 s.shift = sh;
                 if (sh === 'morning') hasMorning = true;
                 if (sh === 'evening') hasEvening = true;
@@ -2457,7 +2710,7 @@ function renderSiblingsList(groups) {
                 <ul class="space-y-0.5">
                     ${group.students.map((student) => {
                         const isTwin = group.students.filter(s => s.grade === student.grade).length > 1;
-                        const studentShift = isDoubleShift ? (student.shift || getStudentShift(student.section, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
+                        const studentShift = isDoubleShift ? (student.shift || getStudentShift(student, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
                         return `
                             <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1.5 bg-slate-50/90 dark:bg-slate-800/60 rounded hover:bg-white dark:hover:bg-slate-800 transition shadow-2xs border border-slate-200/60 dark:border-slate-700/50 gap-1 min-h-[24px]">
                                 <div class="flex flex-wrap items-center gap-1 min-w-0">
@@ -2488,6 +2741,8 @@ function renderSiblingsList(groups) {
 function renderRelativesList(groups) {
     const resultsArea = document.getElementById('resultsArea');
     const dict = translations[currentLang];
+    const shiftConfig = getShiftConfig();
+    const isDoubleShift = shiftConfig.mode === 'double';
     let htmlContent = '';
 
     groups.forEach((group, groupIdx) => {
@@ -2498,10 +2753,27 @@ function renderRelativesList(groups) {
         const icon = isMaternal ? '🌸' : '🌿';
         const relCategory = isMaternal ? dict.maternal_card_title : dict.paternal_card_title;
 
+        let hasMorning = false;
+        let hasEvening = false;
+        let groupShiftStatus = 'unknown';
+
+        if (isDoubleShift) {
+            const allSt = Object.values(group.branches).flatMap(b => b);
+            allSt.forEach(s => {
+                const sh = s.shift || getStudentShift(s, shiftConfig.morningList, shiftConfig.eveningList);
+                if (sh === 'morning') hasMorning = true;
+                if (sh === 'evening') hasEvening = true;
+            });
+            if (hasMorning && hasEvening) groupShiftStatus = 'split';
+            else if (hasMorning) groupShiftStatus = 'morning';
+            else if (hasEvening) groupShiftStatus = 'evening';
+        }
+
         htmlContent += `
             <div class="group-card ${cardClass} transition duration-150"
                  data-shared="${group.sharedKey}"
-                 data-search-pool="${Object.values(group.branches).flatMap(b => b).map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ')}">
+                 data-shift-status="${groupShiftStatus}"
+                 data-search-pool="${Object.values(group.branches).flatMap(b => b).map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''} ${s.shift || ''}`).join(' ')}">
                 
                 <!-- رأس بطاقة الأقارب المصغر جداً -->
                 <div class="group-card-header flex flex-wrap justify-between items-center gap-1">
@@ -2533,7 +2805,7 @@ function renderRelativesList(groups) {
                                     <div class="flex items-center gap-1">
                                         <span class="text-[9.5px]">${isMaternal ? '🌸' : '🌿'}</span>
                                         <span class="text-[9.5px] font-bold text-slate-700 dark:text-slate-200">
-                                            ${isMaternal ? dict.branch_label : dict.father_branch} 
+                                            ${isMaternal ? (dict.maternal_branch_label || 'دایک و خێزان: ') : (dict.father_branch || 'تایا بابێ: ')} 
                                             <span class="font-extrabold ${tagColor} mr-0.5">${branchKey}</span>
                                         </span>
                                     </div>
@@ -2544,7 +2816,9 @@ function renderRelativesList(groups) {
 
                                 <!-- قائمة طلاب هذا الفرع بنظام الصفوف النحيفة -->
                                 <ul class="space-y-0.5">
-                                    ${branchStudents.map(student => `
+                                    ${branchStudents.map(student => {
+                                        const studentShift = isDoubleShift ? (student.shift || getStudentShift(student, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
+                                        return `
                                         <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1 bg-white/95 dark:bg-slate-800/90 rounded border border-slate-100/80 dark:border-slate-700/60 shadow-2xs hover:bg-slate-50 transition gap-1 min-h-[23px]">
                                             <div class="flex flex-wrap items-center gap-1 min-w-0">
                                                 <span class="student-avatar-box w-4 h-4 rounded bg-indigo-100/90 dark:bg-slate-700/90 text-indigo-600 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-400/40 flex items-center justify-center shadow-xs">
@@ -2552,9 +2826,11 @@ function renderRelativesList(groups) {
                                                 </span>
                                                 <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                                                 ${student.mother ? `
-                                                    <span class="text-[7.5px] bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">
+                                                    <span class="text-[7.5px] bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">
                                                         🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span>
                                                     </span>` : ''}
+                                                ${isDoubleShift && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>` : ''}
+                                                ${isDoubleShift && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>` : ''}
                                             </div>
                                             <div class="flex items-center gap-0.5 flex-shrink-0">
                                                 <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
@@ -2562,7 +2838,7 @@ function renderRelativesList(groups) {
                                                 <button onclick="removeStudent(${student.id})" class="w-3.5 h-3.5 rounded text-red-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950 flex items-center justify-center text-[10px] font-bold transition no-print">×</button>
                                             </div>
                                         </li>
-                                    `).join('')}
+                                    `}).join('')}
                                 </ul>
                             </div>
                         `;
@@ -2578,6 +2854,9 @@ function renderRelativesList(groups) {
 function renderSolitaryList(students) {
     const resultsArea = document.getElementById('resultsArea');
     const dict = translations[currentLang];
+    const shiftConfig = getShiftConfig();
+    const isDoubleShift = shiftConfig.mode === 'double';
+
     let htmlContent = `
         <div class="clay-card p-1.5 sm:p-2 mb-1.5 border-rose-200 dark:border-rose-900/60 bg-rose-50/40 dark:bg-slate-800 flex items-center justify-between shadow-2xs">
             <div class="flex items-center gap-1.5 min-w-0">
@@ -2594,10 +2873,12 @@ function renderSolitaryList(students) {
     `;
 
     students.forEach((student) => {
+        const studentShift = isDoubleShift ? (student.shift || getStudentShift(student, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
         htmlContent += `
             <div class="group-card group-card-solitary transition duration-150" 
                  data-shared="${student.name}" 
-                 data-search-pool="${student.name} ${student.grade} ${student.section} ${student.mother || ''}">
+                 data-shift-status="${studentShift}"
+                 data-search-pool="${student.name} ${student.grade} ${student.section} ${student.mother || ''} ${studentShift}">
                 
                 <div class="flex flex-wrap items-center justify-between text-[10.5px] gap-1 min-h-[23px]">
                     <div class="flex flex-wrap items-center gap-1 min-w-0">
@@ -2607,6 +2888,8 @@ function renderSolitaryList(students) {
                         <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                         ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
                         <span class="bg-rose-100/80 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-[7.5px] px-1 py-0.1 rounded font-bold border border-rose-200 dark:border-rose-800/50">بێ کەسوکار</span>
+                        ${isDoubleShift && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>` : ''}
+                        ${isDoubleShift && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>` : ''}
                     </div>
                     <div class="flex items-center gap-0.5 flex-shrink-0">
                         <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
@@ -2624,13 +2907,31 @@ function renderSolitaryList(students) {
 function renderDuplicatesList(groups) {
     const resultsArea = document.getElementById('resultsArea');
     const dict = translations[currentLang];
+    const shiftConfig = getShiftConfig();
+    const isDoubleShift = shiftConfig.mode === 'double';
     let htmlContent = '';
 
     groups.forEach((group, groupIdx) => {
+        let hasMorning = false;
+        let hasEvening = false;
+        let groupShiftStatus = 'unknown';
+
+        if (isDoubleShift) {
+            group.students.forEach(s => {
+                const sh = s.shift || getStudentShift(s, shiftConfig.morningList, shiftConfig.eveningList);
+                if (sh === 'morning') hasMorning = true;
+                if (sh === 'evening') hasEvening = true;
+            });
+            if (hasMorning && hasEvening) groupShiftStatus = 'split';
+            else if (hasMorning) groupShiftStatus = 'morning';
+            else if (hasEvening) groupShiftStatus = 'evening';
+        }
+
         htmlContent += `
             <div class="group-card group-card-duplicate transition duration-150" 
                  data-shared="${group.sharedName}" 
-                 data-search-pool="${group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ')}">
+                 data-shift-status="${groupShiftStatus}"
+                 data-search-pool="${group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''} ${s.shift || ''}`).join(' ')}">
                 
                 <!-- رأس بطاقة الأسماء المتشابهة والمطابقة -->
                 <div class="group-card-header flex flex-wrap justify-between items-center gap-1">
@@ -2652,6 +2953,7 @@ function renderDuplicatesList(groups) {
                 <!-- قائمة الطلاب المتشابهين -->
                 <ul class="space-y-0.5">
                     ${group.students.map((student) => {
+                        const studentShift = isDoubleShift ? (student.shift || getStudentShift(student, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
                         return `
                             <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1.5 bg-slate-50/90 dark:bg-slate-800/60 rounded hover:bg-white dark:hover:bg-slate-800 transition shadow-2xs border border-slate-200/60 dark:border-slate-700/50 gap-1 min-h-[24px]">
                                 <div class="flex flex-wrap items-center gap-1 min-w-0">
@@ -2660,6 +2962,8 @@ function renderDuplicatesList(groups) {
                                     </span>
                                     <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                                     ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
+                                    ${isDoubleShift && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>` : ''}
+                                    ${isDoubleShift && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>` : ''}
                                 </div>
                                 <div class="flex items-center gap-0.5 flex-shrink-0">
                                     <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
@@ -2676,6 +2980,44 @@ function renderDuplicatesList(groups) {
     resultsArea.innerHTML = htmlContent;
 }
 
+function copyFamilyCard(index) {
+    const list = activeTab === 'diff_grades' ? diffGradesSiblingResults : siblingResults;
+    const group = list[index];
+    if (!group) return;
+    const dict = translations[currentLang];
+    let text = `👨‍👩‍👦 ${dict.family_label || 'خێزان'}: ${group.sharedName} (${group.students.length} ${dict.students_suffix})\n`;
+    group.students.forEach((s, idx) => {
+        text += `${idx + 1}. ${s.name} - ${dict.grade_label} ${s.grade} - ${dict.section_label} ${s.section}${s.mother ? ` - ${dict.mother_label} ${s.mother}` : ''}\n`;
+    });
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(() => {
+            showToast(dict.copy_success);
+        });
+    }
+}
+
+function copyRelativeCard(index) {
+    let list = relativeResults;
+    if (activeTab === 'maternal') list = maternalResults;
+    else if (activeTab === 'relatives') list = paternalResults.length > 0 ? paternalResults : relativeResults;
+    const group = list[index];
+    if (!group) return;
+    const dict = translations[currentLang];
+    const isMat = group.type === 'maternal';
+    let text = `${isMat ? '🌸' : '🌿'} ${isMat ? dict.maternal_card_title : dict.paternal_card_title}: ${group.sharedKey} (${group.totalCount} ${dict.students_suffix})\n`;
+    for (const branchKey in group.branches) {
+        text += `\n[${isMat ? dict.branch_label : dict.father_branch}: ${branchKey}]\n`;
+        group.branches[branchKey].forEach((s, idx) => {
+            text += `  ${idx + 1}. ${s.name} - ${dict.grade_label} ${s.grade} - ${dict.section_label} ${s.section}${s.mother ? ` - ${dict.mother_label} ${s.mother}` : ''}\n`;
+        });
+    }
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(() => {
+            showToast(dict.copy_success);
+        });
+    }
+}
+
 function copyDuplicateCard(index) {
     const group = duplicateResults[index];
     if (!group) return;
@@ -2684,14 +3026,19 @@ function copyDuplicateCard(index) {
     group.students.forEach((s, idx) => {
         text += `${idx + 1}. ${s.name} - ${dict.grade_label} ${s.grade} - ${dict.section_label} ${s.section}${s.mother ? ` - ${dict.mother_label} ${s.mother}` : ''}\n`;
     });
-    navigator.clipboard.writeText(text).then(() => {
-        showToast(dict.copy_success);
-    });
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(() => {
+            showToast(dict.copy_success);
+        });
+    }
 }
 
 function renderAllStudentsList(students) {
     const resultsArea = document.getElementById('resultsArea');
     const dict = translations[currentLang];
+    const shiftConfig = getShiftConfig();
+    const isDoubleShift = shiftConfig.mode === 'double';
+
     let htmlContent = `
         <div class="flex items-center justify-between p-1.5 bg-slate-100/80 dark:bg-slate-800/80 rounded-xl border border-slate-200/80 dark:border-slate-700/70 mb-1.5 no-print">
             <div class="flex items-center gap-1.5">
@@ -2708,16 +3055,20 @@ function renderAllStudentsList(students) {
     `;
 
     students.forEach((student, idx) => {
+        const studentShift = isDoubleShift ? (student.shift || getStudentShift(student, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
         htmlContent += `
             <div class="group-card group-card-all transition duration-150" 
                  data-shared="${student.name}" 
-                 data-search-pool="${student.name} ${student.grade} ${student.section} ${student.mother || ''}">
+                 data-shift-status="${studentShift}"
+                 data-search-pool="${student.name} ${student.grade} ${student.section} ${student.mother || ''} ${studentShift}">
                 
                 <div class="flex flex-wrap items-center justify-between text-[10.5px] gap-1 min-h-[23px]">
                     <div class="flex flex-wrap items-center gap-1 min-w-0">
                         <span class="student-avatar-box w-4 h-4 rounded bg-slate-200/90 dark:bg-slate-700/90 text-slate-700 dark:text-amber-300 border border-slate-300/70 dark:border-amber-400/40 flex items-center justify-center font-extrabold text-[8px] shadow-xs">${idx + 1}</span>
                         <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                         ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
+                        ${isDoubleShift && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>` : ''}
+                        ${isDoubleShift && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>` : ''}
                     </div>
                     <div class="flex items-center gap-0.5 flex-shrink-0">
                         <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>

@@ -224,9 +224,9 @@
                             <div>
                                 <label id="ui-match-label" class="block text-[9px] font-bold text-slate-600 dark:text-slate-300 mb-0.5">هەڤبەری:</label>
                                 <select id="matchType" onchange="processNames()" class="clay-input w-full p-1 text-[10px] bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 cursor-pointer">
-                                    <option id="opt-match-rest" value="all-except-first">پاشماوە</option>
-                                    <option id="opt-match-last2" value="last-two">دوو ناڤ</option>
-                                    <option id="opt-match-family" value="last-one">بنەمالە</option>
+                                    <option id="opt-match-rest" value="all-except-first">ژبلی ناڤێ ئێکێ</option>
+                                    <option id="opt-match-last2" value="last-two">دوو ناڤێن دووماهیێ</option>
+                                    <option id="opt-match-family" value="last-one">ناڤێ دووماهیێ (بنەماڵە)</option>
                                 </select>
                             </div>
                         </div>
@@ -371,32 +371,38 @@
                             <span id="tab-siblings-label">خویشک و برا</span>
                         </button>
 
-                        <!-- 3. الأقارب وأبناء العم -->
+                        <!-- 3. کەسوکارێن بابێ (أقارب جهة الأب) -->
                         <button id="tab-relatives-btn" onclick="switchResultTab('relatives')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-indigo-700 dark:text-indigo-300 shadow-2xs whitespace-nowrap">
                             <span class="text-sm">🌿</span>
-                            <span id="tab-relatives-label">پسمام و کەسوکار</span>
+                            <span id="tab-relatives-label">کەسوکار (باب)</span>
                         </button>
 
-                        <!-- 4. الأسماء المتشابهة والمطابقة -->
-                        <button id="tab-duplicates-btn" onclick="switchResultTab('duplicates')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-teal-700 dark:text-teal-300 shadow-2xs whitespace-nowrap">
-                            <span class="text-sm">👥</span>
-                            <span id="tab-duplicates-label">ناڤێن وەکهەڤ</span>
+                        <!-- 4. کەسوکارێن دەیکێ (أقارب جهة الأم) -->
+                        <button id="tab-maternal-btn" onclick="switchResultTab('maternal')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-pink-700 dark:text-pink-300 shadow-2xs whitespace-nowrap">
+                            <span class="text-sm">🌸</span>
+                            <span id="tab-maternal-label">کەسوکار (دەیک)</span>
                         </button>
 
-                        <!-- 5. الطلاب الوحيدين (بدون إخوة وبدون أقارب) -->
-                        <button id="tab-solitary-btn" onclick="switchResultTab('solitary')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-rose-700 dark:text-rose-300 shadow-2xs whitespace-nowrap">
-                            <span class="text-sm">👤</span>
-                            <span id="tab-solitary-label">ب تنێ</span>
-                        </button>
-
-                        <!-- 6. الإخوة في صفوف مختلفة / دوامين مختلفين -->
+                        <!-- 5. الإخوة في صفوف مختلفة / دوامين مختلفين -->
                         <button id="tab-diff-grades-btn" onclick="switchResultTab('diff_grades')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-purple-700 dark:text-purple-300 shadow-2xs whitespace-nowrap">
                             <span class="text-sm">🌗</span>
                             <span id="tab-diff-grades-label">دەوامێن جودا</span>
                         </button>
 
-                        <!-- 7. الإحصائيات والمخططات البيانية (يمتد على كامل العرض) -->
-                        <button id="tab-analytics-btn" onclick="switchResultTab('analytics')" class="col-span-2 w-full py-2 px-2.5 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-amber-700 dark:text-amber-300 shadow-2xs whitespace-nowrap">
+                        <!-- 6. الأسماء المتشابهة والمطابقة -->
+                        <button id="tab-duplicates-btn" onclick="switchResultTab('duplicates')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-teal-700 dark:text-teal-300 shadow-2xs whitespace-nowrap">
+                            <span class="text-sm">👥</span>
+                            <span id="tab-duplicates-label">ناڤێن وەکهەڤ</span>
+                        </button>
+
+                        <!-- 7. الطلاب الوحيدين (بدون إخوة وبدون أقارب) -->
+                        <button id="tab-solitary-btn" onclick="switchResultTab('solitary')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-rose-700 dark:text-rose-300 shadow-2xs whitespace-nowrap">
+                            <span class="text-sm">👤</span>
+                            <span id="tab-solitary-label">ب تنێ</span>
+                        </button>
+
+                        <!-- 8. الإحصائيات والمخططات البيانية -->
+                        <button id="tab-analytics-btn" onclick="switchResultTab('analytics')" class="w-full py-2 px-2 rounded-xl text-[11px] sm:text-[12px] font-extrabold flex items-center justify-center text-center gap-1.5 transition-all clay-btn-sec text-amber-700 dark:text-amber-300 shadow-2xs whitespace-nowrap">
                             <span class="text-sm">📊</span>
                             <span id="tab-analytics-label">ئامار و شیکاری</span>
                         </button>
@@ -438,15 +444,26 @@
                     <button onclick="document.getElementById('diffGradesTabNotice').classList.add('hidden')" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xs font-bold px-1.5 transition">✕</button>
                 </div>
 
-                <!-- إشعار خاص بقسم الأقارب -->
+                <!-- إشعار خاص بقسم أقارب جهة الأب -->
                 <div id="relativesTabNotice" class="hidden mb-2 p-1.5 sm:p-2 bg-indigo-50/80 dark:bg-slate-800/80 rounded-xl border border-indigo-100 dark:border-indigo-900 text-xs flex items-center justify-between no-print">
                     <div class="flex items-center gap-1.5 min-w-0">
-                        <span class="text-xs">ℹ️</span>
+                        <span class="text-xs">🌿</span>
                         <span id="ui-relatives-tab-desc" class="text-indigo-900 dark:text-indigo-200 font-medium text-[9px] sm:text-[10px] leading-relaxed">
-                            قسم الأقارب يعرض فقط الطلاب المرتبطين كأبناء عمومة أو خؤولة (من آباء مختلفين / أمهات مختلفات) مع استبعاد الإخوة المباشرين.
+                            بەشێ کەسوکاران بتنێ پسمام و کەسوکاران (ژ بابێن جودا یان باپیرێ 3 و 4) نیشان ددەت.
                         </span>
                     </div>
                     <button onclick="document.getElementById('relativesTabNotice').classList.add('hidden')" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xs font-bold px-1.5 transition">✕</button>
+                </div>
+
+                <!-- إشعار خاص بقسم أقارب جهة الأم -->
+                <div id="maternalTabNotice" class="hidden mb-2 p-1.5 sm:p-2 bg-pink-50/80 dark:bg-pink-950/40 rounded-xl border border-pink-200/80 dark:border-pink-900/60 text-xs flex items-center justify-between no-print">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                        <span class="text-xs">🌸</span>
+                        <span id="ui-maternal-tab-desc" class="text-pink-900 dark:text-pink-200 font-medium text-[9px] sm:text-[10px] leading-relaxed">
+                            ئەڤ بەشە وان قوتابیان نیشان ددەت یێن کو ل سەر ئاستێ باب و باپیرێ دەیکێ کەسوکارن (پسمامێن دەیکێ، خاڵۆزا و میتۆزا).
+                        </span>
+                    </div>
+                    <button onclick="document.getElementById('maternalTabNotice').classList.add('hidden')" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xs font-bold px-1.5 transition">✕</button>
                 </div>
 
                 <!-- إشعار خاص بقسم الطلاب الوحيدين (بدون إخوة وبدون أقارب) -->
@@ -569,8 +586,8 @@
                     <p id="ui-instruction-1" class="text-[10px] text-slate-600 dark:text-slate-300 max-w-md">
                         تۆ دشێی مەلەفێ إکسل (XLSX, XLS, CSV, TXT) بهاڤێژیە ڤێرێ یان کلیک بکە بۆ هەلبژارتنا مەلەفی ژ ئامیرێ خۆ.
                     </p>
-                    <p class="font-mono text-blue-900/90 dark:text-blue-300 text-[9px] bg-white/80 dark:bg-slate-800/80 p-1.5 rounded-xl border border-blue-200/50 leading-normal max-w-md w-full" id="ui-example-1">
-                        ناڤێ قوتابی (سێیانە/چوارانە)، ناڤێ دەیکێ (ب بژاردەیی)، پۆل، شعبە
+                    <p class="font-mono text-blue-900/90 dark:text-blue-300 text-[9.5px] bg-white/80 dark:bg-slate-800/80 p-1.5 rounded-xl border border-blue-200/50 leading-normal max-w-md w-full" id="ui-example-1">
+                        1. ناوی تەواو | 2. ناوی تەواوی دایک | 3. ڕەگەز | 4. پۆل | 5. هۆبە
                     </p>
                     <input type="file" id="fileInput" accept=".xlsx, .xls, .csv, .txt, .tsv, .xlsm, .xlsb" class="hidden" onchange="handleFileInput(event)">
                 </div>
@@ -584,7 +601,7 @@
                 </div>
                 <textarea id="namesInput" oninput="onInputChanged()" rows="9" 
                           class="clay-input w-full p-2.5 text-xs font-mono placeholder-slate-400 focus:ring-0 custom-scroll resize-y leading-relaxed" 
-                          placeholder="..."></textarea>
+                          placeholder="ناوی تەواو, ناوی تەواوی دایک, ڕەگەز, پۆل, هۆبە&#10;احمد علي محمد, فاطمة, نێر, الأول, أ&#10;سارة حسن يوسف, زينب, مێ, الثاني, ب"></textarea>
             </div>
 
             <!-- أزرار أسفل النافذة المنبثقة بحجم مدمج -->
