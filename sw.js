@@ -1,4 +1,4 @@
-const CACHE_NAME = 'siblings-detector-v14';
+const CACHE_NAME = 'siblings-detector-v16';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -8,7 +8,7 @@ const ASSETS_TO_CACHE = [
   './icon.svg',
   'https://cdn.tailwindcss.com',
   'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js',
-  'https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap'
+  'https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&display=swap'
 ];
 
 // تثبيت ملفات التطبيق مسبقاً للعمل دون إنترنت فوراً
@@ -64,7 +64,7 @@ self.addEventListener('fetch', (event) => {
               });
             }
           })
-          .catch(() => {});
+          .catch(() => { });
         return cachedResponse;
       }
 

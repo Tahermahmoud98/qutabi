@@ -153,17 +153,27 @@ const translations = {
         shift_mode_label: "شێوازێ دەوامێ:",
         shift_single: "☀️ دەواما ئێک (دوام واحد)",
         shift_double: "🌗 دوو دەوام (سپێدە و ئێڤار)",
+        shift_odd_even: "🔢 دوو دەوام - تاک و جوت (1,3,5 و 2,4,6)",
+        shift_custom: "⚙️ دوو دەوام - دەستی و تایبەت (مخصص)",
         shift_morning_label: "☀️ شعبێن دەواما سپێدێ (الصباحي):",
         shift_evening_label: "🌙 شعبێن دەواما ئێڤارێ (المسائي):",
-        shift_split_badge: "⚠️ دەوامێن جودا (سپێدە + ئێڤار)",
+        shift_odd_label: "🔢 دەواما تاک (پۆلێن 1, 3, 5 یان شعبە):",
+        shift_even_label: "🔢 دەواما جوت (پۆلێن 2, 4, 6 یان شعبە):",
+        shift_custom1_label: "🔸 شعب و پۆلێن دەوامێ ئێکێ:",
+        shift_custom2_label: "🔹 شعب و پۆلێن دەوامێ دووێ:",
+        custom_shift1_name_label: "ناڤێ دەوامێ 1 (الاسم):",
+        custom_shift2_name_label: "ناڤێ دەوامێ 2 (الاسم):",
+        shift_split_badge: "⚠️ دەوامێن جودا",
         shift_same_morning: "☀️ هەمان دەوام (سپێدە)",
         shift_same_evening: "🌙 هەمان دەوام (ئێڤار)",
         shift_tag_morning: "سپێدە",
         shift_tag_evening: "ئێڤار",
+        shift_tag_odd: "تاک (1,3,5)",
+        shift_tag_even: "جوت (2,4,6)",
         shift_filter_all: "🔄 هەمی دەوام",
         shift_filter_split: "⚠️ دەوامێن جودا بتنێ",
-        shift_filter_morning: "☀️ سپێدە بتنێ",
-        shift_filter_evening: "🌙 ئێڤار بتنێ",
+        shift_filter_morning: "☀️ دەواما 1 بتنێ",
+        shift_filter_evening: "🌙 دەواما 2 بتنێ",
         stat_split_shifts: "دەوامێن جودا",
         stat_males: "کوڕ (نێر)",
         stat_females: "کچ (مێ)",
@@ -173,6 +183,9 @@ const translations = {
         girls_ratio: "رێژەیا کچان",
         section_table_title: "خشتەیا هویر یا هەمی پۆل و شعبان (دەوام، کچ، کوڕ و خویشک و برا)",
         section_table_desc: "ئامارا بەرفرەھ یا هەر شعبەکێ ب جودا دگەل جۆرێ دەوامێ و دابەشبوونا جێندەری",
+        detected_sections_label: "شعبێن بەردەست (کلیک بکە بۆ دیارکرنێ):",
+        title_set_morning: "دەستنیشانکرن وەک سپێدە ☀️",
+        title_set_evening: "دەستنیشانکرن وەک ئێڤار 🌙",
         dir: "rtl"
     },
     ku_so: {
@@ -333,17 +346,27 @@ const translations = {
         shift_mode_label: "شێوازی دەوام:",
         shift_single: "☀️ یەک دەوام (دوام واحد)",
         shift_double: "🌗 دوو دەوام (بەیانی و ئێوارە)",
+        shift_odd_even: "🔢 دوو دەوام - تاک و جووت (1,3,5 و 2,4,6)",
+        shift_custom: "⚙️ دوو دەوام - دەستی و تایبەت (مخصص)",
         shift_morning_label: "☀️ شعبەکانی دەوامی بەیانی (الصباحي):",
         shift_evening_label: "🌙 شعبەکانی دەوامی ئێوارە (المسائي):",
-        shift_split_badge: "⚠️ دەوامی جیاواز (بەیانی + ئێوارە)",
+        shift_odd_label: "🔢 دەوامی تاک (پۆلەکانی 1, 3, 5 یان هۆبە):",
+        shift_even_label: "🔢 دەوامی جووت (پۆلەکانی 2, 4, 6 یان هۆبە):",
+        shift_custom1_label: "🔸 هۆبە و پۆلەکانی دەوامی یەکەم:",
+        shift_custom2_label: "🔹 هۆبە و پۆلەکانی دەوامی دووەم:",
+        custom_shift1_name_label: "ناوی دەوامی 1 (الاسم):",
+        custom_shift2_name_label: "ناوی دەوامی 2 (الاسم):",
+        shift_split_badge: "⚠️ دەوامی جیاواز",
         shift_same_morning: "☀️ هەمان دەوام (بەیانی)",
         shift_same_evening: "🌙 هەمان دەوام (ئێوارە)",
         shift_tag_morning: "بەیانی",
         shift_tag_evening: "ئێوارە",
+        shift_tag_odd: "تاک (1,3,5)",
+        shift_tag_even: "جووت (2,4,6)",
         shift_filter_all: "🔄 هەموو دەوامەکان",
         shift_filter_split: "⚠️ تەنها دەوامی جیاواز",
-        shift_filter_morning: "☀️ تەنها بەیانی",
-        shift_filter_evening: "🌙 تەنها ئێوارە",
+        shift_filter_morning: "☀️ دەوامی 1 تەنها",
+        shift_filter_evening: "🌙 دەوامی 2 تەنها",
         stat_split_shifts: "دەوامی جیاواز",
         stat_males: "کوڕ (نێر)",
         stat_females: "کچ (مێ)",
@@ -353,6 +376,9 @@ const translations = {
         girls_ratio: "ڕێژەی کچان",
         section_table_title: "خشتەی وردی هەموو پۆل و هۆبەکان (دەوام، کچ، کوڕ و خوشک و برا)",
         section_table_desc: "ئاماری تەواوی هەر هۆبەیەک بە جیا لەگەڵ جۆری دەوام و دابەشبوونی ڕەگەزی",
+        detected_sections_label: "پۆل و هۆبەکانی بەردەست (کلیک بکە بۆ دیاریکردن):",
+        title_set_morning: "دیاریکردن وەک بەیانی ☀️",
+        title_set_evening: "دیاریکردن وەک ئێوارە 🌙",
         dir: "rtl"
     },
     ar: {
@@ -508,18 +534,28 @@ const translations = {
         shift_settings_title: "نظام الدوام وتوزيع الشُعب",
         shift_mode_label: "نظام دوام المدرسة:",
         shift_single: "☀️ دوام واحد (اعتيادي)",
-        shift_double: "🌗 دوامين (صباحي ومسائي)",
+        shift_double: "🌗 دوامين - صباحي ومسائي",
+        shift_odd_even: "🔢 دوامين - فردي وزوجي (1,3,5 و 2,4,6)",
+        shift_custom: "⚙️ دوامين - يدوي ومخصص (تخصيص كامل)",
         shift_morning_label: "☀️ شُعب الدوام الصباحي:",
         shift_evening_label: "🌙 شُعب الدوام المسائي:",
-        shift_split_badge: "⚠️ دوامين مختلفين (صباحي + مسائي)",
-        shift_same_morning: "☀️ نفس الدوام (صباحي)",
-        shift_same_evening: "🌙 نفس الدوام (مسائي)",
+        shift_odd_label: "🔢 الدوام الفردي (الصفوف 1، 3، 5 أو الشُعب):",
+        shift_even_label: "🔢 الدوام الزوجي (الصفوف 2، 4، 6 أو الشُعب):",
+        shift_custom1_label: "🔸 شُعب وصفوف الدوام الأول:",
+        shift_custom2_label: "🔹 شُعب وصفوف الدوام الثاني:",
+        custom_shift1_name_label: "اسم الدوام الأول (الاسم):",
+        custom_shift2_name_label: "اسم الدوام الثاني (الاسم):",
+        shift_split_badge: "⚠️ دوامين مختلفين",
+        shift_same_morning: "☀️ نفس الدوام (الدوام 1)",
+        shift_same_evening: "🌙 نفس الدوام (الدوام 2)",
         shift_tag_morning: "صباحي",
         shift_tag_evening: "مسائي",
+        shift_tag_odd: "فردي (1,3,5)",
+        shift_tag_even: "زوجي (2,4,6)",
         shift_filter_all: "🔄 كل أنواع الدوام",
         shift_filter_split: "⚠️ إخوة في دوامين مختلفين",
-        shift_filter_morning: "☀️ دوام صباحي فقط",
-        shift_filter_evening: "🌙 دوام مسائي فقط",
+        shift_filter_morning: "☀️ الدوام 1 فقط",
+        shift_filter_evening: "🌙 الدوام 2 فقط",
         stat_split_shifts: "دوامين مختلفين",
         stat_males: "الذكور (بنين)",
         stat_females: "الإناث (بنات)",
@@ -529,6 +565,9 @@ const translations = {
         girls_ratio: "نسبة البنات",
         section_table_title: "جدول إحصائية الشُعب التفصيلي لكل صف (الدوام، البنين، البنات، والإخوة)",
         section_table_desc: "إحصائيات تفصيلية ودقيقة لكل شعبة على حدة مع نوع الدوام والتوزيع الديمغرافي",
+        detected_sections_label: "الشُعب المتوفرة (انقر لتعيين نوع الدوام):",
+        title_set_morning: "تعيين كدوام صباحي ☀️",
+        title_set_evening: "تعيين كدوام مسائي 🌙",
         dir: "rtl"
     },
     en: {
@@ -685,17 +724,27 @@ const translations = {
         shift_mode_label: "School Shift System:",
         shift_single: "☀️ Single Shift (Standard)",
         shift_double: "🌗 Double Shift (Morning & Evening)",
+        shift_odd_even: "🔢 Double Shift - Odd & Even Grades (1,3,5 & 2,4,6)",
+        shift_custom: "⚙️ Double Shift - Custom / Manual Definition",
         shift_morning_label: "☀️ Morning Shift Sections:",
         shift_evening_label: "🌙 Evening Shift Sections:",
-        shift_split_badge: "⚠️ Split Shifts (Morning + Evening)",
-        shift_same_morning: "☀️ Same Shift (Morning)",
-        shift_same_evening: "🌙 Same Shift (Evening)",
+        shift_odd_label: "🔢 Odd Grades Shift (1st, 3rd, 5th or sections):",
+        shift_even_label: "🔢 Even Grades Shift (2nd, 4th, 6th or sections):",
+        shift_custom1_label: "🔸 Shift 1 Sections & Grades:",
+        shift_custom2_label: "🔹 Shift 2 Sections & Grades:",
+        custom_shift1_name_label: "Shift 1 Name:",
+        custom_shift2_name_label: "Shift 2 Name:",
+        shift_split_badge: "⚠️ Split Shifts",
+        shift_same_morning: "☀️ Same Shift (Shift 1)",
+        shift_same_evening: "🌙 Same Shift (Shift 2)",
         shift_tag_morning: "Morning",
         shift_tag_evening: "Evening",
+        shift_tag_odd: "Odd (1,3,5)",
+        shift_tag_even: "Even (2,4,6)",
         shift_filter_all: "🔄 All Shifts",
         shift_filter_split: "⚠️ Split Shifts Only",
-        shift_filter_morning: "☀️ Morning Only",
-        shift_filter_evening: "🌙 Evening Only",
+        shift_filter_morning: "☀️ Shift 1 Only",
+        shift_filter_evening: "🌙 Shift 2 Only",
         stat_split_shifts: "Split Shifts",
         stat_males: "Males (Boys)",
         stat_females: "Females (Girls)",
@@ -703,12 +752,15 @@ const translations = {
         gender_table_desc: "Gender demographic distribution and ratio across all academic grades",
         boys_ratio: "Boys %",
         girls_ratio: "Girls %",
+        detected_sections_label: "Detected Sections (Click to assign shift):",
+        title_set_morning: "Assign as Morning Shift ☀️",
+        title_set_evening: "Assign as Evening Shift 🌙",
         dir: "ltr"
     }
 };
 
 let currentLang = 'ku_ba';
-let studentPool = []; 
+let studentPool = [];
 let siblingResults = [];
 let diffGradesSiblingResults = [];
 let relativeResults = [];
@@ -820,7 +872,7 @@ function switchModalTab(mode) {
         pasteSec?.classList.remove('hidden');
         if (uploadBtn) uploadBtn.className = "flex-1 py-1.5 px-2.5 rounded-xl text-xs font-bold transition clay-btn-sec flex items-center justify-center gap-1";
         if (pasteBtn) pasteBtn.className = "flex-1 py-1.5 px-2.5 rounded-xl text-xs font-bold transition clay-btn text-white flex items-center justify-center gap-1 shadow-xs";
-        
+
         requestAnimationFrame(() => {
             document.getElementById('namesInput')?.focus();
         });
@@ -958,13 +1010,18 @@ function changeLanguage(lang) {
         'ui-analytics-grade-density-title': dict.analytics_grade_density_title || "خەستی و هەژمارا خوشک و برایان د قۆناغان دا",
         'ui-shift-mode-label': dict.shift_mode_label || "شێوازێ دەوامێ:",
         'opt-shift-single': dict.shift_single || "☀️ دەواما ئێک (دوام واحد)",
-        'opt-shift-double': dict.shift_double || "🌗 دوو دەوام (سپێدە و ئێڤار)",
+        'opt-shift-double': dict.shift_double || "🌗 دوو دەوام - سپێدە و ئێڤار (صباحي ومسائي)",
+        'opt-shift-odd-even': dict.shift_odd_even || "🔢 دوو دەوام - تاک و جوت (1,3,5 و 2,4,6)",
+        'opt-shift-custom': dict.shift_custom || "⚙️ دوو دەوام - دەستی و تایبەت (مخصص ويدوي)",
+        'ui-custom-shift1-name-label': dict.custom_shift1_name_label || "ناڤێ دەوامێ 1 (الاسم):",
+        'ui-custom-shift2-name-label': dict.custom_shift2_name_label || "ناڤێ دەوامێ 2 (الاسم):",
         'ui-shift-morning-label': dict.shift_morning_label || "☀️ شعبێن دەواما سپێدێ (الصباحي):",
         'ui-shift-evening-label': dict.shift_evening_label || "🌙 شعبێن دەواما ئێڤارێ (المسائي):",
+        'ui-detected-sections-label': dict.detected_sections_label || "الشُعب المتوفرة (انقر لتعيين نوع الدوام):",
         'opt-filter-all-shifts': dict.shift_filter_all || "🔄 هەمی دەوام",
         'opt-filter-split-shifts': dict.shift_filter_split || "⚠️ دەوامێن جودا بتنێ",
-        'opt-filter-morning-shifts': dict.shift_filter_morning || "☀️ سپێدە بتنێ",
-        'opt-filter-evening-shifts': dict.shift_filter_evening || "🌙 ئێڤار بتنێ"
+        'opt-filter-morning-shifts': dict.shift_filter_morning || "☀️ دەواما 1 بتنێ",
+        'opt-filter-evening-shifts': dict.shift_filter_evening || "🌙 دەواما 2 بتنێ"
     };
 
     for (const [id, text] of Object.entries(idsMap)) {
@@ -984,6 +1041,7 @@ function changeLanguage(lang) {
     onInputChanged();
     updateDiffGradesTabUI();
     renderHistoryUI();
+    updateDetectedSectionsChips();
 
     if (studentPool.length > 0) {
         displayResults();
@@ -1025,12 +1083,12 @@ function handleFileDrop(e) {
 function parseUploadedFile(file) {
     const fileName = file.name.toLowerCase();
     const isExcel = fileName.endsWith('.xlsx') || fileName.endsWith('.xls') || fileName.endsWith('.xlsm') || fileName.endsWith('.xlsb');
-    
+
     if (isExcel && typeof XLSX !== 'undefined') {
         const reader = new FileReader();
-        reader.onload = function(e) {
+        reader.onload = function (evt) {
             try {
-                const data = new Uint8Array(e.target.result);
+                const data = new Uint8Array(evt.target.result);
                 const workbook = XLSX.read(data, { type: 'array' });
                 let allLines = [];
 
@@ -1077,7 +1135,7 @@ function parseUploadedFile(file) {
         reader.readAsArrayBuffer(file);
     } else {
         const reader = new FileReader();
-        reader.onload = function(evt) {
+        reader.onload = function (evt) {
             const text = evt.target.result;
             const rawLines = text.split(/\r?\n/).filter(l => l.trim().length > 0);
             if (rawLines.length > 0) {
@@ -1228,7 +1286,7 @@ function extractTargetColumnsFromMatrix(matrix) {
 
 // تسريع تجريد السوابق باستخدام الذاكرة
 function stripPrefixes(text) {
-    if (!document.getElementById('stripPrefixOpt').checked || !text) return text || '';
+    if (!document.getElementById('stripPrefixOpt')?.checked || !text) return text || '';
     if (prefixCache.has(text)) return prefixCache.get(text);
 
     const res = text.trim()
@@ -1236,6 +1294,326 @@ function stripPrefixes(text) {
         .replace(/\s+(ال|أبو|ابو|أم|ام|ابن|بن|شيخ)\s+/g, ' ');
     prefixCache.set(text, res);
     return res;
+}
+// 🌗 إدارة نظام الدوام (دوام واحد / دوامين صباحي ومسائي / فردي وزوجي / يدوي مخصص)
+function toggleShiftModeSettings() {
+    const shiftSelect = document.getElementById('shiftMode');
+    const mode = shiftSelect ? shiftSelect.value : 'single';
+    const configEl = document.getElementById('doubleShiftConfig');
+    const filterWrapper = document.getElementById('shiftFilterWrapper');
+    const customNamesRow = document.getElementById('customShiftNamesRow');
+    const morningLabel = document.getElementById('ui-shift-morning-label');
+    const eveningLabel = document.getElementById('ui-shift-evening-label');
+    const morningInput = document.getElementById('morningSectionsInput');
+    const eveningInput = document.getElementById('eveningSectionsInput');
+    const dict = translations[currentLang] || translations['ar'];
+
+    if (mode === 'single') {
+        if (configEl) configEl.classList.add('hidden');
+        if (filterWrapper) filterWrapper.classList.add('hidden');
+        if (customNamesRow) customNamesRow.classList.add('hidden');
+        const filterSelect = document.getElementById('shiftFilterSelect');
+        if (filterSelect) filterSelect.value = 'all';
+    } else {
+        if (configEl) configEl.classList.remove('hidden');
+        if (filterWrapper) filterWrapper.classList.remove('hidden');
+
+        if (mode === 'odd_even') {
+            if (customNamesRow) customNamesRow.classList.add('hidden');
+            if (morningLabel) morningLabel.textContent = dict.shift_odd_label || "🔢 الدوام الفردي (الصفوف 1، 3، 5):";
+            if (eveningLabel) eveningLabel.textContent = dict.shift_even_label || "🔢 الدوام الزوجي (الصفوف 2، 4، 6):";
+            if (morningInput && (!morningInput.value || morningInput.value.includes('أ, ب') || morningInput.value.includes('A, B'))) {
+                morningInput.value = '1, 3, 5, 7, 9, 11, الاول, الثالث, الخامس, السابع, التاسع, ئێکێ, سیێ, پێنجێ';
+            }
+            if (eveningInput && (!eveningInput.value || eveningInput.value.includes('ج, د') || eveningInput.value.includes('C, D'))) {
+                eveningInput.value = '2, 4, 6, 8, 10, 12, الثاني, الرابع, السادس, الثامن, العاشر, دووێ, چارێ, شەشێ';
+            }
+        } else if (mode === 'custom') {
+            if (customNamesRow) {
+                customNamesRow.classList.remove('hidden');
+                customNamesRow.classList.add('grid');
+            }
+            if (morningLabel) morningLabel.textContent = dict.shift_custom1_label || "🔸 شُعب وصفوف الدوام الأول:";
+            if (eveningLabel) eveningLabel.textContent = dict.shift_custom2_label || "🔹 شُعب وصفوف الدوام الثاني:";
+        } else { // 'double'
+            if (customNamesRow) customNamesRow.classList.add('hidden');
+            if (morningLabel) morningLabel.textContent = dict.shift_morning_label || "☀️ شعبێن دەواما سپێدێ (الصباحي):";
+            if (eveningLabel) eveningLabel.textContent = dict.shift_evening_label || "🌙 شعبێن دەواما ئێڤارێ (المسائي):";
+            if (morningInput && morningInput.value.includes('1, 3, 5')) {
+                morningInput.value = 'أ, ب, A, B, 1, 2';
+            }
+            if (eveningInput && eveningInput.value.includes('2, 4, 6')) {
+                eveningInput.value = 'ج, د, C, D, 3, 4';
+            }
+        }
+    }
+
+    localStorage.setItem('siblings_shift_mode', mode);
+    updateDiffGradesTabUI();
+    updateDetectedSectionsChips();
+    if (typeof studentPool !== 'undefined' && studentPool.length > 0) {
+        const shiftConfig = getShiftConfig();
+        studentPool.forEach(s => {
+            s.shift = getStudentShift(s, shiftConfig);
+        });
+        renderEngine();
+    }
+}
+
+function updateDiffGradesTabUI() {
+    const shiftConfig = getShiftConfig();
+    const isShiftActive = shiftConfig.mode !== 'single';
+    const dict = translations[currentLang];
+
+    const tabLabel = document.getElementById('tab-diff-grades-label');
+    const tabBtn = document.getElementById('tab-diff-grades-btn');
+    const noticeDesc = document.getElementById('ui-diff-grades-tab-desc');
+
+    if (isShiftActive) {
+        if (tabLabel) tabLabel.textContent = dict.tab_split_shifts || "دەوامێن جودا";
+        if (tabBtn) {
+            const iconSpan = tabBtn.querySelector('span:first-child');
+            if (iconSpan) iconSpan.textContent = shiftConfig.mode === 'odd_even' ? '🔢' : '🌗';
+        }
+        if (noticeDesc) noticeDesc.textContent = dict.split_shifts_tab_desc || "ئەڤ بەشە وان خێزانێن خویشک و برایان نیشان ددەت یێن کو ئێک د دەواما ئێکێ دایە و یێ دی د دەواما دووێ دایە بۆ ئاسانکرنا گوهۆڕین و رێکخستنا دەوامێ وان.";
+    } else {
+        if (tabLabel) tabLabel.textContent = dict.tab_diff_grades || "پۆلێن جودا";
+        if (tabBtn) {
+            const iconSpan = tabBtn.querySelector('span:first-child');
+            if (iconSpan) iconSpan.textContent = '🏫';
+        }
+        if (noticeDesc) noticeDesc.textContent = dict.diff_grades_tab_desc || "ئەڤ بەشە بتنێ وان خێزانێن خویشک و برایان نیشان ددەت یێن کو د قۆناغ و پۆلێن جودا دا دخوینن بۆ ئاسانکرنا لێگەڕیان و دیارکرنێ.";
+    }
+}
+
+function getShiftConfig() {
+    const shiftSelect = document.getElementById('shiftMode');
+    const mode = shiftSelect ? shiftSelect.value : (localStorage.getItem('siblings_shift_mode') || 'single');
+    const morningInput = document.getElementById('morningSectionsInput');
+    const eveningInput = document.getElementById('eveningSectionsInput');
+    const custom1NameInput = document.getElementById('customShift1Name');
+    const custom2NameInput = document.getElementById('customShift2Name');
+    const dict = translations[currentLang] || translations['ar'];
+
+    let defaultMorning = 'أ, ب, A, B, 1, 2, صباحي';
+    let defaultEvening = 'ج, د, C, D, 3, 4, مسائي';
+    if (mode === 'odd_even') {
+        defaultMorning = '1, 3, 5, 7, 9, 11, الاول, الثالث, الخامس, فردي, تاک';
+        defaultEvening = '2, 4, 6, 8, 10, 12, الثاني, الرابع, السادس, زوجي, جوت';
+    }
+
+    const morningRaw = morningInput ? morningInput.value : defaultMorning;
+    const eveningRaw = eveningInput ? eveningInput.value : defaultEvening;
+
+    let shift1Name = dict.shift_tag_morning || 'سپێدە';
+    let shift2Name = dict.shift_tag_evening || 'ئێڤار';
+    let shift1Icon = '☀️';
+    let shift2Icon = '🌙';
+
+    if (mode === 'odd_even') {
+        shift1Name = dict.shift_tag_odd || 'تاک (1,3,5)';
+        shift2Name = dict.shift_tag_even || 'جوت (2,4,6)';
+        shift1Icon = '🔢';
+        shift2Icon = '🔢';
+    } else if (mode === 'custom') {
+        shift1Name = custom1NameInput?.value?.trim() || (dict.custom_shift1_name_label || 'دەواما 1');
+        shift2Name = custom2NameInput?.value?.trim() || (dict.custom_shift2_name_label || 'دەواما 2');
+        shift1Icon = '🔸';
+        shift2Icon = '🔹';
+    }
+
+    function cleanList(str) {
+        return (str || '')
+            .split(/[,;\s،]+/)
+            .map(s => normalizeSectionStr(s))
+            .filter(s => s.length > 0);
+    }
+
+    return {
+        mode: mode,
+        morningList: cleanList(morningRaw),
+        eveningList: cleanList(eveningRaw),
+        shift1Name: shift1Name,
+        shift2Name: shift2Name,
+        shift1Icon: shift1Icon,
+        shift2Icon: shift2Icon
+    };
+}
+
+function normalizeSectionStr(s) {
+    if (!s) return '';
+    return String(s)
+        .trim()
+        .replace(/^(شعبة|شعبە|پۆلا|پۆل|الصف|صف)\s+/i, '')
+        .replace(/[أإآ]/g, 'ا')
+        .replace(/[ىيی]/g, 'ي')
+        .replace(/[كک]/g, 'ك')
+        .replace(/[هة]/g, 'ه')
+        .replace(/[١-٩]/g, d => '123456789'['١٢٣٤٥٦٧٨٩'.indexOf(d)])
+        .replace(/[۱-۹]/g, d => '123456789'['۱۲۳۴۵۶۷۸۹'.indexOf(d)])
+        .toLowerCase();
+}
+
+// 🧠 خوارزمية ذكية وشاملة لتحديد دوام الطالب (صباحي/مسائي، فردي/زوجي، أو يدوي مخصص)
+function getStudentShift(studentOrSection, shiftConfigOrMorningList, maybeEveningList) {
+    if (!studentOrSection) return 'unknown';
+
+    let config = null;
+    if (shiftConfigOrMorningList && typeof shiftConfigOrMorningList === 'object' && 'mode' in shiftConfigOrMorningList) {
+        config = shiftConfigOrMorningList;
+    } else {
+        config = getShiftConfig();
+        if (Array.isArray(shiftConfigOrMorningList)) config.morningList = shiftConfigOrMorningList;
+        if (Array.isArray(maybeEveningList)) config.eveningList = maybeEveningList;
+    }
+
+    if (config.mode === 'single') return 'unknown';
+
+    let sSection = '';
+    let sGrade = '';
+    let sShift = '';
+    let sName = '';
+
+    if (typeof studentOrSection === 'object') {
+        sSection = studentOrSection.section || '';
+        sGrade = studentOrSection.grade || '';
+        sShift = studentOrSection.shift || '';
+        sName = studentOrSection.name || '';
+    } else {
+        sSection = String(studentOrSection);
+    }
+
+    if (sShift === 'morning' || sShift === 'evening') return sShift;
+
+    const fullText = normalizeSectionStr(`${sShift} ${sSection} ${sGrade} ${sName}`);
+
+    // 1. الكشف التلقائي الذكي للنمط الفردي والزوجي بناءً على رقم الصف والمرحلة
+    if (config.mode === 'odd_even') {
+        const gradeRank = getGradeRank(sGrade || sSection);
+        if (gradeRank !== 999) {
+            if (gradeRank % 2 === 1) return 'morning'; // فردي
+            if (gradeRank % 2 === 0) return 'evening'; // زوجي
+        }
+
+        const gradeDigits = (sGrade || '').match(/\d+/);
+        if (gradeDigits) {
+            const num = parseInt(gradeDigits[0], 10);
+            if (!isNaN(num)) {
+                if (num % 2 === 1) return 'morning';
+                if (num % 2 === 0) return 'evening';
+            }
+        }
+    }
+
+    // 2. الكشف عن الكلمات الصريحة للدوام الأول
+    const morningKeywords = ['صباحي', 'صباحيه', 'الصباحي', 'الصباحية', 'سپيده', 'سپيدي', 'سپێدە', 'سپێدێ', 'بياني', 'بيانيان', 'بەیانی', 'بەیانیان', 'morning', 'am', 'فردي', 'تاك', 'تاک', 'فترة اولي', 'فترة اولى', 'فترة اول', 'دوام اول'];
+    for (const kw of morningKeywords) {
+        if (fullText.includes(normalizeSectionStr(kw))) return 'morning';
+    }
+
+    // 3. الكشف عن الكلمات الصريحة للدوام الثاني
+    const eveningKeywords = ['مسائي', 'مسائيه', 'المسائي', 'المسائية', 'ئيفار', 'ئيفاري', 'ئێڤار', 'ئێڤاری', 'ئيواره', 'ئيواران', 'ئێوارە', 'ئێواران', 'evening', 'pm', 'زوجي', 'جوت', 'جووت', 'فترة ثانيه', 'فترة ثانية', 'فترة ثاني', 'دوام ثاني'];
+    for (const kw of eveningKeywords) {
+        if (fullText.includes(normalizeSectionStr(kw))) return 'evening';
+    }
+
+    // 4. استخراج رموز الشعبة والصف ومطابقتها الدقيقة
+    const cleanSec = normalizeSectionStr(sSection);
+    const cleanGrade = normalizeSectionStr(sGrade);
+
+    const secTokens = cleanSec.split(/[\s\-_\/]+/).filter(t => t.length > 0);
+    secTokens.push(cleanSec);
+    if (cleanGrade) {
+        secTokens.push(cleanGrade);
+        cleanGrade.split(/[\s\-_\/]+/).forEach(t => { if (t) secTokens.push(t); });
+    }
+
+    for (const token of secTokens) {
+        for (const e of config.eveningList) {
+            if (token === e) return 'evening';
+        }
+    }
+
+    for (const token of secTokens) {
+        for (const m of config.morningList) {
+            if (token === m) return 'morning';
+        }
+    }
+
+    for (const e of config.eveningList) {
+        if (e.length > 1 && (cleanSec.includes(e) || cleanGrade.includes(e))) return 'evening';
+    }
+    for (const m of config.morningList) {
+        if (m.length > 1 && (cleanSec.includes(m) || cleanGrade.includes(m))) return 'morning';
+    }
+
+    return 'unknown';
+}
+
+function updateDetectedSectionsChips() {
+    const container = document.getElementById('detectedSectionsContainer');
+    const chipsDiv = document.getElementById('detectedSectionsChips');
+    if (!container || !chipsDiv) return;
+
+    const sectionsMap = {};
+    studentPool.forEach(s => {
+        if (s.section && s.section !== '-' && s.section !== 'N/A' && s.section !== 'دیارنەکری' && s.section.trim() !== '') {
+            const sec = s.section.trim();
+            sectionsMap[sec] = (sectionsMap[sec] || 0) + 1;
+        }
+    });
+
+    const uniqueSections = Object.keys(sectionsMap);
+    if (uniqueSections.length === 0) {
+        container.classList.add('hidden');
+        return;
+    }
+
+    container.classList.remove('hidden');
+    const shiftConfig = getShiftConfig();
+    const dict = translations[currentLang] || translations['ar'];
+
+    chipsDiv.innerHTML = uniqueSections.map(sec => {
+        const sh = getStudentShift(sec, shiftConfig);
+        const isMorning = sh === 'morning';
+        const isEvening = sh === 'evening';
+
+        let badgeColor = "bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border-slate-300 dark:border-slate-700";
+        if (isMorning) {
+            badgeColor = "bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 border-amber-400 dark:border-amber-700";
+        } else if (isEvening) {
+            badgeColor = "bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 border-indigo-400 dark:border-indigo-700";
+        }
+
+        const safeSec = sec.replace(/'/g, "\\'");
+        return `
+            <div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-lg border text-[8.5px] font-bold ${badgeColor}">
+                <span>${sec}</span>
+                <span class="text-[7.5px] opacity-75">(${sectionsMap[sec]})</span>
+                <button type="button" onclick="setSectionShift('${safeSec}', 'morning')" title="${shiftConfig.shift1Icon} ${shiftConfig.shift1Name}" class="hover:scale-125 transition text-[9px] p-0.2">${shiftConfig.shift1Icon}</button>
+                <button type="button" onclick="setSectionShift('${safeSec}', 'evening')" title="${shiftConfig.shift2Icon} ${shiftConfig.shift2Name}" class="hover:scale-125 transition text-[9px] p-0.2">${shiftConfig.shift2Icon}</button>
+            </div>
+        `;
+    }).join('');
+}
+
+function setSectionShift(section, shiftType) {
+    const morningInput = document.getElementById('morningSectionsInput');
+    const eveningInput = document.getElementById('eveningSectionsInput');
+    if (!morningInput || !eveningInput) return;
+
+    let morningArr = morningInput.value.split(/[,;\s،]+/).map(s => s.trim()).filter(s => s.length > 0 && s !== section);
+    let eveningArr = eveningInput.value.split(/[,;\s،]+/).map(s => s.trim()).filter(s => s.length > 0 && s !== section);
+
+    if (shiftType === 'morning') {
+        morningArr.push(section);
+    } else if (shiftType === 'evening') {
+        eveningArr.push(section);
+    }
+
+    morningInput.value = morningArr.join(', ');
+    eveningInput.value = eveningArr.join(', ');
+    processNames();
 }
 
 // تسريع وتوحيد النصوص العربية والكردية (Memoized Deep Normalization)
@@ -1338,230 +1716,7 @@ function levenshteinDistance(s1, s2) {
     return currRow[len2];
 }
 
-// 🌗 إدارة نظام الدوام (دوام واحد / دوامين صباحي ومسائي) وفحص الشعب
-function toggleShiftModeSettings() {
-    const shiftSelect = document.getElementById('shiftMode');
-    const mode = shiftSelect ? shiftSelect.value : 'single';
-    const configEl = document.getElementById('doubleShiftConfig');
-    const filterWrapper = document.getElementById('shiftFilterWrapper');
-    
-    if (mode === 'double') {
-        if (configEl) configEl.classList.remove('hidden');
-        if (filterWrapper) filterWrapper.classList.remove('hidden');
-    } else {
-        if (configEl) configEl.classList.add('hidden');
-        if (filterWrapper) filterWrapper.classList.add('hidden');
-        const filterSelect = document.getElementById('shiftFilterSelect');
-        if (filterSelect) filterSelect.value = 'all';
-    }
-    localStorage.setItem('siblings_shift_mode', mode);
-    updateDiffGradesTabUI();
-    if (typeof studentPool !== 'undefined' && studentPool.length > 0) {
-        const shiftConfig = getShiftConfig();
-        studentPool.forEach(s => {
-            s.shift = getStudentShift(s, shiftConfig.morningList, shiftConfig.eveningList);
-        });
-        renderEngine();
-    }
-}
 
-function updateDiffGradesTabUI() {
-    const shiftConfig = getShiftConfig();
-    const isDoubleShift = shiftConfig.mode === 'double';
-    const dict = translations[currentLang];
-    
-    const tabLabel = document.getElementById('tab-diff-grades-label');
-    const tabBtn = document.getElementById('tab-diff-grades-btn');
-    const noticeDesc = document.getElementById('ui-diff-grades-tab-desc');
-
-    if (isDoubleShift) {
-        if (tabLabel) tabLabel.textContent = dict.tab_split_shifts || "دەوامێن جودا";
-        if (tabBtn) {
-            const iconSpan = tabBtn.querySelector('span:first-child');
-            if (iconSpan) iconSpan.textContent = '🌗';
-        }
-        if (noticeDesc) noticeDesc.textContent = dict.split_shifts_tab_desc || "ئەڤ بەشە وان خێزانێن خویشک و برایان نیشان ددەت یێن کو ئێک د دەواما سپێدێ دایە و یێ دی د دەواما ئێڤاری دایە بۆ ئاسانکرنا گوهۆڕین و رێکخستنا دەوامێ وان.";
-    } else {
-        if (tabLabel) tabLabel.textContent = dict.tab_diff_grades || "پۆلێن جودا";
-        if (tabBtn) {
-            const iconSpan = tabBtn.querySelector('span:first-child');
-            if (iconSpan) iconSpan.textContent = '🏫';
-        }
-        if (noticeDesc) noticeDesc.textContent = dict.diff_grades_tab_desc || "ئەڤ بەشە بتنێ وان خێزانێن خویشک و برایان نیشان ددەت یێن کو د قۆناغ و پۆلێن جودا دا دخوینن بۆ ئاسانکرنا لێگەڕیان و دیارکرنێ.";
-    }
-}
-
-function getShiftConfig() {
-    const shiftSelect = document.getElementById('shiftMode');
-    const mode = shiftSelect ? shiftSelect.value : (localStorage.getItem('siblings_shift_mode') || 'single');
-    const morningInput = document.getElementById('morningSectionsInput');
-    const eveningInput = document.getElementById('eveningSectionsInput');
-
-    const morningRaw = morningInput ? morningInput.value : 'أ, ب, A, B, 1, 2, صباحي';
-    const eveningRaw = eveningInput ? eveningInput.value : 'ج, د, C, D, 3, 4, مسائي';
-
-    function cleanList(str) {
-        return (str || '')
-            .split(/[,;\s،]+/)
-            .map(s => normalizeSectionStr(s))
-            .filter(s => s.length > 0);
-    }
-
-    return {
-        mode: mode,
-        morningList: cleanList(morningRaw),
-        eveningList: cleanList(eveningRaw)
-    };
-}
-
-function normalizeSectionStr(s) {
-    if (!s) return '';
-    return String(s)
-        .trim()
-        .replace(/^(شعبة|شعبة|پۆلا|پۆل|الصف|صف)\s+/i, '')
-        .replace(/[أإآ]/g, 'ا')
-        .replace(/[ىيی]/g, 'ي')
-        .replace(/[كک]/g, 'ك')
-        .replace(/[هة]/g, 'ه')
-        .replace(/[١-٩]/g, d => '123456789'['١٢٣٤٥٦٧٨٩'.indexOf(d)])
-        .replace(/[۱-۹]/g, d => '123456789'['۱۲۳۴۵۶۷۸۹'.indexOf(d)])
-        .toLowerCase();
-}
-
-// 🧠 خوارزمية ذكية وشاملة لتحديد دوام الطالب (صباحي / مسائي)
-function getStudentShift(studentOrSection, morningList, eveningList) {
-    if (!studentOrSection) return 'unknown';
-
-    let sSection = '';
-    let sGrade = '';
-    let sShift = '';
-    let sName = '';
-
-    if (typeof studentOrSection === 'object') {
-        sSection = studentOrSection.section || '';
-        sGrade = studentOrSection.grade || '';
-        sShift = studentOrSection.shift || '';
-        sName = studentOrSection.name || '';
-    } else {
-        sSection = String(studentOrSection);
-    }
-
-    // 1. إذا كان الدوام محدداً بشكل صريح
-    if (sShift === 'morning' || sShift === 'evening') return sShift;
-
-    const fullText = normalizeSectionStr(`${sShift} ${sSection} ${sGrade} ${sName}`);
-    
-    // 2. الكشف عن الكلمات الصريحة للدوام الصباحي
-    const morningKeywords = ['صباحي', 'صباحيه', 'الصباحي', 'الصباحية', 'سپيده', 'سپيدي', 'سپێدە', 'سپێدێ', 'بياني', 'بيانيان', 'بەیانی', 'بەیانیان', 'morning', 'am', 'فترة اولي', 'فترة اولى', 'فترة اول', 'دوام اول', 'فتره اولي'];
-    for (const kw of morningKeywords) {
-        if (fullText.includes(normalizeSectionStr(kw))) return 'morning';
-    }
-
-    // 3. الكشف عن الكلمات الصريحة للدوام المسائي
-    const eveningKeywords = ['مسائي', 'مسائيه', 'المسائي', 'المسائية', 'ئيفار', 'ئيفاري', 'ئێڤار', 'ئێڤاری', 'ئيواره', 'ئيواران', 'ئێوارە', 'ئێواران', 'evening', 'pm', 'فترة ثانيه', 'فترة ثانية', 'فترة ثاني', 'دوام ثاني', 'فتره ثانيه'];
-    for (const kw of eveningKeywords) {
-        if (fullText.includes(normalizeSectionStr(kw))) return 'evening';
-    }
-
-    // 4. استخراج رموز الشعبة ومطابقتها الدقيقة
-    const cleanSec = normalizeSectionStr(sSection);
-    if (!cleanSec || cleanSec === '-' || cleanSec === 'n/a' || cleanSec === 'ديارنكري' || cleanSec === 'غير محدد') {
-        return 'unknown';
-    }
-
-    // تقسيم الشعبة إلى مقاطع دقيقة (مثل "1-A" أو "الصف 2 شعبة ج")
-    const secTokens = cleanSec.split(/[\s\-_\/]+/).filter(t => t.length > 0);
-    secTokens.push(cleanSec);
-
-    // فحص المسائي أولاً لضمان عدم الخلط مع أرقام المراحل
-    for (const token of secTokens) {
-        for (const e of eveningList) {
-            if (token === e) return 'evening';
-        }
-    }
-
-    // فحص الصباحي
-    for (const token of secTokens) {
-        for (const m of morningList) {
-            if (token === m) return 'morning';
-        }
-    }
-
-    // فحص الاحتواء الجزئي للأحرف الدقيقة
-    for (const e of eveningList) {
-        if (e.length > 1 && cleanSec.includes(e)) return 'evening';
-    }
-    for (const m of morningList) {
-        if (m.length > 1 && cleanSec.includes(m)) return 'morning';
-    }
-
-    return 'unknown';
-}
-
-function updateDetectedSectionsChips() {
-    const container = document.getElementById('detectedSectionsContainer');
-    const chipsDiv = document.getElementById('detectedSectionsChips');
-    if (!container || !chipsDiv) return;
-
-    const sectionsMap = {};
-    studentPool.forEach(s => {
-        if (s.section && s.section !== '-' && s.section !== 'N/A' && s.section !== 'دیارنەکری' && s.section.trim() !== '') {
-            const sec = s.section.trim();
-            sectionsMap[sec] = (sectionsMap[sec] || 0) + 1;
-        }
-    });
-
-    const uniqueSections = Object.keys(sectionsMap);
-    if (uniqueSections.length === 0) {
-        container.classList.add('hidden');
-        return;
-    }
-
-    container.classList.remove('hidden');
-    const { morningList, eveningList } = getShiftConfig();
-
-    chipsDiv.innerHTML = uniqueSections.map(sec => {
-        const sh = getStudentShift(sec, morningList, eveningList);
-        const isMorning = sh === 'morning';
-        const isEvening = sh === 'evening';
-        
-        let badgeColor = "bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border-slate-300 dark:border-slate-700";
-        if (isMorning) {
-            badgeColor = "bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 border-amber-400 dark:border-amber-700";
-        } else if (isEvening) {
-            badgeColor = "bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 border-indigo-400 dark:border-indigo-700";
-        }
-
-        const safeSec = sec.replace(/'/g, "\\'");
-        return `
-            <div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-lg border text-[8.5px] font-bold ${badgeColor}">
-                <span>${sec}</span>
-                <span class="text-[7.5px] opacity-75">(${sectionsMap[sec]})</span>
-                <button type="button" onclick="setSectionShift('${safeSec}', 'morning')" title="تعيين كدوام صباحي ☀️" class="hover:scale-125 transition text-[9px] p-0.2">☀️</button>
-                <button type="button" onclick="setSectionShift('${safeSec}', 'evening')" title="تعيين كدوام مسائي 🌙" class="hover:scale-125 transition text-[9px] p-0.2">🌙</button>
-            </div>
-        `;
-    }).join('');
-}
-
-function setSectionShift(section, shiftType) {
-    const morningInput = document.getElementById('morningSectionsInput');
-    const eveningInput = document.getElementById('eveningSectionsInput');
-    if (!morningInput || !eveningInput) return;
-
-    let morningArr = morningInput.value.split(/[,;\s،]+/).map(s => s.trim()).filter(s => s.length > 0 && s !== section);
-    let eveningArr = eveningInput.value.split(/[,;\s،]+/).map(s => s.trim()).filter(s => s.length > 0 && s !== section);
-
-    if (shiftType === 'morning') {
-        morningArr.push(section);
-    } else if (shiftType === 'evening') {
-        eveningArr.push(section);
-    }
-
-    morningInput.value = morningArr.join(', ');
-    eveningInput.value = eveningArr.join(', ');
-    processNames();
-}
 
 function isSectionValue(val) {
     if (!val) return false;
@@ -1729,10 +1884,10 @@ function handleFileDrop(e) {
 
 function readExcelOrTextFile(file) {
     const fileName = file.name.toLowerCase();
-    
+
     if (fileName.endsWith('.txt') || fileName.endsWith('.csv') || fileName.endsWith('.tsv')) {
         const reader = new FileReader();
-        reader.onload = function(evt) {
+        reader.onload = function (evt) {
             const content = evt.target.result;
             const namesInput = document.getElementById('namesInput');
             if (namesInput) {
@@ -1752,13 +1907,13 @@ function readExcelOrTextFile(file) {
     }
 
     const reader = new FileReader();
-    reader.onload = function(evt) {
+    reader.onload = function (evt) {
         try {
             const data = new Uint8Array(evt.target.result);
             const workbook = XLSX.read(data, { type: 'array' });
             const firstSheetName = workbook.SheetNames[0];
             const worksheet = workbook.Sheets[firstSheetName];
-            
+
             const rows = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: '' });
             if (!rows || rows.length === 0) {
                 showToast("مەلەفێ ئێکسل بەتالە! / ملف الإكسل فارغ!");
@@ -1787,7 +1942,7 @@ function readExcelOrTextFile(file) {
             if (headerRowIdx !== -1) {
                 startRow = headerRowIdx + 1;
                 const headerRow = rows[headerRowIdx].map(c => String(c || '').trim().toLowerCase());
-                
+
                 headerRow.forEach((colText, idx) => {
                     // فحص اسم الأم أولاً لمنع الخلط مع اسم الطالب (ناوی تەواوی دایک vs ناوی تەواو)
                     if (colText.includes('دایک') || colText.includes('دايك') || colText.includes('ام') || colText.includes('أم') || colText.includes('mother') || colText.includes('والدة')) {
@@ -1810,7 +1965,7 @@ function readExcelOrTextFile(file) {
             for (let i = startRow; i < rows.length; i++) {
                 const r = rows[i];
                 if (!r || r.length === 0) continue;
-                
+
                 const sName = String(r[colNameIdx] || '').trim();
                 if (!sName || sName === '-' || sName.toLowerCase() === 'null') continue;
 
@@ -1845,16 +2000,31 @@ function readExcelOrTextFile(file) {
 }
 
 function processNames() {
-    const rawInput = document.getElementById('namesInput').value;
+    const rawInput = document.getElementById('namesInput')?.value || '';
     const lines = rawInput.split('\n').map(line => line.trim()).filter(line => line.length > 0);
-    
+
     if (lines.length === 0) {
         clearResultsArea();
         return;
     }
 
+    localStorage.setItem('siblings_backup', rawInput);
+
+    const sepVal = document.getElementById('dataSeparator')?.value;
+    if (sepVal) localStorage.setItem('siblings_separator', sepVal);
+    const matchVal = document.getElementById('matchType')?.value;
+    if (matchVal) localStorage.setItem('siblings_match_type', matchVal);
+    const relVal = document.getElementById('relativesSearchMode')?.value;
+    if (relVal) localStorage.setItem('siblings_rel_mode', relVal);
+    const grandpaVal = document.getElementById('grandpaMatchDepth')?.value;
+    if (grandpaVal) localStorage.setItem('siblings_grandpa_depth', grandpaVal);
+    const stripVal = document.getElementById('stripPrefixOpt')?.checked;
+    if (stripVal !== undefined) localStorage.setItem('siblings_strip_prefix', stripVal ? 'true' : 'false');
+    const sortVal = document.getElementById('resultsSort')?.value;
+    if (sortVal) localStorage.setItem('siblings_sort', sortVal);
+
     studentPool = [];
-    const sepMode = document.getElementById('dataSeparator').value;
+    const sepMode = sepVal || 'auto';
     const shiftConfig = getShiftConfig();
 
     let rowIndex = 0;
@@ -1870,7 +2040,7 @@ function processNames() {
         }
 
         parts = line.split(sep).map(p => p.trim());
-        
+
         // فحص وتخطي سطر العناوين / الترويسة
         if (index === 0 && isHeaderRow(parts)) {
             return;
@@ -1892,7 +2062,7 @@ function processNames() {
             gender = parseGenderValue(parts[2], name);
             grade = parts[3] || grade;
             section = parts[4] || section;
-            
+
             if (parts.length >= 6) {
                 const p5 = parts[5].trim();
                 const p5Lower = p5.toLowerCase();
@@ -2021,7 +2191,7 @@ function renderEngine() {
     const isStrip = document.getElementById('stripPrefixOpt').checked;
     const relSearchMode = document.getElementById('relativesSearchMode').value;
     const grandpaDepth = document.getElementById('grandpaMatchDepth').value;
-    
+
     // 1. كشف الإخوة الأشقاء
     const siblingGroups = {};
     let twinCount = 0;
@@ -2033,7 +2203,7 @@ function renderEngine() {
         } else {
             const normalized = normalizeText(isStrip ? stripPrefixes(student.name) : student.name);
             const words = normalized.split(' ').filter(w => w.length > 0);
-            
+
             if (matchType === 'all-except-first' && words.length > 1) {
                 key = words.slice(1).join(' ');
             } else if (matchType === 'last-two' && words.length >= 2) {
@@ -2080,7 +2250,7 @@ function renderEngine() {
     const paternalRelativesMap = {};
     studentPool.forEach(student => {
         const { father, grandpaKey } = extractGrandfatherKey(student.name, grandpaDepth, isStrip);
-        
+
         if (grandpaKey && grandpaKey.length > 1) {
             if (!paternalRelativesMap[grandpaKey]) paternalRelativesMap[grandpaKey] = {};
             if (!paternalRelativesMap[grandpaKey][father]) paternalRelativesMap[grandpaKey][father] = [];
@@ -2090,7 +2260,7 @@ function renderEngine() {
 
     for (const grandpaKey in paternalRelativesMap) {
         const fatherBranches = Object.keys(paternalRelativesMap[grandpaKey]);
-        
+
         if (fatherBranches.length > 1) {
             const branches = {};
             let groupCount = 0;
@@ -2117,12 +2287,12 @@ function renderEngine() {
     studentPool.forEach(student => {
         if (student.mother && student.mother.trim().length > 1 && student.mother !== '-' && student.mother !== 'دیارنەکری' && student.mother !== 'غير محدد') {
             const { motherGrandpaKey } = extractMotherGrandfatherKey(student.mother, grandpaDepth, isStrip);
-            
+
             if (motherGrandpaKey && motherGrandpaKey.length > 1) {
                 const normalizedStudentName = normalizeText(isStrip ? stripPrefixes(student.name) : student.name);
                 const words = normalizedStudentName.split(' ');
                 const fatherOrBranch = words.length > 1 ? words.slice(1).join(' ') : student.name;
-                
+
                 // مفتاح الفرع يجمع اسم الأم مع اسم الأب لتمييز العائلات/الأمهات الأخوات
                 const motherClean = normalizeText(student.mother);
                 const branchKey = `${motherClean} ⟵ (${fatherOrBranch})`;
@@ -2250,16 +2420,16 @@ function renderEngine() {
         duplicateResults.sort((a, b) => a.sharedName.localeCompare(b.sharedName));
     }
 
-    // استخراج عائلات الإخوة: في الدوامين (دوامين مختلفين صباحي ومسائي) / في الدوام الواحد (صفوف ومراحل مختلفة)
+    // استخراج عائلات الإخوة: في الدوامين (دوامين مختلفين) / في الدوام الواحد (صفوف ومراحل مختلفة)
     const shiftConfig = getShiftConfig();
-    const isDoubleShift = shiftConfig.mode === 'double';
+    const isShiftActive = shiftConfig.mode !== 'single';
 
-    if (isDoubleShift) {
+    if (isShiftActive) {
         diffGradesSiblingResults = siblingResults.filter(group => {
             let hasMorning = false;
             let hasEvening = false;
             group.students.forEach(s => {
-                const sh = s.shift || getStudentShift(s, shiftConfig.morningList, shiftConfig.eveningList);
+                const sh = s.shift || getStudentShift(s, shiftConfig);
                 s.shift = sh;
                 if (sh === 'morning') hasMorning = true;
                 if (sh === 'evening') hasEvening = true;
@@ -2282,7 +2452,7 @@ function renderEngine() {
     document.getElementById('stat-relatives').textContent = totalRelativesMatched;
     document.getElementById('stat-twins').textContent = twinCount;
     document.getElementById('stat-solitary').textContent = solitaryResults.length;
-    
+
     const totalDuplicateCount = duplicateResults.reduce((acc, g) => acc + g.students.length, 0);
     const statDup = document.getElementById('stat-duplicates');
     if (statDup) statDup.textContent = totalDuplicateCount;
@@ -2302,6 +2472,7 @@ function renderEngine() {
 
 function switchResultTab(tab) {
     activeTab = tab;
+    localStorage.setItem('siblings_active_tab', tab);
     const allBtn = document.getElementById('tab-all-btn');
     const sibBtn = document.getElementById('tab-siblings-btn');
     const diffBtn = document.getElementById('tab-diff-grades-btn');
@@ -2375,7 +2546,7 @@ function getGradeRank(g) {
         .replace(/[٧۷]/g, '7')
         .replace(/[٨۸]/g, '8')
         .replace(/[٩۹]/g, '9');
-    
+
     const numMatch = normDigits.match(/\d+/);
     if (numMatch) {
         return parseInt(numMatch[0], 10);
@@ -2419,20 +2590,20 @@ function populateGradeFilter() {
     const selectedLabel = document.getElementById('selectedGradeLabel');
     const currentVal = filterSelect ? (filterSelect.value || 'all') : 'all';
     const dict = translations[currentLang];
-    
+
     if (filterSelect) {
         filterSelect.innerHTML = `<option id="ui-all-grades" value="all">${dict.all_grades}</option>`;
     }
-    
+
     const gradesSet = new Set();
-    studentPool.forEach(s => { 
+    studentPool.forEach(s => {
         if (s.grade && s.grade.trim() !== '' && s.grade !== '-' && s.grade !== 'N/A' && s.grade !== 'غير محدد' && s.grade !== 'دیارنەکری') {
             if (!isSectionValue(s.grade)) {
                 gradesSet.add(s.grade.trim());
             }
-        } 
+        }
     });
-    
+
     // ترتيب المراحل دراسياً وأكاديمياً من الأول إلى الثاني عشر
     const sortedGrades = Array.from(gradesSet).sort((a, b) => {
         const rankA = getGradeRank(a);
@@ -2487,7 +2658,7 @@ function populateGradeFilter() {
         if (filterSelect) filterSelect.value = 'all';
         if (selectedLabel) selectedLabel.textContent = dict.all_grades;
     }
-    
+
     if (gradesSet.size > 0) {
         if (dropdownBtn) {
             dropdownBtn.classList.remove('hidden');
@@ -2522,7 +2693,7 @@ function selectGradeOption(val, label) {
     const selectedLabel = document.getElementById('selectedGradeLabel');
     const menu = document.getElementById('gradeDropdownMenu');
     const arrow = document.getElementById('gradeDropdownArrow');
-    
+
     if (filterSelect) filterSelect.value = val;
     if (selectedLabel) selectedLabel.textContent = label;
     if (menu) menu.classList.add('hidden');
@@ -2561,8 +2732,8 @@ function displayResults() {
         badgeLabel = dict.badge_groups_sib;
     } else if (activeTab === 'diff_grades') {
         currentResults = diffGradesSiblingResults;
-        const isDouble = getShiftConfig().mode === 'double';
-        badgeLabel = isDouble ? (dict.badge_groups_split_shifts || 'خێزانێن دەوامێن جودا') : (dict.badge_groups_diff_grades || 'خێزانێن پۆلێن جودا');
+        const isShiftActive = getShiftConfig().mode !== 'single';
+        badgeLabel = isShiftActive ? (dict.badge_groups_split_shifts || 'خێزانێن دەوامێن جودا') : (dict.badge_groups_diff_grades || 'خێزانێن پۆلێن جودا');
     } else if (activeTab === 'relatives') {
         currentResults = paternalResults.length > 0 ? paternalResults : relativeResults;
         badgeLabel = dict.badge_groups_rel || 'کۆمێن کەسوکاران (باب)';
@@ -2647,12 +2818,11 @@ function displayResults() {
         filterResults();
     }
 }
-
 function renderSiblingsList(groups) {
     const resultsArea = document.getElementById('resultsArea');
     const dict = translations[currentLang];
     const shiftConfig = getShiftConfig();
-    const isDoubleShift = shiftConfig.mode === 'double';
+    const isShiftActive = shiftConfig.mode !== 'single';
     let htmlContent = '';
 
     groups.forEach((group, groupIdx) => {
@@ -2660,9 +2830,9 @@ function renderSiblingsList(groups) {
         let hasEvening = false;
         let groupShiftStatus = 'unknown';
 
-        if (isDoubleShift) {
+        if (isShiftActive) {
             group.students.forEach(s => {
-                const sh = s.shift || getStudentShift(s, shiftConfig.morningList, shiftConfig.eveningList);
+                const sh = s.shift || getStudentShift(s, shiftConfig);
                 s.shift = sh;
                 if (sh === 'morning') hasMorning = true;
                 if (sh === 'evening') hasEvening = true;
@@ -2693,8 +2863,8 @@ function renderSiblingsList(groups) {
                         <span class="text-[8px] text-slate-500 dark:text-slate-400 font-bold">${dict.family_label}</span>
                         <span class="text-xs font-extrabold ${isSplit ? 'text-amber-900 dark:text-amber-200' : 'text-blue-900/90 dark:text-blue-200'} tracking-tight">${group.sharedName}</span>
                         ${isSplit ? `<span class="clay-badge text-[8px] text-amber-900 dark:text-amber-100 bg-amber-200/90 dark:bg-amber-900/90 px-1.5 py-0.2 font-extrabold border border-amber-400 dark:border-amber-600 shadow-2xs">${dict.shift_split_badge || '⚠️ دەوامێن جودا'}</span>` : ''}
-                        ${groupShiftStatus === 'morning' ? `<span class="clay-badge text-[7.5px] text-amber-800 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 px-1.5 py-0.2 font-bold border border-amber-200/80">${dict.shift_same_morning || '☀️ سپێدە'}</span>` : ''}
-                        ${groupShiftStatus === 'evening' ? `<span class="clay-badge text-[7.5px] text-indigo-800 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/40 px-1.5 py-0.2 font-bold border border-indigo-200/80">${dict.shift_same_evening || '🌙 ئێڤار'}</span>` : ''}
+                        ${groupShiftStatus === 'morning' ? `<span class="clay-badge text-[7.5px] text-amber-800 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 px-1.5 py-0.2 font-bold border border-amber-200/80">${shiftConfig.shift1Icon} ${shiftConfig.shift1Name}</span>` : ''}
+                        ${groupShiftStatus === 'evening' ? `<span class="clay-badge text-[7.5px] text-indigo-800 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/40 px-1.5 py-0.2 font-bold border border-indigo-200/80">${shiftConfig.shift2Icon} ${shiftConfig.shift2Name}</span>` : ''}
                     </div>
                     <div class="flex items-center gap-1">
                         <button onclick="copyFamilyCard(${groupIdx})" class="clay-btn-sec text-[8px] px-1.5 py-0.2 font-bold shadow-2xs no-print flex items-center gap-0.5">
@@ -2709,9 +2879,9 @@ function renderSiblingsList(groups) {
                 <!-- قائمة الطلاب الإخوة -->
                 <ul class="space-y-0.5">
                     ${group.students.map((student) => {
-                        const isTwin = group.students.filter(s => s.grade === student.grade).length > 1;
-                        const studentShift = isDoubleShift ? (student.shift || getStudentShift(student, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
-                        return `
+            const isTwin = group.students.filter(s => s.grade === student.grade).length > 1;
+            const studentShift = isShiftActive ? (student.shift || getStudentShift(student, shiftConfig)) : 'unknown';
+            return `
                             <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1.5 bg-slate-50/90 dark:bg-slate-800/60 rounded hover:bg-white dark:hover:bg-slate-800 transition shadow-2xs border border-slate-200/60 dark:border-slate-700/50 gap-1 min-h-[24px]">
                                 <div class="flex flex-wrap items-center gap-1 min-w-0">
                                     <span class="student-avatar-box w-4 h-4 rounded ${isSplit ? (studentShift === 'morning' ? 'bg-amber-100 text-amber-700 border-amber-300' : 'bg-indigo-100 text-indigo-700 border-indigo-300') : 'bg-blue-100/90 dark:bg-slate-700/90 text-blue-600 dark:text-sky-300 border-blue-200/60 dark:border-blue-400/40'} flex items-center justify-center shadow-xs">
@@ -2720,8 +2890,8 @@ function renderSiblingsList(groups) {
                                     <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                                     ${isTwin ? `<span class="bg-amber-100/90 text-amber-800 dark:bg-amber-950 dark:text-amber-300 text-[7.5px] px-1 py-0.1 rounded font-bold border border-amber-200 dark:border-amber-800/50">${dict.twin_warn}</span>` : ''}
                                     ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
-                                    ${isDoubleShift && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>` : ''}
-                                    ${isDoubleShift && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>` : ''}
+                                    ${isShiftActive && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">${shiftConfig.shift1Icon} ${shiftConfig.shift1Name}</span>` : ''}
+                                    ${isShiftActive && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">${shiftConfig.shift2Icon} ${shiftConfig.shift2Name}</span>` : ''}
                                 </div>
                                 <div class="flex items-center gap-0.5 flex-shrink-0">
                                     <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
@@ -2730,7 +2900,7 @@ function renderSiblingsList(groups) {
                                 </div>
                             </li>
                         `;
-                    }).join('')}
+        }).join('')}
                 </ul>
             </div>
         `;
@@ -2742,7 +2912,7 @@ function renderRelativesList(groups) {
     const resultsArea = document.getElementById('resultsArea');
     const dict = translations[currentLang];
     const shiftConfig = getShiftConfig();
-    const isDoubleShift = shiftConfig.mode === 'double';
+    const isShiftActive = shiftConfig.mode !== 'single';
     let htmlContent = '';
 
     groups.forEach((group, groupIdx) => {
@@ -2757,10 +2927,10 @@ function renderRelativesList(groups) {
         let hasEvening = false;
         let groupShiftStatus = 'unknown';
 
-        if (isDoubleShift) {
+        if (isShiftActive) {
             const allSt = Object.values(group.branches).flatMap(b => b);
             allSt.forEach(s => {
-                const sh = s.shift || getStudentShift(s, shiftConfig.morningList, shiftConfig.eveningList);
+                const sh = s.shift || getStudentShift(s, shiftConfig);
                 if (sh === 'morning') hasMorning = true;
                 if (sh === 'evening') hasEvening = true;
             });
@@ -2783,6 +2953,8 @@ function renderRelativesList(groups) {
                         <span class="text-xs font-extrabold ${tagColor} tracking-tight">
                             ${group.sharedKey}
                         </span>
+                        ${groupShiftStatus === 'morning' ? `<span class="clay-badge text-[7.5px] text-amber-800 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 px-1.5 py-0.2 font-bold border border-amber-200/80">${shiftConfig.shift1Icon} ${shiftConfig.shift1Name}</span>` : ''}
+                        ${groupShiftStatus === 'evening' ? `<span class="clay-badge text-[7.5px] text-indigo-800 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/40 px-1.5 py-0.2 font-bold border border-indigo-200/80">${shiftConfig.shift2Icon} ${shiftConfig.shift2Name}</span>` : ''}
                     </div>
                     <div class="flex items-center gap-1">
                         <button onclick="copyRelativeCard(${groupIdx})" class="clay-btn-sec text-[8px] px-1.5 py-0.2 font-bold shadow-2xs no-print flex items-center gap-0.5">
@@ -2797,8 +2969,8 @@ function renderRelativesList(groups) {
                 <!-- فروع الأب والأم المترابطة داخل الكارت الموحد بتصميم نحيف وسريع القراءة -->
                 <div class="space-y-1">
                     ${Object.keys(group.branches).map(branchKey => {
-                        const branchStudents = group.branches[branchKey];
-                        return `
+            const branchStudents = group.branches[branchKey];
+            return `
                             <div class="${isMaternal ? 'bg-pink-50/50 dark:bg-pink-950/20 border-pink-100/80 dark:border-pink-900/40' : 'bg-indigo-50/50 dark:bg-indigo-950/20 border-indigo-100/80 dark:border-indigo-900/40'} p-1.5 rounded-lg border">
                                 <!-- عنوان الفرع المدمج -->
                                 <div class="flex items-center justify-between pb-0.5 mb-1 border-b border-slate-200/40 dark:border-slate-700/40">
@@ -2817,8 +2989,8 @@ function renderRelativesList(groups) {
                                 <!-- قائمة طلاب هذا الفرع بنظام الصفوف النحيفة -->
                                 <ul class="space-y-0.5">
                                     ${branchStudents.map(student => {
-                                        const studentShift = isDoubleShift ? (student.shift || getStudentShift(student, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
-                                        return `
+                const studentShift = isShiftActive ? (student.shift || getStudentShift(student, shiftConfig)) : 'unknown';
+                return `
                                         <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1 bg-white/95 dark:bg-slate-800/90 rounded border border-slate-100/80 dark:border-slate-700/60 shadow-2xs hover:bg-slate-50 transition gap-1 min-h-[23px]">
                                             <div class="flex flex-wrap items-center gap-1 min-w-0">
                                                 <span class="student-avatar-box w-4 h-4 rounded bg-indigo-100/90 dark:bg-slate-700/90 text-indigo-600 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-400/40 flex items-center justify-center shadow-xs">
@@ -2829,8 +3001,8 @@ function renderRelativesList(groups) {
                                                     <span class="text-[7.5px] bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">
                                                         🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span>
                                                     </span>` : ''}
-                                                ${isDoubleShift && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>` : ''}
-                                                ${isDoubleShift && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>` : ''}
+                                                ${isShiftActive && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">${shiftConfig.shift1Icon} ${shiftConfig.shift1Name}</span>` : ''}
+                                                ${isShiftActive && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">${shiftConfig.shift2Icon} ${shiftConfig.shift2Name}</span>` : ''}
                                             </div>
                                             <div class="flex items-center gap-0.5 flex-shrink-0">
                                                 <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
@@ -2842,7 +3014,7 @@ function renderRelativesList(groups) {
                                 </ul>
                             </div>
                         `;
-                    }).join('')}
+        }).join('')}
                 </div>
             </div>
         `;
@@ -2855,7 +3027,7 @@ function renderSolitaryList(students) {
     const resultsArea = document.getElementById('resultsArea');
     const dict = translations[currentLang];
     const shiftConfig = getShiftConfig();
-    const isDoubleShift = shiftConfig.mode === 'double';
+    const isShiftActive = shiftConfig.mode !== 'single';
 
     let htmlContent = `
         <div class="clay-card p-1.5 sm:p-2 mb-1.5 border-rose-200 dark:border-rose-900/60 bg-rose-50/40 dark:bg-slate-800 flex items-center justify-between shadow-2xs">
@@ -2873,7 +3045,7 @@ function renderSolitaryList(students) {
     `;
 
     students.forEach((student) => {
-        const studentShift = isDoubleShift ? (student.shift || getStudentShift(student, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
+        const studentShift = isShiftActive ? (student.shift || getStudentShift(student, shiftConfig)) : 'unknown';
         htmlContent += `
             <div class="group-card group-card-solitary transition duration-150" 
                  data-shared="${student.name}" 
@@ -2888,8 +3060,8 @@ function renderSolitaryList(students) {
                         <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                         ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
                         <span class="bg-rose-100/80 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-[7.5px] px-1 py-0.1 rounded font-bold border border-rose-200 dark:border-rose-800/50">بێ کەسوکار</span>
-                        ${isDoubleShift && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>` : ''}
-                        ${isDoubleShift && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>` : ''}
+                        ${isShiftActive && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">${shiftConfig.shift1Icon} ${shiftConfig.shift1Name}</span>` : ''}
+                        ${isShiftActive && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">${shiftConfig.shift2Icon} ${shiftConfig.shift2Name}</span>` : ''}
                     </div>
                     <div class="flex items-center gap-0.5 flex-shrink-0">
                         <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
@@ -2908,7 +3080,7 @@ function renderDuplicatesList(groups) {
     const resultsArea = document.getElementById('resultsArea');
     const dict = translations[currentLang];
     const shiftConfig = getShiftConfig();
-    const isDoubleShift = shiftConfig.mode === 'double';
+    const isShiftActive = shiftConfig.mode !== 'single';
     let htmlContent = '';
 
     groups.forEach((group, groupIdx) => {
@@ -2916,9 +3088,9 @@ function renderDuplicatesList(groups) {
         let hasEvening = false;
         let groupShiftStatus = 'unknown';
 
-        if (isDoubleShift) {
+        if (isShiftActive) {
             group.students.forEach(s => {
-                const sh = s.shift || getStudentShift(s, shiftConfig.morningList, shiftConfig.eveningList);
+                const sh = s.shift || getStudentShift(s, shiftConfig);
                 if (sh === 'morning') hasMorning = true;
                 if (sh === 'evening') hasEvening = true;
             });
@@ -2939,6 +3111,8 @@ function renderDuplicatesList(groups) {
                         <span class="text-xs">👥</span>
                         <span class="text-[8px] text-slate-500 dark:text-slate-400 font-bold">${dict.duplicates_title || 'ناڤێ وەکهەڤ:'}</span>
                         <span class="text-xs font-extrabold text-teal-900/90 dark:text-teal-200 tracking-tight">${group.sharedName}</span>
+                        ${groupShiftStatus === 'morning' ? `<span class="clay-badge text-[7.5px] text-amber-800 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 px-1.5 py-0.2 font-bold border border-amber-200/80">${shiftConfig.shift1Icon} ${shiftConfig.shift1Name}</span>` : ''}
+                        ${groupShiftStatus === 'evening' ? `<span class="clay-badge text-[7.5px] text-indigo-800 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/40 px-1.5 py-0.2 font-bold border border-indigo-200/80">${shiftConfig.shift2Icon} ${shiftConfig.shift2Name}</span>` : ''}
                     </div>
                     <div class="flex items-center gap-1">
                         <button onclick="copyDuplicateCard(${groupIdx})" class="clay-btn-sec text-[8px] px-1.5 py-0.2 font-bold shadow-2xs no-print flex items-center gap-0.5">
@@ -2953,8 +3127,8 @@ function renderDuplicatesList(groups) {
                 <!-- قائمة الطلاب المتشابهين -->
                 <ul class="space-y-0.5">
                     ${group.students.map((student) => {
-                        const studentShift = isDoubleShift ? (student.shift || getStudentShift(student, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
-                        return `
+            const studentShift = isShiftActive ? (student.shift || getStudentShift(student, shiftConfig)) : 'unknown';
+            return `
                             <li class="flex flex-wrap items-center justify-between text-[10.5px] py-0.5 px-1.5 bg-slate-50/90 dark:bg-slate-800/60 rounded hover:bg-white dark:hover:bg-slate-800 transition shadow-2xs border border-slate-200/60 dark:border-slate-700/50 gap-1 min-h-[24px]">
                                 <div class="flex flex-wrap items-center gap-1 min-w-0">
                                     <span class="student-avatar-box w-4 h-4 rounded bg-teal-100/90 dark:bg-slate-700/90 text-teal-600 dark:text-teal-300 border border-teal-200/60 dark:border-teal-400/40 flex items-center justify-center shadow-xs">
@@ -2962,8 +3136,8 @@ function renderDuplicatesList(groups) {
                                     </span>
                                     <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'name', this.innerText)" class="font-bold text-slate-800 dark:text-slate-100 text-[11px] focus:outline-none focus:bg-amber-50 dark:focus:bg-slate-700 rounded px-0.5">${student.name}</span>
                                     ${student.mother ? `<span class="bg-pink-50 dark:bg-pink-950/60 text-pink-700 dark:text-pink-300 text-[7.5px] px-1 py-0.1 rounded font-semibold border border-pink-200/60 dark:border-pink-800/40 flex items-center gap-0.5">🌸 <span>${dict.mother_label}</span> <span>${student.mother}</span></span>` : ''}
-                                    ${isDoubleShift && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>` : ''}
-                                    ${isDoubleShift && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>` : ''}
+                                    ${isShiftActive && studentShift === 'morning' ? `<span class="bg-amber-100/90 text-amber-900 dark:bg-amber-950 dark:text-amber-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-amber-300 dark:border-amber-700/60">${shiftConfig.shift1Icon} ${shiftConfig.shift1Name}</span>` : ''}
+                                    ${isShiftActive && studentShift === 'evening' ? `<span class="bg-indigo-100/90 text-indigo-900 dark:bg-indigo-950 dark:text-indigo-200 text-[7px] px-1 py-0.1 rounded font-extrabold border border-indigo-300 dark:border-indigo-700/60">${shiftConfig.shift2Icon} ${shiftConfig.shift2Name}</span>` : ''}
                                 </div>
                                 <div class="flex items-center gap-0.5 flex-shrink-0">
                                     <span class="clay-badge text-[7.5px] text-blue-700 dark:text-blue-300 bg-blue-50/80 dark:bg-blue-950/50 px-1 py-0.1 font-bold border border-blue-200/60 dark:border-blue-800/50">${dict.grade_label} <span contenteditable="true" onblur="updateStudentValue(${student.id}, 'grade', this.innerText)" class="font-extrabold">${student.grade}</span></span>
@@ -2972,7 +3146,7 @@ function renderDuplicatesList(groups) {
                                 </div>
                             </li>
                         `;
-                    }).join('')}
+        }).join('')}
                 </ul>
             </div>
         `;
@@ -3146,7 +3320,7 @@ function filterByGrade() {
     if (selectedGrade === 'all') {
         let currentResults = activeTab === 'all' ? studentPool : (activeTab === 'siblings' ? siblingResults : (activeTab === 'diff_grades' ? diffGradesSiblingResults : (activeTab === 'relatives' ? relativeResults : (activeTab === 'solitary' ? solitaryResults : duplicateResults))));
         let badgeLabel = activeTab === 'all' ? dict.badge_groups_all : (activeTab === 'siblings' ? dict.badge_groups_sib : (activeTab === 'diff_grades' ? (dict.badge_groups_diff_grades || 'خێزانێن پۆلێن جودا') : (activeTab === 'relatives' ? dict.badge_groups_rel : (activeTab === 'solitary' ? dict.badge_groups_sol : dict.badge_groups_dup))));
-        
+
         resultsCount.textContent = `${currentResults.length} ${badgeLabel}`;
         resultsCount.classList.remove('hidden');
         searchFilterContainer.classList.remove('hidden');
@@ -3242,7 +3416,7 @@ function filterResults() {
 
         const matchesSearch = !query || searchPool.includes(query);
         let matchesShift = true;
-        
+
         if (isDoubleShift && shiftFilter !== 'all') {
             if (shiftFilter === 'split') {
                 matchesShift = (cardShift === 'split');
@@ -3270,8 +3444,8 @@ function filterResults() {
 function exportToCSV() {
     if (studentPool.length === 0) return;
     const dict = translations[currentLang];
-    let csvContent = "data:text/csv;charset=utf-8,\uFEFF"; 
-    
+    let csvContent = "data:text/csv;charset=utf-8,\uFEFF";
+
     if (activeTab === 'all') {
         csvContent += `#,${dict.csv_name},${dict.mother_label},${dict.grade_label},${dict.section_label}\n`;
         studentPool.forEach((s, idx) => {
@@ -3336,7 +3510,7 @@ function exportToExcelXLSX() {
     exportStyledFamilyCardsToExcel();
 }
 
-// 🌐 تصدير وحفظ التقرير كملف HTML مطابق 100% لتصميم الموقع بأسلوب Claymorphism التفاعلي
+// 🌐 تصدير وحفظ التقرير كملف HTML مطابق 100% لتصميم الموقع بأسلوب Claymorphism التفاعلي مع دعم تحديد الأقسام والخط الموحد
 function exportToHTML() {
     if (studentPool.length === 0) {
         showToast(translations[currentLang].results_empty_title || "چو داتا نینن");
@@ -3345,26 +3519,95 @@ function exportToHTML() {
 
     const dict = translations[currentLang];
     const isRtl = dict.dir === 'rtl';
-    const schoolName = localStorage.getItem('report_school_name') || 'قوتابخانە';
-    const directorate = localStorage.getItem('report_directorate') || '';
-    const academicYear = localStorage.getItem('report_academic_year') || '2025 - 2026';
-    const principalName = localStorage.getItem('report_principal') || '';
-    const currentDate = new Date().toLocaleDateString();
+    const schoolName = (document.getElementById('reportSchoolName')?.value || localStorage.getItem('report_school_name') || 'قوتابخانە').trim();
+    const directorate = (document.getElementById('reportDirectorate')?.value || localStorage.getItem('report_directorate') || '').trim();
+    const academicYear = (document.getElementById('reportAcademicYear')?.value || localStorage.getItem('report_academic_year') || '2025 - 2026').trim();
+    const principalName = (document.getElementById('reportPrincipalName')?.value || localStorage.getItem('report_principal') || '').trim();
+    const currentDate = new Date().toLocaleDateString(currentLang === 'en' ? 'en-US' : (currentLang === 'ar' ? 'ar-IQ' : 'ku-IQ'));
     const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
-    // حساب الإحصائيات
-    const totalStudents = studentPool.length;
-    const totalSiblingGroups = siblingResults.length;
-    const totalSiblingStudents = siblingResults.reduce((acc, g) => acc + g.students.length, 0);
-    const totalRelativeGroups = relativeResults.length;
-    const totalRelativeStudents = relativeResults.reduce((acc, g) => acc + (g.totalCount || Object.values(g.branches || {}).reduce((a,b)=>a+b.length, 0)), 0);
-    const totalSolitaryStudents = solitaryResults.length;
-    const totalDuplicateGroups = duplicateResults.length;
-    const totalDuplicatesCount = duplicateResults.reduce((acc, g) => acc + g.students.length, 0);
+    // 🎯 قراءة خيارات تحديد الأقسام والمراحل والأعمدة المراد حفظها
+    const scope = document.getElementById('reportScopeSelect')?.value || 'all-sections';
+    const selectedGrade = document.getElementById('reportGradeFilterSelect')?.value || 'all';
+    const showIndex = document.getElementById('colShowIndex')?.checked ?? true;
+    const showMother = document.getElementById('colShowMother')?.checked ?? true;
+    const showGrade = document.getElementById('colShowGrade')?.checked ?? true;
+    const showFamilyHeader = document.getElementById('colShowFamilyHeader')?.checked ?? true;
+
+    // تحديد الأقسام المشمولة بالحفظ والتصدير
+    let includeSiblings = false;
+    let includeRelatives = false;
+    let includeSolitary = false;
+    let includeAll = false;
+    let includeDuplicates = false;
+
+    if (scope === 'all-sections') {
+        includeSiblings = true;
+        includeRelatives = true;
+        includeSolitary = true;
+        includeAll = true;
+        includeDuplicates = true;
+    } else if (scope === 'siblings-only') {
+        includeSiblings = true;
+    } else if (scope === 'relatives-only') {
+        includeRelatives = true;
+    } else if (scope === 'solitary-only') {
+        includeSolitary = true;
+    } else if (scope === 'all-students-only') {
+        includeAll = true;
+    } else if (scope === 'duplicates-only') {
+        includeDuplicates = true;
+    } else if (scope === 'current-tab') {
+        if (activeTab === 'siblings' || activeTab === 'diff_grades' || activeTab === 'split_shifts') includeSiblings = true;
+        else if (activeTab === 'relatives' || activeTab === 'maternal') includeRelatives = true;
+        else if (activeTab === 'solitary') includeSolitary = true;
+        else if (activeTab === 'all') includeAll = true;
+        else if (activeTab === 'duplicates') includeDuplicates = true;
+        else includeSiblings = true;
+    } else {
+        includeSiblings = true;
+        includeRelatives = true;
+        includeSolitary = true;
+        includeAll = true;
+        includeDuplicates = true;
+    }
+
+    // تصفية البيانات حسب المرحلة المحددة إذا تم اختيار مرحلة معينة
+    const isGradeFiltered = selectedGrade && selectedGrade !== 'all';
+
+    const activeStudentPool = isGradeFiltered
+        ? studentPool.filter(s => s.grade && s.grade.trim() === selectedGrade.trim())
+        : studentPool;
+
+    const activeSiblingResults = isGradeFiltered
+        ? siblingResults.filter(group => group.students.some(s => s.grade && s.grade.trim() === selectedGrade.trim()))
+        : siblingResults;
+
+    const activeRelativeResults = isGradeFiltered
+        ? relativeResults.filter(group => Object.values(group.branches || {}).some(branch => branch.some(s => s.grade && s.grade.trim() === selectedGrade.trim())))
+        : relativeResults;
+
+    const activeSolitaryResults = isGradeFiltered
+        ? solitaryResults.filter(s => s.grade && s.grade.trim() === selectedGrade.trim())
+        : solitaryResults;
+
+    const activeDuplicateResults = isGradeFiltered
+        ? duplicateResults.filter(group => group.students.some(s => s.grade && s.grade.trim() === selectedGrade.trim()))
+        : duplicateResults;
+
+    // حساب الإحصائيات الدقيقة
+    const totalStudents = activeStudentPool.length;
+    const totalSiblingGroups = activeSiblingResults.length;
+    const totalSiblingStudents = activeSiblingResults.reduce((acc, g) => acc + g.students.length, 0);
+    const totalRelativeGroups = activeRelativeResults.length;
+    const totalRelativeStudents = activeRelativeResults.reduce((acc, g) => acc + (g.totalCount || Object.values(g.branches || {}).reduce((a, b) => a + b.length, 0)), 0);
+    const totalSolitaryStudents = activeSolitaryResults.length;
+    const totalDuplicateGroups = activeDuplicateResults.length;
+    const totalDuplicatesCount = activeDuplicateResults.reduce((acc, g) => acc + g.students.length, 0);
 
     // حساب التوائم
     let twinCount = 0;
-    siblingResults.forEach(group => {
+    activeSiblingResults.forEach(group => {
         const gradesInFamily = {};
         group.students.forEach(s => {
             if (s.grade && s.grade !== '-') {
@@ -3378,7 +3621,7 @@ function exportToHTML() {
 
     // قائمة المراحل الفريدة
     const gradeCounts = {};
-    studentPool.forEach(s => {
+    activeStudentPool.forEach(s => {
         if (s.grade && s.grade.trim() !== '' && s.grade !== '-') {
             const g = s.grade.trim();
             gradeCounts[g] = (gradeCounts[g] || 0) + 1;
@@ -3386,277 +3629,293 @@ function exportToHTML() {
     });
     const uniqueGrades = Object.keys(gradeCounts).sort(compareGrades);
 
-    // دالة حماية النصوص
     function escapeHtml(str) {
         if (!str && str !== 0) return '';
-        return String(str)
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, '&#039;');
+        return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
     }
 
     // 1. بطاقات الإخوة الأشقاء
     const shiftConfig = getShiftConfig();
     const isDoubleShift = shiftConfig.mode === 'double';
     let siblingsHtml = '';
-    if (siblingResults.length === 0) {
-        siblingsHtml = `<div class="empty-state-box">🔍 <p class="empty-title">${escapeHtml(dict.results_empty_title)}</p><p class="empty-desc">${escapeHtml(dict.results_empty_desc)}</p></div>`;
-    } else {
-        siblingResults.forEach((group, idx) => {
-            let hasMorning = false;
-            let hasEvening = false;
-            let groupShiftStatus = 'unknown';
+    if (includeSiblings) {
+        if (activeSiblingResults.length === 0) {
+            siblingsHtml = `<div class="empty-state-box">🔍 <p class="empty-title">${escapeHtml(dict.results_empty_title)}</p><p class="empty-desc">${escapeHtml(dict.results_empty_desc)}</p></div>`;
+        } else {
+            activeSiblingResults.forEach((group, idx) => {
+                let hasMorning = false;
+                let hasEvening = false;
+                let groupShiftStatus = 'unknown';
 
-            if (isDoubleShift) {
-                group.students.forEach(s => {
-                    const sh = getStudentShift(s.section, shiftConfig.morningList, shiftConfig.eveningList);
-                    s.shift = sh;
-                    if (sh === 'morning') hasMorning = true;
-                    if (sh === 'evening') hasEvening = true;
-                });
+                if (isDoubleShift) {
+                    group.students.forEach(s => {
+                        const sh = getStudentShift(s.section, shiftConfig.morningList, shiftConfig.eveningList);
+                        s.shift = sh;
+                        if (sh === 'morning') hasMorning = true;
+                        if (sh === 'evening') hasEvening = true;
+                    });
 
-                if (hasMorning && hasEvening) {
-                    groupShiftStatus = 'split';
-                } else if (hasMorning && !hasEvening) {
-                    groupShiftStatus = 'morning';
-                } else if (hasEvening && !hasMorning) {
-                    groupShiftStatus = 'evening';
+                    if (hasMorning && hasEvening) {
+                        groupShiftStatus = 'split';
+                    } else if (hasMorning && !hasEvening) {
+                        groupShiftStatus = 'morning';
+                    } else if (hasEvening && !hasMorning) {
+                        groupShiftStatus = 'evening';
+                    }
                 }
-            }
 
-            const isSplit = groupShiftStatus === 'split';
-            const cardClass = isSplit ? 'group-card group-card-sibling group-card-split-shift' : 'group-card group-card-sibling';
-            const searchPool = group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''} ${s.shift || ''}`).join(' ');
-            const gradesList = group.students.map(s => s.grade || '').join(' ');
+                const isSplit = groupShiftStatus === 'split';
+                const cardClass = isSplit ? 'group-card group-card-sibling group-card-split-shift' : 'group-card group-card-sibling';
+                const searchPool = group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''} ${s.shift || ''}`).join(' ');
+                const gradesList = group.students.map(s => s.grade || '').join(' ');
 
-            siblingsHtml += `
-            <div class="${cardClass}" data-family="${escapeHtml(group.sharedName)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(gradesList)}">
-                <div class="group-card-header">
-                    <div class="header-main-info">
-                        <span class="header-icon">${isSplit ? '⚠️' : '👨‍👩‍👦'}</span>
-                        <span class="header-label">${escapeHtml(dict.family_label || 'بنەمالە / باپیرێ هەڤپشک:')}</span>
-                        <span class="header-name ${isSplit ? 'text-amber-theme' : 'text-blue-theme'}">${escapeHtml(group.sharedName)}</span>
-                        ${isSplit ? `<span class="clay-badge badge-amber font-extrabold">${escapeHtml(dict.shift_split_badge || '⚠️ دەوامێن جودا')}</span>` : ''}
-                        ${groupShiftStatus === 'morning' ? `<span class="clay-badge badge-amber">${escapeHtml(dict.shift_same_morning || '☀️ سپێدە')}</span>` : ''}
-                        ${groupShiftStatus === 'evening' ? `<span class="clay-badge badge-indigo">${escapeHtml(dict.shift_same_evening || '🌙 ئێڤار')}</span>` : ''}
-                    </div>
-                    <div class="header-actions">
-                        <button onclick="copyGroupCard(this)" class="clay-btn-sec action-pill no-print">
-                            <span>📋</span> <span>${escapeHtml(dict.copy_btn || 'کۆپی')}</span>
-                        </button>
-                        <span class="clay-badge ${isSplit ? 'badge-amber' : 'badge-blue'}">
-                            👥 ${escapeHtml(dict.siblings_count || 'قوتابی:')} <strong>${group.students.length}</strong>
-                        </span>
-                    </div>
-                </div>
-                <ul class="students-list">
-            `;
-            group.students.forEach((s, sIdx) => {
-                const isTwin = group.students.filter(st => st.grade === s.grade).length > 1;
-                const studentShift = isDoubleShift ? (s.shift || getStudentShift(s.section, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
                 siblingsHtml += `
-                    <li class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(s.name + ' ' + (s.mother || '') + ' ' + (s.grade || '') + ' ' + (s.section || ''))}">
-                        <div class="student-info-side">
-                            <span class="student-avatar-box ${isSplit ? (studentShift === 'morning' ? 'avatar-amber' : 'avatar-indigo') : 'avatar-blue'}">👤</span>
-                            <span class="student-name">${escapeHtml(s.name)}</span>
-                            ${isTwin ? `<span class="tag-twin">${escapeHtml(dict.twin_warn || '⚠️ دووانە؟')}</span>` : ''}
-                            ${s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
-                            ${isDoubleShift && studentShift === 'morning' ? `<span class="tag-shift-morning">☀️ ${escapeHtml(dict.shift_tag_morning || 'سپێدە')}</span>` : ''}
-                            ${isDoubleShift && studentShift === 'evening' ? `<span class="tag-shift-evening">🌙 ${escapeHtml(dict.shift_tag_evening || 'ئێڤار')}</span>` : ''}
+                <div class="${cardClass}" data-family="${escapeHtml(group.sharedName)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(gradesList)}">
+                    ${showFamilyHeader ? `
+                    <div class="group-card-header">
+                        <div class="header-main-info">
+                            <span class="header-icon">${isSplit ? '⚠️' : '👨‍👩‍👦'}</span>
+                            <span class="header-label">${escapeHtml(dict.family_label || 'بنەمالە / باپیرێ هەڤپشک:')}</span>
+                            <span class="header-name ${isSplit ? 'text-amber-theme' : 'text-blue-theme'}">${escapeHtml(group.sharedName)}</span>
+                            ${isSplit ? `<span class="clay-badge badge-amber font-extrabold">${escapeHtml(dict.shift_split_badge || '⚠️ دەوامێن جودا')}</span>` : ''}
+                            ${groupShiftStatus === 'morning' ? `<span class="clay-badge badge-amber">${escapeHtml(dict.shift_same_morning || '☀️ سپێدە')}</span>` : ''}
+                            ${groupShiftStatus === 'evening' ? `<span class="clay-badge badge-indigo">${escapeHtml(dict.shift_same_evening || '🌙 ئێڤار')}</span>` : ''}
                         </div>
-                        <div class="student-meta-side">
-                            <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
-                            <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
+                        <div class="header-actions">
+                            <button onclick="copyGroupCard(this)" class="clay-btn-sec action-pill no-print">
+                                <span>📋</span> <span>${escapeHtml(dict.copy_btn || 'کۆپی')}</span>
+                            </button>
+                            <span class="clay-badge ${isSplit ? 'badge-amber' : 'badge-blue'}">
+                                👥 ${escapeHtml(dict.siblings_count || 'قوتابی:')} <strong>${group.students.length}</strong>
+                            </span>
                         </div>
-                    </li>
+                    </div>` : ''}
+                    <ul class="students-list">
+                `;
+                group.students.forEach((s, sIdx) => {
+                    const isTwin = group.students.filter(st => st.grade === s.grade).length > 1;
+                    const studentShift = isDoubleShift ? (s.shift || getStudentShift(s.section, shiftConfig.morningList, shiftConfig.eveningList)) : 'unknown';
+                    siblingsHtml += `
+                        <li class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(s.name + ' ' + (s.mother || '') + ' ' + (s.grade || '') + ' ' + (s.section || ''))}">
+                            <div class="student-info-side">
+                                ${showIndex ? `<span class="student-index-badge">#${sIdx + 1}</span>` : ''}
+                                <span class="student-avatar-box ${isSplit ? (studentShift === 'morning' ? 'avatar-amber' : 'avatar-indigo') : 'avatar-blue'}">👤</span>
+                                <span class="student-name">${escapeHtml(s.name)}</span>
+                                ${isTwin ? `<span class="tag-twin">${escapeHtml(dict.twin_warn || '⚠️ دووانە؟')}</span>` : ''}
+                                ${showMother && s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
+                                ${isDoubleShift && studentShift === 'morning' ? `<span class="tag-shift-morning">☀️ ${escapeHtml(dict.shift_tag_morning || 'سپێدە')}</span>` : ''}
+                                ${isDoubleShift && studentShift === 'evening' ? `<span class="tag-shift-evening">🌙 ${escapeHtml(dict.shift_tag_evening || 'ئێڤار')}</span>` : ''}
+                            </div>
+                            ${showGrade ? `
+                            <div class="student-meta-side">
+                                <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
+                                <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
+                            </div>` : ''}
+                        </li>
+                    `;
+                });
+                siblingsHtml += `
+                    </ul>
+                </div>
                 `;
             });
-            siblingsHtml += `
-                </ul>
-            </div>
-            `;
-        });
+        }
     }
 
     // 2. بطاقات الأقارب والعمومة
     let relativesHtml = '';
-    if (relativeResults.length === 0) {
-        relativesHtml = `<div class="empty-state-box">🔍 <p class="empty-title">${escapeHtml(dict.results_empty_title)}</p><p class="empty-desc">${escapeHtml(dict.results_empty_desc)}</p></div>`;
-    } else {
-        relativeResults.forEach((group, idx) => {
-            const isMaternal = group.type === 'maternal';
-            const cardClass = isMaternal ? 'group-card-maternal' : 'group-card-paternal';
-            const tagColorClass = isMaternal ? 'text-pink-theme' : 'text-indigo-theme';
-            const badgeThemeClass = isMaternal ? 'badge-pink' : 'badge-indigo';
-            const icon = isMaternal ? '🌸' : '🌿';
-            const relCategory = isMaternal ? (dict.maternal_card_title || 'ژ لایێ دەیکێ') : (dict.paternal_card_title || 'ژ لایێ بابێ');
-            const totalGroupCount = group.totalCount || Object.values(group.branches || {}).reduce((a,b)=>a+b.length, 0);
-            const allBranchStudents = Object.values(group.branches || {}).flatMap(b => b);
-            const searchPool = allBranchStudents.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ');
-            const gradesList = allBranchStudents.map(s => s.grade || '').join(' ');
+    if (includeRelatives) {
+        if (activeRelativeResults.length === 0) {
+            relativesHtml = `<div class="empty-state-box">🔍 <p class="empty-title">${escapeHtml(dict.results_empty_title)}</p><p class="empty-desc">${escapeHtml(dict.results_empty_desc)}</p></div>`;
+        } else {
+            activeRelativeResults.forEach((group, idx) => {
+                const isMaternal = group.type === 'maternal';
+                const cardClass = isMaternal ? 'group-card-maternal' : 'group-card-paternal';
+                const tagColorClass = isMaternal ? 'text-pink-theme' : 'text-indigo-theme';
+                const badgeThemeClass = isMaternal ? 'badge-pink' : 'badge-indigo';
+                const icon = isMaternal ? '🌸' : '🌿';
+                const relCategory = isMaternal ? (dict.maternal_card_title || 'ژ لایێ دەیکێ') : (dict.paternal_card_title || 'ژ لایێ بابێ');
+                const totalGroupCount = group.totalCount || Object.values(group.branches || {}).reduce((a, b) => a + b.length, 0);
+                const allBranchStudents = Object.values(group.branches || {}).flatMap(b => b);
+                const searchPool = allBranchStudents.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ');
+                const gradesList = allBranchStudents.map(s => s.grade || '').join(' ');
 
-            relativesHtml += `
-            <div class="group-card ${cardClass}" data-family="${escapeHtml(group.sharedKey)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(gradesList)}">
-                <div class="group-card-header">
-                    <div class="header-main-info">
-                        <span class="header-icon">${icon}</span>
-                        <span class="header-label">${escapeHtml(relCategory)}</span>
-                        <span class="header-name ${tagColorClass}">${escapeHtml(group.sharedKey)}</span>
-                    </div>
-                    <div class="header-actions">
-                        <button onclick="copyGroupCard(this)" class="clay-btn-sec action-pill no-print">
-                            <span>📋</span> <span>${escapeHtml(dict.copy_btn || 'کۆپی')}</span>
-                        </button>
-                        <span class="clay-badge ${badgeThemeClass}">
-                            👥 ${escapeHtml(dict.siblings_count || 'قوتابی:')} <strong>${totalGroupCount}</strong>
-                        </span>
-                    </div>
-                </div>
-                <div class="branches-wrapper">
-            `;
-            if (group.branches) {
-                Object.keys(group.branches).forEach(branchKey => {
-                    const branchStudents = group.branches[branchKey];
-                    const branchBoxClass = isMaternal ? 'branch-box-maternal' : 'branch-box-paternal';
-                    relativesHtml += `
-                    <div class="branch-box ${branchBoxClass}">
-                        <div class="branch-box-header">
-                            <div class="branch-title-wrap">
-                                <span>${isMaternal ? '🌸' : '🌿'}</span>
-                                <span class="branch-label">${isMaternal ? escapeHtml(dict.branch_label || 'دەیک:') : escapeHtml(dict.father_branch || 'تایا بابێ:')}</span>
-                                <strong class="${tagColorClass}">${escapeHtml(branchKey)}</strong>
-                            </div>
-                            <span class="clay-badge badge-neutral-soft">
-                                ${branchStudents.length} ${escapeHtml(dict.students_suffix || 'قوتابی')}
+                relativesHtml += `
+                <div class="group-card ${cardClass}" data-family="${escapeHtml(group.sharedKey)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(gradesList)}">
+                    ${showFamilyHeader ? `
+                    <div class="group-card-header">
+                        <div class="header-main-info">
+                            <span class="header-icon">${icon}</span>
+                            <span class="header-label">${escapeHtml(relCategory)}</span>
+                            <span class="header-name ${tagColorClass}">${escapeHtml(group.sharedKey)}</span>
+                        </div>
+                        <div class="header-actions">
+                            <button onclick="copyGroupCard(this)" class="clay-btn-sec action-pill no-print">
+                                <span>📋</span> <span>${escapeHtml(dict.copy_btn || 'کۆپی')}</span>
+                            </button>
+                            <span class="clay-badge ${badgeThemeClass}">
+                                👥 ${escapeHtml(dict.siblings_count || 'قوتابی:')} <strong>${totalGroupCount}</strong>
                             </span>
                         </div>
-                        <ul class="students-list">
-                    `;
-                    branchStudents.forEach(s => {
+                    </div>` : ''}
+                    <div class="branches-wrapper">
+                `;
+                if (group.branches) {
+                    Object.keys(group.branches).forEach(branchKey => {
+                        const branchStudents = group.branches[branchKey];
+                        const branchBoxClass = isMaternal ? 'branch-box-maternal' : 'branch-box-paternal';
                         relativesHtml += `
-                            <li class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(s.name + ' ' + (s.mother || '') + ' ' + (s.grade || '') + ' ' + (s.section || ''))}">
-                                <div class="student-info-side">
-                                    <span class="student-avatar-box ${isMaternal ? 'avatar-pink' : 'avatar-indigo'}">👤</span>
-                                    <span class="student-name">${escapeHtml(s.name)}</span>
-                                    ${s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
+                        <div class="branch-box ${branchBoxClass}">
+                            <div class="branch-box-header">
+                                <div class="branch-title-wrap">
+                                    <span>${isMaternal ? '🌸' : '🌿'}</span>
+                                    <span class="branch-label">${isMaternal ? escapeHtml(dict.branch_label || 'دەیک:') : escapeHtml(dict.father_branch || 'تایا بابێ:')}</span>
+                                    <strong class="${tagColorClass}">${escapeHtml(branchKey)}</strong>
                                 </div>
-                                <div class="student-meta-side">
-                                    <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
-                                    <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
-                                </div>
-                            </li>
+                                <span class="clay-badge badge-neutral-soft">
+                                    ${branchStudents.length} ${escapeHtml(dict.students_suffix || 'قوتابی')}
+                                </span>
+                            </div>
+                            <ul class="students-list">
+                        `;
+                        branchStudents.forEach((s, bIdx) => {
+                            relativesHtml += `
+                                <li class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(s.name + ' ' + (s.mother || '') + ' ' + (s.grade || '') + ' ' + (s.section || ''))}">
+                                    <div class="student-info-side">
+                                        ${showIndex ? `<span class="student-index-badge">#${bIdx + 1}</span>` : ''}
+                                        <span class="student-avatar-box ${isMaternal ? 'avatar-pink' : 'avatar-indigo'}">👤</span>
+                                        <span class="student-name">${escapeHtml(s.name)}</span>
+                                        ${showMother && s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
+                                    </div>
+                                    ${showGrade ? `
+                                    <div class="student-meta-side">
+                                        <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
+                                        <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
+                                    </div>` : ''}
+                                </li>
+                            `;
+                        });
+                        relativesHtml += `
+                            </ul>
+                        </div>
                         `;
                     });
-                    relativesHtml += `
-                        </ul>
+                }
+                relativesHtml += `
                     </div>
-                    `;
-                });
-            }
-            relativesHtml += `
                 </div>
-            </div>
-            `;
-        });
+                `;
+            });
+        }
     }
 
     // 3. بطاقات الوحيدين
     let solitaryHtml = '';
-    if (solitaryResults.length === 0) {
-        solitaryHtml = `<div class="empty-state-box">👤 <p class="empty-title">${escapeHtml(dict.no_singletons || 'چو قوتابیێن ب تنێ نینن')}</p></div>`;
-    } else {
-        solitaryResults.forEach((s) => {
+    if (includeSolitary) {
+        if (activeSolitaryResults.length === 0) {
+            solitaryHtml = `<div class="empty-state-box">👤 <p class="empty-title">${escapeHtml(dict.no_singletons || 'چو قوتابیێن ب تنێ نینن')}</p></div>`;
+        } else {
+            activeSolitaryResults.forEach((s, sIdx) => {
+                const searchPool = `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`;
+                solitaryHtml += `
+                <div class="group-card group-card-solitary" data-family="${escapeHtml(s.name)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(s.grade || '')}">
+                    <div class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(searchPool)}">
+                        <div class="student-info-side">
+                            ${showIndex ? `<span class="student-index-badge">#${sIdx + 1}</span>` : ''}
+                            <span class="student-avatar-box avatar-rose">👤</span>
+                            <span class="student-name">${escapeHtml(s.name)}</span>
+                            ${showMother && s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
+                            <span class="tag-solitary">${escapeHtml(dict.csv_solitary_type || 'ب تنێ')}</span>
+                        </div>
+                        ${showGrade ? `
+                        <div class="student-meta-side">
+                            <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
+                            <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
+                        </div>` : ''}
+                    </div>
+                </div>
+                `;
+            });
+        }
+    }
+
+    // 4. بطاقات السجل العام لكافة الطلاب
+    let allStudentsHtml = '';
+    if (includeAll) {
+        activeStudentPool.forEach((s, sIdx) => {
             const searchPool = `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`;
-            solitaryHtml += `
-            <div class="group-card group-card-solitary" data-family="${escapeHtml(s.name)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(s.grade || '')}">
+            allStudentsHtml += `
+            <div class="group-card group-card-all" data-family="${escapeHtml(s.name)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(s.grade || '')}">
                 <div class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(searchPool)}">
                     <div class="student-info-side">
-                        <span class="student-avatar-box avatar-rose">👤</span>
+                        ${showIndex ? `<span class="student-index-badge">#${sIdx + 1}</span>` : ''}
+                        <span class="student-avatar-box avatar-slate">👤</span>
                         <span class="student-name">${escapeHtml(s.name)}</span>
-                        ${s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
-                        <span class="tag-solitary">${escapeHtml(dict.csv_solitary_type || 'ب تنێ')}</span>
+                        ${showMother && s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
                     </div>
+                    ${showGrade ? `
                     <div class="student-meta-side">
                         <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
                         <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
-                    </div>
+                    </div>` : ''}
                 </div>
             </div>
             `;
         });
     }
 
-    // 4. بطاقات السجل العام لكافة الطلاب
-    let allStudentsHtml = '';
-    studentPool.forEach((s, sIdx) => {
-        const searchPool = `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`;
-        allStudentsHtml += `
-        <div class="group-card group-card-all" data-family="${escapeHtml(s.name)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(s.grade || '')}">
-            <div class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(searchPool)}">
-                <div class="student-info-side">
-                    <span class="student-index-badge">#${sIdx + 1}</span>
-                    <span class="student-avatar-box avatar-slate">👤</span>
-                    <span class="student-name">${escapeHtml(s.name)}</span>
-                    ${s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
-                </div>
-                <div class="student-meta-side">
-                    <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
-                    <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
-                </div>
-            </div>
-        </div>
-        `;
-    });
-
     // 5. بطاقات الأسماء المتشابهة
     let duplicatesHtml = '';
-    if (duplicateResults.length === 0) {
-        duplicatesHtml = `<div class="empty-state-box">🔁 <p class="empty-title">${escapeHtml(dict.no_duplicates || 'چو ناڤێن وەکهەڤ نینن')}</p></div>`;
-    } else {
-        duplicateResults.forEach((group, idx) => {
-            const searchPool = group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ');
-            const gradesList = group.students.map(s => s.grade || '').join(' ');
-            duplicatesHtml += `
-            <div class="group-card group-card-duplicate" data-family="${escapeHtml(group.sharedName)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(gradesList)}">
-                <div class="group-card-header">
-                    <div class="header-main-info">
-                        <span class="header-icon">🔁</span>
-                        <span class="header-label">${escapeHtml(dict.tab_duplicates || 'ناڤێن وەکهەڤ:')}</span>
-                        <span class="header-name text-teal-theme">${escapeHtml(group.sharedName)}</span>
-                    </div>
-                    <div class="header-actions">
-                        <button onclick="copyGroupCard(this)" class="clay-btn-sec action-pill no-print">
-                            <span>📋</span> <span>${escapeHtml(dict.copy_btn || 'کۆپی')}</span>
-                        </button>
-                        <span class="clay-badge badge-teal">
-                            👥 ${escapeHtml(dict.siblings_count || 'قوتابی:')} <strong>${group.students.length}</strong>
-                        </span>
-                    </div>
-                </div>
-                <ul class="students-list">
-            `;
-            group.students.forEach((s) => {
+    if (includeDuplicates) {
+        if (activeDuplicateResults.length === 0) {
+            duplicatesHtml = `<div class="empty-state-box">🔁 <p class="empty-title">${escapeHtml(dict.no_duplicates || 'چو ناڤێن وەکهەڤ نینن')}</p></div>`;
+        } else {
+            activeDuplicateResults.forEach((group, idx) => {
+                const searchPool = group.students.map(s => `${s.name} ${s.grade} ${s.section} ${s.mother || ''}`).join(' ');
+                const gradesList = group.students.map(s => s.grade || '').join(' ');
                 duplicatesHtml += `
-                    <li class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(s.name + ' ' + (s.mother || '') + ' ' + (s.grade || '') + ' ' + (s.section || ''))}">
-                        <div class="student-info-side">
-                            <span class="student-avatar-box avatar-teal">👤</span>
-                            <span class="student-name">${escapeHtml(s.name)}</span>
-                            ${s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
+                <div class="group-card group-card-duplicate" data-family="${escapeHtml(group.sharedName)}" data-search="${escapeHtml(searchPool)}" data-grades="${escapeHtml(gradesList)}">
+                    ${showFamilyHeader ? `
+                    <div class="group-card-header">
+                        <div class="header-main-info">
+                            <span class="header-icon">🔁</span>
+                            <span class="header-label">${escapeHtml(dict.tab_duplicates || 'ناڤێن وەکهەڤ:')}</span>
+                            <span class="header-name text-teal-theme">${escapeHtml(group.sharedName)}</span>
                         </div>
-                        <div class="student-meta-side">
-                            <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
-                            <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
+                        <div class="header-actions">
+                            <button onclick="copyGroupCard(this)" class="clay-btn-sec action-pill no-print">
+                                <span>📋</span> <span>${escapeHtml(dict.copy_btn || 'کۆپی')}</span>
+                            </button>
+                            <span class="clay-badge badge-teal">
+                                👥 ${escapeHtml(dict.siblings_count || 'قوتابی:')} <strong>${group.students.length}</strong>
+                            </span>
                         </div>
-                    </li>
+                    </div>` : ''}
+                    <ul class="students-list">
+                `;
+                group.students.forEach((s, dIdx) => {
+                    duplicatesHtml += `
+                        <li class="student-item" data-grade="${escapeHtml(s.grade || '')}" data-search="${escapeHtml(s.name + ' ' + (s.mother || '') + ' ' + (s.grade || '') + ' ' + (s.section || ''))}">
+                            <div class="student-info-side">
+                                ${showIndex ? `<span class="student-index-badge">#${dIdx + 1}</span>` : ''}
+                                <span class="student-avatar-box avatar-teal">👤</span>
+                                <span class="student-name">${escapeHtml(s.name)}</span>
+                                ${showMother && s.mother ? `<span class="tag-mother">🌸 <span>${escapeHtml(dict.mother_label || 'دەیک:')}</span> <span>${escapeHtml(s.mother)}</span></span>` : ''}
+                            </div>
+                            ${showGrade ? `
+                            <div class="student-meta-side">
+                                <span class="clay-badge badge-blue-soft">${escapeHtml(dict.grade_label || 'پۆل:')} <strong>${escapeHtml(s.grade || '-')}</strong></span>
+                                <span class="clay-badge badge-green-soft">${escapeHtml(dict.section_label || 'شعبە:')} <strong>${escapeHtml(s.section || '-')}</strong></span>
+                            </div>` : ''}
+                        </li>
+                    `;
+                });
+                duplicatesHtml += `
+                    </ul>
+                </div>
                 `;
             });
-            duplicatesHtml += `
-                </ul>
-            </div>
-            `;
-        });
+        }
     }
 
     // بناء قائمة المراحل المنسدلة
@@ -3668,18 +3927,25 @@ function exportToHTML() {
         gradesOptionsHtml += `<button type="button" class="grade-item" onclick="setGradeFilter('${escapeHtml(g)}', '${emoji} ${escapeHtml(g)}')"><span>${emoji} ${escapeHtml(g)}</span> <span>(${count})</span></button>`;
     });
 
-    // بناء الوثيقة الكاملة بتصميم Claymorphism المطابق للموقع الأصلي
+    // تحديد التبويب الأولي النشط
+    let defaultTabKey = 'siblings';
+    if (includeSiblings) defaultTabKey = 'siblings';
+    else if (includeRelatives) defaultTabKey = 'relatives';
+    else if (includeSolitary) defaultTabKey = 'solitary';
+    else if (includeAll) defaultTabKey = 'all';
+    else if (includeDuplicates) defaultTabKey = 'duplicates';
+
+    // بناء الوثيقة الكاملة بتصميم Claymorphism مع خط الموقع الموحد
     const fullHtmlDoc = `<!DOCTYPE html>
 <html lang="${currentLang.startsWith('ku') ? 'ku' : currentLang}" dir="${isRtl ? 'rtl' : 'ltr'}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>${escapeHtml(schoolName || 'School Report')} - Claymorphism Standalone Report</title>
+    <title>${escapeHtml(schoolName || 'School Report')} - ${isGradeFiltered ? `(${selectedGrade})` : ''}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        /* نظام ألوان Claymorphism المطابق 100% لتصميم الموقع */
         :root {
             --clay-bg: #edf2f7;
             --clay-primary: #5a8fee;
@@ -3689,7 +3955,7 @@ function exportToHTML() {
             --clay-card-bg: rgba(255, 255, 255, 0.94);
             --text-main: #0f172a;
             --text-muted: #64748b;
-            --font-family: 'Noto Kufi Arabic', 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Tahoma, Arial, sans-serif;
+            --font-family: 'Noto Kufi Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif;
         }
 
         .theme-green {
@@ -3729,16 +3995,17 @@ function exportToHTML() {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: 'Noto Kufi Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif !important;
             -webkit-tap-highlight-color: transparent;
         }
 
-        body {
-            font-family: var(--font-family);
+        html, body {
+            font-family: 'Noto Kufi Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif !important;
             background-color: var(--clay-bg);
             color: var(--text-main);
             min-height: 100vh;
             direction: ${isRtl ? 'rtl' : 'ltr'};
-            padding: 12px sm:padding: 20px;
+            padding: 12px;
             display: flex;
             flex-direction: column;
             gap: 12px;
@@ -3842,193 +4109,103 @@ function exportToHTML() {
             border: 1.5px solid rgba(255, 255, 255, 0.2);
             color: #ffffff;
             cursor: pointer;
-            font-family: inherit;
             font-size: 11.5px;
             font-weight: 800;
             padding: 7px 14px;
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 6px;
-            transition: filter 0.08s ease, transform 0.08s ease;
+            transition: all 0.1s ease;
         }
-        .clay-btn:hover { filter: brightness(1.06); transform: translateY(-1px); }
-        .clay-btn:active { transform: scale(0.96); }
+        .clay-btn:hover {
+            transform: translateY(-1px);
+            filter: brightness(1.05);
+        }
+        .clay-btn:active {
+            transform: translateY(1px);
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+        }
 
         .clay-btn-sec {
-            background: #e6ebf2;
-            color: #374151;
+            background: rgba(255, 255, 255, 0.7);
             border-radius: 12px;
-            box-shadow: 
-                2px 4px 8px var(--clay-shadow-color),
-                inset -2px -2px 4px rgba(0, 0, 0, 0.05),
-                inset 2px 2px 4px rgba(255, 255, 255, 0.85);
-            border: 1.5px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 2px 4px 10px var(--clay-shadow-color), inset 1px 1px 2px rgba(255, 255, 255, 0.8);
+            border: 1.5px solid rgba(203, 213, 225, 0.8);
+            color: var(--text-main);
             cursor: pointer;
-            font-family: inherit;
-            font-size: 11.5px;
+            font-size: 11px;
             font-weight: 700;
-            padding: 7px 14px;
+            padding: 6px 12px;
             display: inline-flex;
             align-items: center;
-            gap: 6px;
-            transition: filter 0.08s ease, transform 0.08s ease;
+            justify-content: center;
+            gap: 5px;
+            transition: all 0.1s ease;
         }
         .theme-dark .clay-btn-sec {
-            background: #1e293b;
-            color: #e2e8f0;
-            box-shadow: 2px 4px 8px var(--clay-shadow-color), inset -2px -2px 4px rgba(0, 0, 0, 0.3), inset 2px 2px 4px rgba(255, 255, 255, 0.06);
-            border: 1.5px solid #475569;
+            background: rgba(30, 41, 59, 0.8);
+            border-color: rgba(51, 65, 85, 0.8);
+            color: #f1f5f9;
+            box-shadow: 2px 4px 10px rgba(0,0,0,0.4);
         }
-        .clay-btn-sec:hover { filter: brightness(1.06); transform: translateY(-1px); }
-        .clay-btn-sec:active { transform: scale(0.96); }
 
-        /* شريط كروت الإحصائيات الستة الملونة 3D Clay */
+        /* كروت الإحصائيات (Stats Grid) */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
+            grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+            gap: 10px;
         }
-        @media (min-width: 640px) {
-            .stats-grid { grid-template-columns: repeat(3, 1fr); }
-        }
-        @media (min-width: 1024px) {
-            .stats-grid { grid-template-columns: repeat(6, 1fr); }
-        }
-
         .stat-card {
             border-radius: 16px;
-            padding: 10px 12px;
+            padding: 12px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            position: relative;
+            justify-content: center;
+            box-shadow: 3px 5px 12px var(--clay-shadow-color), inset 1px 1px 2px rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.6);
             transition: transform 0.1s ease;
         }
-        .stat-card-title {
-            font-size: 10px;
-            font-weight: 800;
-            margin-bottom: 2px;
-        }
-        .stat-card-num {
-            font-size: 20px;
-            font-weight: 900;
-            line-height: 1.2;
-        }
-        .stat-card-sub {
-            font-size: 9px;
-            font-weight: 700;
-            opacity: 0.85;
-            margin-top: 2px;
-        }
+        .stat-card:hover { transform: translateY(-2px); }
+        .stat-card-blue { background: #e0f2fe; color: #0369a1; border-color: #bae6fd; }
+        .stat-card-green { background: #dcfce7; color: #15803d; border-color: #bbf7d0; }
+        .stat-card-purple { background: #f3e8ff; color: #7e22ce; border-color: #e9d5ff; }
+        .stat-card-amber { background: #fef3c7; color: #b45309; border-color: #fde68a; }
+        .stat-card-rose { background: #ffe4e6; color: #be123c; border-color: #fecdd3; }
+        .stat-card-teal { background: #ccfbf1; color: #0f766e; border-color: #99f6e4; }
 
-        .stat-card-blue {
-            background: rgba(219, 234, 254, 0.94);
-            border: 1.5px solid rgba(147, 197, 253, 0.85);
-            box-shadow: 4px 6px 14px rgba(147, 197, 253, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(59, 130, 246, 0.12);
-            color: #1e40af;
-        }
-        .stat-card-green {
-            background: rgba(209, 250, 229, 0.94);
-            border: 1.5px solid rgba(110, 231, 183, 0.85);
-            box-shadow: 4px 6px 14px rgba(110, 231, 183, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(16, 185, 129, 0.12);
-            color: #065f46;
-        }
-        .stat-card-purple {
-            background: rgba(224, 231, 255, 0.94);
-            border: 1.5px solid rgba(165, 180, 252, 0.85);
-            box-shadow: 4px 6px 14px rgba(165, 180, 252, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(99, 102, 241, 0.12);
-            color: #3730a3;
-        }
-        .stat-card-amber {
-            background: rgba(254, 243, 199, 0.94);
-            border: 1.5px solid rgba(252, 211, 77, 0.85);
-            box-shadow: 4px 6px 14px rgba(252, 211, 77, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(245, 158, 11, 0.12);
-            color: #92400e;
-        }
-        .stat-card-rose {
-            background: rgba(255, 228, 230, 0.94);
-            border: 1.5px solid rgba(253, 164, 175, 0.85);
-            box-shadow: 4px 6px 14px rgba(253, 164, 175, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(244, 63, 94, 0.12);
-            color: #9f1239;
-        }
-        .stat-card-teal {
-            background: rgba(204, 251, 241, 0.94);
-            border: 1.5px solid rgba(94, 234, 212, 0.85);
-            box-shadow: 4px 6px 14px rgba(94, 234, 212, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(20, 184, 166, 0.12);
-            color: #115e59;
-        }
+        .stat-card-title { font-size: 10.5px; font-weight: 800; opacity: 0.9; margin-bottom: 2px; }
+        .stat-card-num { font-size: 20px; font-weight: 900; line-height: 1.1; }
+        .stat-card-sub { font-size: 9px; font-weight: 700; opacity: 0.8; margin-top: 2px; }
 
-        .theme-dark .stat-card-blue {
-            background: rgba(24, 48, 88, 0.92);
-            border: 1.5px solid #60a5fa;
-            color: #93c5fd;
-            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
-        }
-        .theme-dark .stat-card-green {
-            background: rgba(14, 60, 45, 0.92);
-            border: 1.5px solid #34d399;
-            color: #6ee7b7;
-            box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
-        }
-        .theme-dark .stat-card-purple {
-            background: rgba(45, 34, 85, 0.92);
-            border: 1.5px solid #818cf8;
-            color: #c7d2fe;
-            box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
-        }
-        .theme-dark .stat-card-amber {
-            background: rgba(70, 48, 16, 0.92);
-            border: 1.5px solid #fbbf24;
-            color: #fde68a;
-            box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
-        }
-        .theme-dark .stat-card-rose {
-            background: rgba(75, 20, 38, 0.92);
-            border: 1.5px solid #fb7185;
-            color: #fecdd3;
-            box-shadow: 0 4px 14px rgba(244, 63, 94, 0.35);
-        }
-        .theme-dark .stat-card-teal {
-            background: rgba(19, 78, 74, 0.92);
-            border: 1.5px solid #2dd4bf;
-            color: #99f6e4;
-            box-shadow: 0 4px 14px rgba(20, 184, 166, 0.35);
-        }
-
-        /* شريط التبويبات المتناسق */
+        /* شريط التبويبات والبحث */
         .tab-bar-container {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+            padding-bottom: 12px;
+            margin-bottom: 12px;
         }
         .tab-buttons-row {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            display: flex;
+            flex-wrap: wrap;
             gap: 6px;
         }
-        @media (min-width: 640px) {
-            .tab-buttons-row { grid-template-columns: repeat(3, 1fr); }
-        }
-        @media (min-width: 860px) {
-            .tab-buttons-row { grid-template-columns: repeat(5, 1fr); }
-        }
-
         .tab-btn {
-            padding: 8px 10px;
             border-radius: 12px;
             font-size: 11px;
             font-weight: 800;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
+            padding: 6px 12px;
             cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
             transition: all 0.1s ease;
-            font-family: inherit;
-            border: none;
         }
 
-        /* شريط البحث وفلترة المراحل */
         .filter-row {
             display: flex;
             flex-wrap: wrap;
@@ -4037,74 +4214,70 @@ function exportToHTML() {
             gap: 8px;
         }
         .search-box-wrap {
-            position: relative;
             flex: 1;
-            min-width: 220px;
+            min-width: 200px;
         }
         .clay-input {
-            background: #f8fafc;
-            border-radius: 12px;
-            box-shadow: inset 2px 2px 4px var(--clay-inner-shadow), inset -2px -2px 4px rgba(255, 255, 255, 0.9);
-            border: 1.5px solid #cbd5e1;
-            padding: 7px 12px;
-            font-size: 12px;
-            font-family: inherit;
             width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1.5px solid rgba(203, 213, 225, 0.9);
+            border-radius: 12px;
+            padding: 6px 12px;
+            font-size: 11px;
             color: var(--text-main);
+            box-shadow: inset 1px 2px 4px rgba(0,0,0,0.05);
             outline: none;
-            transition: border-color 0.15s ease;
+            transition: border-color 0.1s ease;
         }
         .theme-dark .clay-input {
-            background: #1e293b;
-            color: #f1f5f9;
-            border: 1.5px solid #475569;
-            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.4), inset -1px -1px 3px rgba(255,255,255,0.05);
+            background: rgba(15, 23, 42, 0.8);
+            border-color: rgba(51, 65, 85, 0.8);
+            color: #f8fafc;
         }
-        .clay-input:focus { border-color: var(--clay-primary); }
+        .clay-input:focus {
+            border-color: var(--clay-primary);
+        }
 
-        /* القائمة المنسدلة للمراحل */
         .grade-dropdown-wrapper {
             position: relative;
-            min-width: 170px;
         }
         .grade-btn {
-            background: linear-gradient(135deg, rgba(236, 253, 245, 0.95), rgba(209, 250, 229, 0.8));
-            border: 1.5px solid #10b981;
-            color: #065f46;
-            padding: 7px 12px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1.5px solid rgba(203, 213, 225, 0.9);
             border-radius: 12px;
+            padding: 6px 12px;
             font-size: 11px;
             font-weight: 800;
+            color: var(--text-main);
             cursor: pointer;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            font-family: inherit;
+            gap: 6px;
         }
         .theme-dark .grade-btn {
-            background: linear-gradient(135deg, rgba(6, 78, 59, 0.95), rgba(15, 23, 42, 0.8));
-            border: 1.5px solid #34d399;
-            color: #6ee7b7;
+            background: rgba(15, 23, 42, 0.8);
+            border-color: rgba(51, 65, 85, 0.8);
+            color: #f8fafc;
         }
         .grade-menu {
-            position: absolute;
-            top: calc(100% + 4px);
-            ${isRtl ? 'right: 0;' : 'left: 0;'}
-            width: 220px;
-            background: #ffffff;
-            border-radius: 14px;
-            padding: 6px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-            border: 1px solid #cbd5e1;
-            z-index: 50;
             display: none;
-            max-height: 250px;
+            position: absolute;
+            top: 100%;
+            ${isRtl ? 'left: 0;' : 'right: 0;'}
+            margin-top: 4px;
+            background: #ffffff;
+            border: 1.5px solid #cbd5e1;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            min-width: 180px;
+            z-index: 50;
+            padding: 6px;
+            max-height: 280px;
             overflow-y: auto;
         }
         .theme-dark .grade-menu {
             background: #0f172a;
-            border: 1.5px solid #334155;
+            border-color: #334155;
         }
         .grade-menu.open { display: block; }
         .grade-item {
@@ -4112,21 +4285,21 @@ function exportToHTML() {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 6px 8px;
+            padding: 6px 10px;
             border-radius: 8px;
             font-size: 10.5px;
             font-weight: 700;
-            border: none;
             background: none;
-            cursor: pointer;
+            border: none;
             color: var(--text-main);
-            font-family: inherit;
-            text-align: ${isRtl ? 'right' : 'left'};
+            cursor: pointer;
+            text-align: inherit;
         }
-        .grade-item:hover { background: rgba(209, 250, 229, 0.6); color: #047857; }
-        .grade-item.active { background: #10b981; color: #ffffff; }
+        .grade-item:hover, .grade-item.active {
+            background: rgba(90, 143, 238, 0.15);
+            color: var(--clay-primary);
+        }
 
-        /* منطقة النتائج والبطاقات */
         .results-scroll-panel {
             display: flex;
             flex-direction: column;
@@ -4249,33 +4422,66 @@ function exportToHTML() {
         .header-main-info {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             gap: 6px;
+            font-size: 11px;
+            font-weight: 800;
         }
-        .header-icon { font-size: 13px; }
-        .header-label { font-size: 8.5px; font-weight: 700; color: #64748b; }
+        .header-icon { font-size: 14px; }
+        .header-label { color: #64748b; font-size: 9px; font-weight: 700; }
         .theme-dark .header-label { color: #94a3b8; }
-        .header-name { font-size: 12px; font-weight: 900; }
-        .text-blue-theme { color: #1e3a8a; }
-        .theme-dark .text-blue-theme { color: #bfdbfe; }
-        .text-indigo-theme { color: #312e81; }
-        .theme-dark .text-indigo-theme { color: #c7d2fe; }
-        .text-pink-theme { color: #831843; }
+        .header-name { font-size: 11.5px; font-weight: 900; }
+        .text-blue-theme { color: #1e40af; }
+        .theme-dark .text-blue-theme { color: #93c5fd; }
+        .text-amber-theme { color: #b45309; }
+        .theme-dark .text-amber-theme { color: #fde68a; }
+        .text-indigo-theme { color: #4338ca; }
+        .theme-dark .text-indigo-theme { color: #a5b4fc; }
+        .text-pink-theme { color: #be185d; }
         .theme-dark .text-pink-theme { color: #fbcfe8; }
-        .text-teal-theme { color: #134e4a; }
+        .text-teal-theme { color: #0f766e; }
         .theme-dark .text-teal-theme { color: #99f6e4; }
 
         .header-actions {
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 6px;
         }
         .action-pill {
-            font-size: 8px;
-            padding: 2px 6px;
+            padding: 3px 8px;
+            font-size: 9px;
             border-radius: 8px;
         }
 
-        /* صفوف وقائمة الطلاب (Student Items) */
+        /* البادجات والوسوم */
+        .clay-badge {
+            font-size: 9px;
+            font-weight: 800;
+            padding: 2px 7px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .badge-blue { background: #dbeafe; color: #1e40af; }
+        .theme-dark .badge-blue { background: #1e3a8a; color: #dbeafe; }
+        .badge-amber { background: #fef3c7; color: #92400e; }
+        .theme-dark .badge-amber { background: #78350f; color: #fef3c7; }
+        .badge-indigo { background: #e0e7ff; color: #3730a3; }
+        .theme-dark .badge-indigo { background: #312e81; color: #e0e7ff; }
+        .badge-pink { background: #fce7f3; color: #9d174d; }
+        .theme-dark .badge-pink { background: #831843; color: #fce7f3; }
+        .badge-teal { background: #ccfbf1; color: #115e59; }
+        .theme-dark .badge-teal { background: #134e4a; color: #ccfbf1; }
+
+        .badge-blue-soft { background: rgba(59, 130, 246, 0.08); color: #2563eb; }
+        .theme-dark .badge-blue-soft { background: rgba(59, 130, 246, 0.2); color: #93c5fd; }
+        .badge-green-soft { background: rgba(16, 185, 129, 0.08); color: #059669; }
+        .theme-dark .badge-green-soft { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; }
+        .badge-neutral-soft { background: rgba(100, 116, 139, 0.1); color: #475569; }
+        .theme-dark .badge-neutral-soft { background: rgba(100, 116, 139, 0.25); color: #cbd5e1; }
+
+        /* قائمة الطلاب داخل الكرت */
         .students-list {
             list-style: none;
             display: flex;
@@ -4284,219 +4490,139 @@ function exportToHTML() {
         }
         .student-item {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
             padding: 3px 6px;
-            background: #f8fafc;
             border-radius: 6px;
-            border: 1px solid #e2e8f0;
-            gap: 4px;
-            font-size: 11px;
-            transition: background-color 0.08s ease;
-        }
-        .theme-dark .student-item {
-            background: rgba(30, 41, 59, 0.8);
-            border: 1px solid rgba(71, 85, 105, 0.6);
+            transition: background-color 0.05s ease;
+            gap: 6px;
         }
         .student-item:hover {
-            background: #f1f5f9;
+            background-color: rgba(148, 163, 184, 0.08);
         }
         .theme-dark .student-item:hover {
-            background: rgba(51, 65, 85, 0.9);
+            background-color: rgba(255, 255, 255, 0.04);
         }
 
         .student-info-side {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            gap: 5px;
+            gap: 6px;
+            font-size: 10.5px;
         }
         .student-index-badge {
-            font-size: 9px;
+            font-size: 8.5px;
             font-weight: 800;
             color: #94a3b8;
-            min-width: 20px;
+            min-width: 18px;
         }
         .student-avatar-box {
-            width: 18px;
-            height: 18px;
+            font-size: 10px;
+            padding: 1.5px 4px;
             border-radius: 4px;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 10px;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
-        .avatar-blue { background: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; }
-        .avatar-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
-        .avatar-indigo { background: #e0e7ff; color: #4338ca; border: 1px solid #c7d2fe; }
-        .avatar-pink { background: #fce7f3; color: #be185d; border: 1px solid #fbcfe8; }
-        .avatar-rose { background: #ffe4e6; color: #e11d48; border: 1px solid #fecdd3; }
-        .avatar-teal { background: #ccfbf1; color: #0f766e; border: 1px solid #99f6e4; }
-        .avatar-slate { background: #e2e8f0; color: #475569; border: 1px solid #cbd5e1; }
-
-        .group-card-split-shift {
-            border: 1.8px solid #f59e0b !important;
-            box-shadow: 0 3px 14px rgba(245, 158, 11, 0.25) !important;
-        }
-        .group-card-split-shift .group-card-header {
-            background: linear-gradient(135deg, rgba(254, 243, 199, 0.98), rgba(253, 230, 138, 0.9)) !important;
-            border: 1.2px solid rgba(245, 158, 11, 0.75) !important;
-        }
-        .theme-dark .group-card-split-shift {
-            border: 1.8px solid #f59e0b !important;
-            box-shadow: 0 4px 18px rgba(245, 158, 11, 0.35) !important;
-        }
-        .theme-dark .group-card-split-shift .group-card-header {
-            background: linear-gradient(135deg, #78350f, #451a03) !important;
-            border: 1.2px solid #f59e0b !important;
-        }
-
-        .text-amber-theme { color: #78350f; }
-        .theme-dark .text-amber-theme { color: #fde68a; }
-
-        .tag-shift-morning {
-            background: #fef3c7;
-            color: #92400e;
-            font-size: 7.5px;
-            font-weight: 800;
-            padding: 1px 5px;
-            border-radius: 4px;
-            border: 1px solid #fde68a;
-        }
-        .theme-dark .tag-shift-morning {
-            background: #451a03;
-            color: #fde68a;
-            border-color: #78350f;
-        }
-
-        .tag-shift-evening {
-            background: #e0e7ff;
-            color: #3730a3;
-            font-size: 7.5px;
-            font-weight: 800;
-            padding: 1px 5px;
-            border-radius: 4px;
-            border: 1px solid #c7d2fe;
-        }
-        .theme-dark .tag-shift-evening {
-            background: #1e1b4b;
-            color: #c7d2fe;
-            border-color: #3730a3;
-        }
-
-        .badge-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
-        .theme-dark .badge-amber { background: #451a03; color: #fde68a; border-color: #78350f; }
+        .avatar-blue { background: #dbeafe; }
+        .avatar-amber { background: #fef3c7; }
+        .avatar-indigo { background: #e0e7ff; }
+        .avatar-pink { background: #fce7f3; }
+        .avatar-rose { background: #ffe4e6; }
+        .avatar-teal { background: #ccfbf1; }
+        .avatar-slate { background: #e2e8f0; }
 
         .student-name {
             font-weight: 800;
             color: var(--text-main);
-            font-size: 11.5px;
         }
-
         .tag-twin {
-            background: rgba(254, 243, 199, 0.9);
-            color: #92400e;
-            font-size: 8px;
+            font-size: 8.5px;
             font-weight: 800;
+            color: #d97706;
+            background: #fef3c7;
             padding: 1px 4px;
             border-radius: 4px;
-            border: 1px solid #fde68a;
         }
-        .theme-dark .tag-twin {
-            background: #451a03;
-            color: #fde68a;
-            border-color: #78350f;
-        }
-
         .tag-mother {
-            background: #fdf2f8;
-            color: #be185d;
-            font-size: 8px;
-            font-weight: 700;
-            padding: 1px 4px;
+            font-size: 8.5px;
+            font-weight: 600;
+            color: #ec4899;
+            background: rgba(236, 72, 153, 0.08);
+            padding: 1px 5px;
             border-radius: 4px;
-            border: 1px solid #fbcfe8;
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
         }
-        .theme-dark .tag-mother {
-            background: #500724;
-            color: #fbcfe8;
-            border-color: #831843;
-        }
-
         .tag-solitary {
-            background: #ffe4e6;
-            color: #e11d48;
-            font-size: 8px;
+            font-size: 8.5px;
             font-weight: 800;
+            color: #e11d48;
+            background: #ffe4e6;
             padding: 1px 4px;
             border-radius: 4px;
-            border: 1px solid #fecdd3;
+        }
+        .tag-shift-morning {
+            font-size: 8.5px;
+            font-weight: 800;
+            color: #d97706;
+            background: #fef3c7;
+            padding: 1px 4px;
+            border-radius: 4px;
+        }
+        .tag-shift-evening {
+            font-size: 8.5px;
+            font-weight: 800;
+            color: #4f46e5;
+            background: #e0e7ff;
+            padding: 1px 4px;
+            border-radius: 4px;
         }
 
         .student-meta-side {
             display: flex;
             align-items: center;
             gap: 4px;
-            flex-shrink: 0;
+            white-space: nowrap;
         }
 
-        /* الشارات الناعمة (Clay Badges) */
-        .clay-badge {
-            font-size: 8px;
-            padding: 2px 6px;
-            border-radius: 10px;
-            font-weight: 700;
-            display: inline-flex;
-            align-items: center;
-            gap: 2px;
-        }
-        .badge-blue { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
-        .badge-indigo { background: #eef2ff; color: #4338ca; border: 1px solid #c7d2fe; }
-        .badge-pink { background: #fdf2f8; color: #be185d; border: 1px solid #fbcfe8; }
-        .badge-teal { background: #f0fdf4; color: #0f766e; border: 1px solid #99f6e4; }
-        .badge-blue-soft { background: #eff6ff; color: #1e40af; border: 1px solid #dbeafe; }
-        .badge-green-soft { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
-        .badge-neutral-soft { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
-
-        .theme-dark .badge-blue { background: #172554; color: #93c5fd; border-color: #1e40af; }
-        .theme-dark .badge-indigo { background: #1e1b4b; color: #c7d2fe; border-color: #3730a3; }
-        .theme-dark .badge-pink { background: #500724; color: #fbcfe8; border-color: #831843; }
-        .theme-dark .badge-teal { background: #042f2e; color: #99f6e4; border-color: #115e59; }
-        .theme-dark .badge-blue-soft { background: #1e293b; color: #93c5fd; border-color: #334155; }
-        .theme-dark .badge-green-soft { background: #064e3b; color: #6ee7b7; border-color: #047857; }
-        .theme-dark .badge-neutral-soft { background: #1e293b; color: #cbd5e1; border-color: #334155; }
-
-        /* فروع الأقارب داخل الكارت */
+        /* فروع الأقارب */
         .branches-wrapper {
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 6px;
+            margin-top: 4px;
         }
         .branch-box {
+            background: rgba(248, 250, 252, 0.6);
             border-radius: 8px;
+            border: 1px solid rgba(226, 232, 240, 0.8);
             padding: 4px 6px;
-            border: 1px solid #e2e8f0;
         }
-        .branch-box-paternal { background: rgba(238, 242, 255, 0.4); border-color: #e0e7ff; }
-        .branch-box-maternal { background: rgba(253, 242, 248, 0.4); border-color: #fce7f3; }
-        .theme-dark .branch-box-paternal { background: rgba(30, 27, 75, 0.4); border-color: #312e81; }
-        .theme-dark .branch-box-maternal { background: rgba(80, 7, 36, 0.4); border-color: #831843; }
-
+        .theme-dark .branch-box {
+            background: rgba(30, 41, 59, 0.4);
+            border-color: rgba(51, 65, 85, 0.6);
+        }
+        .branch-box-paternal { border-right: 3px solid #818cf8; }
+        .branch-box-maternal { border-right: 3px solid #f472b6; }
         .branch-box-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 3px;
             padding-bottom: 2px;
-            border-bottom: 1px dashed rgba(148, 163, 184, 0.3);
+            margin-bottom: 2px;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+        }
+        .theme-dark .branch-box-header {
+            border-bottom-color: rgba(51, 65, 85, 0.6);
         }
         .branch-title-wrap {
-            font-size: 9.5px;
-            font-weight: 700;
             display: flex;
             align-items: center;
+            font-size: 9.5px;
+            font-weight: 700;
             gap: 4px;
         }
         .branch-label { color: #64748b; font-size: 8.5px; }
@@ -5092,18 +5218,18 @@ document.addEventListener('click', (e) => {
 function openReportConfigModal() {
     const modal = document.getElementById('exportPrintModal');
     if (!modal) return;
-    
+
     try {
         // استرجاع البيانات المحفوظة
         const schInput = document.getElementById('reportSchoolName');
         if (schInput) schInput.value = localStorage.getItem('report_school_name') || '';
-        
+
         const dirInput = document.getElementById('reportDirectorate');
         if (dirInput) dirInput.value = localStorage.getItem('report_directorate') || '';
-        
+
         const yearInput = document.getElementById('reportAcademicYear');
         if (yearInput) yearInput.value = localStorage.getItem('report_academic_year') || '2025 - 2026';
-        
+
         const prinInput = document.getElementById('reportPrincipalName');
         if (prinInput) prinInput.value = localStorage.getItem('report_principal') || '';
 
@@ -5576,7 +5702,7 @@ function exportAnalyticsToHTML() {
     <title>${dict.analytics_title || 'راپۆرتا ئاماری یا قوتابخانەیێ'} - ${schoolName}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg: #f8fafc;
@@ -5598,7 +5724,10 @@ function exportAnalyticsToHTML() {
                 --clay-card-shadow: 6px 6px 16px rgba(0, 0, 0, 0.6), -4px -4px 12px rgba(30, 41, 59, 0.4);
             }
         }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Tajawal', 'Cairo', 'Segoe UI', Tahoma, sans-serif; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Noto Kufi Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif !important; }
+        html, body, button, input, select, textarea, table, th, td, div, p, span, h1, h2, h3, h4, h5, h6, .clay-card, .kpi-card {
+            font-family: 'Noto Kufi Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif !important;
+        }
         body { background: var(--bg); color: var(--text); padding: 24px; min-height: 100vh; line-height: 1.5; }
         .container { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
         
@@ -5809,13 +5938,13 @@ function exportAnalyticsToHTML() {
                     </thead>
                     <tbody>
                         ${sortedSectionKeys.map(k => {
-                            const item = sectionsBreakdownMap[k];
-                            const bRatio = item.total > 0 ? ((item.males / item.total) * 100).toFixed(0) : 0;
-                            const gRatio = item.total > 0 ? ((item.females / item.total) * 100).toFixed(0) : 0;
-                            let shiftBadge = '-';
-                            if (item.shift === 'morning') shiftBadge = `<span class="badge badge-morning">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>`;
-                            else if (item.shift === 'evening') shiftBadge = `<span class="badge badge-evening">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>`;
-                            return `
+        const item = sectionsBreakdownMap[k];
+        const bRatio = item.total > 0 ? ((item.males / item.total) * 100).toFixed(0) : 0;
+        const gRatio = item.total > 0 ? ((item.females / item.total) * 100).toFixed(0) : 0;
+        let shiftBadge = '-';
+        if (item.shift === 'morning') shiftBadge = `<span class="badge badge-morning">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>`;
+        else if (item.shift === 'evening') shiftBadge = `<span class="badge badge-evening">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>`;
+        return `
                                 <tr>
                                     <td style="font-weight: 800;">${item.grade}</td>
                                     <td style="text-align: center; font-weight: 800;">${item.section}</td>
@@ -5832,7 +5961,7 @@ function exportAnalyticsToHTML() {
                                     </td>
                                 </tr>
                             `;
-                        }).join('')}
+    }).join('')}
                     </tbody>
                     <tfoot>
                         <tr>
@@ -5874,10 +6003,10 @@ function exportAnalyticsToHTML() {
                     </thead>
                     <tbody>
                         ${sortedGradeKeys.map(g => {
-                            const data = gradesMap[g];
-                            const bRatio = data.total > 0 ? ((data.males / data.total) * 100).toFixed(0) : 0;
-                            const gRatio = data.total > 0 ? ((data.females / data.total) * 100).toFixed(0) : 0;
-                            return `
+        const data = gradesMap[g];
+        const bRatio = data.total > 0 ? ((data.males / data.total) * 100).toFixed(0) : 0;
+        const gRatio = data.total > 0 ? ((data.females / data.total) * 100).toFixed(0) : 0;
+        return `
                                 <tr>
                                     <td style="font-weight: 800;">${g}</td>
                                     <td style="text-align: center; font-weight: 800; color: #4338ca;">${data.males}</td>
@@ -5893,7 +6022,7 @@ function exportAnalyticsToHTML() {
                                     </td>
                                 </tr>
                             `;
-                        }).join('')}
+    }).join('')}
                     </tbody>
                     <tfoot>
                         <tr>
@@ -5967,11 +6096,11 @@ function exportAnalyticsToHTML() {
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; text-align: center;">
                             <div style="background: #fef3c7; border: 1px solid #fde68a; border-radius: 12px; padding: 6px;">
                                 <span style="font-size: 10px; font-weight: 700; color: #92400e; display: block;">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>
-                                <span style="font-size: 13px; font-weight: 900; color: #78350f;">${morningStudentsCount} <small>(${totalStudents > 0 ? ((morningStudentsCount/totalStudents)*100).toFixed(0) : 0}%)</small></span>
+                                <span style="font-size: 13px; font-weight: 900; color: #78350f;">${morningStudentsCount} <small>(${totalStudents > 0 ? ((morningStudentsCount / totalStudents) * 100).toFixed(0) : 0}%)</small></span>
                             </div>
                             <div style="background: #e0e7ff; border: 1px solid #c7d2fe; border-radius: 12px; padding: 6px;">
                                 <span style="font-size: 10px; font-weight: 700; color: #3730a3; display: block;">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>
-                                <span style="font-size: 13px; font-weight: 900; color: #1e1b4b;">${eveningStudentsCount} <small>(${totalStudents > 0 ? ((eveningStudentsCount/totalStudents)*100).toFixed(0) : 0}%)</small></span>
+                                <span style="font-size: 13px; font-weight: 900; color: #1e1b4b;">${eveningStudentsCount} <small>(${totalStudents > 0 ? ((eveningStudentsCount / totalStudents) * 100).toFixed(0) : 0}%)</small></span>
                             </div>
                         </div>
                     </div>
@@ -5992,10 +6121,10 @@ function exportAnalyticsToHTML() {
                     ${sortedSurnames.length === 0 ? `
                         <p style="color: var(--text-muted); text-align: center; padding: 12px; font-size: 11px;">چو ناڤ نەهاتنە دیتن</p>
                     ` : sortedSurnames.map(([name, count], rIdx) => {
-                        const barWidth = ((count / maxSurnameCount) * 100).toFixed(0);
-                        const rankBadge = rIdx === 0 ? '🥇' : (rIdx === 1 ? '🥈' : (rIdx === 2 ? '🥉' : `#${rIdx + 1}`));
-                        const rankBg = rIdx === 0 ? 'background: rgba(254, 243, 199, 0.6); border: 1px solid #fde68a;' : (rIdx === 1 ? 'background: rgba(241, 245, 249, 0.8); border: 1px solid #cbd5e1;' : (rIdx === 2 ? 'background: rgba(254, 243, 199, 0.4); border: 1px solid #fef3c7;' : 'background: rgba(255, 255, 255, 0.7); border: 1px solid var(--border);'));
-                        return `
+        const barWidth = ((count / maxSurnameCount) * 100).toFixed(0);
+        const rankBadge = rIdx === 0 ? '🥇' : (rIdx === 1 ? '🥈' : (rIdx === 2 ? '🥉' : `#${rIdx + 1}`));
+        const rankBg = rIdx === 0 ? 'background: rgba(254, 243, 199, 0.6); border: 1px solid #fde68a;' : (rIdx === 1 ? 'background: rgba(241, 245, 249, 0.8); border: 1px solid #cbd5e1;' : (rIdx === 2 ? 'background: rgba(254, 243, 199, 0.4); border: 1px solid #fef3c7;' : 'background: rgba(255, 255, 255, 0.7); border: 1px solid var(--border);'));
+        return `
                             <div style="${rankBg} border-radius: 12px; padding: 6px 10px; display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
                                 <div style="display: flex; align-items: center; gap: 6px;">
                                     <span style="font-size: 12px; font-weight: 900;">${rankBadge}</span>
@@ -6009,7 +6138,7 @@ function exportAnalyticsToHTML() {
                                 </div>
                             </div>
                         `;
-                    }).join('')}
+    }).join('')}
                 </div>
             </div>
 
@@ -6036,10 +6165,10 @@ function exportAnalyticsToHTML() {
                     </thead>
                     <tbody>
                         ${sortedGradeKeys.map(g => {
-                            const data = gradesMap[g];
-                            const ratio = data.total > 0 ? ((data.siblings / data.total) * 100).toFixed(0) : 0;
-                            const secCount = data.sections.size;
-                            return `
+        const data = gradesMap[g];
+        const ratio = data.total > 0 ? ((data.siblings / data.total) * 100).toFixed(0) : 0;
+        const secCount = data.sections.size;
+        return `
                                 <tr>
                                     <td style="font-weight: 800;">${g}</td>
                                     <td style="text-align: center; font-weight: 700;">${data.total}</td>
@@ -6057,7 +6186,7 @@ function exportAnalyticsToHTML() {
                                     </td>
                                 </tr>
                             `;
-                        }).join('')}
+    }).join('')}
                     </tbody>
                 </table>
             </div>
@@ -6083,10 +6212,6 @@ function exportAnalyticsToHTML() {
     URL.revokeObjectURL(link.href);
 
     showToast(dict.html_export_success || 'تم حفظ وتصدير ملف HTML بنجاح!');
-}
-
-function exportToHTML() {
-    exportAnalyticsToHTML();
 }
 
 function exportToExcelXLSX() {
@@ -6160,11 +6285,11 @@ function detectStudentGender(name) {
     if (!name) return 'male';
     const clean = normalizeText(name).trim();
     const firstWord = clean.split(' ')[0] || '';
-    
+
     if (femaleNamesSet.has(firstWord)) return 'female';
     if (maleNamesSet.has(firstWord)) return 'male';
 
-    if (firstWord.endsWith('ة') || firstWord.endsWith('ه') || firstWord.endsWith('اء') || 
+    if (firstWord.endsWith('ة') || firstWord.endsWith('ه') || firstWord.endsWith('اء') ||
         firstWord.endsWith('ى') || firstWord.endsWith('خاتون') || firstWord.endsWith('ناز') ||
         firstWord.endsWith('ڤين') || firstWord.endsWith('ڤین') || firstWord.endsWith('گل') ||
         firstWord.endsWith('گول') || firstWord.endsWith('ستان')) {
@@ -6186,11 +6311,11 @@ function renderInlineAnalytics() {
     const totalSolitary = solitaryResults.length;
     const totalFamilies = siblingResults.length;
     const totalDuplicates = duplicateResults.reduce((acc, g) => acc + g.students.length, 0);
-    
+
     // حساب أعداد الذكور والإناث الكلية ولكل مرحلة
     let totalMales = 0;
     let totalFemales = 0;
-    
+
     studentPool.forEach(s => {
         const gender = s.gender || detectStudentGender(s.name);
         s.gender = gender;
@@ -6266,14 +6391,14 @@ function renderInlineAnalytics() {
     studentPool.forEach(s => {
         const g = s.grade || 'نەدیار';
         if (!gradesMap[g]) {
-            gradesMap[g] = { 
-                total: 0, 
-                siblings: 0, 
-                relatives: 0, 
-                solitary: 0, 
-                males: 0, 
-                females: 0, 
-                sections: new Set() 
+            gradesMap[g] = {
+                total: 0,
+                siblings: 0,
+                relatives: 0,
+                solitary: 0,
+                males: 0,
+                females: 0,
+                sections: new Set()
             };
         }
         gradesMap[g].total++;
@@ -6307,7 +6432,7 @@ function renderInlineAnalytics() {
         const g = s.grade || 'نەدیار';
         const sec = (s.section && s.section !== '-') ? s.section : (currentLang === 'en' ? 'General' : (currentLang === 'ar' ? 'عام' : 'گشتی'));
         const key = `${g}___${sec}`;
-        
+
         if (!sectionsBreakdownMap[key]) {
             const sh = getStudentShift(sec, shiftConfig.morningList, shiftConfig.eveningList);
             sectionsBreakdownMap[key] = {
@@ -6472,18 +6597,18 @@ function renderInlineAnalytics() {
                         </thead>
                         <tbody class="divide-y divide-slate-100 dark:divide-slate-800/80">
                             ${sortedSectionKeys.map(k => {
-                                const item = sectionsBreakdownMap[k];
-                                const bRatio = item.total > 0 ? ((item.males / item.total) * 100).toFixed(0) : 0;
-                                const gRatio = item.total > 0 ? ((item.females / item.total) * 100).toFixed(0) : 0;
-                                
-                                let shiftBadge = '-';
-                                if (item.shift === 'morning') {
-                                    shiftBadge = `<span class="px-1.5 py-0.2 rounded-md bg-amber-100 dark:bg-amber-950 text-amber-900 dark:text-amber-200 text-[8.5px] font-bold">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>`;
-                                } else if (item.shift === 'evening') {
-                                    shiftBadge = `<span class="px-1.5 py-0.2 rounded-md bg-indigo-100 dark:bg-indigo-950 text-indigo-900 dark:text-indigo-200 text-[8.5px] font-bold">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>`;
-                                }
+        const item = sectionsBreakdownMap[k];
+        const bRatio = item.total > 0 ? ((item.males / item.total) * 100).toFixed(0) : 0;
+        const gRatio = item.total > 0 ? ((item.females / item.total) * 100).toFixed(0) : 0;
 
-                                return `
+        let shiftBadge = '-';
+        if (item.shift === 'morning') {
+            shiftBadge = `<span class="px-1.5 py-0.2 rounded-md bg-amber-100 dark:bg-amber-950 text-amber-900 dark:text-amber-200 text-[8.5px] font-bold">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>`;
+        } else if (item.shift === 'evening') {
+            shiftBadge = `<span class="px-1.5 py-0.2 rounded-md bg-indigo-100 dark:bg-indigo-950 text-indigo-900 dark:text-indigo-200 text-[8.5px] font-bold">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>`;
+        }
+
+        return `
                                     <tr class="hover:bg-slate-50/90 dark:hover:bg-slate-800/50 transition">
                                         <td class="py-2 px-2.5 font-black text-slate-800 dark:text-slate-100">${item.grade}</td>
                                         <td class="py-2 px-2.5 text-center font-black text-indigo-700 dark:text-indigo-300">
@@ -6502,7 +6627,7 @@ function renderInlineAnalytics() {
                                         </td>
                                     </tr>
                                 `;
-                            }).join('')}
+    }).join('')}
                         </tbody>
                         <tfoot>
                             <tr class="bg-slate-100/95 dark:bg-slate-800/95 font-black text-slate-900 dark:text-slate-100 border-t-2 border-slate-300 dark:border-slate-600">
@@ -6562,10 +6687,10 @@ function renderInlineAnalytics() {
                         </thead>
                         <tbody class="divide-y divide-slate-100 dark:divide-slate-800/80">
                             ${sortedGradeKeys.map(g => {
-                                const data = gradesMap[g];
-                                const bRatio = data.total > 0 ? ((data.males / data.total) * 100).toFixed(0) : 0;
-                                const gRatio = data.total > 0 ? ((data.females / data.total) * 100).toFixed(0) : 0;
-                                return `
+        const data = gradesMap[g];
+        const bRatio = data.total > 0 ? ((data.males / data.total) * 100).toFixed(0) : 0;
+        const gRatio = data.total > 0 ? ((data.females / data.total) * 100).toFixed(0) : 0;
+        return `
                                     <tr class="hover:bg-slate-50/90 dark:hover:bg-slate-800/50 transition">
                                         <td class="py-2 px-2.5 font-black text-slate-800 dark:text-slate-100">${g}</td>
                                         <td class="py-2 px-2.5 text-center font-extrabold text-indigo-700 dark:text-indigo-400 bg-indigo-50/30 dark:bg-indigo-950/20">${data.males}</td>
@@ -6581,7 +6706,7 @@ function renderInlineAnalytics() {
                                         </td>
                                     </tr>
                                 `;
-                            }).join('')}
+    }).join('')}
                         </tbody>
                         <tfoot>
                             <tr class="bg-slate-100/95 dark:bg-slate-800/95 font-black text-slate-900 dark:text-slate-100 border-t-2 border-slate-300 dark:border-slate-600">
@@ -6656,11 +6781,11 @@ function renderInlineAnalytics() {
                             <div class="grid grid-cols-2 gap-2 text-center">
                                 <div class="p-1.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800">
                                     <span class="text-[9px] font-bold block text-amber-800 dark:text-amber-300">☀️ ${dict.shift_tag_morning || 'سپێدە'}</span>
-                                    <span class="text-xs font-black text-amber-950 dark:text-amber-100">${morningStudentsCount} <small>(${totalStudents > 0 ? ((morningStudentsCount/totalStudents)*100).toFixed(0) : 0}%)</small></span>
+                                    <span class="text-xs font-black text-amber-950 dark:text-amber-100">${morningStudentsCount} <small>(${totalStudents > 0 ? ((morningStudentsCount / totalStudents) * 100).toFixed(0) : 0}%)</small></span>
                                 </div>
                                 <div class="p-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800">
                                     <span class="text-[9px] font-bold block text-indigo-800 dark:text-indigo-300">🌙 ${dict.shift_tag_evening || 'ئێڤار'}</span>
-                                    <span class="text-xs font-black text-indigo-950 dark:text-indigo-100">${eveningStudentsCount} <small>(${totalStudents > 0 ? ((eveningStudentsCount/totalStudents)*100).toFixed(0) : 0}%)</small></span>
+                                    <span class="text-xs font-black text-indigo-950 dark:text-indigo-100">${eveningStudentsCount} <small>(${totalStudents > 0 ? ((eveningStudentsCount / totalStudents) * 100).toFixed(0) : 0}%)</small></span>
                                 </div>
                             </div>
                         </div>
@@ -6681,10 +6806,10 @@ function renderInlineAnalytics() {
                         ${sortedSurnames.length === 0 ? `
                             <p class="text-slate-400 text-center py-4 text-[10px]">چو ناڤ نەهاتنە دیتن</p>
                         ` : sortedSurnames.map(([name, count], rIdx) => {
-                            const barWidth = ((count / maxSurnameCount) * 100).toFixed(0);
-                            const rankBadge = rIdx === 0 ? '🥇' : (rIdx === 1 ? '🥈' : (rIdx === 2 ? '🥉' : `#${rIdx + 1}`));
-                            const rankBg = rIdx === 0 ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-300' : (rIdx === 1 ? 'bg-slate-50 dark:bg-slate-800 border-slate-300' : (rIdx === 2 ? 'bg-amber-50/50 dark:bg-amber-950/20 border-amber-200' : 'bg-white dark:bg-slate-800/60 border-slate-200/60'));
-                            return `
+        const barWidth = ((count / maxSurnameCount) * 100).toFixed(0);
+        const rankBadge = rIdx === 0 ? '🥇' : (rIdx === 1 ? '🥈' : (rIdx === 2 ? '🥉' : `#${rIdx + 1}`));
+        const rankBg = rIdx === 0 ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-300' : (rIdx === 1 ? 'bg-slate-50 dark:bg-slate-800 border-slate-300' : (rIdx === 2 ? 'bg-amber-50/50 dark:bg-amber-950/20 border-amber-200' : 'bg-white dark:bg-slate-800/60 border-slate-200/60'));
+        return `
                                 <div class="p-1.5 rounded-xl border ${rankBg} flex items-center justify-between gap-2 text-[10px] shadow-2xs">
                                     <div class="flex items-center gap-1.5 min-w-0">
                                         <span class="font-black text-xs">${rankBadge}</span>
@@ -6698,7 +6823,7 @@ function renderInlineAnalytics() {
                                     </div>
                                 </div>
                             `;
-                        }).join('')}
+    }).join('')}
                     </div>
                 </div>
             </div>
@@ -6727,10 +6852,10 @@ function renderInlineAnalytics() {
                         </thead>
                         <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
                             ${sortedGradeKeys.map(g => {
-                                const data = gradesMap[g];
-                                const ratio = data.total > 0 ? ((data.siblings / data.total) * 100).toFixed(0) : 0;
-                                const secCount = data.sections.size;
-                                return `
+        const data = gradesMap[g];
+        const ratio = data.total > 0 ? ((data.siblings / data.total) * 100).toFixed(0) : 0;
+        const secCount = data.sections.size;
+        return `
                                     <tr class="hover:bg-slate-50/80 dark:hover:bg-slate-800/50 transition">
                                         <td class="py-1.5 px-2 font-black text-slate-800 dark:text-slate-100">${g}</td>
                                         <td class="py-1.5 px-2 text-center font-bold">${data.total}</td>
@@ -6748,7 +6873,7 @@ function renderInlineAnalytics() {
                                         </td>
                                     </tr>
                                 `;
-                            }).join('')}
+    }).join('')}
                         </tbody>
                     </table>
                 </div>
@@ -6921,7 +7046,7 @@ function copyRelativeCard(index) {
     const dict = translations[currentLang];
     const relHeader = group.type === 'maternal' ? `🌸 ${dict.maternal_family_label} ${group.sharedKey}` : `🌿 ${dict.family_label} ${group.sharedKey}`;
     let text = `📋 ${relHeader} (${group.totalCount} ${dict.students_suffix})\n`;
-    
+
     Object.keys(group.branches).forEach(branch => {
         text += `\n[${group.type === 'maternal' ? dict.branch_label : dict.father_branch} ${branch}]\n`;
         group.branches[branch].forEach((s, idx) => {
@@ -6946,17 +7071,20 @@ function copySolitaryList() {
 }
 
 function saveBackupLocally() {
-    const rawInput = document.getElementById('namesInput').value;
-    localStorage.setItem('siblings_backup', rawInput);
+    const inputEl = document.getElementById('namesInput');
+    if (inputEl) {
+        localStorage.setItem('siblings_backup', inputEl.value);
+    }
 }
 
 function updateHistoryArchive(data) {
+    if (!data || data.trim().length === 0) return;
     let history = JSON.parse(localStorage.getItem('siblings_history') || '[]');
     if (history.includes(data)) return;
-    
+
     history.unshift(data);
-    if (history.length > 5) history.pop(); 
-    
+    if (history.length > 5) history.pop();
+
     localStorage.setItem('siblings_history', JSON.stringify(history));
     renderHistoryUI();
 }
@@ -6966,12 +7094,12 @@ function renderHistoryUI() {
     if (!historyList) return;
     const history = JSON.parse(localStorage.getItem('siblings_history') || '[]');
     historyList.innerHTML = '';
-    
+
     history.forEach((data, index) => {
         const btn = document.createElement('button');
         btn.className = "clay-btn-sec px-1.5 py-0.2 rounded-lg text-[8px] font-bold";
         btn.textContent = `${translations[currentLang].history_ver} ${index + 1}`;
-        btn.onclick = function() {
+        btn.onclick = function () {
             document.getElementById('namesInput').value = data;
             onInputChanged();
             processNames();
@@ -6995,7 +7123,7 @@ function toggleDarkMode() {
     const root = document.documentElement;
     const isDark = root.classList.contains('theme-dark') || root.classList.contains('dark');
     const dict = translations[currentLang];
-    
+
     if (!isDark) {
         setTheme('dark');
         const darkBtn = document.getElementById('darkBtnText');
@@ -7046,7 +7174,7 @@ function clearResultsArea() {
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
         <p id="ui-results-default-desc" class="text-xs px-4 max-w-md leading-relaxed">${dict.results_default_desc}</p>`;
-    
+
     resultsCount.classList.add('hidden');
     searchFilterContainer.classList.add('hidden');
     const filterSelect = document.getElementById('gradeFilter');
@@ -7119,12 +7247,12 @@ function installPWA() {
     } else {
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
         if (isIOS) {
-            alert(currentLang === 'en' 
-                ? 'To install: tap Share (⎋) and select "Add to Home Screen"' 
+            alert(currentLang === 'en'
+                ? 'To install: tap Share (⎋) and select "Add to Home Screen"'
                 : 'بۆ دانانێ: ل سەر دوگمەیا Share (⎋) د Safari دا کلیک بکە و پاشان "Add to Home Screen" هەلبژێرە.');
         } else {
-            alert(currentLang === 'en' 
-                ? 'To install: click your browser menu (⋮ or ⋯) and select "Install App" or "Install Page as App".' 
+            alert(currentLang === 'en'
+                ? 'To install: click your browser menu (⋮ or ⋯) and select "Install App" or "Install Page as App".'
                 : 'بۆ دانانا بەرنامەی: ژ مێنیویا براوزەری (⋮) کلیک بکە ل سەر (تثبيت التطبيق / Install App).');
         }
     }
@@ -7141,6 +7269,45 @@ if ('serviceWorker' in navigator) {
 
 // تشغيل فوري فائق السرعة بمجرد قراءة الـ DOM (Zero-latency Startup)
 document.addEventListener('DOMContentLoaded', () => {
+    // 1. استعادة البيانات والنصوص المحفوظة أولاً قبل أي عملية أخرى لمنع مسحها
+    const backup = localStorage.getItem('siblings_backup');
+    const namesInput = document.getElementById('namesInput');
+    if (backup !== null && namesInput) {
+        namesInput.value = backup;
+    }
+
+    // 2. استعادة كافة الخيارات والإعدادات السابقة من التخزين المحلي
+    const savedSep = localStorage.getItem('siblings_separator');
+    if (savedSep && document.getElementById('dataSeparator')) document.getElementById('dataSeparator').value = savedSep;
+
+    const savedMatch = localStorage.getItem('siblings_match_type');
+    if (savedMatch && document.getElementById('matchType')) document.getElementById('matchType').value = savedMatch;
+
+    const savedRelMode = localStorage.getItem('siblings_rel_mode');
+    if (savedRelMode && document.getElementById('relativesSearchMode')) document.getElementById('relativesSearchMode').value = savedRelMode;
+
+    const savedGrandpa = localStorage.getItem('siblings_grandpa_depth');
+    if (savedGrandpa && document.getElementById('grandpaMatchDepth')) document.getElementById('grandpaMatchDepth').value = savedGrandpa;
+
+    const savedStrip = localStorage.getItem('siblings_strip_prefix');
+    if (savedStrip !== null && document.getElementById('stripPrefixOpt')) document.getElementById('stripPrefixOpt').checked = (savedStrip === 'true');
+
+    const savedSort = localStorage.getItem('siblings_sort');
+    if (savedSort && document.getElementById('resultsSort')) document.getElementById('resultsSort').value = savedSort;
+
+    const savedMorning = localStorage.getItem('siblings_morning_sections');
+    if (savedMorning && document.getElementById('morningSectionsInput')) document.getElementById('morningSectionsInput').value = savedMorning;
+
+    const savedEvening = localStorage.getItem('siblings_evening_sections');
+    if (savedEvening && document.getElementById('eveningSectionsInput')) document.getElementById('eveningSectionsInput').value = savedEvening;
+
+    const savedCustom1 = localStorage.getItem('siblings_custom1_name');
+    if (savedCustom1 && document.getElementById('customShift1Name')) document.getElementById('customShift1Name').value = savedCustom1;
+
+    const savedCustom2 = localStorage.getItem('siblings_custom2_name');
+    if (savedCustom2 && document.getElementById('customShift2Name')) document.getElementById('customShift2Name').value = savedCustom2;
+
+    // 3. تطبيق الثيم والمظهر
     const savedTheme = localStorage.getItem('siblings_theme') || 'blue';
     if (savedTheme === 'dark') {
         const root = document.documentElement;
@@ -7151,6 +7318,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTheme(savedTheme);
     }
 
+    // 4. تطبيق اللغة
     const savedLang = localStorage.getItem('siblings_lang') || 'ku_ba';
     currentLang = savedLang;
     const labelEl = document.getElementById('currentLangLabel');
@@ -7164,6 +7332,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     changeLanguage(savedLang);
 
+    // 5. تطبيق إعدادات الدوام
     const savedShiftMode = localStorage.getItem('siblings_shift_mode') || 'single';
     const shiftSelect = document.getElementById('shiftMode');
     if (shiftSelect) {
@@ -7171,15 +7340,40 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleShiftModeSettings();
     }
 
-    const backup = localStorage.getItem('siblings_backup');
-    if (backup) {
-        document.getElementById('namesInput').value = backup;
+    // 6. التحليل والمعالجة التلقائية الفورية للبيانات وعرض النتائج دون أي فقدان
+    if (namesInput && namesInput.value.trim().length > 0) {
         onInputChanged();
         processNames();
+        const savedTab = localStorage.getItem('siblings_active_tab') || 'siblings';
+        if (savedTab && savedTab !== 'siblings') {
+            switchResultTab(savedTab);
+        }
     }
+
+    // 7. حفظ التغييرات فورياً عند تعديل أي خيار
+    ['dataSeparator', 'matchType', 'relativesSearchMode', 'grandpaMatchDepth', 'resultsSort'].forEach(id => {
+        document.getElementById(id)?.addEventListener('change', () => {
+            if (namesInput && namesInput.value.trim().length > 0) processNames();
+        });
+    });
+    document.getElementById('stripPrefixOpt')?.addEventListener('change', () => {
+        if (namesInput && namesInput.value.trim().length > 0) processNames();
+    });
+    document.getElementById('morningSectionsInput')?.addEventListener('input', (e) => {
+        localStorage.setItem('siblings_morning_sections', e.target.value);
+    });
+    document.getElementById('eveningSectionsInput')?.addEventListener('input', (e) => {
+        localStorage.setItem('siblings_evening_sections', e.target.value);
+    });
+    document.getElementById('customShift1Name')?.addEventListener('input', (e) => {
+        localStorage.setItem('siblings_custom1_name', e.target.value);
+    });
+    document.getElementById('customShift2Name')?.addEventListener('input', (e) => {
+        localStorage.setItem('siblings_custom2_name', e.target.value);
+    });
 });
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches('#langBtn') && !event.target.closest('#langMenu') && !event.target.closest('#langBtn')) {
         document.getElementById('langMenu')?.classList.add('hidden');
     }

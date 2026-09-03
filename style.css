@@ -42,15 +42,17 @@
 * {
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
+    font-family: 'Noto Kufi Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif;
 }
 
 html, body {
     touch-action: manipulation;
     -webkit-text-size-adjust: 100%;
+    font-family: 'Noto Kufi Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif !important;
 }
 
 body {
-    font-family: 'Noto Kufi Arabic', 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Tahoma, Arial, sans-serif;
+    font-family: 'Noto Kufi Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif !important;
     background-color: var(--clay-bg);
     min-height: 100vh;
     text-rendering: optimizeSpeed;
@@ -58,6 +60,7 @@ body {
 }
 
 button, a, select, input, textarea, .clay-btn, .clay-btn-sec, .stat-card, .group-card {
+    font-family: 'Noto Kufi Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif !important;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
